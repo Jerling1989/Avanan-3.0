@@ -177,39 +177,20 @@
           <ul class="list-inline ml-2 mb-0">
             <!-- Search -->
             <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
+              <a class="u-header__navbar-link" href="javascript:;" role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                       aria-controls="searchPushTop"
                       data-unfold-type="jquery-slide"
                       data-unfold-target="#searchPushTop">
-                <span class="fas fa-search btn-icon__inner"></span>
+                <i class="fas fa-search"></i>
+                <span class="d-none d-sm-inline-block">Search</span>
               </a>
-              <a class="u-header__navbar-link d-none d-sm-inline-block" href="javascript:;" role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      aria-controls="searchPushTop"
-                      data-unfold-type="jquery-slide"
-                      data-unfold-target="#searchPushTop">Search</a>
             </li>
             <!-- End Search -->
 
             <!-- Shopping Cart -->
             <li class="list-inline-item position-relative">
-              <a id="shoppingCartDropdownInvoker" class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
-                      aria-controls="shoppingCartDropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      data-unfold-event="hover"
-                      data-unfold-target="#shoppingCartDropdown"
-                      data-unfold-type="css-animation"
-                      data-unfold-duration="300"
-                      data-unfold-delay="300"
-                      data-unfold-hide-on-scroll="true"
-                      data-unfold-animation-in="slideInUp"
-                      data-unfold-animation-out="fadeOut">
-                <span class="fas fa-shopping-cart btn-icon__inner"></span>
-              </a>
               <a class="u-header__navbar-link" href="javascript:;" role="button"
                       aria-controls="shoppingCartDropdown"
                       aria-haspopup="true"
@@ -221,7 +202,10 @@
                       data-unfold-delay="300"
                       data-unfold-hide-on-scroll="true"
                       data-unfold-animation-in="slideInUp"
-                      data-unfold-animation-out="fadeOut">Support</a>
+                      data-unfold-animation-out="fadeOut">
+                <i class="fas fa-headset"></i>
+                <span class="d-none d-sm-inline-block">Support</span>
+              </a>
 
               <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right text-center p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
                 <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
@@ -235,30 +219,20 @@
             <!-- Account Login -->
             <li class="list-inline-item">
               <!-- Account Sidebar Toggle Button -->
-              <a id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
-                 aria-controls="sidebarContent"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="click"
-                 data-unfold-hide-on-scroll="false"
-                 data-unfold-target="#sidebarContent"
-                 data-unfold-type="css-animation"
-                 data-unfold-animation-in="fadeInRight"
-                 data-unfold-animation-out="fadeOutRight"
-                 data-unfold-duration="500">
-                <span class="fas fa-user-circle btn-icon__inner font-size-1"></span>
+              <a id="sidebarNavToggler" class="u-header__navbar-link" href="javascript:;" role="button"
+                  aria-controls="sidebarContent"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-unfold-event="click"
+                  data-unfold-hide-on-scroll="false"
+                  data-unfold-target="#sidebarContent"
+                  data-unfold-type="css-animation"
+                  data-unfold-animation-in="fadeInRight"
+                  data-unfold-animation-out="fadeOutRight"
+                  data-unfold-duration="500">
+                <i class="fas fa-user-circle font-size-1"></i>
+                <span class="d-none d-sm-inline-block">Login</span>
               </a>
-              <a class="u-header__navbar-link d-none d-sm-inline-block" href="javascript:;" role="button"
-                 aria-controls="sidebarContent"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="click"
-                 data-unfold-hide-on-scroll="false"
-                 data-unfold-target="#sidebarContent"
-                 data-unfold-type="css-animation"
-                 data-unfold-animation-in="fadeInRight"
-                 data-unfold-animation-out="fadeOutRight"
-                 data-unfold-duration="500">Login</a>
               <!-- End Account Sidebar Toggle Button -->
             </li>
             <!-- End Account Login -->
