@@ -23086,3 +23086,109 @@ label.btn {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+
+.shape {
+  position: absolute; }
+
+.shape > svg,
+.shape > img {
+  display: block; }
+
+.shape:not([class*="blur"]) {
+  overflow: hidden; }
+  .shape:not([class*="blur"]) > svg, .shape:not([class*="blur"]) > img {
+    transform: scale(1.001); }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .shape > svg {
+    display: none; } }
+
+.shape-top {
+  top: -.75px;
+  right: -.75px;
+  left: -.75px; }
+  .shape-top > svg, .shape-top > img {
+    transform-origin: top center; }
+
+.shape-right {
+  top: -.75px;
+  right: -.75px;
+  bottom: -.75px; }
+  .shape-right > svg, .shape-right > img {
+    transform-origin: right center;
+    margin-left: auto; }
+
+.shape-bottom {
+  right: -.75px;
+  bottom: -.75px;
+  left: -.75px; }
+  .shape-bottom > svg, .shape-bottom > img {
+    transform-origin: bottom center; }
+
+.shape-left {
+  top: -.75px;
+  bottom: -.75px;
+  left: -.75px; }
+  .shape-left > svg, .shape-left > img {
+    transform-origin: left center; }
+
+.shape-fluid-x > svg,
+.shape-fluid-x > img {
+  width: calc(100% + 1.5px);
+  height: auto; }
+
+.shape-fluid-y > svg,
+.shape-fluid-y > img {
+  height: calc(100% + 1.5px);
+  width: auto; }
+
+.shape-fluid-y {
+  width: 100%;
+  pointer-events: none; }
+
+.shape-flip-x {
+  transform: scaleX(-1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.shape-blur-1 {
+  top: 0;
+  right: 0;
+  left: 0; }
+  .shape-blur-1 > svg, .shape-blur-1 > img {
+    width: 100%;
+    height: auto; }
+  @media (min-width: 768px) {
+    .shape-blur-1 {
+      bottom: 0;
+      left: 50%;
+      right: auto; }
+      .shape-blur-1 > svg, .shape-blur-1 > img {
+        width: auto;
+        height: 100%; } }
+
+.shape-blur-2 {
+  top: 0;
+  right: 0;
+  left: 0; }
+  .shape-blur-2 > svg, .shape-blur-2 > img {
+    width: 100%;
+    height: auto; }
+  @media (min-width: 768px) {
+    .shape-blur-2 {
+      bottom: 0;
+      right: 50%;
+      left: auto; }
+      .shape-blur-2 > svg, .shape-blur-2 > img {
+        width: auto;
+        height: 100%;
+        float: right; } }
+
+.shape-blur-4 {
+  top: 0;
+  bottom: 0;
+  left: 50%; }
+  .shape-blur-4 > svg, .shape-blur-4 > img {
+    width: auto;
+    height: 100%;
+    transform: translateX(-50%) scale(1.3); }
