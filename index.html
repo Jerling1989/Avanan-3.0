@@ -698,7 +698,15 @@
   </header>
   <!-- ========== END HEADER ========== -->
 
-  <!-- ========== MAIN CONTENT ========== -->
+
+    
+
+
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
   <main id="content" role="main">
     <div style="margin-top: 180px;"></div>
     <!-- Hero Section -->
@@ -761,14 +769,52 @@
     <!-- End Hero Section -->
 
 
+    <section style="margin-top: 180px;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3>Today We've...</h3>
+            <br>
+          </div>
+          
+
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            <h4 class="h6">Scanned</h4>
+            <div class="js-counter h3">23764345</div>
+            <h4 class="h6">Emails</h4>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            <h4 class="h6">Blocked</h4>
+            <div class="js-counter h3">84152</div>
+            <h4 class="h6">Phishing Attacks</h4>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            <h4 class="h6">Stopped</h4>
+            <div class="js-counter h3">4420</div>
+            <h4 class="h6">Malicous Files</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
     
 
+    <!-- SHAPE
+    ================================================== -->
+    <div style="margin-top: 225px;" class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0C720 240 0 240 0 240H1440V0Z" fill="currentColor"/>
+        </svg>
 
+      </div>
+    </div>
 
     <!-- Icon Blocks Section -->
-    <div class="container space-top-3 space-bottom-md-3 space-bottom-2">
-
+    <div class="space-top-3 space-bottom-md-3 space-bottom-2 bg-white">
+      <div class="container">
       <div class="row">
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
@@ -829,6 +875,7 @@
         <!-- End Mockup Browser -->
       </div>
       <!-- End Mockup Browser -->
+      </div>
     </div>
     <!-- End Icon Blocks Section -->
 
@@ -1361,6 +1408,7 @@
   <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
   <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="assets/vendor/appear.js"></script>
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
@@ -1374,6 +1422,7 @@
   <script src="assets/js/components/hs.show-animation.js"></script>
   <script src="assets/js/components/hs.svg-injector.js"></script>
   <script src="assets/js/components/hs.go-to.js"></script>
+  <script src="assets/js/components/hs.counter.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -1390,6 +1439,11 @@
       $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
     });
 
+    $(document).on('ready', function () {
+      // initialization of counters
+      var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+    });
+    
     $(document).on('ready', function () {
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
