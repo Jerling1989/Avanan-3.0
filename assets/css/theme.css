@@ -6823,6 +6823,10 @@ button.bg-danger:focus {
   background-color: #f8f9fa !important;
 }
 
+.bg-whitesmoke {
+  background-color: #f0f3f7 !important;
+}
+
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
