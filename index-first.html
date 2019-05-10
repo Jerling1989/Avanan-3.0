@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Home Page | Front - Responsive Website Template</title>
+  <title>Avanan | Cloud Security Platform for Every SaaS | Office 365, Google, Slack, and Beyond</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -21,17 +21,24 @@
   <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
   <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+
+
+  <!-- ADDED BY ME (ANIMATION) -->
+  <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/theme3.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
+
 </head>
-<body>
+<body class="bg-light">
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
-    <div id="searchPushTop" class="u-search-push-top">
+    <div id="searchPushTop" class="u-search-push-top bg-white" style="box-shadow: none !important;">
       <div class="container position-relative">
         <div class="u-search-push-top__content">
           <!-- Close Button -->
@@ -114,21 +121,8 @@
 
             <div class="col-sm-6">
               <!-- Banner -->
-              <div class="rounded u-search-push-top__banner">
-                <div class="d-flex align-items-center">
-                  <div class="u-search-push-top__banner-container">
-                    <img class="img-fluid u-search-push-top__banner-img" src="assets/img/mockups/img3.png" alt="Image Description">
-                    <img class="img-fluid u-search-push-top__banner-img" src="assets/img/mockups/img2.png" alt="Image Description">
-                  </div>
-
-                  <div>
-                    <div class="mb-4">
-                      <strong class="d-block mb-2">Featured Item</strong>
-                      <p>Create astonishing web sites and pages.</p>
-                    </div>
-                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="index.html">Apply Now <span class="fas fa-angle-right ml-2"></span></a>
-                  </div>
-                </div>
+              <div class="rounded u-search-push-top__banner text-center shadow p-3 mb-5 lift">
+                <img style="width: 85%; height: auto; margin-bottom: 15px;" src="https://www.avanan.com/hubfs/Images/Webinars/gpr-webinar-featured.png">
               </div>
               <!-- End Banner -->
             </div>
@@ -163,7 +157,9 @@
             </a>
 
             <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
-              <a class="dropdown-item active" href="#">English</a>
+              <a class="dropdown-item active" href="#">English (US)</a>
+              <a class="dropdown-item" href="#">English (UK)</a>
+              <a class="dropdown-item" href="#">Hebrew</a>
               <a class="dropdown-item" href="#">Deutsch</a>
               <a class="dropdown-item" href="#">Español‎</a>
             </div>
@@ -171,61 +167,26 @@
           <!-- End Language -->
 
           <div class="ml-auto">
-            <!-- Jump To -->
-            <div class="d-inline-block d-sm-none position-relative mr-2">
-              <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-                 aria-controls="jumpToDropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="hover"
-                 data-unfold-target="#jumpToDropdown"
-                 data-unfold-type="css-animation"
-                 data-unfold-duration="300"
-                 data-unfold-delay="300"
-                 data-unfold-hide-on-scroll="true"
-                 data-unfold-animation-in="slideInUp"
-                 data-unfold-animation-out="fadeOut">
-                Jump to
-              </a>
-
-              <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-                <a class="dropdown-item" href="../../html/pages/help.html">Help</a>
-                <a class="dropdown-item" href="../../html/pages/contacts-agency.html">Contacts</a>
-              </div>
-            </div>
-            <!-- End Jump To -->
-
-            <!-- Links -->
-            <div class="d-none d-sm-inline-block ml-sm-auto">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../pages/help.html">Help</a>
-                </li>
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../pages/contacts-agency.html">Contacts</a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Links -->
           </div>
 
           <ul class="list-inline ml-2 mb-0">
             <!-- Search -->
             <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
+              <a class="u-header__navbar-link" href="javascript:;" role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                       aria-controls="searchPushTop"
                       data-unfold-type="jquery-slide"
                       data-unfold-target="#searchPushTop">
-                <span class="fas fa-search btn-icon__inner"></span>
+                <i class="fas fa-search"></i>
+                <span class="d-none d-sm-inline-block">Search</span>
               </a>
             </li>
             <!-- End Search -->
 
             <!-- Shopping Cart -->
             <li class="list-inline-item position-relative">
-              <a id="shoppingCartDropdownInvoker" class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
+              <a class="u-header__navbar-link" href="javascript:;" role="button"
                       aria-controls="shoppingCartDropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -237,33 +198,35 @@
                       data-unfold-hide-on-scroll="true"
                       data-unfold-animation-in="slideInUp"
                       data-unfold-animation-out="fadeOut">
-                <span class="fas fa-shopping-cart btn-icon__inner"></span>
+                <i class="fas fa-headset"></i>
+                <span class="d-none d-sm-inline-block">Support</span>
               </a>
 
-              <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right text-center p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
+              <!-- <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right text-center p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
                 <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
                   <span class="fas fa-shopping-basket btn-icon__inner"></span>
                 </span>
                 <span class="d-block">Your Cart is Empty</span>
-              </div>
+              </div> -->
             </li>
             <!-- End Shopping Cart -->
 
             <!-- Account Login -->
             <li class="list-inline-item">
               <!-- Account Sidebar Toggle Button -->
-              <a id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
-                 aria-controls="sidebarContent"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="click"
-                 data-unfold-hide-on-scroll="false"
-                 data-unfold-target="#sidebarContent"
-                 data-unfold-type="css-animation"
-                 data-unfold-animation-in="fadeInRight"
-                 data-unfold-animation-out="fadeOutRight"
-                 data-unfold-duration="500">
-                <span class="fas fa-user-circle btn-icon__inner font-size-1"></span>
+              <a id="sidebarNavToggler" class="u-header__navbar-link" href="javascript:;" role="button"
+                  aria-controls="sidebarContent"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-unfold-event="click"
+                  data-unfold-hide-on-scroll="false"
+                  data-unfold-target="#sidebarContent"
+                  data-unfold-type="css-animation"
+                  data-unfold-animation-in="fadeInRight"
+                  data-unfold-animation-out="fadeOutRight"
+                  data-unfold-duration="500">
+                <i class="fas fa-user-circle font-size-1"></i>
+                <span class="d-none d-sm-inline-block">Login</span>
               </a>
               <!-- End Account Sidebar Toggle Button -->
             </li>
@@ -278,13 +241,7 @@
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
           <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
-            </svg>
-            <span class="u-header__navbar-brand-text">Front</span>
+            <img src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/logos/avanan-teal-logo-sm.png">
           </a>
           <!-- End Logo -->
 
@@ -310,7 +267,7 @@
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
                   data-position="left">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Home</a>
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Platform</a>
 
                 <!-- Home - Mega Menu -->
                 <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="homeMegaMenu">
@@ -390,7 +347,7 @@
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Pages</a>
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Security</a>
 
                 <!-- Pages - Submenu -->
                 <ul id="pagesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
@@ -544,84 +501,18 @@
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Blog</a>
-
-                <!-- Blog - Submenu -->
-                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
-                  <!-- Classic -->
-                  <li class="hs-has-sub-menu">
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogClassic">Classic</a>
-
-                    <ul id="navSubmenuBlogClassic" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogClassic" style="min-width: 230px;">
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-full-width.html">Full Width</a></li>
-                    </ul>
-                  </li>
-                  <!-- Classic -->
-
-                  <!-- Grid -->
-                  <li class="hs-has-sub-menu">
-                    <a id="navLinkBlogGrid" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGrid">Grid</a>
-
-                    <ul id="navSubmenuBlogGrid" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGrid" style="min-width: 230px;">
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-full-width.html">Full Width</a></li>
-                    </ul>
-                  </li>
-                  <!-- Grid -->
-
-                  <!-- List -->
-                  <li class="hs-has-sub-menu">
-                    <a id="navLinkBlogList" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogList">List</a>
-
-                    <ul id="navSubmenuBlogList" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogList" style="min-width: 230px;">
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-left-sidebar.html">Left Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-right-sidebar.html">Right Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-full-width.html">Full Width</a></li>
-                    </ul>
-                  </li>
-                  <!-- List -->
-
-                  <!-- Modern -->
-                  <li class="hs-has-sub-menu">
-                    <a id="navLinkBlogCard" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogCard">Modern</a>
-
-                    <ul id="navSubmenuBlogCard" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogCard" style="min-width: 230px;">
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-left-sidebar.html">Left Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-right-sidebar.html">Right Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-full-width.html">Full Width</a></li>
-                    </ul>
-                  </li>
-                  <!-- Grid Modern -->
-
-                  <!-- Masonry -->
-                  <li class="hs-has-sub-menu">
-                    <a id="navLinkBlogGridMinimal" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGridMinimal">Masonry</a>
-
-                    <ul id="navSubmenuBlogGridMinimal" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGridMinimal" style="min-width: 230px;">
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-full-width.html">Full Width</a></li>
-                    </ul>
-                  </li>
-                  <!-- Masonry -->
-
-                  <!-- Single Article -->
-                  <li class="hs-has-sub-menu">
-                    <a id="navLinkBlogGridMasonry" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGridMasonry">Single Article</a>
-
-                    <ul id="navSubmenuBlogGridMasonry" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGridMasonry" style="min-width: 230px;">
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-classic.html">Classic</a></li>
-                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-simple.html">Simple</a></li>
-                    </ul>
-                  </li>
-                  <!-- Single Article -->
-                </ul>
-                <!-- End Submenu -->
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="#!">How it Works</a>
               </li>
               <!-- End Blog -->
+
+              <!-- Blog -->
+              <!-- <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="#!">Pricing</a>
+              </li>
+ -->              <!-- End Blog -->
 
               <!-- Shop -->
               <li class="nav-item hs-has-mega-menu u-header__nav-item"
@@ -630,7 +521,7 @@
                   data-animation-out="fadeOut"
                   data-max-width="440px"
                   data-position="right">
-                <a id="shopMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Shop</a>
+                <a id="shopMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
 
                 <!-- Shop - Mega Menu -->
                 <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix--md" aria-labelledby="shopMegaMenu">
@@ -658,7 +549,7 @@
                   <!-- Mega Menu Banner -->
                   <div class="u-header__product-banner">
                     <div class="d-flex align-items-end">
-                      <img class="img-fluid mr-4" src="assets/img/mockups/img4.png" alt="Image Description">
+                      <img class="img-fluid mr-4" src="../../assets/img/mockups/img4.png" alt="Image Description">
                       <div class="u-header__product-banner-content">
                         <div class="mb-4">
                           <span class="u-header__product-banner-title">Win T-shirt</span>
@@ -681,7 +572,7 @@
                   data-animation-out="fadeOut"
                   data-max-width="600px"
                   data-position="right">
-                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Demos</a>
+                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Company</a>
 
                 <!-- Demos - Mega Menu -->
                 <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
@@ -748,13 +639,13 @@
               <!-- End Demos -->
 
               <!-- Docs -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+              <!-- <li class="nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
                   data-max-width="260px"
                   data-position="right">
-                <a id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a>
+                <a id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a> -->
 
                 <!-- Docs - Submenu -->
                 <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
@@ -788,29 +679,6 @@
                     </a>
                   </div>
                   <!-- End Promo Item -->
-
-                  <div class="u-header__promo-footer">
-                    <!-- List -->
-                    <div class="row no-gutters">
-                      <div class="col-6">
-                        <div class="u-header__promo-footer-item">
-                          <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="../../documentation/getting-started/changelog.html">
-                            Changelog
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-6 u-header__promo-footer-ver-divider">
-                        <div class="u-header__promo-footer-item">
-                          <small class="text-muted d-block">Have a question?</small>
-                          <a class="small" href="http://htmlstream.com/contact-us">
-                            Contact us
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End List -->
-                  </div>
                 </div>
                 <!-- End Docs - Submenu -->
               </li>
@@ -818,8 +686,8 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
-                  Buy Now
+                <a class="btn btn-sm btn-danger transition-3d-hover" href="#!">
+                  Request Demo
                 </a>
               </li>
               <!-- End Button -->
@@ -833,26 +701,53 @@
   </header>
   <!-- ========== END HEADER ========== -->
 
-  <!-- ========== MAIN CONTENT ========== -->
+
+    
+
+
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
   <main id="content" role="main">
+    <div style="margin-top: 180px;"></div>
     <!-- Hero Section -->
-    <div class="d-lg-flex position-relative">
-      <div class="container d-lg-flex align-items-lg-center space-top-2 space-top-md-5 space-lg-0 min-height-lg-100vh">
-        <!-- Content -->
-        <div class="row w-100">
-          <div class="col-lg-5">
-            <h1 class="display-4 font-size-md-down-5 mb-3">Introducing Front</h1>
+    <section class="position-relative py-8 py-md-11 mb-9 mt-10">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-1 svg-shim text-gray-200">
+        <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M703.969 241.602L703.963 241.599C716.081 262.97 723 287.677 723 314C723 382.917 675.575 440.757 611.58 456.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569C81.2603 569 0 487.74 0 387.5C0 353.244 9.49023 321.204 25.985 293.867L25.9688 293.875L141.512 77.5476C162.753 33.3052 207.123 2.2726 258.951 0.119583L258.959 0H264.719H390.999H508.5H509.999L510.002 0.00999319C551.85 0.567328 588.083 24.388 606.358 59.1292L606.359 59.125L703.969 241.602Z" fill="currentColor"/>
+        </svg>
+
+      </div>
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 order-md-2">
+            
+            <!-- Image -->
+            <div class="img-skewed img-skewed-left mb-6 mb-md-0">
+              <img src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/hero/tiny/avanan-dashboard-dark-new.png" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
+            
+            <!-- Heading -->
+            <h1 class="display-5 font-size-md-down-5 mb-3">Any SaaS. Any Security. <br>
+              <span class="text-primary">One Click.</span></h1>
             <p>
-              Your company will look
+              We've got you covered for
               <span class="text-primary">
                 <strong class="u-text-animation u-text-animation--typing"></strong>
               </span>
-              <br>
-              Attract more visitors, and win more business with Front template.
             </p>
 
             <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-soft-primary btn-wide transition-3d-hover" href="../pages/login-simple.html">Get Started</a>
+              <a class="btn btn-danger btn-wide transition-3d-hover" href="../pages/login-simple.html">Request Demo</a>
 
               <!-- Fancybox -->
               <a class="js-fancybox media align-items-center u-media-player ml-3" href="javascript:;"
@@ -861,71 +756,98 @@
                  data-animate-in="zoomIn"
                  data-animate-out="zoomOut"
                  data-caption="Front - Responsive Website Template">
-                <span class="u-media-player__icon u-media-player__icon--success mr-3">
+                <span class="u-media-player__icon u-media-player__icon--primary mr-3">
                   <span class="fas fa-play u-media-player__icon-inner"></span>
                 </span>
                 <span class="media-body">
-                  Play video
+                  How Avanan Works
                 </span>
               </a>
-              <!-- End Fancybox -->
-            </div>
-          </div>
-        </div>
-        <!-- End Content -->
 
-        <!-- SVG Background -->
-        <div id="SVGMainHero" class="col-lg-9 col-xl-7 svg-preloader d-none d-lg-block position-absolute top-0 right-0 pr-0" style="margin-top: 105.6px;">
-          <figure class="ie-main-hero">
-            <img class="js-svg-injector" src="assets/svg/illustrations/main-hero.svg" alt="Image Description"
-                 data-img-paths='[
-                   {"targetId": "#SVGMainHeroImg1", "newPath": "assets/img/750x750/img2.jpg"}
-                 ]'
-                 data-parent="#SVGMainHero">
-          </figure>
-        </div>
-        <!-- End SVG Background -->
-      </div>
-    </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
     <!-- End Hero Section -->
 
-    <!-- Icon Blocks Section -->
-    <div class="container space-top-3 space-bottom-md-3 space-bottom-2">
-      <!-- Title -->
-      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-        <span class="btn btn-xs btn-soft-success btn-pill mb-2">What we do?</span>
-        <h2>Front makes designing easy and performance fast</h2>
-      </div>
-      <!-- End Title -->
 
+    <section style="margin-top: 180px;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3>Today We've...</h3>
+            <br>
+          </div>
+          
+
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            <h4 class="h6">Scanned</h4>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="23764345" data-aos data-aos-id="countup:in"></div>
+            <h4 class="h6">Emails</h4>
+          </div>
+
+
+
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            <h4 class="h6">Blocked</h4>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="84152" data-aos data-aos-id="countup:in"></div>
+            <h4 class="h6">Phishing Attacks</h4>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+            <h4 class="h6">Stopped</h4>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in"></div>
+            <h4 class="h6">Malicous Files</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- SHAPE
+    ================================================== -->
+    <div style="margin-top: 225px;" class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0C720 240 0 240 0 240H1440V0Z" fill="currentColor"/>
+        </svg>
+
+      </div>
+    </div>
+
+    <!-- Icon Blocks Section -->
+    <div class="space-top-3 space-bottom-md-3 space-bottom-2 bg-white">
+      <div class="container">
       <div class="row">
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
             <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
-              <span class="fab fa-yelp fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              <span class="fas fa-th fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">Professional Design</h3>
-            <p class="mb-md-0">Achieve virtually any design and layout from within the one template.</p>
+            <h3 class="h5">1. Select your SaaS</h3>
+            <!-- <p class="mb-md-0">Achieve virtually any design and layout from within the one template.</p> -->
           </div>
         </div>
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
             <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
-              <span class="fas fa-fire fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              <span class="fas fa-layer-group fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">Front Strategy</h3>
-            <p class="mb-md-0">We strive to figure out ways to help your business grow through all platforms.</p>
+            <h3 class="h5">2. Choose Security Layers</h3>
+            <!-- <p class="mb-md-0">We strive to figure out ways to help your business grow through all platforms.</p> -->
           </div>
         </div>
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
             <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
-              <span class="fab fa-whmcs fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              <span class="fas fa-tachometer-alt fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">Unlimited Power</h3>
-            <p class="mb-md-0">Find what you need in one template and combine features at will.</p>
+            <h3 class="h5">3. Deploy Instantly</h3>
+            <!-- <p class="mb-md-0">Find what you need in one template and combine features at will.</p> -->
           </div>
         </div>
       </div>
@@ -935,7 +857,7 @@
       <!-- Title -->
       <div class="w-md-60 w-lg-50 text-center mx-auto mb-7">
         <h4 class="h5">
-          It is fast and easy. <span class="font-weight-normal">Create your first and ongoing website with Front.</span>
+          It's fast and simple. <span class="font-weight-normal">Manage all your SaaS and Security tools from a single dashboard.</span>
         </h4>
       </div>
       <!-- End Title -->
@@ -943,460 +865,148 @@
       <!-- Mockup Browser -->
       <div class="u-browser-v1 mx-auto mb-4">
         <!-- SVG Background Shape -->
-        <figure id="SVGbgShapeID1" class="svg-preloader ie-soft-triangle-shape">
-          <img class="js-svg-injector" src="assets/svg/components/soft-triangle-shape.svg" alt="Image Description"
-               data-parent="#SVGbgShapeID1">
+        <figure id="SVGbgShapeID1" class="ie-soft-triangle-shape" style="">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1109.8 797.1" style="enable-background:new 0 0 1109.8 797.1;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGbgShapeID1">
+          <style type="text/css">
+            .soft-triangle-shape-0{fill:#377DFF;}
+          </style>
+          <path class="soft-triangle-shape-0 fill-primary" opacity=".1" d="M105.1,267.1C35.5,331.5-3.5,423,0.3,517.7C6.1,663,111,831.9,588.3,790.8c753-64.7,481.3-358.3,440.4-398.3  c-4-3.9-7.9-7.9-11.7-12L761.9,104.8C639.4-27.6,432.5-35.6,299.9,87L105.1,267.1z"></path>
+          </svg>
         </figure>
         <!-- End SVG Background Shape -->
 
         <!-- Mockup Browser -->
-        <figure id="SVGBrowserShape" class="svg-preloader ie-browser u-browser-v1__svg">
-          <img class="js-svg-injector" src="assets/svg/illustrations/browser.svg" alt="Image Description"
-               data-img-paths='[
-                 {"targetId": "#SVGBrowserShapeImg1", "newPath": "assets/img/855x665/img1.jpg"}
-               ]'
-               data-parent="#SVGBrowserShape">
-        </figure>
+        <img style="width: 120%; position: absolute; margin-top: -580px; margin-left: -10%;" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/filler-images/graphic-laptop-matrix.png">
         <!-- End Mockup Browser -->
       </div>
       <!-- End Mockup Browser -->
-
-      <div class="w-50 w-md-40 w-lg-30 text-center mx-auto">
-        <p class="small">We are launching soon. Join the priority list for information and early access.</p>
       </div>
     </div>
     <!-- End Icon Blocks Section -->
 
-    <!-- Pricing Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 mb-7 mb-lg-0">
-          <!-- Title -->
-          <div class="pr-lg-4 mb-7">
-            <span class="btn btn-xs btn-soft-success btn-pill mb-2">Pricing plans</span>
-            <h2>No additional costs.<br>Pay for what you use.</h2>
-            <p>Choose the most suitable service for your needs with reasonable price.</p>
-          </div>
-          <!-- End Title -->
 
-          <!-- Button Group -->
-          <div class="btn-group btn-group-toggle">
-            <a class="js-animation-link btn btn-outline-secondary btn-custom-toggle-primary btn-sm-wide active" href="javascript:;"
-               data-target="#pricingMonthly"
-               data-link-group="idPricing"
-               data-animation-in="slideInUp">Monthly</a>
-            <a class="js-animation-link btn btn-outline-secondary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
-               data-target="#pricingYearly"
-               data-link-group="idPricing"
-               data-animation-in="slideInUp">
-              Yearly
-              <span class="badge badge-success badge-pill badge-bigger badge-pos">10% OFF</span>
-            </a>
-          </div>
-          <!-- End Button Group -->
-        </div>
 
-        <div class="col-lg-7">
-          <!-- Monthly Plans -->
-          <div id="pricingMonthly" class="row align-items-center mb-3" data-target-group="idPricing">
-            <div class="col-sm-6 mb-7 mb-sm-0">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID1" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Individual Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">22</span>
-                    <span>/month</span>
-                  </span>
 
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID1">
-                    </figure>
-                  </div>
-                </header>
 
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        Community support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        100+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item disabled py-2">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        20+ home page options
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
+    <!-- SAAS Section -->
+    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "reverse"}'>
+      <div class="dzsparallaxer--target">
+        <div class="container-fluid px-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/google-72.png" alt="Image Description">
               </div>
-              <!-- End Pricing -->
+              <!-- End Logo -->
             </div>
-
-            <div class="col-sm-6">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID2" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Enterprise Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">99</span>
-                    <span>/month</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID2">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        24/7 support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        200+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        40+ home page options
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        E-commerce
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
+            <div class="col-3 mb-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"5", mid:"0", final:"-5"}]'>
+              <!-- Logo -->
+              <div class="bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/office-365-72.png" alt="Image Description">
               </div>
-              <!-- End Pricing -->
+              <!-- End Logo -->
+            </div>
+            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/new_slack_logo.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
             </div>
           </div>
-          <!-- End Monthly Plans -->
 
-          <!-- Yearly Plans -->
-          <div id="pricingYearly" class="row align-items-center mb-3" style="display: none; opacity: 0;" data-target-group="idPricing">
-            <div class="col-sm-6 mb-7 mb-sm-0">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID3" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Individual Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">242</span>
-                    <span>/year</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID3">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        24/7 support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        100+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item disabled py-2">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        20+ home page options
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
+          <div class="row justify-content-between">
+            <div class="col-3 mb-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
+              <!-- Logo -->
+              <div class="bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4">
+                <img style="width: 80%; margin-left: 3px;" class="img-fluid" src="assets/img/saas/sharefile-transparent-72.png" alt="Image Description">
               </div>
-              <!-- End Pricing -->
+              <!-- End Logo -->
             </div>
-
-            <div class="col-sm-6">
-              <!-- Pricing -->
-              <div class="card border-0 shadow-sm">
-                <header id="SVGwave1BottomShapeID4" class="svg-preloader card-header border-0 position-relative bg-primary text-white p-5 pb-11">
-                  <h3 class="h4 mb-1">Enterprise Plan</h3>
-                  <span class="d-block">
-                    <span class="align-top">$</span>
-                    <span class="display-4 font-weight-semi-bold">1089</span>
-                    <span>/year</span>
-                  </span>
-
-                  <div class="position-absolute right-0 bottom-0 left-0">
-                    <figure class="ie-wave-1-bottom">
-                      <img class="js-svg-injector" src="assets/svg/components/wave-1-bottom.svg" alt="Image Description"
-                           data-parent="#SVGwave1BottomShapeID4">
-                    </figure>
-                  </div>
-                </header>
-
-                <!-- Content -->
-                <div class="card-body pt-0 px-5 pb-5">
-                  <ul class="list-group list-group-flush list-group-borderless mb-4">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        24/7 support
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        400+ pages
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        200+ header variations
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        40+ home page options
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center">
-                        <span class="btn btn-xs btn-icon btn-soft-primary rounded-circle mr-3">
-                          <span class="fas fa-check btn-icon__inner"></span>
-                        </span>
-                        E-commerce
-                      </div>
-                    </li>
-                  </ul>
-
-                  <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Get Started</button>
-                </div>
-                <!-- End Content -->
+            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
+              <!-- Logo -->
+              <div class="bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
+                <img class="img-fluid" src="assets/img/saas/onedrive-transparent-72.png" alt="Image Description">
               </div>
-              <!-- End Pricing -->
+              <!-- End Logo -->
             </div>
           </div>
-          <!-- End Yearly Plans -->
 
-          <p class="small text-muted text-center">
-            * <a class="link-muted" href="../pages/terms.html">Terms</a> are subject to change.
-          </p>
+          <div class="row">
+            <div class="col-3 offset-1 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
+                <img class="img-fluid" src="assets/img/saas/office-365-email-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-3 offset-2 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
+                <img class="img-fluid" src="assets/img/saas/gmail-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
+              <!-- Logo -->
+              <div class="bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/dropbox-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-4 mt-6" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"5", mid:"0", final:"-5"}]'>
+              <!-- Logo -->
+              <div class="d-none d-sm-block bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img style="margin-top: 8px;" class="img-fluid" src="assets/img/saas/box-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-4 mt-6" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
+              <!-- Logo -->
+              <div class="bg-whitesmoke u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/google-drive-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- End Pricing Section -->
 
-    <!-- Blog News Section -->
-    <div class="gradient-half-primary-v2">
-      <div class="container space-2 space-md-3 px-lg-7">
+      <div class="container space-3 space-sm-4">
         <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-          <span class="btn btn-xs btn-soft-success btn-pill mb-2">News &amp; Blog</span>
-          <h2>Read our latest news</h2>
-          <p>Our duty towards you is to share our experience we're reaching in our work path with you.</p>
+        <div class="w-md-80 w-lg-50 text-center mx-md-auto">
+          <h2 class="h1 font-weight-medium mb-5">See what we Protect</h2>
+          <a class="btn btn-primary btn-pill btn-wide transition-3d-hover" href="#!">View SaaS</a>
         </div>
         <!-- End Title -->
-
-        <!-- News Carousel -->
-        <div class="js-slick-carousel u-slick u-slick--equal-height u-slick--gutters-3"
-             data-slides-show="3"
-             data-slides-scroll="1"
-             data-arrows-classes="d-none d-lg-inline-block u-slick__arrow u-slick__arrow--offset u-slick__arrow-centered--y rounded-circle"
-             data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-inner u-slick__arrow-inner--left"
-             data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-inner u-slick__arrow-inner--right"
-             data-pagi-classes="text-center u-slick__pagination mt-7 mb-0"
-             data-responsive='[{
-               "breakpoint": 992,
-               "settings": {
-                 "slidesToShow": 2
-               }
-             }, {
-               "breakpoint": 768,
-               "settings": {
-                 "slidesToShow": 1
-               }
-             }, {
-               "breakpoint": 554,
-               "settings": {
-                 "slidesToShow": 1
-               }
-             }]'>
-          <!-- Blog News -->
-          <a class="js-slide bg-img-hero gradient-overlay-half-dark-v1 transition-3d-hover rounded-pseudo my-4" href="../blog/single-article-classic.html" style="background-image: url(assets/img/400x500/img1.jpg);">
-            <article class="align-self-end w-100 text-center p-6">
-              <h3 class="h4 text-white">How to make trust your competitive advantage</h3>
-              <div class="mt-4">
-                <strong class="d-block text-white-70 mb-2">Neyton Burchie</strong>
-                <div class="u-avatar mx-auto">
-                  <img class="img-fluid rounded-circle" src="assets/img/100x100/img3.jpg" alt="Image Description">
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- End Blog News -->
-
-          <!-- Blog News -->
-          <div class="js-slide position-relative bg-white shadow-sm transition-3d-hover rounded my-4">
-            <article class="align-self-end w-100 text-center p-6">
-              <h3 class="h6 font-weight-normal">" How to help your team excel at remote collaboration. Here are tips and tools we use on the content team at InVision to keep our remote collaboration game strong. Trust is both a complex and nuanced topic. Its very nature makes it difficult to tackle through direct effort. "</h3>
-              <div class="my-4">
-                <strong class="d-block mb-2">Keith Margaret</strong>
-                <div class="u-avatar mx-auto">
-                  <img class="img-fluid rounded-circle" src="assets/img/100x100/img2.jpg" alt="Image Description">
-                </div>
-              </div>
-              <a class="btn btn-sm btn-soft-primary btn-wide transition-3d-hover" href="../blog/single-article-classic.html">Read More</a>
-            </article>
-          </div>
-          <!-- End Blog News -->
-
-          <!-- Blog News -->
-          <a class="js-slide bg-img-hero gradient-overlay-half-dark-v1 transition-3d-hover rounded-pseudo my-4" href="../blog/single-article-classic.html" style="background-image: url(assets/img/400x500/img2.jpg);">
-            <article class="align-self-end w-100 text-center p-6">
-              <h3 class="h4 text-white">Remote workers, here's how to dodge distractions</h3>
-              <div class="mt-4">
-                <strong class="d-block text-white-70 mb-2">Tina Krueger</strong>
-                <div class="u-avatar mx-auto">
-                  <img class="img-fluid rounded-circle" src="assets/img/100x100/img1.jpg" alt="Image Description">
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- End Blog News -->
-
-          <!-- Blog News -->
-          <div class="js-slide position-relative bg-white shadow-sm transition-3d-hover rounded my-4">
-            <article class="align-self-end w-100 text-center p-6">
-              <h3 class="h6 font-weight-normal">" 4 salary negotiation mistakes you've probably made. Four years ago, I was making $25 per hour as a freelance digital designer building ecommerce sites. I had no idea how to increase my hourly rate, even if I'd wanted to. "</h3>
-              <div class="my-4">
-                <strong class="d-block mb-2">Neyton Burchie</strong>
-                <div class="u-avatar mx-auto">
-                  <img class="img-fluid rounded-circle" src="assets/img/100x100/img3.jpg" alt="Image Description">
-                </div>
-              </div>
-              <a class="btn btn-sm btn-soft-primary btn-wide transition-3d-hover" href="../blog/single-article-classic.html">Read More</a>
-            </article>
-          </div>
-          <!-- End Blog News -->
-
-          <!-- Blog News -->
-          <a class="js-slide bg-img-hero gradient-overlay-half-dark-v1 transition-3d-hover rounded-pseudo my-4" href="../blog/single-article-classic.html" style="background-image: url(assets/img/400x500/img3.jpg);">
-            <article class="align-self-end w-100 text-center p-6">
-              <h3 class="h4 text-white">Steal these ideas to stay happy and productive</h3>
-              <div class="mt-4">
-                <strong class="d-block text-white-70 mb-2">Liza Nelson</strong>
-                <div class="u-avatar mx-auto">
-                  <img class="img-fluid rounded-circle" src="assets/img/100x100/img4.jpg" alt="Image Description">
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- End Blog News -->
-        </div>
-        <!-- End News Carousel -->
       </div>
     </div>
-    <!-- End Blog News Section -->
+    <!-- SAAS section -->
+
+
+
+
+
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
+  <!-- CTA Section -->
+<div class="bg-primary text-white text-center">
+  <div class="container space-1">
+    <span class="h6 d-block d-lg-inline-block font-weight-light mb-lg-0">
+      <span class="font-weight-semi-bold">14-Day Free Trial</span> – Get 100% visibility into your cloud right now.
+    </span> &nbsp;
+    <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-3" href="#">Start Enterprise Trial</a>
+  </div>
+</div>
+<!-- End CTA Section -->
+
   <!-- ========== FOOTER ========== -->
-  <footer>
+  <footer class="bg-white">
     <!-- Lists -->
     <div class="border-bottom">
       <div class="container space-2">
@@ -1471,18 +1081,7 @@
 
     <!-- Copyright -->
     <div class="container text-center space-1">
-      <!-- Logo -->
-      <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Front">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-          <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-          <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-          <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-          <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
-        </svg>
-        <span class="brand brand-primary">Front</span>
-      </a>
-      <!-- End Logo -->
-      <p class="small text-muted">&copy; Front. 2019 Htmlstream. All rights reserved.</p>
+      <p class="small text-muted">&copy; Copyright 2019 Avanan. All rights reserved.</p>
     </div>
     <!-- End Copyright -->
   </footer>
@@ -1765,8 +1364,23 @@
 
           <!-- SVG Background Shape -->
           <div class="position-absolute right-0 bottom-0 left-0">
-            <img class="js-svg-injector" src="assets/svg/components/wave-bottom-with-dots.svg" alt="Image Description"
-                   data-parent="#SVGwaveWithDots">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 126.5" style="margin-bottom: -5px; enable-background:new 0 0 300 126.5;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwaveWithDots">
+            <style type="text/css">
+              .wave-bottom-with-dots-0{fill:#377DFF;}
+              .wave-bottom-with-dots-1{fill:#377DFF;}
+              .wave-bottom-with-dots-2{fill:#DE4437;}
+              .wave-bottom-with-dots-3{fill:#00C9A7;}
+              .wave-bottom-with-dots-4{fill:#FFC107;}
+            </style>
+            <path class="wave-bottom-with-dots-0 fill-primary" opacity=".6" d="M0,58.9c0-0.9,5.1-2,5.8-2.2c6-0.8,11.8,2.2,17.2,4.6c4.5,2.1,8.6,5.3,13.3,7.1C48.2,73.3,61,73.8,73,69  c43-16.9,40-7.9,84-2.2c44,5.7,83-31.5,143-10.1v69.8H0C0,126.5,0,59,0,58.9z"></path>
+            <path class="wave-bottom-with-dots-1 fill-primary" d="M300,68.5v58H0v-58c0,0,43-16.7,82,5.6c12.4,7.1,26.5,9.6,40.2,5.9c7.5-2.1,14.5-6.1,20.9-11  c6.2-4.7,12-10.4,18.8-13.8c7.3-3.8,15.6-5.2,23.6-5.2c16.1,0.1,30.7,8.2,45,16.1c13.4,7.4,28.1,12.2,43.3,11.2  C282.5,76.7,292.7,74.4,300,68.5z"></path>
+            <g>
+              <circle class="wave-bottom-with-dots-2 fill-danger" cx="259.5" cy="17" r="13"></circle>
+              <circle class="wave-bottom-with-dots-1 fill-primary" cx="290" cy="35.5" r="8.5"></circle>
+              <circle class="wave-bottom-with-dots-3 fill-success" cx="288" cy="5.5" r="5.5"></circle>
+              <circle class="wave-bottom-with-dots-4 fill-warning" cx="232.5" cy="34" r="2"></circle>
+            </g>
+            </svg>
           </div>
           <!-- End SVG Background Shape -->
         </footer>
@@ -1795,6 +1409,11 @@
   <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
+  <!-- ADDED BY ME (ANIMATION) -->
+  <script src="assets/libs/aos/dist/aos.js"></script>
+  <script src="assets/js/theme2.min.js"></script>
+  <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+
   <!-- JS Implementing Plugins -->
   <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
   <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
@@ -1803,6 +1422,8 @@
   <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
   <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="assets/vendor/appear.js"></script>
+  <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
@@ -1831,7 +1452,7 @@
       // initialization of svg injector module
       $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
     });
-
+    
     $(document).on('ready', function () {
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
@@ -1866,7 +1487,7 @@
 
       // initialization of text animation (typing)
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["more professional.", "perfect in every way.", "astonishing."],
+        strings: ["Office 365.", "G Suite.", "Dropbox.", "Slack.", "Outlook.", "Gmail."],
         typeSpeed: 60,
         loop: true,
         backSpeed: 25,
