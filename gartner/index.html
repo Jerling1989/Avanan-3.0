@@ -81,10 +81,10 @@
             <!-- Text -->
             <div class="text-center">
               <p class="">
-                Get a free pass to the event<br>Learn how
+                Attend the event for free<br>Learn how
               </p>
 
-              <a href="#discount" class="btn btn-dark btn-rounded-circle lift text-center" data-smooth-scroll="">
+              <a href="#discount" class="btn btn-secondary btn-rounded-circle lift text-center" data-smooth-scroll="">
                 <i class="fe fe-arrow-down"></i>
               </a>
             </div>
@@ -103,12 +103,12 @@
 
             <!-- Heading -->
             <h1>
-              Go to the summit on us
+              Go to the summit on us.
             </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-gray-700 mb-7 mb-md-9">
-              We are giving away a limited number of complimentary passes to the event, <a href="#!">Register for yours here!</a>
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              We're giving away a limited amount of free passes to the event. <a href="#!" data-toggle="modal" data-target="#compPassModal">Register to get yours here!</a>
             </p>
 
 
@@ -118,6 +118,29 @@
       
       </div> <!-- / .container -->
     </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="compPassModal" tabindex="-1" role="dialog" aria-labelledby="Complimentary Pass form" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Complimentary Pass Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            content...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+            <a class="btn btn-sm btn-danger" href="#!">Get Yours</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- SCALABLE
     ================================================== -->
@@ -135,16 +158,16 @@
             <!-- Heading -->
             <h2>
               Where to find us <br>
-              <span class="text-primary">when you're at the summit</span>.
+              <span class="text-secondary">when you're at the summit</span>.
             </h2>
 
             <!-- Text -->
-            <p class="font-size-lg text-gray-700 mb-6 mb-md-6">
+            <p class="font-size-lg text-muted mb-6 mb-md-6">
               Floor A, Maryland Ballroom <br>
               Section B, Booth 1492
             </p>
 
-            <button type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#exampleModal">View on Map</button>
+            <button type="button" class="btn btn-secondary btn-sm mb-2" data-toggle="modal" data-target="#floorplanModal">View on Map</button>
 
           </div>
         </div> <!-- / .row -->
@@ -152,25 +175,25 @@
     </section>
 
     <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Event Floorplan</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-fluid" src="assets/img/floorplan.png">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-                    <a class="btn btn-sm btn-danger" href="#!">Download PDF</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" id="floorplanModal" tabindex="-1" role="dialog" aria-labelledby="Summit Map" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Event Floorplan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="assets/img/floorplan.png">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+            <a class="btn btn-sm btn-danger" href="#!">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- LOCATION
     ================================================== -->
@@ -209,43 +232,13 @@
             <!-- Heading -->
             <h2>
               About the venue <br>
-              <span class="text-success">Gaylord National Resort & Convention Center</span>.
+              <span class="text-secondary">Gaylord National Resort & Convention Center</span>.
             </h2>
 
             <!-- Text -->
-            <p class="font-size-lg text-gray-700 mb-6 mb-md-6">
+            <p class="font-size-lg text-muted mb-6 mb-md-6">
               201 Waterfront St. <br>National Harbor, MD 20745
             </p>
-
-            <!-- Stats -->
-            <!-- <div class="d-flex">
-              <div class="pr-5">
-                <h3 class="text-success mb-0">
-                  125
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Countries
-                </p>
-              </div>
-              <div class="border-left"></div>
-              <div class="px-5">
-                <h3 class="text-success mb-0">
-                  312
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Cities
-                </p>
-              </div>
-              <div class="border-left"></div>
-              <div class="pl-5">
-                <h3 class="text-success mb-0">
-                  40,000
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Desks
-                </p>
-              </div>
-            </div> -->
 
           </div>
         </div> <!-- / .row -->
@@ -286,16 +279,6 @@
                       <img src="assets/img/illustrations/illustration-3.png" alt="..." class="img-fluid mb-3" style="width: 265px;">
                     </div>
 
-                    <!-- Heading -->
-                    <!-- <h2 class="font-weight-bold text-center mb-1">
-                      See us there
-                    </h2> -->
-
-                    <!-- Text -->
-                    <!-- <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-                      Send us a message and we'll schedule a time to meet.
-                    </p> -->
-
                     <!-- Form -->
                     <form>
                       <div class="row">
@@ -322,7 +305,7 @@
                         <div class="col-12 col-md-12">
                           <!-- Email -->
                           <div class="form-group">
-                            <label for="exampleFormControlTextarea1" class="text-muted">Message</label>
+                            <label for="exampleFormControlTextarea1" class="text-gray-600">Message</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
                           </div>
 
@@ -332,7 +315,7 @@
                         <div class="col-12">
                           
                           <!-- Submit -->
-                          <button class="btn btn-block btn-primary mt-3 lift">
+                          <button class="btn btn-block btn-danger mt-3 lift">
                             Send Message
                           </button>
 
@@ -356,7 +339,7 @@
     <div class="position-relative mt-n16">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         <svg viewBox="0 0 1440 24" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0 24H1440V0C722.5 52 0 0 0 0V24Z" fill="#222"/>
+        <path d="M0 24H1440V0C722.5 52 0 0 0 0V24Z" fill="currentColor"/>
         </svg>
 
       </div>
@@ -365,13 +348,13 @@
     <!-- FOOTER
     ================================================== -->
     <section class="pt-16 bg-dark">
-      <footer class="py-2 py-md-3 bg-dark" style="border-top: 1px solid #2c2c2c;">
+      <footer class="py-2 py-md-3 bg-dark border-top border-gray-800-50">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
 
               <!-- Text -->
-              <p style="color: #788487;">© Copyright
+              <p class="text-gray-700">© Copyright
                <!-- YEAR SCRIPT -->
               <script type="text/javascript">
                 document.write(new Date().getFullYear());
