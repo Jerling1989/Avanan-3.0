@@ -31,6 +31,51 @@
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
 
+
+  <style type="text/css">
+    /* PHONES IN PORTRAIT col-3 */
+    @media (max-width: 576px) {
+      #spacer-div {
+        margin-top: -30px;
+      }
+    }
+
+    /* PHONES IN LANDSCAPE col-sm-3 */
+    @media (min-width: 576px) and (max-width: 768px) {
+      #spacer-div {
+        margin-top: 0px;
+      }
+    }
+
+    /* TABLETS col-md-3 */
+    @media (min-width: 768px) and (max-width: 992px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+    }
+
+    /* LAPTOPS  col-lg-3 */
+    @media (min-width: 992px) and (max-width: 1200px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+    }
+
+    /* DESKTOPS col-xl-3 */
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+    }
+
+    /* LARGE DESKTOPS */
+    @media (min-width: 1500px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+    }
+  </style>
+
 </head>
 <body class="bg-light">
   <!-- ========== HEADER ========== -->
@@ -711,7 +756,7 @@
   <!-- =========================== MAIN CONTENT ======================= -->
   <!-- =========================== MAIN CONTENT ======================= -->
   <main id="content" role="main">
-    <div style="margin-top: 180px;"></div>
+    <div id="spacer-div"></div>
     <!-- Hero Section -->
     <section class="position-relative py-8 py-md-11 mb-9 mt-10">
 
@@ -729,7 +774,7 @@
           <div class="col-12 col-md-6 order-md-2">
             
             <!-- Image -->
-            <div class="img-skewed img-skewed-left mb-6 mb-md-0">
+            <div class="img-skewed img-skewed-left mb-10 mb-md-0">
               <img src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/hero/tiny/avanan-dashboard-dark-new.png" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
             </div>
 
