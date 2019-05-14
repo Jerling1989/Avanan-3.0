@@ -6828,7 +6828,7 @@ button.bg-danger:focus {
 }
 
 .bg-light-teal {
-  background-color: rgba(86,155,190,0.18) !important;
+  background-color: rgba(86,155,190,0.15) !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
