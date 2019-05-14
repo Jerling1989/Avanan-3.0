@@ -34,11 +34,11 @@
 </head>
 <body class="bg-light">
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--abs-top-md u-header--bg-white u-header--show-hide-md"
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
-    <div id="searchPushTop" class="u-search-push-top">
+    <div id="searchPushTop" class="u-search-push-top bg-white" style="box-shadow: none !important;">
       <div class="container position-relative">
         <div class="u-search-push-top__content">
           <!-- Close Button -->
@@ -711,58 +711,63 @@
   <!-- =========================== MAIN CONTENT ======================= -->
   <!-- =========================== MAIN CONTENT ======================= -->
   <main id="content" role="main">
+    <div style="margin-top: 0px;"></div>
     <!-- Hero Section -->
-    <div class="d-lg-flex position-relative" style="background-color: rgba(86,155,190,1);">
-      <div style="min-height: 85vh;" class="container d-lg-flex align-items-lg-center space-top-2 space-top-md-5 space-lg-0">
+    <div class="d-lg-flex position-relative">
+      <div class="container d-lg-flex align-items-lg-center space-top-2 space-top-md-5 space-lg-0 min-height-lg-100vh">
         <!-- Content -->
         <div class="row w-100">
           <div class="col-lg-5">
-            <h1 class="display-4 font-size-md-down-5 mb-3 text-white">Reinventing Email Security</h1>
-            <p class="text-white">
-              Welcome to a more secure future on the cloud, an adaptive AI solution that deploys in minutes.
-
+            <h1 class="display-4 font-size-md-down-5 mb-3">Introducing Front</h1>
+            <p>
+              Your company will look
+              <span class="text-primary">
+                <strong class="u-text-animation u-text-animation--typing"></strong><span class="typed-cursor"></span>
+              </span>
+              <br>
+              Attract more visitors, and win more business with Front template.
             </p>
 
             <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-sm btn-outline-light transition-3d-hover" href="#!">Request Demo</a>
+              <a class="btn btn-soft-primary btn-wide transition-3d-hover" href="../pages/login-simple.html">Get Started</a>
+
+              <!-- Fancybox -->
+              <a class="js-fancybox media align-items-center u-media-player ml-3" href="javascript:;" data-src="//vimeo.com/167434033" data-speed="700" data-animate-in="zoomIn" data-animate-out="zoomOut" data-caption="Front - Responsive Website Template">
+                <span class="u-media-player__icon u-media-player__icon--success mr-3">
+                  <span class="fas fa-play u-media-player__icon-inner"></span>
+                </span>
+                <span class="media-body">
+                  Play video
+                </span>
+              </a>
+              <!-- End Fancybox -->
             </div>
           </div>
         </div>
         <!-- End Content -->
 
         <!-- SVG Background -->
-        <div id="SVGMainHero" class="col-lg-8 col-xl-6 d-none d-lg-block position-absolute top-0 right-0 pr-0" style="margin-top: 80px; margin-right: -30px;">
+        <div id="SVGMainHero" class="col-lg-9 col-xl-7 d-none d-lg-block position-absolute top-0 right-0 pr-0" style="margin-top: 105.6px;">
           <figure class="ie-main-hero">
-            <!-- Fancybox -->
-              <a class="js-fancybox media align-items-center u-media-player ml-3" href="javascript:;"
-                 data-src="//vimeo.com/167434033"
-                 data-speed="700"
-                 data-animate-in="zoomIn"
-                 data-animate-out="zoomOut"
-                 data-caption="Front - Responsive Website Template">
-                  <span style="position: absolute; top: 42%; right: 35%;" class="fas fa-play fa-5x"></span>
-                <span class="media-body">
-                </span>
-              </a>
-              <!-- End Fancybox -->
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1374.7 1083.6" style="enable-background:new 0 0 1374.7 1083.6;" xml:space="preserve" class="injected-svg js-svg-injector" data-img-paths="[
                    {&quot;targetId&quot;: &quot;#SVGMainHeroImg1&quot;, &quot;newPath&quot;: &quot;assets/img/gif/homepage.gif&quot;}
                  ]" data-parent="#SVGMainHero">
-              <style type="text/css">
-                .main-hero-0{fill:#377dff;}
-              </style>
-                <g>
-                <defs>
-                  <path id="mainHeroBlock1" d="M1374.7,0H687.6l-278,279.7c-150,150.9-148.1,395.3,4.4,543.8l0,0C554.1,960,774.9,968.7,925.4,843.6    l449.3-373.4V0z"></path>
-                </defs>
-                <clipPath id="mainHeroBlock2">
-                  <use xlink:href="#mainHeroBlock1" style="overflow:visible;"></use>
-                </clipPath>
-                <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#mainHeroBlock2);">
-                  <!-- Apply your (750px width to 750px height) image here -->
-                  <image id="SVGMainHeroImg1" style="overflow:visible;" xlink:href="assets/img/gif/homepage.gif" transform="matrix(1.4462 0 0 1.4448 290.09 0)"></image>
-                </g>
+            <style type="text/css">
+              .main-hero-0{fill:#377dff;}
+            </style>
+            <path class="main-hero-0 fill-primary" opacity=".05" d="M285.2,170.1c-94.5,8.6-181.2,57.4-235.9,134.8C-34.7,423.6-54.5,621.5,349,879.8  c636.5,407.6,600,9.3,591.9-47.4c-0.8-5.5-1.4-11.1-2-16.6l-34.2-374.1C888.4,262,729.2,129.6,549.4,146L285.2,170.1z"></path>
+            <g>
+              <defs>
+                <path id="mainHeroBlock1" d="M1374.7,0H687.6l-278,279.7c-150,150.9-148.1,395.3,4.4,543.8l0,0C554.1,960,774.9,968.7,925.4,843.6    l449.3-373.4V0z"></path>
+              </defs>
+              <clipPath id="mainHeroBlock2">
+                <use xlink:href="#mainHeroBlock1" style="overflow:visible;"></use>
+              </clipPath>
+              <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#mainHeroBlock2);">
+                <!-- Apply your (750px width to 750px height) image here -->
+                <image id="SVGMainHeroImg1" style="overflow:visible;" width="750" height="750" xlink:href="assets/img/gif/homepage.gif" transform="matrix(1.4462 0 0 1.4448 290.09 0)"></image>
               </g>
+            </g>
             </svg>
           </figure>
         </div>
@@ -772,10 +777,8 @@
     <!-- End Hero Section -->
 
 
-
-    <section class="bg-white" style="">
+    <section style="margin-top: 180px;">
       <div class="container">
-
         <div class="row text-center">
           <div class="col-12">
             <h3>Today We've...</h3>
@@ -790,6 +793,7 @@
           </div>
 
 
+
           <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
             <h4 class="h6">Blocked</h4>
             <div class="h3" data-toggle="countup" data-from="0" data-to="84152" data-aos data-aos-id="countup:in"></div>
@@ -802,34 +806,21 @@
             <h4 class="h6">Malicous Files</h4>
           </div>
         </div>
-
-
-        <div class="card-deck card-sm-gutters-3 d-block d-sm-flex" style="margin-top: 0px; padding-bottom: 60px;">
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Cloud-Native Architecture</h5>
-              <p class="card-text">An agentless on-gateway API layered atop existing security, Avanan protects all mail with cloud prefilters and post-delivery capabilities that neither users nor hackers know is there. </p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Full Suite Protection </h5>
-              <p class="card-text">Avanan monitors the entire email suite — every user action, configuration change, permissions update, file share, and internal message — to identify malicious behavior and compromised accounts within a single threat intelligence interface.</p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Open AI Platform </h5>
-              <p class="card-text">An artificially intelligent platform that learns from behavioral patterns, Avanan prevents  phishing, malware, account takeover, and data loss while also  integrating with industry-leading Security Event Information Management (SEIM) tools. </p>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </section>
 
     
+
+    <!-- SHAPE
+    ================================================== -->
+    <div style="margin-top: 225px;" class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0C720 240 0 240 0 240H1440V0Z" fill="currentColor"/>
+        </svg>
+
+      </div>
+    </div>
 
     <!-- Icon Blocks Section -->
     <div class="space-top-3 space-bottom-md-3 space-bottom-2 bg-white">
@@ -1424,8 +1415,8 @@
   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <!-- ADDED BY ME (ANIMATION) -->
-  <script src="assets/libs/aos/dist/aos.js"></script>
-  <script src="assets/js/theme2.min.js"></script>
+  <!-- <script src="assets/libs/aos/dist/aos.js"></script>
+  <script src="assets/js/theme2.min.js"></script> -->
   <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
 
   <!-- JS Implementing Plugins -->
