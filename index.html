@@ -35,6 +35,10 @@
   <style type="text/css">
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
+      #spacer-div {
+        margin-top: -30px;
+      }
+
       #hero-copy {
         margin-top: 0px;
       }
@@ -46,6 +50,10 @@
 
     /* PHONES IN LANDSCAPE col-sm-3 */
     @media (min-width: 576px) and (max-width: 768px) {
+      #spacer-div {
+        margin-top: 0px;
+      }
+
       #hero-copy {
         margin-top: 0px;
       }
@@ -57,6 +65,10 @@
 
     /* TABLETS col-md-3 */
     @media (min-width: 768px) and (max-width: 992px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+
       #hero-copy {
         margin-top: -50px;
       }
@@ -68,6 +80,10 @@
 
     /* LAPTOPS  col-lg-3 */
     @media (min-width: 992px) and (max-width: 1200px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+
       #hero-copy {
         margin-top: -50px;
       }
@@ -79,6 +95,10 @@
 
     /* DESKTOPS col-xl-3 */
     @media (min-width: 1200px) and (max-width: 1500px) {
+      #spacer-div {
+        margin-top: 180px;
+      }
+
       #hero-copy {
         margin-top: -30px;
       }
@@ -90,20 +110,25 @@
 
     /* LARGE DESKTOPS */
     @media (min-width: 1500px) {
+      #spacer-div {
+        margin-top: 160px;
+      }
+
       #hero-copy {
         margin-top: -30px;
       }
 
       #daily-data {
-        margin-top: -100px;
+        margin-top: 100px;
       }
     }
   </style>
 
+
 </head>
-<body class="bg-light-teal">
+<body class="bg-light">
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--abs-top-md u-header--bg-white u-header--show-hide-md"
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
@@ -780,13 +805,32 @@
   <!-- =========================== MAIN CONTENT ======================= -->
   <!-- =========================== MAIN CONTENT ======================= -->
   <main id="content" role="main">
-    <div style="margin-top: 0px;"></div>
+    <div id="spacer-div"></div>
     <!-- Hero Section -->
-    <div class="d-lg-flex position-relative">
-      <div class="container d-lg-flex align-items-lg-center space-top-2 space-top-md-5 space-lg-0 min-height-lg-100vh">
-        <!-- Content -->
-        <div id="hero-copy" class="row w-100">
-          <div class="col-lg-6">
+    <section class="position-relative py-8 py-md-11 mb-9 mt-10">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-1 svg-shim text-gray-200">
+        <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M703.969 241.602L703.963 241.599C716.081 262.97 723 287.677 723 314C723 382.917 675.575 440.757 611.58 456.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569C81.2603 569 0 487.74 0 387.5C0 353.244 9.49023 321.204 25.985 293.867L25.9688 293.875L141.512 77.5476C162.753 33.3052 207.123 2.2726 258.951 0.119583L258.959 0H264.719H390.999H508.5H509.999L510.002 0.00999319C551.85 0.567328 588.083 24.388 606.358 59.1292L606.359 59.125L703.969 241.602Z" fill="#e4eff5"/>
+        </svg>
+
+      </div>
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 order-md-2">
+            
+            <!-- Image -->
+            <div class="img-skewed img-skewed-left mb-10 mb-md-0">
+              <img src="assets/img/Dashboard-Homepage-5.png" style="box-shadow: none; max-width: 134%; margin-left: -33px;" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
+            
+            <!-- Heading -->
             <h1 class="display-4 font-size-md-down-5 mb-3">Reinventing Email Security.</h1>
             <p>
                 Avanan is the best way to protect enterprise collaboration<br>suites from
@@ -797,53 +841,28 @@
             </p>
 
             <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-danger btn-wide transition-3d-hover" href="../pages/login-simple.html">See why</a>
-            </div>
-          </div>
-        </div>
-        <!-- End Content -->
+              <a class="btn btn-danger btn-wide transition-3d-hover" href="../pages/login-simple.html">See Why</a>
 
-
-        <!-- SVG Background -->
-        <div id="SVGMainHero" class="col-lg-9 col-xl-6 d-none d-lg-block position-absolute top-0 right-0 pr-0" style="margin-top: 104px;">
-          <figure class="ie-main-hero">
-            <!-- Fancybox -->
+              <!-- Fancybox -->
               <a class="js-fancybox media align-items-center u-media-player ml-3" href="javascript:;"
                  data-src="//vimeo.com/167434033"
                  data-speed="700"
                  data-animate-in="zoomIn"
                  data-animate-out="zoomOut"
                  data-caption="Front - Responsive Website Template">
-                  <span style="position: absolute; top: 42%; right: 35%;" class="fas fa-play fa-5x"></span>
+                <span class="u-media-player__icon u-media-player__icon--primary mr-3">
+                  <span class="fas fa-play u-media-player__icon-inner"></span>
+                </span>
                 <span class="media-body">
+                  How Avanan Works
                 </span>
               </a>
-              <!-- End Fancybox -->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1374.7 1083.6" style="enable-background:new 0 0 1374.7 1083.6;" xml:space="preserve" class="injected-svg js-svg-injector" data-img-paths="[
-                   {&quot;targetId&quot;: &quot;#SVGMainHeroImg1&quot;, &quot;newPath&quot;: &quot;assets/img/gif/homepage.gif&quot;}
-                 ]" data-parent="#SVGMainHero">
-            <style type="text/css">
-              .main-hero-0{fill:#377dff;}
-            </style>
-            <path class="main-hero-0 fill-primary" opacity="1" d="M285.2,170.1c-94.5,8.6-181.2,57.4-235.9,134.8C-34.7,423.6-54.5,621.5,349,879.8  c636.5,407.6,600,9.3,591.9-47.4c-0.8-5.5-1.4-11.1-2-16.6l-34.2-374.1C888.4,262,729.2,129.6,549.4,146L285.2,170.1z"></path>
-            <g>
-              <defs>
-                <path id="mainHeroBlock1" d="M1374.7,0H687.6l-278,279.7c-150,150.9-148.1,395.3,4.4,543.8l0,0C554.1,960,774.9,968.7,925.4,843.6    l449.3-373.4V0z"></path>
-              </defs>
-              <clipPath id="mainHeroBlock2">
-                <use xlink:href="#mainHeroBlock1" style="overflow:visible;"></use>
-              </clipPath>
-              <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#mainHeroBlock2);">
-                <!-- Apply your (750px width to 750px height) image here -->
-                <image id="SVGMainHeroImg1" style="overflow:visible;" width="750" height="750" xlink:href="assets/img/gif/homepage.gif" transform="matrix(1.4462 0 0 1.4448 290.09 0)"></image>
-              </g>
-            </g>
-            </svg>
-          </figure>
-        </div>
-        <!-- End SVG Background -->
-      </div>
-    </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
     <!-- End Hero Section -->
 
 
@@ -876,35 +895,6 @@
             <h4 class="h6">Malicous Files</h4>
           </div>
         </div>
-
-
-        <div class="row mt-10">
-          <div class="col-12 text-center mt-10">
-            <h4>Default security isn’t enough. Advanced threat protection<br>doesn’t cut it. Legacy solutions don’t make sense.</h4>
-          </div>
-        </div>
-
-
-        <div class="card-deck card-sm-gutters-3 d-block d-sm-flex" style="margin-top: 45px; padding-bottom: 60px;">
-          <div class="card mb-3 shadow" style="position: relative; z-index: 10;">
-            <div class="card-body">
-              <h5 class="card-title">Cloud-Native Architecture</h5>
-              <p class="card-text">An agentless on-gateway API layered atop existing security, Avanan protects all mail with cloud prefilters and post-delivery capabilities that neither users nor hackers know is there. </p>
-            </div>
-          </div>
-          <div class="card mb-3 shadow" style="position: relative; z-index: 10;">
-            <div class="card-body">
-              <h5 class="card-title">Full Suite Protection </h5>
-              <p class="card-text">Avanan monitors the entire email suite — every user action, configuration change, permissions update, file share, and internal message — to identify malicious behavior and compromised accounts within a single threat intelligence interface.</p>
-            </div>
-          </div>
-          <div class="card mb-3 shadow" style="position: relative; z-index: 10;">
-            <div class="card-body">
-              <h5 class="card-title">Open AI Platform </h5>
-              <p class="card-text">An artificially intelligent platform that learns from behavioral patterns, Avanan prevents  phishing, malware, account takeover, and data loss while also  integrating with industry-leading Security Event Information Management (SEIM) tools. </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -912,7 +902,7 @@
 
     <!-- SHAPE
     ================================================== -->
-    <div style="margin-top: -60px;" class="position-relative">
+    <div style="margin-top: 225px;" class="position-relative">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
         <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0C720 240 0 240 0 240H1440V0Z" fill="currentColor"/>
@@ -927,30 +917,30 @@
       <div class="row">
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
-              <span class="fas fa-th fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-twitter rounded-circle mb-5">
+              <span class="fas fa-cloud fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">1. Select your SaaS</h3>
+            <h3 class="h5">Cloud-Native Architecture</h3>
             <!-- <p class="mb-md-0">Achieve virtually any design and layout from within the one template.</p> -->
           </div>
         </div>
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
+            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
               <span class="fas fa-layer-group fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">2. Choose Security Layers</h3>
+            <h3 class="h5">Full Suite Protection</h3>
             <!-- <p class="mb-md-0">We strive to figure out ways to help your business grow through all platforms.</p> -->
           </div>
         </div>
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
-              <span class="fas fa-tachometer-alt fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-indigo rounded-circle mb-5">
+              <span class="fas fa-brain fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">3. Deploy Instantly</h3>
+            <h3 class="h5">Open AI Platform</h3>
             <!-- <p class="mb-md-0">Find what you need in one template and combine features at will.</p> -->
           </div>
         </div>
@@ -959,9 +949,9 @@
       <img class="img-fluid d-none d-md-block w-75 mx-auto mb-7" src="assets/svg/components/pointer-1.svg" alt="SVG Arrow">
 
       <!-- Title -->
-      <div class="w-md-60 w-lg-50 text-center mx-auto mb-7">
+      <div class="w-md-60 w-lg-55 text-center mx-auto mb-7">
         <h4 class="h5">
-          It's fast and simple. <span class="font-weight-normal">Manage all your SaaS and Security tools from a single dashboard.</span>
+          Avanan catches attacks that default and advanced security tools miss, while adding an invisible layer of security.
         </h4>
       </div>
       <!-- End Title -->
@@ -972,7 +962,7 @@
         <figure id="SVGbgShapeID1" class="ie-soft-triangle-shape" style="">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1109.8 797.1" style="enable-background:new 0 0 1109.8 797.1;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGbgShapeID1">
           <style type="text/css">
-            .soft-triangle-shape-0{fill:#377DFF;}
+            .soft-triangle-shape-0{fill:#e4eff5;}
           </style>
           <path class="soft-triangle-shape-0 fill-primary" opacity=".1" d="M105.1,267.1C35.5,331.5-3.5,423,0.3,517.7C6.1,663,111,831.9,588.3,790.8c753-64.7,481.3-358.3,440.4-398.3  c-4-3.9-7.9-7.9-11.7-12L761.9,104.8C639.4-27.6,432.5-35.6,299.9,87L105.1,267.1z"></path>
           </svg>
