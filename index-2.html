@@ -38,12 +38,28 @@
       #spacer-div {
         margin-top: -30px;
       }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #daily-data {
+        margin-top: 100px;
+      }
     }
 
     /* PHONES IN LANDSCAPE col-sm-3 */
     @media (min-width: 576px) and (max-width: 768px) {
       #spacer-div {
         margin-top: 0px;
+      }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #daily-data {
+        margin-top: 100px;
       }
     }
 
@@ -52,12 +68,28 @@
       #spacer-div {
         margin-top: 180px;
       }
+
+      #hero-copy {
+        margin-top: -50px;
+      }
+
+      #daily-data {
+        margin-top: -100px;
+      }
     }
 
     /* LAPTOPS  col-lg-3 */
     @media (min-width: 992px) and (max-width: 1200px) {
       #spacer-div {
         margin-top: 180px;
+      }
+
+      #hero-copy {
+        margin-top: -50px;
+      }
+
+      #daily-data {
+        margin-top: -100px;
       }
     }
 
@@ -66,15 +98,32 @@
       #spacer-div {
         margin-top: 180px;
       }
+
+      #hero-copy {
+        margin-top: -30px;
+      }
+
+      #daily-data {
+        margin-top: -100px;
+      }
     }
 
     /* LARGE DESKTOPS */
     @media (min-width: 1500px) {
       #spacer-div {
-        margin-top: 180px;
+        margin-top: 160px;
+      }
+
+      #hero-copy {
+        margin-top: -30px;
+      }
+
+      #daily-data {
+        margin-top: 100px;
       }
     }
   </style>
+
 
 </head>
 <body class="bg-light">
@@ -763,7 +812,7 @@
       <!-- Shape -->
       <div class="shape shape-fluid-x shape-blur-1 svg-shim text-gray-200">
         <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M703.969 241.602L703.963 241.599C716.081 262.97 723 287.677 723 314C723 382.917 675.575 440.757 611.58 456.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569C81.2603 569 0 487.74 0 387.5C0 353.244 9.49023 321.204 25.985 293.867L25.9688 293.875L141.512 77.5476C162.753 33.3052 207.123 2.2726 258.951 0.119583L258.959 0H264.719H390.999H508.5H509.999L510.002 0.00999319C551.85 0.567328 588.083 24.388 606.358 59.1292L606.359 59.125L703.969 241.602Z" fill="currentColor"/>
+        <path d="M703.969 241.602L703.963 241.599C716.081 262.97 723 287.677 723 314C723 382.917 675.575 440.757 611.58 456.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569C81.2603 569 0 487.74 0 387.5C0 353.244 9.49023 321.204 25.985 293.867L25.9688 293.875L141.512 77.5476C162.753 33.3052 207.123 2.2726 258.951 0.119583L258.959 0H264.719H390.999H508.5H509.999L510.002 0.00999319C551.85 0.567328 588.083 24.388 606.358 59.1292L606.359 59.125L703.969 241.602Z" fill="#569BBE35"/>
         </svg>
 
       </div>
@@ -817,7 +866,7 @@
     <!-- End Hero Section -->
 
 
-    <section style="margin-top: 180px;">
+    <section id="daily-data">
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
@@ -828,7 +877,7 @@
 
           <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
             <h4 class="h6">Scanned</h4>
-            <div class="h3" data-toggle="countup" data-from="0" data-to="23764345" data-aos data-aos-id="countup:in"></div>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="23764345" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Emails</h4>
           </div>
 
@@ -836,13 +885,13 @@
 
           <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
             <h4 class="h6">Blocked</h4>
-            <div class="h3" data-toggle="countup" data-from="0" data-to="84152" data-aos data-aos-id="countup:in"></div>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="84152" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Phishing Attacks</h4>
           </div>
 
           <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
             <h4 class="h6">Stopped</h4>
-            <div class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in"></div>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Malicous Files</h4>
           </div>
         </div>
