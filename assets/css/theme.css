@@ -19706,7 +19706,7 @@ label.btn {
 }
 
 .u-media-player__icon--box-shadow {
-  box-shadow: 0 0 2.5rem rgba(140, 152, 164, 0.3);
+  box-shadow: 0 0 2.5rem #e4eff5;
 }
 
 .u-media-player:hover .u-media-player__icon, .u-media-player:focus .u-media-player__icon {
