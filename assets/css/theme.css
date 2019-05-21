@@ -14493,8 +14493,8 @@ button:focus {
     padding-left: 0;
   }
   .navbar-expand-md .u-header__navbar-nav .u-header__sub-menu.hs-sub-menu {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /*padding-top: 1rem;*/
+    /*padding-bottom: 1rem;*/
   }
   .navbar-expand-md .u-header__navbar-nav .u-header__sub-menu .hs-has-sub-menu {
     padding: 0;

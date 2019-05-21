@@ -356,18 +356,54 @@
           <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
             <ul class="navbar-nav u-header__navbar-nav">
 
-              <!-- PLATFORMS -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+
+              <!-- PLATFORM -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
-                  data-animation-out="fadeOut"
-                  data-position="left">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Platform</a>
+                  data-animation-out="fadeOut">
+                <a id="platformMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="platformSubMenu">Platform</a>
 
-                
-                
+                <!-- Pages - Submenu -->
+                <ul id="platformSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="platformMenu" style="min-width: 320px;">
+                  <!-- Account -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="/assets/svg/icons/icon-2.svg" alt="SVG">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Documentation
+                            <span class="badge badge-primary badge-pill ml-1">v2.5</span>
+                          </span>
+                          <small class="u-header__promo-text">Development guides</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Account -->
+                  
+                  <!-- Account -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="/assets/svg/icons/icon-2.svg" alt="SVG">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Documentation
+                            <span class="badge badge-primary badge-pill ml-1">v2.5</span>
+                          </span>
+                          <small class="u-header__promo-text">Development guides</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Account -->
+                </ul>
+                <!-- End Pages - Submenu -->
               </li>
-              <!-- END PLATFORMS -->
+              <!-- END PLATFORM -->
+
 
 
               <!-- SECURITY -->
@@ -375,46 +411,42 @@
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Security</a>
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="securitySubMenu">Security</a>
 
                 <!-- Pages - Submenu -->
-                <ul id="pagesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 320px;">
+                <ul id="securitySubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 320px;">
                   <!-- Account -->
-                  <!-- <li class="hs-has-sub-menu"> -->
-                    <div class="u-header__promo-item">
-                      <a class="u-header__promo-link" href="../../documentation/index.html">
-                        <div class="media align-items-center">
-                          <img class="js-svg-injector u-header__promo-icon" src="/assets/svg/icons/icon-2.svg" alt="SVG">
-                          <div class="media-body">
-                            <span class="u-header__promo-title">
-                              Documentation
-                              <span class="badge badge-primary badge-pill ml-1">v2.5</span>
-                            </span>
-                            <small class="u-header__promo-text">Development guides</small>
-                          </div>
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="/assets/svg/icons/icon-2.svg" alt="SVG">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Documentation
+                            <span class="badge badge-primary badge-pill ml-1">v2.5</span>
+                          </span>
+                          <small class="u-header__promo-text">Development guides</small>
                         </div>
-                      </a>
-                    </div>
-                  <!-- </li> -->
+                      </div>
+                    </a>
+                  </div>
                   <!-- End Account -->
                   
                   <!-- Account -->
-                  <!-- <li class="hs-has-sub-menu"> -->
-                    <div class="u-header__promo-item">
-                      <a class="u-header__promo-link" href="../../documentation/index.html">
-                        <div class="media align-items-center">
-                          <img class="js-svg-injector u-header__promo-icon" src="/assets/svg/icons/icon-2.svg" alt="SVG">
-                          <div class="media-body">
-                            <span class="u-header__promo-title">
-                              Documentation
-                              <span class="badge badge-primary badge-pill ml-1">v2.5</span>
-                            </span>
-                            <small class="u-header__promo-text">Development guides</small>
-                          </div>
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="/assets/svg/icons/icon-2.svg" alt="SVG">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Documentation
+                            <span class="badge badge-primary badge-pill ml-1">v2.5</span>
+                          </span>
+                          <small class="u-header__promo-text">Development guides</small>
                         </div>
-                      </a>
-                    </div>
-                  <!-- </li> -->
+                      </div>
+                    </a>
+                  </div>
                   <!-- End Account -->
                 </ul>
                 <!-- End Pages - Submenu -->
