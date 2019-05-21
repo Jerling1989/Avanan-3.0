@@ -13252,8 +13252,8 @@ button:focus {
   display: block;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .u-header__promo-link:hover .u-header__promo-title {
@@ -13289,7 +13289,7 @@ button:focus {
 
 .u-header__promo-icon {
   width: 100%;
-  max-width: 2.75rem;
+  max-width: 2rem;
   margin-right: 1rem;
 }
 
