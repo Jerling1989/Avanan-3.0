@@ -33,6 +33,33 @@
 
 
   <style type="text/css">
+    #cna-card {
+      position: absolute;
+      display: none;
+    }
+
+    #cna:hover + #cna-card {
+      display: block;
+    }
+
+    #fsp-card {
+      position: absolute;
+      display: none;
+    }
+
+    #fsp:hover + #fsp-card {
+      display: block;
+    }
+
+    #oaip-card {
+      position: absolute;
+      display: none;
+    }
+
+    #oaip:hover + #oaip-card {
+      display: block;
+    }
+
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       #spacer-div {
@@ -850,14 +877,11 @@
             <br>
           </div>
           
-
           <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
             <h4 class="h6">Scanned</h4>
             <div class="h3" data-toggle="countup" data-from="0" data-to="23764345" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Emails</h4>
           </div>
-
-
 
           <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
             <h4 class="h6">Blocked</h4>
@@ -896,8 +920,12 @@
             <span class="btn btn-icon btn-lg btn-soft-twitter rounded-circle mb-5">
               <span class="fas fa-cloud fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">Cloud-Native Architecture</h3>
-            <!-- <p class="mb-md-0">Achieve virtually any design and layout from within the one template.</p> -->
+            <h3 id="cna" class="h5">Cloud-Native Architecture</h3>
+            <div id="cna-card" class="card mb-3 shadow">
+              <div class="card-body text-left">
+                <p class="card-text" style="font-size: 15px;">An agentless on-gateway API layered atop existing security, Avanan protects all mail with cloud prefilters and post-delivery capabilities that neither users nor hackers know is there. </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -906,8 +934,12 @@
             <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
               <span class="fas fa-layer-group fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">Full Suite Protection</h3>
-            <!-- <p class="mb-md-0">We strive to figure out ways to help your business grow through all platforms.</p> -->
+            <h3 id="fsp" class="h5">Full Suite Protection</h3>
+            <div id="fsp-card" class="card mb-3 shadow" style="position: absolute;">
+              <div class="card-body text-left">
+                <p class="card-text" style="font-size: 15px;">Avanan monitors the entire email suite — every user action, configuration change, permissions update, file share, and internal message — to identify malicious behavior and compromised accounts within a single threat intelligence interface.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -916,8 +948,12 @@
             <span class="btn btn-icon btn-lg btn-soft-indigo rounded-circle mb-5">
               <span class="fas fa-brain fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
             </span>
-            <h3 class="h5">Open AI Platform</h3>
-            <!-- <p class="mb-md-0">Find what you need in one template and combine features at will.</p> -->
+            <h3 id="oaip" class="h5">Open AI Platform</h3>
+            <div id="oaip-card" class="card mb-3 shadow" style="position: absolute;">
+              <div class="card-body text-left">
+                <p class="card-text" style="font-size: 15px;">An artificially intelligent platform that learns from behavioral patterns, Avanan prevents  phishing, malware, account takeover, and data loss while also  integrating with industry-leading Security Event Information Management (SEIM) tools. </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -929,6 +965,7 @@
         <h4 class="h5">
           Avanan catches attacks that default and advanced security tools miss, while adding an invisible layer of security.
         </h4>
+        <a href="#!" class="btn btn-wide btn-primary mt-3 lift">Learn How</a>
       </div>
       <!-- End Title -->
 
@@ -1057,11 +1094,10 @@
     </div>
     <!-- SAAS section -->
 
-
-
-
-
   </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- CTA Section -->
@@ -1260,7 +1296,6 @@
                   </div>
                   <!-- End Login Buttons -->
                 </div>
-
 
                 <!-- Forgot Password -->
                 <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
