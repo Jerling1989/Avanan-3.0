@@ -18088,8 +18088,8 @@ label.btn {
 }
 
 .card-frame-highlighted, .card-frame:hover {
-  border-color: rgba(55, 125, 255, 0.3);
-  box-shadow: 0 0 35px rgba(55, 125, 255, 0.125);
+  border-color: rgba(86,155,190,0.3);
+  box-shadow: 0 0 35px rgba(86,155,190,0.125)
 }
 
 .card-text-dark {
