@@ -23,10 +23,13 @@
   <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
 
-
   <!-- ADDED BY ME (ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
   <link rel="stylesheet" href="assets/css/theme3.css">
+
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
@@ -307,7 +310,7 @@
             <!-- End Search Icon -->
 
             <!-- Support Icon -->
-            <li class="list-inline-item position-relative">
+            <!-- <li class="list-inline-item position-relative">
               <a class="u-header__navbar-link" href="javascript:;" role="button"
                       aria-controls="shoppingCartDropdown"
                       aria-haspopup="true"
@@ -324,14 +327,30 @@
                 <span class="d-none d-sm-inline-block">Support</span>
               </a>
 
-              <!-- <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right text-center p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
+              <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right text-center p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
                 <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
                   <span class="fas fa-shopping-basket btn-icon__inner"></span>
                 </span>
                 <span class="d-block">Your Cart is Empty</span>
-              </div> -->
-            </li>
+              </div>
+            </li> -->
             <!-- End Support Icon -->
+
+
+            
+            <!-- Shopping Cart Modal Window Open Button -->
+            <li class="list-inline-item">
+              <a class="btn btn-xs btn-icon btn-text-secondary" href="#shoppingCartModal" role="button"
+                 data-modal-target="#shoppingCartModal"
+                 data-overlay-color="#111722">
+                <span class="fas fa-shopping-cart btn-icon__inner"></span>
+              </a>
+            </li>
+            <!-- End Shopping Cart Modal Window Open Button -->
+
+
+
+
 
             <!-- Account Login Icon -->
             <li class="list-inline-item">
@@ -826,6 +845,47 @@
     </div>
   </header>
   <!-- ========== END HEADER ========== -->
+
+
+
+  <!-- Shopping Cart Modal Window -->
+  <div id="shoppingCartModal" class="js-modal-window u-modal-window" style="width: 370px;">
+    <div class="card">
+      <!-- Header -->
+      <header class="card-header bg-light py-3 px-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="h6 mb-0">Your Shopping Cart</h3>
+
+          <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="card-body text-center p-5">
+        <span class="btn btn-icon btn-soft-primary rounded-circle">
+          <span class="fas fa-shopping-basket btn-icon__inner"></span>
+        </span>
+      </div>
+      <!-- End Body -->
+
+      <!-- Footer -->
+      <div class="card-footer text-center p-5">
+        <div class="mb-3">
+          <span class="d-block font-weight-semi-bold">Order Total</span>
+          <span class="d-block">$56.99</span>
+        </div>
+        <div class="mb-2">
+          <a class="btn btn-sm btn-soft-primary disabled transition-3d-hover" href="../shop/shop-checkout.html">Review Bag and Checkout</a>
+        </div>
+        <p class="small mb-0"><a class="link-muted" href="javascript:;">Start Shopping</a></p>
+      </div>
+      <!-- End Footer -->
+    </div>
+  </div>
+  <!-- End Shopping Cart Modal Window -->
 
 
     
@@ -1470,6 +1530,10 @@
   <script src="assets/vendor/appear.js"></script>
   <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
 
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
   <script src="assets/js/components/hs.header.js"></script>
@@ -1482,6 +1546,9 @@
   <script src="assets/js/components/hs.show-animation.js"></script>
   <script src="assets/js/components/hs.svg-injector.js"></script>
   <script src="assets/js/components/hs.go-to.js"></script>
+
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <script src="assets/js/components/hs.modal-window.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -1496,6 +1563,11 @@
 
       // initialization of svg injector module
       $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+        autonomous: true
+      });
     });
     
     $(document).on('ready', function () {
