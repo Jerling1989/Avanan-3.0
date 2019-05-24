@@ -74,7 +74,7 @@
       }
 
       #hero-copy {
-        margin-top: -50px;
+        margin-top: 0px;
       }
 
       #daily-data {
@@ -89,7 +89,7 @@
       }
 
       #hero-copy {
-        margin-top: -50px;
+        margin-top: 0px;
       }
 
       #daily-data {
@@ -100,15 +100,22 @@
     /* DESKTOPS col-xl-3 */
     @media (min-width: 1200px) and (max-width: 1500px) {
       #spacer-div {
-        margin-top: 180px;
+        margin-top: 120px;
       }
 
       #hero-copy {
-        margin-top: -30px;
+        margin-top: 0px;
       }
 
       #daily-data {
-        margin-top: -100px;
+        margin-top: -30px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 118%;
+        margin-left: -34px;
+        margin-top: -20px;
       }
     }
 
@@ -119,11 +126,18 @@
       }
 
       #hero-copy {
-        margin-top: -30px;
+        margin-top: 0px;
       }
 
       #daily-data {
         margin-top: 100px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 134%;
+        margin-left: -33px;
+        margin-top: 0px;
       }
     }
   </style>
@@ -887,12 +901,12 @@
             
             <!-- Image -->
             <div class="img-skewed img-skewed-left mb-10 mb-md-0">
-              <img src="assets/img/Dashboard-Homepage-5.png" style="box-shadow: none; max-width: 134%; margin-left: -33px;" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
+              <img id="hero-img" src="assets/img/Dashboard-Homepage-5.png" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
             </div>
 
           </div>
-          <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
-            
+
+          <div id="hero-copy" class="col-12 col-md-6 order-md-1" data-aos="fade-up">
             <!-- Heading -->
             <h1 class="display-4 font-size-md-down-5 mb-3">Reinventing Email Security.</h1>
             <p>
