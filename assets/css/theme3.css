@@ -161,7 +161,7 @@
     height: auto
 }
 
-@media (min-width:768px) {
+@media (min-width:992px) {
     .shape-blur-1 {
         bottom: 0;
         left: 50%;
