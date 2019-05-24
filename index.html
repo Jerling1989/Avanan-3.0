@@ -58,18 +58,15 @@
 
       #hero-img {
         box-shadow: none;
-        max-width: 110%;
+        max-width: 105%;
         margin-left: -30px;
         margin-top: -40px;
         margin-bottom: 0px;
       }
 
-      /*#mockup-laptop {
-        width: 120%;
-        position: absolute;
-        margin-top: -230px;
-        margin-left: -10%;
-      }*/
+      #client-block {
+        margin-bottom: 100px
+      }
     }
 
     /* PHONES IN LANDSCAPE col-sm-3 */
@@ -103,13 +100,6 @@
         width: 70%;
         margin: 0 auto;
       }
-
-      /*#mockup-laptop {
-        width: 120%;
-        position: absolute;
-        margin-top: -348px;
-        margin-left: -10%;
-      }*/
     }
 
     /* TABLETS col-md-3 */
@@ -142,13 +132,6 @@
         width: 75%;
         margin: 0 auto;
       }
-
-      /*#mockup-laptop {
-        width: 120%;
-        position: absolute;
-        margin-top: -472px;
-        margin-left: -10%;
-      }*/
     }
 
     /* LAPTOPS  col-lg-3 */
@@ -176,12 +159,9 @@
         margin-top: -20px;
       }
 
-      /*#mockup-laptop {
-        width: 120%;
-        position: absolute;
-        margin-top: -580px;
-        margin-left: -10%;
-      }*/
+      #client-block {
+        margin-bottom: 0px
+      }
     }
 
     /* DESKTOPS col-xl-3 */
@@ -209,12 +189,9 @@
         margin-top: -20px;
       }
 
-      /*#mockup-laptop {
-        width: 120%;
-        position: absolute;
-        margin-top: -580px;
-        margin-left: -10%;
-      }*/
+      #client-block {
+        margin-bottom: 0px
+      }
     }
 
     /* LARGE DESKTOPS */
@@ -242,32 +219,25 @@
         margin-top: 0px;
       }
 
-      /*#mockup-laptop {
-        width: 120%;
-        position: absolute;
-        margin-top: -580px;
-        margin-left: -10%;
-      }*/
-
       .u-browser-v1 {
           position: relative;
           max-width: 88%;
+      }
+
+      #client-block {
+        margin-bottom: 0px
       }
     }
 
     #mockup-laptop {
       width: 100%;
-      /*position: absolute;
-      overflow: hidden;
-      margin-top: -580px;
-      margin-left: -10%;*/
     }
 
-    /** {
+    * {
       background: #000 !important;
       color: #0f0 !important;
       outline: solid #f00 1px !important;
-    }*/
+    }
   </style>
 
 
@@ -1166,7 +1136,7 @@
         <!-- End Mockup Browser -->
 
         <!-- Clients Section -->
-        <div class="container">
+        <div id="client-block" class="container">
           <!-- <div class="container"> -->
           <div class="row align-items-lg-center">
             <div class="col-md-7 col-lg-8 mb-5 mb-md-0">
