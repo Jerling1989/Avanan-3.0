@@ -19732,7 +19732,7 @@ label.btn {
 
 .u-media-player__icon--primary {
   color: #569bbe;
-  background-color: #d0e2ea;
+  background-color: #e4eff5;
 }
 
 .u-media-player__icon--success {
@@ -21450,6 +21450,11 @@ label.btn {
 .fill-primary {
   fill: #569bbe !important;
 }
+
+.fill-primary-soft {
+  fill: #e5eff4 !important;
+}
+
 
 .fill-primary-lighter {
   fill: #19a0ff !important;
