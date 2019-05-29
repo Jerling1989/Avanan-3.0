@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Avanan | Cloud Security Platform for Every SaaS | Office 365, Google, Slack, and Beyond</title>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+  <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css"> -->
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+
+  <!-- ADDED BY ME (HERO ANIMATION) -->
+  <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/theme3.css">
+
+  <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
+  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/animate.css"> -->
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+
+
+  <style type="text/css">
+
+    /* PHONES IN PORTRAIT col-3 */
+    @media (max-width: 576px) {
+      #spacer-div {
+        margin-top: -35px;
+      }
+
+      #hero-copy {
+        margin-top: -5px;
+      }
+
+      #hero-brk {
+        display: block;
+      }
+
+      #how-it-works-btn {
+        margin-left: 0px;
+      }
+
+      #daily-data {
+        margin-top: 130px;
+        margin-bottom: -60px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 110%;
+        margin-left: -30px;
+        margin-top: -40px;
+        margin-bottom: 0px;
+      }
+
+      #client-block {
+        margin-bottom: 100px
+      }
+    }
+
+    /* PHONES IN LANDSCAPE col-sm-3 */
+    @media (min-width: 576px) and (max-width: 768px) {
+      #spacer-div {
+        margin-top: -20px;
+      }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #hero-brk {
+        display: inline;
+      }
+
+      #how-it-works-btn {
+        margin-left: 15px;
+      }
+
+      #daily-data {
+        margin-top: 140px;
+        margin-bottom: -20px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 100%;
+        margin-left: -45px;
+        margin-top: -40px;
+        margin-bottom: 10px;
+      }
+
+      .shape-blur-1 {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      #client-block {
+        margin-bottom: 0px
+      }
+    }
+
+    /* TABLETS col-md-3 */
+    @media (min-width: 768px) and (max-width: 992px) {
+      #spacer-div {
+        margin-top: 200px;
+      }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #hero-brk {
+        display: block;
+      }
+
+      #how-it-works-btn {
+        margin-left: 15px;
+      }
+
+      #daily-data {
+        margin-top: 0px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 100%;
+        margin-left: -45px;
+        margin-top: -60px;
+        margin-bottom: 20px;
+      }
+
+      .shape-blur-1 {
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      #client-block {
+        margin-bottom: 40px
+      }
+    }
+
+    /* LAPTOPS  col-lg-3 */
+    @media (min-width: 992px) and (max-width: 1200px) {
+      #spacer-div {
+        margin-top: 140px;
+      }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #hero-brk {
+        display: inline;
+      }
+
+      #how-it-works-btn {
+        margin-left: 15px;
+      }
+
+      #daily-data {
+        margin-top: 0px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 120%;
+        margin-left: -45px;
+        margin-top: -20px;
+      }
+
+      #client-block {
+        margin-bottom: 0px
+      }
+    }
+
+    /* DESKTOPS col-xl-3 */
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      #spacer-div {
+        margin-top: 120px;
+      }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #hero-brk {
+        display: block;
+      }
+
+      #how-it-works-btn {
+        margin-left: 15px;
+      }
+
+      #daily-data {
+        margin-top: -30px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 118%;
+        margin-left: -34px;
+        margin-top: -20px;
+      }
+
+      #client-block {
+        margin-bottom: 0px
+      }
+    }
+
+    /* LARGE DESKTOPS */
+    @media (min-width: 1500px) {
+      #spacer-div {
+        margin-top: 160px;
+      }
+
+      #hero-copy {
+        margin-top: 0px;
+      }
+
+      #hero-brk {
+        display: block;
+      }
+
+      #how-it-works-btn {
+        margin-left: 15px;
+      }
+
+      #daily-data {
+        margin-top: 90px;
+      }
+
+      #hero-img {
+        box-shadow: none;
+        max-width: 134%;
+        margin-left: -33px;
+        margin-top: 0px;
+      }
+
+      .u-browser-v1 {
+          position: relative;
+          max-width: 88%;
+      }
+
+      #client-block {
+        margin-bottom: 0px
+      }
+    }
+
+    #mockup-laptop {
+      width: 100%;
+    }
+
+    /** {
+      background: #000 !important;
+      color: #0f0 !important;
+      outline: solid #f00 1px !important;
+    }*/
+  </style>
+
+
+</head>
+<body class="bg-light">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+          data-header-fix-moment="500"
+          data-header-fix-effect="slide">
+
+    <!-- SEARCH PANEL -->
+    <div id="searchPushTop" class="u-search-push-top bg-white" style="box-shadow: none !important;">
+      <div class="container position-relative">
+        <div class="u-search-push-top__content">
+          <!-- Close Button -->
+          <button type="button" class="close u-search-push-top__close-btn"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="searchPushTop"
+                  data-unfold-type="jquery-slide"
+                  data-unfold-target="#searchPushTop">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- End Close Button -->
+
+          <!-- Search Input -->
+          <form class="js-focus-state input-group input-group-lg">
+            <input type="search" class="form-control" placeholder="Search Front" aria-label="Search Front">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+          </form>
+          <!-- End Search Input -->
+
+          <!-- Panel Content -->
+          <div class="row d-none d-md-flex mt-7">
+            <div class="col-sm-6">
+              <strong class="d-block mb-2">Quick Links</strong>
+
+              <div class="row">
+                <!-- Quick Links Group One -->
+                <div class="col-6">
+                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Office 365 Security
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      G Suite Security
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Slack Security
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Avanan Blog
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Avanan in the News
+                    </a>
+                  </div>
+                </div>
+                <!-- End Quick Links Group One -->
+
+                <!-- Quick Links Group Two -->
+                <div class="col-6">
+                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Anti-Phishing
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Malware Protection
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      DLP & Compliance
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="#">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      CASB/Shadow IT
+                    </a>
+                  </div>
+                </div>
+                <!-- End Quick Links Group Two -->
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <!-- Promotional Item -->
+              <div class="rounded u-search-push-top__banner text-center shadow p-3 mb-5 lift">
+                <img style="width: 85%; height: auto; margin-bottom: 15px;" src="https://www.avanan.com/hubfs/Images/Webinars/gpr-webinar-featured.png">
+              </div>
+              <!-- End Promotional -->
+            </div>
+          </div>
+          <!-- End Panel Content -->
+        </div>
+      </div>
+    </div>
+    <!-- End Search -->
+
+    <div class="u-header__section">
+      <!-- Top Nav Section -->
+      <div class="container u-header__hide-content pt-2">
+        <div class="d-flex align-items-center">
+          <!-- Language Dropdown -->
+          <div class="position-relative">
+            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
+               aria-controls="languageDropdown"
+               aria-haspopup="true"
+               aria-expanded="false"
+               data-unfold-event="hover"
+               data-unfold-target="#languageDropdown"
+               data-unfold-type="css-animation"
+               data-unfold-duration="300"
+               data-unfold-delay="300"
+               data-unfold-hide-on-scroll="true"
+               data-unfold-animation-in="slideInUp"
+               data-unfold-animation-out="fadeOut">
+               <img class="dropdown-item-icon" src="assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+              <span class="d-inline-block d-sm-none">US</span>
+              <span class="d-none d-sm-inline-block">United States</span>
+            </a>
+
+            <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
+              <a class="dropdown-item active" href="#">English (US)</a>
+              <a class="dropdown-item" href="#">English (UK)</a>
+              <a class="dropdown-item" href="#">Hebrew</a>
+              <a class="dropdown-item" href="#">Deutsch</a>
+              <a class="dropdown-item" href="#">Español‎</a>
+            </div>
+          </div>
+          <!-- End Language Dropdown -->
+
+          <div class="ml-auto">
+          </div>
+
+          <ul class="list-inline ml-2 mb-0">
+            <!-- Search Icon -->
+            <li class="list-inline-item">
+              <a class="u-header__navbar-link" href="javascript:;" role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="searchPushTop"
+                      data-unfold-type="jquery-slide"
+                      data-unfold-target="#searchPushTop">
+                <i class="fas fa-search"></i>
+                <span class="d-none d-sm-inline-block">Search</span>
+              </a>
+            </li>
+            <!-- End Search Icon -->
+
+            <!-- Support Icon -->
+            <li class="list-inline-item position-relative">
+              <a class="u-header__navbar-link" href="#supportModal" role="button"
+                      data-modal-target="#supportModal"
+                      data-overlay-color="#111722">
+                <i class="fas fa-headset"></i>
+                <span class="d-none d-sm-inline-block">Support</span>
+              </a>
+            </li>
+            <!-- End Support Icon -->
+
+            <!-- Account Login Icon -->
+            <li class="list-inline-item">
+              <!-- Account Sidebar Toggle Button -->
+              <a id="sidebarNavToggler" class="u-header__navbar-link" href="javascript:;" role="button"
+                  aria-controls="sidebarContent"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-unfold-event="click"
+                  data-unfold-hide-on-scroll="false"
+                  data-unfold-target="#sidebarContent"
+                  data-unfold-type="css-animation"
+                  data-unfold-animation-in="fadeInRight"
+                  data-unfold-animation-out="fadeOutRight"
+                  data-unfold-duration="500">
+                <i class="fas fa-user-circle font-size-1"></i>
+                <span class="d-none d-sm-inline-block">Login</span>
+              </a>
+              <!-- End Account Sidebar Toggle Button -->
+            </li>
+            <!-- End Account Login Icon -->
+          </ul>
+        </div>
+      </div>
+      <!-- End Top Nav Section -->
+
+      <div id="logoAndNav" class="container">
+        <!-- Main Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+            <img src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/logos/avanan-teal-logo-sm.png">
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span id="hamburgerTrigger" class="u-hamburger__box">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+
+              <!-- PLATFORM -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="platformMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="platformSubMenu">Platform</a>
+
+                <!-- PLATFORM SUBMENU -->
+                <ul id="platformSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="platformMenu" style="min-width: 205px;">
+                  <!-- Office 365 -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="u-header__promo-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/office-365-tiny.png" alt="Office 365">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Office 365
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Office 365 -->
+                  
+                  <!-- G Suite -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="u-header__promo-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/google-tiny.png" alt="G Suite">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            G Suite
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End G Suite -->
+
+                  <!-- Slack -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="u-header__promo-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/new_slack_logo_sm.png" alt="Slack">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Slack
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Slack -->
+
+                  <!-- Dropbox -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="u-header__promo-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/dropbox-transparent-tiny.png" alt="Dropbox">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Dropbox
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Dropbox -->
+
+                  <!-- Google Drive -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="u-header__promo-icon" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/any-saas/transparent/tiny/google-drive-transparent-tiny.png" alt="Google Drive">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Google Drive
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Google Drive -->
+
+                  <!-- View All -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <button class="btn btn-sm btn-primary btn-block lift">View All</button>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End View All -->
+                </ul>
+                <!-- END PLATFORM SUBMENU -->
+              </li>
+              <!-- END PLATFORM -->
+
+
+              <!-- SECURITY -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="securitySubMenu">Security</a>
+
+                <!-- SECURITY SUBMENU -->
+                <ul id="securitySubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 330px;">
+                  <!-- Anti-Phishing -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/new/antiphishing.png" alt="Anti-Phishing">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Anti-Phishing
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Anti-Phishing -->
+                  
+                  <!-- Malware & Ransomware -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/new/malware.png" alt="Malware & Ransomware">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Malware & Ransomware
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Malware & Ransomware -->
+
+                  <!-- Account Takeover Protection -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/new/account-takeover.png" alt="Account Takeover Protection">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Account Takeover Protection
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Account Takeover Protection -->
+
+                  <!-- DLP & Compliance -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/new/dlp.png" alt="DLP & Compliance">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            DLP & Compliance
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End DLP & Compliance -->
+
+                  <!-- CASB/Shadow IT -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/new/casb.png" alt="CASB/Shadow IT">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            CASB/Shadow IT
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End CASB/Shadow IT -->
+
+                  <!-- SIEM Integration -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/new/siem.png" alt="SIEM Integration">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            SIEM Integration
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End SIEM Integration -->
+
+                  <!-- View All -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <button class="btn btn-sm btn-primary btn-block lift">View All</button>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End View All -->
+                </ul>
+                <!-- END SECURITY SUBMENU -->
+              </li>
+              <!-- END SECURITY -->
+
+
+              <!-- HOW IT WORKS -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="#!">How it Works</a>
+              </li>
+              <!-- END HOW IT WORKS -->
+
+
+              <!-- RESOURCES -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="resourcesMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+
+                <!-- RESOURCES SUBMENU -->
+                <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="resourcesMenu" style="min-width: 205px;">
+                  <!-- Blog -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/blog-dualtone.png" alt="Blog">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Blog
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Blog -->
+                  
+                  <!-- Comics -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/comics-dualtone.png" alt="Comics">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Comics
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Comics -->
+
+                  <!-- Case Studies -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/case-study-dualtone.png" alt="Case Studies">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Case Studies
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Case Studies -->
+                  
+                  <!-- Webinars -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/webinar-dualtone.png" alt="Webinars">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Webinars
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Webinars -->
+
+                  <!-- White Papers -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/white-paper-dualtone.png" alt="White Papers">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            White Papers
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End White Papers -->
+                  
+                  <!-- Videos -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/videos-dualtone.png" alt="Videos">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Videos
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Videos -->
+
+                  <!-- View All -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <button class="btn btn-sm btn-primary btn-block lift">View All</button>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End View All -->
+                </ul>
+                <!-- END RESOURCES SUBMENU -->
+              </li>
+              <!-- END RESOURCES -->
+
+
+              <!-- COMPANY -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="companyMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="companySubMenu">Company</a>
+
+                <!-- COMPANY SUBMENU -->
+                <ul id="companySubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="companyMenu" style="min-width: 260px;">
+                  <!-- About Us -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/about-us-dualtone.png" alt="About Us">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            About Us
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End About Us -->
+                  
+                  <!-- Partnerships -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/partners-dualtone.png" alt="Partnerships">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Partnerships
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Partnerships -->
+
+                  <!-- Management Team -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/mgmt-team-dualtone.png" alt="Management Team">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Management Team
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Management Team -->
+
+                  <!-- Board of Directors -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/board-dualtone.png" alt="Board of Directors">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Board of Directors
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Board of Directors -->
+
+                  <!-- Contact Us -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="#!">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/contact-us-dualtone.png" alt="Contact Us">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Contact Us
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Contact Us -->
+                </ul>
+                <!-- END COMPANY SUBMENU -->
+              </li>
+              <!-- END COMPANY -->
+
+
+              <!-- Nav CTA Button -->
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-danger transition-3d-hover" href="#!">
+                  Request Demo
+                </a>
+              </li>
+              <!-- End Nav CTA Button -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Main Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+
+
+  <!-- Shopping Cart Modal Window -->
+  <div id="supportModal" class="js-modal-window u-modal-window" style="width: 370px;">
+    <div class="card">
+      <!-- Header -->
+      <header class="card-header bg-light py-3 px-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="h6 mb-0">Avanan Support</h3>
+
+          <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="card-body text-center p-5">
+        <!-- Card -->
+        <div class="card card-frame mb-2">
+          <div class="card-body">
+            <div class="media d-block d-sm-flex justify-content-sm-between align-items-sm-center">
+              <div class="u-avatar mr-3">
+                <img class="img-fluid mb-2 mb-sm-0" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/documentation-dualtone.png" alt="Documentation">
+              </div>
+              <div class="media-body mb-2 mb-sm-0">
+                <h4 class="h6 mb-0">Documentation</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div class="card card-frame mb-2">
+          <div class="card-body">
+            <div class="media d-block d-sm-flex justify-content-sm-between align-items-sm-center">
+              <div class="u-avatar mr-3">
+                <img class="img-fluid mb-2 mb-sm-0" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/call-dualtone.png" alt="Call Us">
+              </div>
+              <div class="media-body mb-2 mb-sm-0">
+                <h4 class="h6 mb-0">Call Us</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div class="card card-frame mb-2">
+          <div class="card-body">
+            <div class="media d-block d-sm-flex justify-content-sm-between align-items-sm-center">
+              <div class="u-avatar mr-3">
+                <img class="img-fluid mb-2 mb-sm-0" src="https://www.avanan.com/hubfs/Website/website/jacob_redesign/any-saas/transparent/tiny/live-chat-dualtone.png" alt="Live Chat">
+              </div>
+              <div class="media-body mb-2 mb-sm-0">
+                <h4 class="h6 mb-0">Live Chat</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+      <!-- End Body -->
+
+    </div>
+  </div>
+  <!-- End Shopping Cart Modal Window -->
+
+
+    
+
+
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <main id="content" role="main">
+    <div id="spacer-div"></div>
+    <!-- Hero Section -->
+    <section class="position-relative py-8 py-md-11 mb-9 mt-10">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-1 svg-shim">
+        <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M703.969 241.602L703.963 241.599C716.081 262.97 723 287.677 723 314C723 382.917 675.575 440.757 611.58 456.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569C81.2603 569 0 487.74 0 387.5C0 353.244 9.49023 321.204 25.985 293.867L25.9688 293.875L141.512 77.5476C162.753 33.3052 207.123 2.2726 258.951 0.119583L258.959 0H264.719H390.999H508.5H509.999L510.002 0.00999319C551.85 0.567328 588.083 24.388 606.358 59.1292L606.359 59.125L703.969 241.602Z" fill="#e4eff5"/>
+        </svg>
+
+      </div>
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 order-lg-2">
+            
+            <!-- Image -->
+            <div class="img-skewed img-skewed-left mb-10 mb-md-0">
+              <img id="hero-img" src="assets/img/Dashboard-Homepage-5.png" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
+            </div>
+
+          </div>
+
+          <div id="hero-copy" class="col-12 col-lg-6 order-md-1" data-aos="fade-up">
+            <!-- Heading -->
+            <h1 class="display-4 font-size-md-down-5 mb-4">Reinventing Email Security.</h1>
+            <p>
+                Avanan is the best way to protect enterprise collaboration <span id="hero-brk">suites from
+                <span class="text-primary">
+                  <strong class="u-text-animation u-text-animation--typing"></strong><span class="typed-cursor"></span>
+                </span>
+              </span>
+              <br>
+            </p>
+
+            <div class="d-flex align-items-center flex-wrap">
+              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="#!">See Why</a>
+
+              <!-- Fancybox -->
+              <a id="how-it-works-btn" class="js-fancybox media align-items-center u-media-player mb-4" href="javascript:;"
+                 data-src="//vimeo.com/167434033"
+                 data-speed="700"
+                 data-animate-in="zoomIn"
+                 data-animate-out="zoomOut"
+                 data-caption="Front - Responsive Website Template">
+                <span class="u-media-player__icon u-media-player__icon--primary mr-3">
+                  <span class="fas fa-play u-media-player__icon-inner"></span>
+                </span>
+                <span class="media-body">
+                  How Avanan Works
+                </span>
+              </a>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+    <!-- End Hero Section -->
+
+
+    <section id="daily-data">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3>Today We've...</h3>
+            <br>
+          </div>
+          
+          <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
+            <h4 class="h6">Scanned</h4>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="23764345" data-aos data-aos-id="countup:in">0</div>
+            <h4 class="h6">Emails</h4>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
+            <h4 class="h6">Blocked</h4>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="84152" data-aos data-aos-id="countup:in">0</div>
+            <h4 class="h6">Phishing Attacks</h4>
+          </div>
+
+          <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
+            <h4 class="h6">Stopped</h4>
+            <div class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
+            <h4 class="h6">Malicous Files</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- SHAPE
+    ================================================== -->
+    <div style="margin-top: 225px;" class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0C720 240 0 240 0 240H1440V0Z" fill="currentColor"/>
+        </svg>
+
+      </div>
+    </div>
+
+    <!-- Icon Blocks Section -->
+    <div class="space-top-3 space-bottom-md-3 space-bottom-2 bg-white">
+      <div class="container">
+        <div class="row">
+          <div id="cna" class="col-md-4 mb-7">
+            <div class="text-center px-lg-3">
+              <span class="btn btn-icon btn-lg btn-soft-twitter rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500">
+                <span class="fas fa-cloud fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              </span>
+              <h3 class="h5">Cloud-Native Architecture</h3>
+            </div>
+          </div>
+
+          <div id="fsp" class="col-md-4 mb-7">
+            <div class="text-center px-lg-3">
+              <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
+                <span class="fas fa-layer-group fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              </span>
+              <h3 class="h5">Full Suite Protection</h3>
+            </div>
+          </div>
+
+          <div id="oaip" class="col-md-4 mb-7">
+            <div class="text-center px-lg-3">
+              <span class="btn btn-icon btn-lg btn-soft-indigo rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
+                <span class="fas fa-brain fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+              </span>
+              <h3 class="h5">Open AI Platform</h3>
+            </div>
+          </div>
+        </div>
+
+        <img class="img-fluid d-none d-md-block w-75 mx-auto mb-7" src="assets/svg/components/pointer-1.svg" alt="SVG Arrow">
+
+        <!-- Title -->
+        <div class="w-md-60 w-lg-55 text-center mx-auto mb-7">
+          <h4 class="h5">
+            Avanan catches attacks that default and advanced security tools miss, while adding an invisible layer of security.
+          </h4>
+          <a href="#!" class="btn btn-wide btn-primary mt-3 transition-3d-hover">Learn How</a>
+        </div>
+        <!-- End Title -->
+
+        <!-- Mockup Browser -->
+        <div class="u-browser-v1 mx-auto mb-4">
+          <!-- Mockup Browser -->
+          <img id="mockup-laptop" src="assets/img/laptop-mockup-2.png">
+          <!-- End Mockup Browser -->
+        </div>
+        <!-- End Mockup Browser -->
+
+        <!-- Clients Section -->
+        <div id="client-block" class="container">
+          <!-- <div class="container"> -->
+          <div class="row align-items-lg-center">
+            <div class="col-md-7 col-lg-8 mb-5 mb-md-0">
+              <!-- Clients Section -->
+              <div class="row justify-content-center border-top space-top-2">
+                <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+                  <div class="mx-2">
+                    <img class="u-clients" src="assets/svg/clients-logo/slack.svg" alt="Image Description">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+                  <div class="mx-2">
+                    <img class="u-clients" src="assets/svg/clients-logo/google.svg" alt="Image Description">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+                  <div class="mx-2">
+                    <img class="u-clients" src="assets/svg/clients-logo/spotify.svg" alt="Image Description">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+                  <div class="mx-2">
+                    <img class="u-clients" src="assets/svg/clients-logo/airbnb.svg" alt="Image Description">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+                  <div class="mx-2">
+                    <img class="u-clients" src="assets/svg/clients-logo/shopify.svg" alt="Image Description">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+                  <div class="mx-2">
+                    <img class="u-clients" src="assets/svg/clients-logo/netflix.svg" alt="Image Description">
+                  </div>
+                </div>
+              </div>
+              <!-- End Clients Section -->
+            </div>
+
+            <div class="col-md-5 col-lg-4">
+              <div class="pl-md-4">
+                <span class="d-block display-3 text-primary font-weight-medium text-lh-sm">99.9%</span>
+                <!-- <p>Believe basic computer skills are all you need to plan projects with Front Pay.</p> -->
+                <p>of Phishing attacks are prevented for our clients. See what we can do for you.</p>
+              </div>
+            </div>
+          <!-- </div> -->
+          </div>
+        </div>
+        <!-- End Clients Section -->
+
+      </div>
+    </div>
+    <!-- End Icon Blocks Section -->
+
+    
+
+
+    <!-- SAAS Section -->
+    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white" data-options='{direction: "reverse"}'>
+      <div class="dzsparallaxer--target">
+        <div class="container-fluid px-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/google-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-3 mb-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"5", mid:"0", final:"-5"}]'>
+              <!-- Logo -->
+              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/office-365-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/new_slack_logo.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-3 mb-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
+              <!-- Logo -->
+              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4">
+                <img style="width: 80%; margin-left: 3px;" class="img-fluid" src="assets/img/saas/sharefile-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
+              <!-- Logo -->
+              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
+                <img class="img-fluid" src="assets/img/saas/onedrive-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3 offset-1 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
+                <img class="img-fluid" src="assets/img/saas/office-365-email-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-3 offset-2 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
+              <!-- Logo -->
+              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
+                <img class="img-fluid" src="assets/img/saas/gmail-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
+              <!-- Logo -->
+              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/dropbox-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-4 mt-6" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"5", mid:"0", final:"-5"}]'>
+              <!-- Logo -->
+              <div class="d-none d-sm-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img style="margin-top: 8px;" class="img-fluid" src="assets/img/saas/box-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+            <div class="col-4 mt-6" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
+              <!-- Logo -->
+              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
+                <img class="img-fluid" src="assets/img/saas/google-drive-transparent-72.png" alt="Image Description">
+              </div>
+              <!-- End Logo -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container space-3 space-sm-4">
+        <!-- Title -->
+        <div class="w-md-80 w-lg-50 text-center mx-md-auto">
+          <h2 class="h1 font-weight-medium mb-5">See what we Protect</h2>
+          <a class="btn btn-primary btn-pill btn-wide transition-3d-hover" href="./saas.html">View SaaS</a>
+        </div>
+        <!-- End Title -->
+      </div>
+    </div>
+    <!-- SAAS section -->
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- CTA Section -->
+  <div class="bg-primary text-white text-center">
+    <div class="container space-1">
+      <span class="h6 d-block d-lg-inline-block font-weight-light mb-lg-0">
+        <span class="font-weight-semi-bold">14-Day Free Trial</span> – Get 100% visibility into your cloud right now.
+      </span> &nbsp;
+      <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-3" href="#!">Start Enterprise Trial</a>
+    </div>
+  </div>
+  <!-- End CTA Section -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container space-top-2">
+      <div class="row justify-content-lg-between mb-4">
+        <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
+          <h4 class="h6 text-white">About</h4>
+
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="#!">About Us</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Careers</a></li>
+          </ul>
+          <!-- End List Group -->
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
+          <h4 class="h6 text-white">Explore</h4>
+
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="#!">Platform</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">How it Works</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">View Pricing</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Get a Demo</a></li>
+          </ul>
+          <!-- End List Group -->
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
+          <h4 class="h6 text-white">Contacts</h4>
+
+          <!-- Address -->
+          <address class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <a class="list-group-item list-group-item-action" href="#!">+1 (888) 109-9222</a>
+            <a class="list-group-item list-group-item-action" href="#!">support@avanan.com</a>
+            <a class="list-group-item list-group-item-action" href="#!">253 West 30th Street, New York, NY 10001</a>
+          </address>
+          <!-- End Address -->
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-3 col-lg-3">
+          <div class="mb-4">
+            <h4 class="h6 text-white mb-3">Subscribe</h4>
+
+            <!-- Subscribe Form -->
+            <form class="js-validate js-form-message">
+              <label class="sr-only" for="subscribeSrEmailExample2">Your email</label>
+              <div class="input-group">
+                <input type="email" class="form-control" name="email" id="subscribeSrEmailExample2" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButtonExample2" required
+                       data-msg="Please enter a valid email address.">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit" id="subscribeButtonExample2">
+                    <span class="fas fa-paper-plane"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- End Subscribe Form -->
+          </div>
+
+          <h4 class="h6 text-white-70 mb-3">Stay in touch</h4>
+
+          <!-- Social Networks -->
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-facebook-f btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-linkedin-in btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-twitter btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-youtube btn-icon__inner"></span>
+              </a>
+            </li>
+          </ul>
+          <!-- End Social Networks -->
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center space-1">
+        <div class="col-5">
+          <!-- Logo -->
+          <img style="max-width: 100px; height: auto; opacity: 1;" src="https://www.avanan.com/hubfs/Images/Logos/avanan-logo-white-teal.png">
+          </a>
+          <!-- End Logo -->
+        </div>
+
+        <div class="col-6 text-right">
+          <p class="small mb-0">
+            © Copyright
+             <!-- YEAR SCRIPT -->
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script> 
+            <!-- END YEAR SCRIPT -->
+            Avanan. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Account Sidebar Navigation -->
+  <aside id="sidebarContent" class="u-sidebar" aria-labelledby="sidebarNavToggler">
+    <div class="u-sidebar__scroller">
+      <div class="u-sidebar__container">
+        <div class="u-header-sidebar__footer-offset">
+          <!-- Toggle Button -->
+          <div class="d-flex align-items-center pt-4 px-7">
+            <button type="button" class="close ml-auto"
+                    aria-controls="sidebarContent"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-unfold-event="click"
+                    data-unfold-hide-on-scroll="false"
+                    data-unfold-target="#sidebarContent"
+                    data-unfold-type="css-animation"
+                    data-unfold-animation-in="fadeInRight"
+                    data-unfold-animation-out="fadeOutRight"
+                    data-unfold-duration="500">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- End Toggle Button -->
+
+          <!-- Content -->
+          <div class="js-scrollbar u-sidebar__body">
+            <div class="u-sidebar__content u-header-sidebar__content">
+              <form class="js-validate">
+                <!-- Login -->
+                <div id="login" data-target-group="idForm">
+                  <!-- Title -->
+                  <header class="text-center mb-7">
+                    <h2 class="h4 mb-0">Welcome Back!</h2>
+                    <p>Login to manage your account.</p>
+                  </header>
+                  <!-- End Title -->
+
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <div class="js-form-message js-focus-state">
+                      <label class="sr-only" for="signinEmail">Email</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="signinEmailLabel">
+                            <span class="fas fa-user"></span>
+                          </span>
+                        </div>
+                        <input type="email" class="form-control" name="email" id="signinEmail" placeholder="Email" aria-label="Email" aria-describedby="signinEmailLabel" required
+                               data-msg="Please enter a valid email address."
+                               data-error-class="u-has-error"
+                               data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <div class="js-form-message js-focus-state">
+                      <label class="sr-only" for="signinPassword">Password</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="signinPasswordLabel">
+                            <span class="fas fa-lock"></span>
+                          </span>
+                        </div>
+                        <input type="password" class="form-control" name="password" id="signinPassword" placeholder="Password" aria-label="Password" aria-describedby="signinPasswordLabel" required
+                               data-msg="Your password is invalid. Please try again."
+                               data-error-class="u-has-error"
+                               data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <div class="d-flex justify-content-end mb-4">
+                    <a class="js-animation-link small link-muted" href="javascript:;"
+                       data-target="#forgotPassword"
+                       data-link-group="idForm"
+                       data-animation-in="slideInUp">Forgot Password?</a>
+                  </div>
+
+                  <div class="mb-2">
+                    <button type="submit" class="btn btn-block btn-sm btn-primary transition-3d-hover">Login</button>
+                  </div>
+
+                  <div class="text-center">
+                    <span class="u-divider u-divider--xs u-divider--text mb-4">OR</span>
+                  </div>
+
+                  <!-- Login Buttons -->
+                  <div class="d-flex">
+                    <a class="btn btn-block btn-sm btn-soft-facebook transition-3d-hover mr-1" href="#">
+                      <span class="fab fa-facebook-square mr-1"></span>
+                      Facebook
+                    </a>
+                    <a class="btn btn-block btn-sm btn-soft-google transition-3d-hover ml-1 mt-0" href="#">
+                      <span class="fab fa-google mr-1"></span>
+                      Google
+                    </a>
+                  </div>
+                  <!-- End Login Buttons -->
+                </div>
+
+                <!-- Forgot Password -->
+                <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
+                  <!-- Title -->
+                  <header class="text-center mb-7">
+                    <h2 class="h4 mb-0">Recover Password.</h2>
+                    <p>Enter your email address and an email with instructions will be sent to you.</p>
+                  </header>
+                  <!-- End Title -->
+
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <div class="js-form-message js-focus-state">
+                      <label class="sr-only" for="recoverEmail">Your email</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="recoverEmailLabel">
+                            <span class="fas fa-user"></span>
+                          </span>
+                        </div>
+                        <input type="email" class="form-control" name="email" id="recoverEmail" placeholder="Your email" aria-label="Your email" aria-describedby="recoverEmailLabel" required
+                               data-msg="Please enter a valid email address."
+                               data-error-class="u-has-error"
+                               data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <div class="mb-2">
+                    <button type="submit" class="btn btn-block btn-sm btn-primary transition-3d-hover">Recover Password</button>
+                  </div>
+
+                  <div class="text-center mb-4">
+                    <span class="small text-muted">Remember your password?</span>
+                    <a class="js-animation-link small" href="javascript:;"
+                       data-target="#login"
+                       data-link-group="idForm"
+                       data-animation-in="slideInUp">Login
+                    </a>
+                  </div>
+                </div>
+                <!-- End Forgot Password -->
+              </form>
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+
+        <!-- Footer -->
+        <footer id="SVGwaveWithDots" class="svg-preloader u-sidebar__footer u-sidebar__footer--account">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item pr-3">
+              <a class="u-sidebar__footer--account__text" href="#!">Privacy</a>
+            </li>
+            <li class="list-inline-item pr-3">
+              <a class="u-sidebar__footer--account__text" href="#!">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="u-sidebar__footer--account__text" href="#!">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- SVG Background Shape -->
+          <div class="position-absolute right-0 bottom-0 left-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 126.5" style="margin-bottom: -5px; enable-background:new 0 0 300 126.5;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwaveWithDots">
+            <style type="text/css">
+              .wave-bottom-with-dots-0{fill:#377DFF;}
+              .wave-bottom-with-dots-1{fill:#377DFF;}
+              .wave-bottom-with-dots-2{fill:#DE4437;}
+              .wave-bottom-with-dots-3{fill:#00C9A7;}
+              .wave-bottom-with-dots-4{fill:#FFC107;}
+            </style>
+            <path class="wave-bottom-with-dots-0 fill-primary" opacity=".6" d="M0,58.9c0-0.9,5.1-2,5.8-2.2c6-0.8,11.8,2.2,17.2,4.6c4.5,2.1,8.6,5.3,13.3,7.1C48.2,73.3,61,73.8,73,69  c43-16.9,40-7.9,84-2.2c44,5.7,83-31.5,143-10.1v69.8H0C0,126.5,0,59,0,58.9z"></path>
+            <path class="wave-bottom-with-dots-1 fill-primary" d="M300,68.5v58H0v-58c0,0,43-16.7,82,5.6c12.4,7.1,26.5,9.6,40.2,5.9c7.5-2.1,14.5-6.1,20.9-11  c6.2-4.7,12-10.4,18.8-13.8c7.3-3.8,15.6-5.2,23.6-5.2c16.1,0.1,30.7,8.2,45,16.1c13.4,7.4,28.1,12.2,43.3,11.2  C282.5,76.7,292.7,74.4,300,68.5z"></path>
+            <g>
+              <circle class="wave-bottom-with-dots-2 fill-danger" cx="259.5" cy="17" r="13"></circle>
+              <circle class="wave-bottom-with-dots-1 fill-primary" cx="290" cy="35.5" r="8.5"></circle>
+              <circle class="wave-bottom-with-dots-3 fill-success" cx="288" cy="5.5" r="5.5"></circle>
+              <circle class="wave-bottom-with-dots-4 fill-warning" cx="232.5" cy="34" r="2"></circle>
+            </g>
+            </svg>
+          </div>
+          <!-- End SVG Background Shape -->
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </aside>
+  <!-- End Account Sidebar Navigation -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- ADDED BY ME (ANIMATION) -->
+  <script src="assets/libs/aos/dist/aos.js"></script>
+  <script src="assets/js/theme2.min.js"></script>
+  <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="assets/vendor/appear.js"></script>
+  <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="assets/js/hs.core.js"></script>
+  <script src="assets/js/components/hs.header.js"></script>
+  <script src="assets/js/components/hs.unfold.js"></script>
+  <script src="assets/js/components/hs.focus-state.js"></script>
+  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="assets/js/components/hs.validation.js"></script>
+  <script src="assets/js/components/hs.fancybox.js"></script>
+  <script src="assets/js/components/hs.slick-carousel.js"></script>
+  <script src="assets/js/components/hs.show-animation.js"></script>
+  <script src="assets/js/components/hs.svg-injector.js"></script>
+  <script src="assets/js/components/hs.go-to.js"></script>
+  <script src="assets/js/components/hs.scroll-nav.js"></script>
+  <script src="assets/js/components/hs.onscroll-animation.js"></script>
+
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <script src="assets/js/components/hs.modal-window.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+        autonomous: true
+      });
+    });
+    
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["phishing.", "data loss.", "account takeover.", "malware."],
+        typeSpeed: 60,
+        loop: true,
+        backSpeed: 25,
+        backDelay: 1500
+      });
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+</html>
