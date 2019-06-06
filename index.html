@@ -896,7 +896,7 @@
         <div class="row">
           <div id="cna" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span style="box-shadow: #569bbe 0px 0px 20px;" class="btn btn-icon btn-lg btn-soft-twitter rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500">
+              <span id="scanning" style="box-shadow: #569bbe 0px 0px 20px;" class="btn btn-icon btn-lg btn-soft-twitter rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500">
                 <img style="width: 75px; height: auto;" src="assets/img/bypass.png">
                 <!-- <span class="fas fa-cloud fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span> -->
               </span>
@@ -930,10 +930,12 @@
         
 
         <!-- Mockup Browser -->
-        <div class="u-browser-v1 mx-auto mb-4">
+        <div id="mockup-browser" class="u-browser-v1 mx-auto mb-4">
           <!-- Mockup Browser -->
-          <img id="mockup-laptop" src="assets/img/laptop-mockup-light-dash.png">
+          <!-- <img id="mockup-laptop" src="assets/img/laptop-mockup-light-dash.png"> -->
           <!-- End Mockup Browser -->
+          <img class="img-transform" id="o365-phish-panel" src="assets/img/Office-365-Phishing-Panel.png">
+          <img class="img-transform" id="o365-phish-info" src="assets/img/Office-365-Phishing-Info.png">
         </div>
         <!-- End Mockup Browser -->
 
@@ -1545,6 +1547,13 @@
     });
     
     $(document).on('ready', function () {
+
+      // Mockup windows
+      $("#scanning").click(function() {
+        $('.img-transform').toggleClass('img-transform-active');
+        $('.img-transform-2').toggleClass('img-transform-active-2');
+      });
+
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
 

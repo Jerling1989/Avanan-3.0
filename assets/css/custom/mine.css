@@ -222,8 +222,65 @@
   }
 }
 
+#scanning:hover {
+  cursor: pointer;
+}
+
+#o365-phish-panel {
+  height: 1px;
+  width: auto;
+  margin-left: 445px;
+  margin-top: 130px;
+  opacity: 0;
+  position: absolute;
+}
+
+#o365-phish-info {
+  height: 1px;
+  width: auto;
+  margin-left: 425px;
+  margin-top: 380px;
+  opacity: 0;
+  position: absolute;
+}
+
+.img-transform {
+  -webkit-transition: all .5s ease;  
+  -moz-transition: all .5s ease;  
+  -o-transition: all .5s ease;  
+  -ms-transition: all .5s ease;  
+  transition: all .5s ease;
+}
+
+.img-transform-active {
+  transform: scale(225, 200);
+  opacity: 1 !important;
+}
+
+.img-transform-2 {
+  -webkit-transition: all .5s ease;  
+  -moz-transition: all .5s ease;  
+  -o-transition: all .5s ease;  
+  -ms-transition: all .5s ease;  
+  transition: all .5s ease;
+}
+
+.img-transform-active-2 {
+  transform: scale(100);
+  opacity: 1 !important;
+}
+
 #mockup-laptop {
   width: 100%;
+}
+
+#mockup-browser {
+  background-image: url("../../img/laptop-mockup-light-dash.png");
+  height: 615px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /** {
