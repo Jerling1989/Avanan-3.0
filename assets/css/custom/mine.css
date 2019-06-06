@@ -224,6 +224,16 @@
 
 #scanning:hover {
   cursor: pointer;
+  box-shadow: #569bbe 0px 0px 40px;
+}
+
+#scanning:active,
+#scanning:focus {
+  box-shadow: #569bbe 0px 0px 20px !important;
+}
+
+.teal-shadow {
+  box-shadow: #569bbe 0px 0px 20px;
 }
 
 #o365-phish-panel {
@@ -238,8 +248,8 @@
 #o365-phish-info {
   height: 1px;
   width: auto;
-  margin-left: 425px;
-  margin-top: 380px;
+  margin-left: 385px;
+  margin-top: 310px;
   opacity: 0;
   position: absolute;
 }
@@ -253,7 +263,7 @@
 }
 
 .img-transform-active {
-  transform: scale(225, 200);
+  transform: scale(265, 220);
   opacity: 1 !important;
 }
 
@@ -266,7 +276,7 @@
 }
 
 .img-transform-active-2 {
-  transform: scale(100);
+  transform: scale(180);
   opacity: 1 !important;
 }
 
