@@ -16600,12 +16600,22 @@ label.btn {
 /*------------------------------------
   Indicator Steps
 ------------------------------------*/
-.u-indicator-steps {
+.u-indicator-steps-right {
   position: relative;
   padding-left: 2.5rem;
 }
 
-.u-indicator-steps::before {
+.u-indicator-steps-right:first-child::after {
+  height: 50%;
+  top: auto;
+}
+
+.u-indicator-steps-right:last-child::after {
+  height: 50%;
+  bottom: auto;
+}
+
+.u-indicator-steps-right::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -16618,7 +16628,7 @@ label.btn {
   content: "";
 }
 
-.u-indicator-steps::after {
+.u-indicator-steps-right::after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -16631,14 +16641,45 @@ label.btn {
   content: "";
 }
 
-.u-indicator-steps:first-child::after {
+.u-indicator-steps-left {
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.u-indicator-steps-left:first-child::after {
   height: 50%;
   top: auto;
 }
 
-.u-indicator-steps:last-child::after {
+.u-indicator-steps-left:last-child::after {
   height: 50%;
   bottom: auto;
+}
+
+.u-indicator-steps-left::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -.25rem;
+  width: 2rem;
+  height: .0625rem;
+  border-top: 1px solid #e7eaf3;
+  margin: auto 0 auto auto;
+  content: "";
+}
+
+.u-indicator-steps-left::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -.3125rem;
+  width: .0625rem;
+  height: 100%;
+  border-left: 1px solid #e7eaf3;
+  margin: auto 0 auto auto;
+  content: "";
 }
 
 .u-indicator-steps__inner {
