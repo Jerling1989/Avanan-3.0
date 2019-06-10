@@ -105,7 +105,7 @@
         margin-top: 0px;
       }
 
-      #how-it-works > h6, #how-it-works p {
+      #how-it-works > h6, #how-it-works > p {
         font-size: 1rem;
       }
 
@@ -115,13 +115,29 @@
       }
 
       #full-suite {
-        margin-bottom: -4rem;
+        margin-bottom: -2.25rem;
         text-align: left;
       }
 
       #layered-security {
         margin-bottom: 1.6rem;
         text-align: right;
+      }
+
+      #intel-scan-img {
+        max-width: 150% !important;
+        height: auto;
+      }
+
+      #full-suite-img {
+        max-width: 150%;
+        height: auto;
+        margin-left: -198px;
+      }
+
+      #layered-img {
+        max-width: 150% !important;
+        height: auto;
       }
     }
 
@@ -914,7 +930,7 @@
                 <h2>Intelligent Scanning</h2>
               </div>
               <!-- SVG Icon -->
-              <img style="max-width: 150%; height: auto;" src="assets/img/intelligent-scanning.png" alt="Image Description">
+              <img id="intel-scan-img" src="assets/img/intelligent-scanning.png" alt="Intelligent Scanning">
               <!-- End SVG Icon -->
             </div>
           </div>
@@ -966,7 +982,7 @@
                 <h2>Full-Suite Protection</h2>
               </div>
               <!-- SVG Icon -->
-              <img style="max-width: 150%; height: auto; margin-left: -200px;" src="assets/img/full-suite-protection.png" alt="Image Description">
+              <img id="full-suite-img" src="assets/img/full-suite-protection.png" alt="Image Description">
               <!-- End SVG Icon -->
             </div>
           </div>
@@ -988,8 +1004,8 @@
               <li class="u-indicator-steps-right py-3">
                 <div class="media align-items-center border rounded p-5">
                   <div class="media-body">
-                    <h6>Universal Policies</h6>
-                    <p class="mb-0">Avanan maps the user, file, and permission conditions of each cloud, enabling meaningful policy control across different SaaS.</p>
+                    <h6>Universal Policy Control</h6>
+                    <p class="mb-0">Avanan maps the user, file, and permission conditions of each cloud into a single threat management interface. This enables universal policy control across different SaaS applications. </p>
                   </div>
                 </div>
               </li>
@@ -999,7 +1015,7 @@
               <li class="u-indicator-steps-right py-3">
                 <div class="media align-items-center border rounded p-5">
                   <div class="media-body">
-                    <h6>Connect instantly and securely</h6>
+                    <h6>Instand and Secure Connection</h6>
                     <p class="mb-0">Connect Avanan to a new SaaS application in seconds using the latest OAuth token-based, TLS-encrypted protocols. Avanan only asks for the minimum level of required access.</p>
                   </div>
                 </div>
@@ -1020,7 +1036,7 @@
                 <h2>Layered Security</h2>
               </div>
               <!-- SVG Icon -->
-              <img style="max-width: 150%; height: auto;" src="assets/img/layered-security.png" alt="Image Description">
+              <img id="layered-img" src="assets/img/layered-security.png" alt="Image Description">
               <!-- End SVG Icon -->
             </div>
           </div>
