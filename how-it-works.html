@@ -89,6 +89,10 @@
       #hero-copy {
         margin-top: 0px;
       }
+
+      #how-it-works > h6, #how-it-works p {
+        font-size: .85rem;
+      }
     }
 
     /* LARGE DESKTOPS */
@@ -100,13 +104,32 @@
       #hero-copy {
         margin-top: 0px;
       }
+
+      #how-it-works > h6, #how-it-works p {
+        font-size: 1rem;
+      }
+
+      #intel-scanning {
+        margin-bottom: 3.2rem;
+        text-align: right;
+      }
+
+      #full-suite {
+        margin-bottom: -4rem;
+        text-align: left;
+      }
+
+      #layered-security {
+        margin-bottom: 1.6rem;
+        text-align: right;
+      }
     }
 
-    /** {
+    * {
       background: #000 !important;
       color: #0f0 !important;
       outline: solid #f00 1px !important;
-    }*/
+    }
   </style>
 
 
@@ -879,7 +902,7 @@
     <!-- HOW-IT-WORKS INFO SECTION -->
     <div class="space-bottom-md-3 space-bottom-2">
       <!-- How It Works Section -->
-      <div class="container">
+      <div id="how-it-works" class="container">
 
 
         <!-- INTELLIGENT SCANNING -->
@@ -887,7 +910,7 @@
           <div class="col-lg-6 order-lg-2" data-aos="fade-left">
 
             <div class="pr-lg-7">
-              <div class="text-right mb-7">
+              <div id="intel-scanning">
                 <h2>Intelligent Scanning</h2>
               </div>
               <!-- SVG Icon -->
@@ -939,7 +962,7 @@
         <div class="row align-items-lg-center mt-10 mb-10">
           <div class="col-lg-6 order-lg-1"  data-aos="fade-right">
             <div class="pr-lg-7">
-              <div class="text-left">
+              <div id="full-suite">
                 <h2>Full-Suite Protection</h2>
               </div>
               <!-- SVG Icon -->
@@ -993,7 +1016,7 @@
         <div class="row align-items-lg-center mt-10">
           <div class="col-lg-6 order-lg-2" data-aos="fade-left">
             <div class="pr-lg-7">
-              <div class="text-right">
+              <div id="layered-security">
                 <h2>Layered Security</h2>
               </div>
               <!-- SVG Icon -->
