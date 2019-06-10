@@ -12670,7 +12670,7 @@ a.text-indigo:hover, a.text-indigo:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .space-xl-0,
   .space-top-xl-0 {
     padding-top: 0 !important;
