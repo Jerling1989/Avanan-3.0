@@ -679,7 +679,7 @@
 
               <!-- Nav CTA Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-danger transition-3d-hover" href="#!">
+                <a class="btn btn-sm btn-danger transition-3d-hover" href="#demoModal" data-modal-target="#demoModal">
                   Request Demo
                 </a>
               </li>
@@ -696,7 +696,7 @@
 
 
 
-  <!-- Shopping Cart Modal Window -->
+  <!-- DOCUMENTATION MODAL -->
   <div id="supportModal" class="js-modal-window u-modal-window" style="width: 370px;">
     <div class="card">
       <!-- Header -->
@@ -762,7 +762,7 @@
 
     </div>
   </div>
-  <!-- End Shopping Cart Modal Window -->
+  <!-- END DOCUMENTATION MODAL -->
 
 
     
@@ -812,7 +812,7 @@
             <p class="mt-4">25% of phishing attacks get through existing security.</p>
             
             <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="#!">See What You're Missing</a>
+              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="#demoModal" data-modal-target="#demoModal">See What You're Missing</a>
 
               <!-- Fancybox -->
               <!-- <a id="how-it-works-btn" class="js-fancybox media align-items-center u-media-player mb-4" href="javascript:;"
@@ -835,6 +835,223 @@
 
     </section>
     <!-- End Hero Section -->
+
+
+
+    <!-- TEMPORARY DEMO MODAL -->
+    <div id="demoModal" class="js-modal-window u-modal-window" style="width: 400px;">
+      <div class="card">
+        <form class="js-validate">
+          <!-- Login -->
+          <div id="login" data-target-group="idForm">
+            <!-- Header -->
+            <header class="card-header bg-light py-3 px-5">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h6 mb-0">Get a Demo</h3>
+
+                <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </header>
+            <!-- End Header -->
+
+            <div class="card-body p-5">
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrEmail">Name</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinEmail">
+                        <span class="fas fa-user"></span>
+                      </span>
+                    </div>
+                    <input type="email" class="form-control" name="email" id="signinSrEmail" placeholder="Email" aria-label="Name" aria-describedby="signinEmail" required
+                           data-msg="Please enter a valid email address."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrPassword">Company</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinPassword">
+                        <span class="fas fa-building"></span>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="signinSrPassword" placeholder="Company" aria-label="Password" aria-describedby="signinPassword" required
+                           data-msg="Your password is invalid. Please try again."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrPassword">Email</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinPassword">
+                        <span class="fas fa-at"></span>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="signinSrPassword" placeholder="Email" aria-label="Password" aria-describedby="signinPassword" required
+                           data-msg="Your password is invalid. Please try again."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrPassword">Phone</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinPassword">
+                        <span class="fas fa-phone"></span>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="signinSrPassword" placeholder="Phone" aria-label="Password" aria-describedby="signinPassword" required
+                           data-msg="Your password is invalid. Please try again."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <div class="mb-2">
+                <button type="submit" class="btn btn-block btn-danger transition-3d-hover">Request Demo</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- END TEMPORARY DEMO MODAL -->
+
+
+
+    <!-- TEMPORARY TRIAL MODAL -->
+    <div id="trialModal" class="js-modal-window u-modal-window" style="width: 400px;">
+      <div class="card">
+        <form class="js-validate">
+          <!-- Login -->
+          <div id="login" data-target-group="idForm">
+            <!-- Header -->
+            <header class="card-header bg-light py-3 px-5">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h6 mb-0">Start a Trial</h3>
+
+                <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </header>
+            <!-- End Header -->
+
+            <div class="card-body p-5">
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrEmail">Name</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinEmail">
+                        <span class="fas fa-user"></span>
+                      </span>
+                    </div>
+                    <input type="email" class="form-control" name="email" id="signinSrEmail" placeholder="Email" aria-label="Name" aria-describedby="signinEmail" required
+                           data-msg="Please enter a valid email address."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrPassword">Company</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinPassword">
+                        <span class="fas fa-building"></span>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="signinSrPassword" placeholder="Company" aria-label="Password" aria-describedby="signinPassword" required
+                           data-msg="Your password is invalid. Please try again."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrPassword">Email</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinPassword">
+                        <span class="fas fa-at"></span>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="signinSrPassword" placeholder="Email" aria-label="Password" aria-describedby="signinPassword" required
+                           data-msg="Your password is invalid. Please try again."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="form-group">
+                <div class="js-form-message js-focus-state">
+                  <label class="sr-only" for="signinSrPassword">Phone</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="signinPassword">
+                        <span class="fas fa-phone"></span>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password" id="signinSrPassword" placeholder="Phone" aria-label="Password" aria-describedby="signinPassword" required
+                           data-msg="Your password is invalid. Please try again."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+              <!-- End Form Group -->
+
+              <div class="mb-2">
+                <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Start Free Trial</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- END TEMPORARY TRIAL MODAL -->
+
 
 
     <section id="daily-data">
@@ -1290,7 +1507,7 @@
       <span class="h6 d-block d-lg-inline-block font-weight-light mb-lg-0">
         <span class="font-weight-semi-bold">14-Day Free Trial</span> – Get 100% visibility into your cloud right now.
       </span> &nbsp;
-      <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-3" href="#!">Start Enterprise Trial</a>
+      <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-3"  href="#trialModal" data-modal-target="#trialModal">Start Enterprise Trial</a>
     </div>
   </div>
   <!-- End CTA Section -->
