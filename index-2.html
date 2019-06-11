@@ -894,16 +894,16 @@
 
 
         <div class="row">
-          <div id="cna" class="col-md-4 mb-7">
+          <div id="cna" class="col-md-4">
             <div class="text-center px-lg-3">
-              <span style="width: 50%; height: auto; margin: 0 auto;" id="scanning" class="btn rounded-circle mb-3 data-animation="bounce" data-animation-duration="1500">
+              <span style="width: 50%; height: auto; margin: 0 auto;" id="scanning" class="btn rounded-circle mb-3 teal-shadow" data-animation="bounce" data-animation-duration="1500">
                 <img style="width: 100%; height: auto; margin: 0 auto;" src="assets/img/bypass.png">
               </span>
               <h3 class="h5">Intelligent Scanning</h3>
             </div>
           </div>
 
-          <div id="fsp" class="col-md-4 mb-7">
+          <div id="fsp" class="col-md-4">
             <div class="text-center px-lg-3">
               <span style="width: 50%; height: auto; margin: 0 auto;" id="full-suite" class="btn btn-icon btn-lg rounded-circle mb-3" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
                 <img style="width: 100%; height: auto margin: 0 auto;" src="assets/img/suite.png">
@@ -912,7 +912,7 @@
             </div>
           </div>
 
-          <div id="oaip" class="col-md-4 mb-7">
+          <div id="oaip" class="col-md-4">
             <div class="text-center px-lg-3">
               <span style="width: 50%; height: auto; margin: 0 auto;" id="layered" class="btn btn-icon btn-lg rounded-circle mb-3" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
                 <img style="width: 100%; height: auto; margin: 0 auto;" src="assets/img/layers.png">
@@ -957,8 +957,8 @@
           <!-- End Mockup Browser -->
 
           <!-- Intelligent Scanning -->
-          <img class="img-transform" id="o365-phish-panel" src="assets/img/Office-365-Phishing-Panel.png">
-          <img class="img-transform-2" id="o365-phish-info" src="assets/img/Office-365-Phishing-Info.png">
+          <img class="img-transform img-transform-active" id="o365-phish-panel" src="assets/img/Office-365-Phishing-Panel.png">
+          <img class="img-transform-2 img-transform-active-2" id="o365-phish-info" src="assets/img/Office-365-Phishing-Info.png">
 
           <!-- Full Suite Protection -->
           <img class="img-transform-3" id="dlp-panel" src="assets/img/dlp-panel.png">
@@ -1584,17 +1584,25 @@
         $('.img-transform').toggleClass('img-transform-active');
         $('.img-transform-2').toggleClass('img-transform-active-2');
         $('#scanning').toggleClass('teal-shadow');
+        $('.img-transform-5').toggleClass('img-transform-active-5');
+        $('#layered').toggleClass('teal-shadow');
       });
 
       $('#full-suite').click(function() {
         $('.img-transform-3').toggleClass('img-transform-active-3');
         $('.img-transform-4').toggleClass('img-transform-active-4');
         $('#full-suite').toggleClass('teal-shadow');
+        $('.img-transform').toggleClass('img-transform-active');
+        $('.img-transform-2').toggleClass('img-transform-active-2');
+        $('#scanning').toggleClass('teal-shadow');
       });
 
       $('#layered').click(function() {
         $('.img-transform-5').toggleClass('img-transform-active-5');
         $('#layered').toggleClass('teal-shadow');
+        $('.img-transform-3').toggleClass('img-transform-active-3');
+        $('.img-transform-4').toggleClass('img-transform-active-4');
+        $('#full-suite').toggleClass('teal-shadow');
       });
 
 
