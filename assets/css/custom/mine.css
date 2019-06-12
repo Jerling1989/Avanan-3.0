@@ -359,6 +359,10 @@
   position: relative;
 }
 
+.hmpg-icons:hover {
+  cursor: pointer !important;
+}
+
 /** {
   background: #000 !important;
   color: #0f0 !important;
