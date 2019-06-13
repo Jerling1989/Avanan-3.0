@@ -1139,8 +1139,14 @@
             <!-- Layered Security -->
             <!-- <img class="mockup-desktop" data-aos="fade-right" id="layered-sec-img" src="assets/img/layered-security-screen-angled-opp.png"> -->
 
-
-            <img class="mockup-desktop mockup-desktop-active" data-aos="fade-right" id="layered-sec-img" src="assets/img/angled-desktop-base.png">
+            <!-- Desktop mockup base -->
+            <img class="mockup-desktop" data-aos="fade-right" src="assets/img/angled-desktop-base.png">
+            <!-- Intelligent Scanning Panels -->
+            <img class="popup-panels popup-panels-active" data-aos="fade-right" id="intel-scan-img" src="assets/img/intelligent-scanning-panels.png">
+            <!-- Full Suite Protection Panels -->
+            <img class="popup-panels" data-aos="fade-right" id="full-suite-img" src="assets/img/full-suite-protection-panels.png">
+            <!-- Layered Security Panels -->
+            <img class="popup-panels" data-aos="fade-right" id="layered-sec-img" src="assets/img/layered-security-panels.png">
           </div>
 
           <!-- Title -->
@@ -1869,27 +1875,27 @@
         $('#intel-scan-icon').addClass('hmpg-icon-active');
         $('#full-suite-icon').removeClass('hmpg-icon-active');
         $('#layered-sec-icon').removeClass('hmpg-icon-active');
-        $('#intel-scan-img').addClass('mockup-desktop-active');
-        $('#full-suite-img').removeClass('mockup-desktop-active');
-        $('#layered-sec-img').removeClass('mockup-desktop-active');
+        $('#intel-scan-img').addClass('popup-panels-active');
+        $('#full-suite-img').removeClass('popup-panels-active');
+        $('#layered-sec-img').removeClass('popup-panels-active');
       });
 
       $('#full-suite-icon').click(function() {
         $('#full-suite-icon').addClass('hmpg-icon-active');
         $('#layered-sec-icon').removeClass('hmpg-icon-active');
         $('#intel-scan-icon').removeClass('hmpg-icon-active');
-        $('#full-suite-img').addClass('mockup-desktop-active');
-        $('#layered-sec-img').removeClass('mockup-desktop-active');
-        $('#intel-scan-img').removeClass('mockup-desktop-active');
+        $('#full-suite-img').addClass('popup-panels-active');
+        $('#layered-sec-img').removeClass('popup-panels-active');
+        $('#intel-scan-img').removeClass('popup-panels-active');
       });
 
       $('#layered-sec-icon').click(function() {
         $('#layered-sec-icon').addClass('hmpg-icon-active');
         $('#intel-scan-icon').removeClass('hmpg-icon-active');
         $('#full-suite-icon').removeClass('hmpg-icon-active');
-        $('#layered-sec-img').addClass('mockup-desktop-active');
-        $('#intel-scan-img').removeClass('mockup-desktop-active');
-        $('#full-suite-img').removeClass('mockup-desktop-active');
+        $('#layered-sec-img').addClass('popup-panels-active');
+        $('#intel-scan-img').removeClass('popup-panels-active');
+        $('#full-suite-img').removeClass('popup-panels-active');
       });
 
       // initialization of header

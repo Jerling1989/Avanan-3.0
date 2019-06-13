@@ -230,7 +230,23 @@
 .mockup-desktop {
   width: 90%;
   margin-top: -30px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.popup-panels {
+  width: 90%;
+  margin-top: -58px;
+  margin-left: 50px;
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup-panels-active {
+  display: block;
 }
 
 .mockup-desktop-active {
