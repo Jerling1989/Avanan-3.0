@@ -249,10 +249,6 @@
   display: block;
 }
 
-.mockup-desktop-active {
-  display: block;
-}
-
 .hmpg-icon:hover {
   cursor: pointer !important;
 }
