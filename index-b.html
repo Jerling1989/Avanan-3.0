@@ -1876,14 +1876,17 @@
         $('#layered-sec-icon').removeClass('hmpg-icon-active');
         $('#intel-scan-icon').removeClass('hmpg-icon-active');
         $('#full-suite-img').addClass('mockup-desktop-active');
-        $('#intel-scan-img').removeClass('mockup-desktop-active');
         $('#layered-sec-img').removeClass('mockup-desktop-active');
+        $('#intel-scan-img').removeClass('mockup-desktop-active');
       });
 
       $('#layered-sec-icon').click(function() {
         $('#layered-sec-icon').addClass('hmpg-icon-active');
         $('#intel-scan-icon').removeClass('hmpg-icon-active');
         $('#full-suite-icon').removeClass('hmpg-icon-active');
+        $('#layered-sec-img').addClass('mockup-desktop-active');
+        $('#intel-scan-img').removeClass('mockup-desktop-active');
+        $('#full-suite-img').removeClass('mockup-desktop-active');
       });
 
       // initialization of header
