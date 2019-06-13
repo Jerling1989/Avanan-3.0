@@ -1103,7 +1103,7 @@
         <div class="row">
           <div id="cna" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span id="icon-one" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3 hmpg-icon hmpg-icon-active" data-animation="bounce" data-animation-duration="1500">
+              <span id="intel-scan-icon" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle hmpg-icon hmpg-icon-active" data-animation="bounce" data-animation-duration="1500">
                 <img style="width: 100%; height: auto; margin: 0 auto;" src="assets/img/bypass-2.png">
               </span>
               <h3 class="h5">Intelligent Scanning</h3>
@@ -1112,7 +1112,7 @@
 
           <div id="fsp" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span id="icon-two" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3 hmpg-icon" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
+              <span id="full-suite-icon" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle  hmpg-icon" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
                 <img style="width: 100%; height: auto margin: 0 auto;" src="assets/img/suite.png">
               </span>
               <h3 class="h5">Full Suite Protection</h3>
@@ -1121,7 +1121,7 @@
 
           <div id="oaip" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span id="icon-three" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3 hmpg-icon" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
+              <span id="layered-sec-icon" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle  hmpg-icon" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
                 <img style="width: 100%; height: auto; margin: 0 auto;" src="assets/img/layers.png">
               </span>
               <h3 class="h5">Layered Security</h3>
@@ -1131,13 +1131,14 @@
 
         
         <div class="row">
-          <!-- Mockup Browser -->
           <div class="col-md-8 text-center">
-            <!-- Mockup Browser -->
-            <img data-aos="fade-right" id="mockup-desktop" src="assets/img/full-suite-protection.png">
-            <!-- End Mockup Browser -->
+            <!-- Intelligent Scanning -->
+            <img class="mockup-desktop mockup-desktop-active" data-aos="fade-right" id="intel-scan-img" src="assets/img/intelligent-detection-screen-angled-opp.png">
+            <!-- Full Suite Protection -->
+            <img class="mockup-desktop" data-aos="fade-right" id="full-suite-img" src="assets/img/full-suite-protection.png">
+            <!-- Layered Security -->
+            <img class="mockup-desktop" data-aos="fade-right" id="layered-sec-img" src="assets/img/layered-security-screen-angled-opp.png">
           </div>
-          <!-- End Mockup Browser -->
 
           <!-- Title -->
           <div class="col-md-4 mt-10 text-left">
@@ -1861,22 +1862,28 @@
     
     $(document).on('ready', function () {
 
-      $('#icon-one').click(function() {
-        $('#icon-one').addClass('hmpg-icon-active');
-        $('#icon-two').removeClass('hmpg-icon-active');
-        $('#icon-three').removeClass('hmpg-icon-active');
+      $('#intel-scan-icon').click(function() {
+        $('#intel-scan-icon').addClass('hmpg-icon-active');
+        $('#full-suite-icon').removeClass('hmpg-icon-active');
+        $('#layered-sec-icon').removeClass('hmpg-icon-active');
+        $('#intel-scan-img').addClass('mockup-desktop-active');
+        $('#full-suite-img').removeClass('mockup-desktop-active');
+        $('#layered-sec-img').removeClass('mockup-desktop-active');
       });
 
-      $('#icon-two').click(function() {
-        $('#icon-two').addClass('hmpg-icon-active');
-        $('#icon-three').removeClass('hmpg-icon-active');
-        $('#icon-one').removeClass('hmpg-icon-active');
+      $('#full-suite-icon').click(function() {
+        $('#full-suite-icon').addClass('hmpg-icon-active');
+        $('#layered-sec-icon').removeClass('hmpg-icon-active');
+        $('#intel-scan-icon').removeClass('hmpg-icon-active');
+        $('#full-suite-img').addClass('mockup-desktop-active');
+        $('#intel-scan-img').removeClass('mockup-desktop-active');
+        $('#layered-sec-img').removeClass('mockup-desktop-active');
       });
 
-      $('#icon-three').click(function() {
-        $('#icon-three').addClass('hmpg-icon-active');
-        $('#icon-one').removeClass('hmpg-icon-active');
-        $('#icon-two').removeClass('hmpg-icon-active');
+      $('#layered-sec-icon').click(function() {
+        $('#layered-sec-icon').addClass('hmpg-icon-active');
+        $('#intel-scan-icon').removeClass('hmpg-icon-active');
+        $('#full-suite-icon').removeClass('hmpg-icon-active');
       });
 
       // initialization of header
