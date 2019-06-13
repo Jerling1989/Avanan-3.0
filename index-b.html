@@ -1100,41 +1100,11 @@
     <div class="space-top-3 space-bottom-1 bg-white">
       <div class="container">
 
-        <!-- <div class="row">
-          <div id="cna" class="col-md-4 mb-7">
-            <div class="text-center px-lg-3">
-              <span class="lift hmpg-icons btn btn-icon btn-lg btn-soft-twitter rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500">
-                <span class="fas fa-brain fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
-              </span>
-              <h3 class="h5">Intelligent Scanning</h3>
-            </div>
-          </div>
-
-          <div id="fsp" class="col-md-4 mb-7">
-            <div class="text-center px-lg-3">
-              <span class="lift hmpg-icons btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
-                <img style="width: 100px; height: auto; margin-top: 37px; margin-left: -8px;" src="assets/img/g-suite-o365-red.png" />
-              </span>
-              <h3 class="h5">Full Suite Protection</h3>
-            </div>
-          </div>
-
-          <div id="oaip" class="col-md-4 mb-7">
-            <div class="text-center px-lg-3">
-              <span class="lift hmpg-icons btn btn-icon btn-lg btn-soft-indigo rounded-circle mb-5" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
-                <span class="fas fa-layer-group fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
-              </span>
-              <h3 class="h5">Layered Security</h3>
-            </div>
-          </div>
-        </div> -->
-
-
         <div class="row">
           <div id="cna" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3" data-animation="bounce" data-animation-duration="1500">
-                <img style="width: 100%; height: auto; margin: 0 auto; box-shadow: #569bbe 8px 8px 8px;" src="assets/img/bypass-2.png">
+              <span id="icon-one" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3 hmpg-icon hmpg-icon-active" data-animation="bounce" data-animation-duration="1500">
+                <img style="width: 100%; height: auto; margin: 0 auto;" src="assets/img/bypass-2.png">
               </span>
               <h3 class="h5">Intelligent Scanning</h3>
             </div>
@@ -1142,7 +1112,7 @@
 
           <div id="fsp" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span style="width: 50%; height: auto; margin: 0 auto;" class="btn btn-icon btn-lg rounded-circle mb-3" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
+              <span id="icon-two" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3 hmpg-icon" data-animation="bounce" data-animation-duration="1500" data-animation-delay="600">
                 <img style="width: 100%; height: auto margin: 0 auto;" src="assets/img/suite.png">
               </span>
               <h3 class="h5">Full Suite Protection</h3>
@@ -1151,7 +1121,7 @@
 
           <div id="oaip" class="col-md-4 mb-7">
             <div class="text-center px-lg-3">
-              <span style="width: 50%; height: auto; margin: 0 auto;" class="btn btn-icon btn-lg rounded-circle mb-3" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
+              <span id="icon-three" style="width: 50%; height: auto; margin: 0 auto;" class="btn rounded-circle mb-3 hmpg-icon" data-animation="bounce" data-animation-duration="1500" data-animation-delay="1200">
                 <img style="width: 100%; height: auto; margin: 0 auto;" src="assets/img/layers.png">
               </span>
               <h3 class="h5">Layered Security</h3>
@@ -1164,7 +1134,7 @@
           <!-- Mockup Browser -->
           <div class="col-md-8 text-center">
             <!-- Mockup Browser -->
-            <img data-aos="fade-right" id="mockup-laptop" src="assets/img/full-suite-protection.png">
+            <img data-aos="fade-right" id="mockup-desktop" src="assets/img/full-suite-protection.png">
             <!-- End Mockup Browser -->
           </div>
           <!-- End Mockup Browser -->
@@ -1890,6 +1860,25 @@
     });
     
     $(document).on('ready', function () {
+
+      $('#icon-one').click(function() {
+        $('#icon-one').addClass('hmpg-icon-active');
+        $('#icon-two').removeClass('hmpg-icon-active');
+        $('#icon-three').removeClass('hmpg-icon-active');
+      });
+
+      $('#icon-two').click(function() {
+        $('#icon-two').addClass('hmpg-icon-active');
+        $('#icon-three').removeClass('hmpg-icon-active');
+        $('#icon-one').removeClass('hmpg-icon-active');
+      });
+
+      $('#icon-three').click(function() {
+        $('#icon-three').addClass('hmpg-icon-active');
+        $('#icon-one').removeClass('hmpg-icon-active');
+        $('#icon-two').removeClass('hmpg-icon-active');
+      });
+
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
 

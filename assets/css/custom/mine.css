@@ -222,146 +222,22 @@
   }
 }
 
-#scanning:hover {
-  cursor: pointer;
-  box-shadow: #569bbe 0px 0px 40px;
-}
-
-#scanning:active,
-#scanning:focus {
-  box-shadow: #569bbe 0px 0px 20px !important;
-}
-
-.teal-shadow {
-  box-shadow: #569bbe 0px 0px 20px;
-}
-
-#o365-phish-panel {
-  height: 1px;
-  width: auto;
-  margin-left: 415px;
-  margin-top: 130px;
-  opacity: 0;
-  position: absolute;
-}
-
-#o365-phish-info {
-  height: 1px;
-  width: auto;
-  margin-left: 385px;
-  margin-top: 310px;
-  opacity: 0;
-  position: absolute;
-}
-
-#saas-panel {
-  height: 1px;
-  width: auto;
-  margin-left: 499px;
-  margin-top: 355px;
-  opacity: 0;
-  position: absolute;
-}
-
-#dlp-panel {
-  height: 1px;
-  width: auto;
-  margin-left: 345px;
-  margin-top: 240px;
-  opacity: 0;
-  position: absolute;
-}
-
-#layered-panel {
-  height: 1px;
-  width: auto;
-  margin-left: 499px;
-  margin-top: 395px;
-  opacity: 0;
-  position: absolute;
-}
-
-.img-transform {
-  -webkit-transition: all .5s ease;  
-  -moz-transition: all .5s ease;  
-  -o-transition: all .5s ease;  
-  -ms-transition: all .5s ease;  
-  transition: all .5s ease;
-}
-
-.img-transform-2 {
-  -webkit-transition: all .5s ease;  
-  -moz-transition: all .5s ease;  
-  -o-transition: all .5s ease;  
-  -ms-transition: all .5s ease;  
-  transition: all .5s ease;
-}
-
-.img-transform-3 {
-  -webkit-transition: all .5s ease;  
-  -moz-transition: all .5s ease;  
-  -o-transition: all .5s ease;  
-  -ms-transition: all .5s ease;  
-  transition: all .5s ease;
-}
-
-.img-transform-4 {
-  -webkit-transition: all .5s ease;  
-  -moz-transition: all .5s ease;  
-  -o-transition: all .5s ease;  
-  -ms-transition: all .5s ease;  
-  transition: all .5s ease;
-}
-
-.img-transform-5 {
-  -webkit-transition: all .5s ease;  
-  -moz-transition: all .5s ease;  
-  -o-transition: all .5s ease;  
-  -ms-transition: all .5s ease;  
-  transition: all .5s ease;
-}
-
-.img-transform-active {
-  transform: scale(265, 220);
-  opacity: 1 !important;
-}
-
-.img-transform-active-2 {
-  transform: scale(180);
-  opacity: 1 !important;
-}
-
-.img-transform-active-3 {
-  transform: scale(150);
-  opacity: 1 !important;
-}
-
-.img-transform-active-4 {
-  transform: scale(150);
-  opacity: 1 !important;
-}
-
-.img-transform-active-5 {
-  transform: scale(150);
-  opacity: 1 !important;
-}
-
 #mockup-laptop {
+  width: 100%;
+  margin-top: 0px;
+}
+
+#mockup-desktop {
   width: 90%;
   margin-top: -30px;
 }
 
-#mockup-browser {
-  background-image: url("../../img/laptop-mockup-light-dash.png");
-  height: 610px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.hmpg-icon:hover {
+  cursor: pointer !important;
 }
 
-.hmpg-icons:hover {
-  cursor: pointer !important;
+.hmpg-icon-active {
+   filter: drop-shadow(0 0 10px #569bbe);
 }
 
 /** {
