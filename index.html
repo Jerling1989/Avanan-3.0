@@ -1875,27 +1875,36 @@
         $('#intel-scan-icon').addClass('hmpg-icon-active');
         $('#full-suite-icon').removeClass('hmpg-icon-active');
         $('#layered-sec-icon').removeClass('hmpg-icon-active');
-        $('#intel-scan-img').addClass('popup-panels-active');
-        $('#full-suite-img').removeClass('popup-panels-active');
-        $('#layered-sec-img').removeClass('popup-panels-active');
+        // $('#intel-scan-img').addClass('popup-panels-active');
+        // $('#full-suite-img').removeClass('popup-panels-active');
+        // $('#layered-sec-img').removeClass('popup-panels-active');
+        $('#intel-scan-img').fadeIn('slow');
+        $('#full-suite-img').fadeOut('slow');
+        $('#layered-sec-img').fadeOut('slow');
       });
 
       $('#full-suite-icon').click(function() {
         $('#full-suite-icon').addClass('hmpg-icon-active');
         $('#layered-sec-icon').removeClass('hmpg-icon-active');
         $('#intel-scan-icon').removeClass('hmpg-icon-active');
-        $('#full-suite-img').addClass('popup-panels-active');
-        $('#layered-sec-img').removeClass('popup-panels-active');
-        $('#intel-scan-img').removeClass('popup-panels-active');
+        // $('#full-suite-img').addClass('popup-panels-active');
+        // $('#layered-sec-img').removeClass('popup-panels-active');
+        // $('#intel-scan-img').removeClass('popup-panels-active');
+        $('#full-suite-img').fadeIn('slow');
+        $('#layered-sec-img').fadeOut('slow');
+        $('#intel-scan-img').fadeOut('slow');
       });
 
       $('#layered-sec-icon').click(function() {
         $('#layered-sec-icon').addClass('hmpg-icon-active');
         $('#intel-scan-icon').removeClass('hmpg-icon-active');
         $('#full-suite-icon').removeClass('hmpg-icon-active');
-        $('#layered-sec-img').addClass('popup-panels-active');
-        $('#intel-scan-img').removeClass('popup-panels-active');
-        $('#full-suite-img').removeClass('popup-panels-active');
+        // $('#layered-sec-img').addClass('popup-panels-active');
+        // $('#intel-scan-img').removeClass('popup-panels-active');
+        // $('#full-suite-img').removeClass('popup-panels-active');
+        $('#layered-sec-img').fadeIn('slow');
+        $('#intel-scan-img').fadeOut('slow');
+        $('#full-suite-img').fadeOut('slow');
       });
 
       // initialization of header
