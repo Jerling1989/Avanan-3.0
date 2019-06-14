@@ -12,7 +12,9 @@ request.onload = function () {
   // console.log(data);
   console.log('Emails Scanned: ' + emails);
   console.log('Phishing: ' + phishing);
-  console.log('Malware: ' + malware);        
+  console.log('Malware: ' + malware);   
+
+  document.getElementById('scannedEmails').setAttribute('data-to', emails);
 }
 // Send request
 request.send()

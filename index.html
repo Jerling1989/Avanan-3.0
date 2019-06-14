@@ -1054,6 +1054,33 @@
 
 
 
+    <script>
+      // Create a request variable and assign a new XMLHttpRequest object to it.
+      var request = new XMLHttpRequest()
+      // Open a new connection, using the GET request on the URL endpoint
+      // request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+      request.open('GET', 'https://u7q76ggsff.execute-api.us-east-1.amazonaws.com/production', true)
+      request.onload = function () {
+        // Begin accessing JSON data here
+        var data = JSON.parse(this.response)
+        var emails = data['Total Emails/Files Scanned by Avanan'];
+        var phishing = data['Phishing Attacks Blocked By Avanan'];
+        var malware = data['Malware Attacks Blocked By Avanan'];
+        // console.log(data);
+        console.log('Emails Scanned: ' + emails);
+        console.log('Phishing: ' + phishing);
+        console.log('Malware: ' + malware);      
+
+        document.getElementById('scannedEmails').setAttribute('data-to', emails);
+        document.getElementById('phishingBlocked').setAttribute('data-to', phishing); 
+        document.getElementById('malwareStopped').setAttribute('data-to', malware); 
+      }
+      // Send request
+      request.send()
+    </script>
+
+
+
     <section id="daily-data">
       <div class="container">
         <div class="row text-center">
@@ -1064,19 +1091,19 @@
           
           <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
             <h4 class="h6">Scanned</h4>
-            <div class="h3" data-toggle="countup" data-from="0" data-to="23764345" data-aos data-aos-id="countup:in">0</div>
+            <div id="scannedEmails" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Emails</h4>
           </div>
 
           <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
             <h4 class="h6">Blocked</h4>
-            <div class="h3" data-toggle="countup" data-from="0" data-to="84152" data-aos data-aos-id="countup:in">0</div>
+            <div id="phishingBlocked" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Phishing Attacks</h4>
           </div>
 
           <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
             <h4 class="h6">Stopped</h4>
-            <div class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
+            <div id="malwareStopped" class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Malicous Files</h4>
           </div>
         </div>
@@ -1848,6 +1875,7 @@
 
   <!-- ADDED BY ME (SUPPORT MODAL) -->
   <script src="assets/js/components/hs.modal-window.js"></script>
+  <!-- <script src="assets/js/api-req.js"></script> -->
 
   <!-- JS Plugins Init. -->
   <script>
