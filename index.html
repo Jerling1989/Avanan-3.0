@@ -1066,7 +1066,7 @@
         var emails = data['Total Emails/Files Scanned by Avanan'];
         var phishing = data['Phishing Attacks Blocked By Avanan'];
         var malware = data['Malware Attacks Blocked By Avanan'];
-        // console.log(data);
+        console.log(data);
         console.log('Emails Scanned: ' + emails);
         console.log('Phishing: ' + phishing);
         console.log('Malware: ' + malware);      
@@ -1085,25 +1085,25 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
-            <h3>Today, Avanan has:</h3>
+            <h3 style="font-weight: 400;">Today, Avanan has:</h3>
             <br>
           </div>
           
           <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
             <h4 class="h6">Scanned</h4>
-            <div id="scannedEmails" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
+            <div style="font-weight: 400;" id="scannedEmails" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Emails</h4>
           </div>
 
           <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
             <h4 class="h6">Blocked</h4>
-            <div id="phishingBlocked" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
+            <div style="font-weight: 400;" id="phishingBlocked" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Phishing Attacks</h4>
           </div>
 
           <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
             <h4 class="h6">Stopped</h4>
-            <div id="malwareStopped" class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
+            <div style="font-weight: 400;" id="malwareStopped" class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
             <h4 class="h6">Malicous Files</h4>
           </div>
         </div>
