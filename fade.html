@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery example: fadeIn(), fadeOut(), and fadeToggle()</title>
+    </head>
+    <body>
+    <div style="height: 150px; text-align: center;">
+        <img style="display: block; margin: 0 auto 30px auto;" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png" alt="hopper">
+    </div>
+    
+    
+    <div style="display: block; text-align: center;">
+    <button id="fade-in">Fade In</button>       
+    <button id="fade-out">Fade Out</button>        
+    <button id="toggle-fading">Toggle Fading</button>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        // Monitors the buttons for a click events, fades <img> in response
+        
+        $('#fade-in').click(function(){
+            $('img').fadeIn('fast');
+        });
+        
+        $('#fade-out').click(function(){
+            $('img').fadeOut(400);
+        });
+        
+        $('#toggle-fading').click(function(){
+            $('img').fadeToggle('slow');
+        });
+    </script>
+    </body>
+</html>
+<!-- Example created by Bryce:
+https://www.khanacademy.org/profile/BryceMCA/ -->
+

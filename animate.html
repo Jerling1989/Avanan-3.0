@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Fade-in / fade-out effects with CSS: `opacity` + CSS-delayed `visibility`</title>
+  <meta charset="UTF-8">
+
+  <style type="text/css">
+    #test {
+      margin: 2em auto;
+    }
+
+    #test > div {
+      overflow: hidden;
+    }
+
+    #test > .visible {
+      visibility: visible;
+      opacity: 1;
+      /* When showing the content we only need to transition the
+         opacity, and everything else should be applied instantly */
+      -webkit-transition: opacity 2s linear;
+      -moz-transition: opacity 2s linear;
+      -o-transition: opacity 2s linear;
+      transition: opacity 2s linear;
+    }
+
+    #test > .hidden {
+      visibility: hidden;
+      opacity: 0;
+      /* When hiding the content we should delay the transition
+         of the visibility value, so that it happens at the end
+         of the opacity transition. Note that even though it works
+         with visibility, the same trick doesn’t work with display,
+         position, or height (barring a fixed height). */
+      -webkit-transition: visibility 0s 2s, opacity 2s linear;
+      -moz-transition: visibility 0s 2s, opacity 2s linear;
+      -o-transition: visibility 0s 2s, opacity 2s linear;
+      transition: visibility 0s 2s, opacity 2s linear;
+    }
+
+    /* Any formatting that results in the content taking up vertical
+       space should be applied to the element’s content, not to
+       the shown/hidden element itself, that that the element can
+       collapse to a 0px height. */
+    #test > div > div {
+      margin-top: 0px;
+      padding: 15px;
+      border: solid 5px black;
+      background: #EEE;
+    }
+
+    /* We’re hiding the content with a negative top margin, after
+       a 2s delay. We’re not using display:none or position:absolute
+       because we can’t delay those. */
+    #test > .hidden > div {
+      margin-top: -10000px;
+      -webkit-transition: margin-top 0s 2s;
+      -moz-transition: margin-top 0s 2s;
+      -o-transition: margin-top 0s 2s;
+      transition: margin-top 0s 2s;
+    }
+  </style>
+</head>
+<body>
+
+<p><a href=".">Back to the intro page</a></p>
+
+<p>This is similar to <a href="test4.html">our previous test</a> except this time we’re trying to delay the application of `visbility:hidden` using pure CSS. We can do this using the `transition-delay` property, and apply a different delay to the opacity transition (no delay) and to the visibility transition (delay equal to the duration of the opacity transition). Thanks to <a href="http://kizu.ru">Roman Komarov</a> for pointing out this technique.</p>
+
+<div id="test">
+  <p>
+    <button type="button">Show element</button>
+    <button type="button">Hide element</button>
+  </p>
+  <div class="hidden">
+    <div>
+      Dummy content: No <a href="#test1">living truth</a> can be reduced to a sentence; such a sentence would be, at best, the passport that gives entrance to a foreign country, which you then <a href="#test2">still need to discover</a>. And you end up thinking that you can only tackle essential things in roundabout ways, or diagonally — almost on the sly.
+    </div>
+  </div>
+  <p><a href="#test3">Test link</a> after the hidden content.</p>
+</div><!--#test-->
+
+<h2>How it works</h2>
+
+<p>The basic CSS code for this example looks like this:</p>
+
+<pre><code>.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+</code></pre>
+
+<p>When showing the element (by switching to the <code>visible</code> class), we want the <code>visibility:visible</code> to kick in instantly, so it’s ok to transition only the <code>opacity</code> property. And when hiding the element (by switching to the <code>hidden</code> class), we want to delay the <code>visibility:hidden</code> declaration, so that we can see the fade-out transition first. We’re doing this by declaring a transition on the <code>visibility</code> property, with a 0s duration and a delay.</p>
+
+<h2>How do we remove the hidden element from the flow?</h2>
+
+<p>At the end of the fade-out transition, we want to remove the hidden element from the flow, so that it does not leave a blank space in the middle of the page. Sadly we don’t have many options here:</p>
+
+<ul>
+<li><code>display:none</code> doesn’t work because it will be applied instantly, and trying to delay it like we did with <code>visibility</code> won’t work;</li>
+<li><code>position:absolute</code> has the exact same issue;</li>
+<li>it’s not ideal, but we <em>can</em> use <code>margin-top</code> (it can be transitioned and thus delayed).</li>
+</ul>
+
+<p>In order to use <code>margin-top</code> to hide the element, we need to have a slightly richer HTML structure: </p>
+
+<pre><code>&lt;div class="visible"&gt;
+  &lt;div&gt;…&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>And our CSS code becomes more complex:</p>
+
+<pre><code>.visible,
+.hidden {
+  overflow: hidden;
+  /* This container should not have padding, borders, etc. */
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+.visible &gt; div,
+.hidden &gt; div {
+  /* Put any padding, border, min-height, etc. here. */
+}
+.hidden &gt; div {
+  margin-top: -10000px;
+  transition: margin-top 0s 2s;
+}
+</code></pre>
+
+<script>
+  var showBtn = document.querySelector("#test button:nth-of-type(1)"),
+      hideBtn = document.querySelector("#test button:nth-of-type(2)"),
+      content = document.querySelector("#test > div");
+
+  // Toggle show/hide classes on test content
+  showBtn.addEventListener("click", function(){
+    content.className = "visible";
+  }, false);
+  hideBtn.addEventListener("click", function(){
+    content.className = "hidden";
+  }, false);
+</script>
+
+</body>
+</html>
