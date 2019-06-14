@@ -30,6 +30,9 @@
         // Begin accessing JSON data here
         var data = JSON.parse(this.response)
         console.log(data);
+        console.log('Malware: ' + data['Malware Attacks Blocked By Avanan']);
+        console.log('Phishing: ' + data['Phishing Attacks Blocked By Avanan']);
+        console.log('Emails Scanned: ' + data['Total Emails/Files Scanned by Avanan']);
       }
 
       // Send request
