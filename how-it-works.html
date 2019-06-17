@@ -14,11 +14,20 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
   <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css"> -->
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
 
   <!-- ADDED BY ME (HERO ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/theme3.css">
+
+  <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
+  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/animate.css"> -->
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
@@ -75,6 +84,18 @@
         margin-bottom: -2.5rem;
       }
 
+      #video-hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*width: 100%;*/
+        height: 100%;
+      }
+
+      #video-hero {
+        height: 350px;
+      }
+
     }
 
     /* PHONES IN LANDSCAPE col-sm-3 */
@@ -124,6 +145,18 @@
         height: auto;
         margin-bottom: -2.5rem;
       }
+
+      #video-hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*width: 100%;*/
+        height: 100%;
+      }
+
+      #video-hero {
+        height: 350px;
+      }
     }
 
     /* TABLETS col-md-3 */
@@ -172,6 +205,18 @@
         height: auto;
         margin-bottom: -2.5rem;
       }
+
+      #video-hero video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        /*height: 100%;*/
+      }
+
+      #video-hero {
+        height: 350px;
+      }
     }
 
     /* LAPTOPS  col-lg-3 */
@@ -217,6 +262,17 @@
       #layered-img {
         max-width: 125%;
         height: auto;
+      }
+
+      #video-hero video {
+        top: 55%;
+        left: 50%;
+        width: 100%;
+        /*height: 100%;*/
+      }
+
+      #video-hero {
+        height: 350px;
       }
     }
 
@@ -264,6 +320,17 @@
         max-width: 125%;
         height: auto;
       }
+
+      #video-hero video {
+        top: 55%;
+        left: 50%;
+        width: 100%;
+        /*height: 100%;*/
+      }
+
+      #video-hero {
+        height: 350px;
+      }
     }
 
     /* LARGE DESKTOPS */
@@ -310,6 +377,61 @@
         max-width: 150%;
         height: auto;
       }
+
+      #video-hero video {
+        top: 55%;
+        left: 50%;
+        width: 100%;
+        /*height: 100%;*/
+      }
+
+      #video-hero {
+        height: 480px;
+      }
+    }
+
+
+    #video-hero {
+      position: relative;
+      background-color: black;
+      min-height: 25rem;
+      overflow: hidden;
+      margin: 96px 15px;
+      border-radius: 0.3125rem !important;
+    }
+
+    #video-hero video {
+      position: absolute;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    #video-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    #video-hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.45;
+      z-index: 1;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+      #video-hero {
+        background: url('assets/img/1920x800/img5.jpg') black no-repeat center center scroll;
+      }
+      #video-hero video {
+        display: none;
+      }
     }
 
     /** {
@@ -325,6 +447,8 @@
 
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md">
+
+    
     <div class="u-header__section">
 
       <div id="logoAndNav" class="container">
@@ -763,12 +887,14 @@
   <main id="content" role="main" style="overflow: hidden;">
     <div id="how-spacer-div"></div>
 
-    <!-- Hero Section -->
-    <section class="position-relative py-8 py-md-11">
-      <!-- Content -->
-      <div class="container-fluid py-3">
-        <div class="bg-img-hero-bottom text-center rounded space-2 space-xl-3" style="background-image: url(assets/img/1920x800/img5.jpg);">
-
+    <section id="video-hero">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/vids/avanan-office.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
           <h1 class="d-inline-block text-white mb-0">How Avanan Works</h1>
           <br><br>
           <!-- Fancybox -->
@@ -782,8 +908,8 @@
           <h4 class="d-inline-block text-white mb-0">Watch Video</h4>
         </div>
       </div>
-    </section>
-    <!-- End Hero Section -->
+    </div>
+  </section>
 
 
 
@@ -1139,7 +1265,6 @@
     </div>
   </footer>
   <!-- ========== END FOOTER ========== -->
-
 
   <!-- JS Global Compulsory -->
   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>

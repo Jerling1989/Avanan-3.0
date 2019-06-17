@@ -14,20 +14,11 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
   <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css"> -->
-  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
 
   <!-- ADDED BY ME (HERO ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/theme3.css">
-
-  <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
-  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/animate.css"> -->
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
@@ -84,18 +75,6 @@
         margin-bottom: -2.5rem;
       }
 
-      #video-hero video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*width: 100%;*/
-        height: 100%;
-      }
-
-      #video-hero {
-        height: 350px;
-      }
-
     }
 
     /* PHONES IN LANDSCAPE col-sm-3 */
@@ -145,18 +124,6 @@
         height: auto;
         margin-bottom: -2.5rem;
       }
-
-      #video-hero video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*width: 100%;*/
-        height: 100%;
-      }
-
-      #video-hero {
-        height: 350px;
-      }
     }
 
     /* TABLETS col-md-3 */
@@ -205,18 +172,6 @@
         height: auto;
         margin-bottom: -2.5rem;
       }
-
-      #video-hero video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        /*height: 100%;*/
-      }
-
-      #video-hero {
-        height: 350px;
-      }
     }
 
     /* LAPTOPS  col-lg-3 */
@@ -262,17 +217,6 @@
       #layered-img {
         max-width: 125%;
         height: auto;
-      }
-
-      #video-hero video {
-        top: 55%;
-        left: 50%;
-        width: 100%;
-        /*height: 100%;*/
-      }
-
-      #video-hero {
-        height: 350px;
       }
     }
 
@@ -320,17 +264,6 @@
         max-width: 125%;
         height: auto;
       }
-
-      #video-hero video {
-        top: 55%;
-        left: 50%;
-        width: 100%;
-        /*height: 100%;*/
-      }
-
-      #video-hero {
-        height: 350px;
-      }
     }
 
     /* LARGE DESKTOPS */
@@ -377,61 +310,6 @@
         max-width: 150%;
         height: auto;
       }
-
-      #video-hero video {
-        top: 55%;
-        left: 50%;
-        width: 100%;
-        /*height: 100%;*/
-      }
-
-      #video-hero {
-        height: 480px;
-      }
-    }
-
-
-    #video-hero {
-      position: relative;
-      background-color: black;
-      min-height: 25rem;
-      overflow: hidden;
-      margin: 96px 15px;
-      border-radius: 0.3125rem !important;
-    }
-
-    #video-hero video {
-      position: absolute;
-      z-index: 0;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-    }
-
-    #video-hero .container {
-      position: relative;
-      z-index: 2;
-    }
-
-    #video-hero .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      opacity: 0.45;
-      z-index: 1;
-    }
-
-    @media (pointer: coarse) and (hover: none) {
-      #video-hero {
-        background: url('assets/img/1920x800/img5.jpg') black no-repeat center center scroll;
-      }
-      #video-hero video {
-        display: none;
-      }
     }
 
     /** {
@@ -447,8 +325,6 @@
 
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md">
-
-    
     <div class="u-header__section">
 
       <div id="logoAndNav" class="container">
@@ -887,14 +763,12 @@
   <main id="content" role="main" style="overflow: hidden;">
     <div id="how-spacer-div"></div>
 
-    <section id="video-hero">
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="assets/vids/avanan-office.mp4" type="video/mp4">
-    </video>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
+    <!-- Hero Section -->
+    <section class="position-relative py-8 py-md-11">
+      <!-- Content -->
+      <div class="container-fluid py-3">
+        <div class="bg-img-hero-bottom text-center rounded space-2 space-xl-3" style="background-image: url(assets/img/1920x800/img5.jpg);">
+
           <h1 class="d-inline-block text-white mb-0">How Avanan Works</h1>
           <br><br>
           <!-- Fancybox -->
@@ -908,9 +782,8 @@
           <h4 class="d-inline-block text-white mb-0">Watch Video</h4>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+    <!-- End Hero Section -->
 
 
 
@@ -981,7 +854,7 @@
                 <h2>Full-Suite Protection</h2>
               </div>
               <!-- SVG Icon -->
-              <img id="full-suite-img" src="assets/img/full-suite-protection.png" alt="Image Description">
+              <img id="full-suite-img" src="assets/img/full-suite-protection.png" alt="Full-Suite Protection">
               <!-- End SVG Icon -->
             </div>
           </div>
@@ -1035,7 +908,7 @@
                 <h2>Layered Security</h2>
               </div>
               <!-- SVG Icon -->
-              <img id="layered-img" src="assets/img/layered-security-screen-angled-1.png" alt="Image Description">
+              <img id="layered-img" src="assets/img/layered-security.png" alt="Layered Security">
               <!-- End SVG Icon -->
             </div>
           </div>
@@ -1276,42 +1149,13 @@
   <!-- ADDED BY ME (ANIMATION) -->
   <script src="assets/libs/aos/dist/aos.js"></script>
   <script src="assets/js/theme2.min.js"></script>
-  <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-  <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
-  <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
-  <script src="assets/vendor/appear.js"></script>
-  <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-  <script src="assets/vendor/player.js/dist/player.min.js"></script>
-
-  <!-- ADDED BY ME (SUPPORT MODAL) -->
-  <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
-  <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
 
   <!-- JS Front -->
-  <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/components/hs.header.js"></script>
-  <script src="assets/js/components/hs.unfold.js"></script>
-  <script src="assets/js/components/hs.focus-state.js"></script>
-  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
-  <script src="assets/js/components/hs.validation.js"></script>
-  <script src="assets/js/components/hs.fancybox.js"></script>
-  <script src="assets/js/components/hs.slick-carousel.js"></script>
-  <script src="assets/js/components/hs.show-animation.js"></script>
-  <script src="assets/js/components/hs.svg-injector.js"></script>
-  <script src="assets/js/components/hs.go-to.js"></script>
-  <script src="assets/js/components/hs.scroll-nav.js"></script>
-  <script src="assets/js/components/hs.onscroll-animation.js"></script>
-  <script src="assets/js/components/hs.video-player.js"></script>
-
-  <!-- ADDED BY ME (SUPPORT MODAL) -->
-  <script src="assets/js/components/hs.modal-window.js"></script>
+  <!-- <script src="assets/js/hs.core.js"></script> -->
+  <!-- <script src="assets/js/components/hs.header.js"></script> -->
 
   <!-- JS Plugins Init. -->
   <script>
@@ -1323,79 +1167,11 @@
         breakpoint: 767.98,
         hideTimeOut: 0
       });
-
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-
-      // initialization of autonomous popups
-      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
-        autonomous: true
-      });
     });
     
     $(document).on('ready', function () {
-
-      // SCROLL TO FORM DIV ON PAGE LOAD
-      // $(function() {
-      //   if (window.location.href.indexOf('#free-trial') > -1 ) {
-      //     $('html, body').animate({
-      //       scrollTop: $('#free-trial').offset().top
-      //     }, 'slow');
-      //   }
-      // });
-      
-
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
-
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
-
-      // initialization of video player
-      $.HSCore.components.HSVideoPlayer.init('.js-inline-video-player');
-
-      // initialization of animation
-      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
-
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
-
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
-          }
-        }
-      });
-
-      // initialization of show animations
-      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-
-      // initialization of fancybox
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
-      // initialization of text animation (typing)
-      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["Office 365", "G Suite", "Slack", "Dropbox", "Google Drive", "Outlook", "G Mail", "Box", "OneDrive", "ShareFile"],
-        typeSpeed: 60,
-        loop: true,
-        backSpeed: 25,
-        backDelay: 1500
-      });
-
-      // initialization of slick carousel
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>
 </body>
