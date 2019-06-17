@@ -14,17 +14,11 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css"> -->
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
-  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
 
   <!-- ADDED BY ME (ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-  <!-- <link rel="stylesheet" href="assets/css/theme3.css"> -->
-
-  <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
-  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
@@ -1013,19 +1007,11 @@
         breakpoint: 767.98,
         hideTimeOut: 0
       });
-
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-
-      // initialization of autonomous popups
-      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
-        autonomous: true
-      });
     });
     
     $(document).on('ready', function () {
       // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+      // $.HSCore.components.HSHeader.init($('#header'));
 
       // initialization of unfold component
       $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
