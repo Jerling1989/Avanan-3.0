@@ -14,20 +14,11 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
   <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css"> -->
-  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
 
   <!-- ADDED BY ME (HERO ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/theme3.css">
-
-  <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
-  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/animate.css"> -->
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
@@ -1159,42 +1150,13 @@
   <!-- ADDED BY ME (ANIMATION) -->
   <script src="assets/libs/aos/dist/aos.js"></script>
   <script src="assets/js/theme2.min.js"></script>
-  <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-  <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
-  <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
-  <script src="assets/vendor/appear.js"></script>
-  <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-  <script src="assets/vendor/player.js/dist/player.min.js"></script>
-
-  <!-- ADDED BY ME (SUPPORT MODAL) -->
-  <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
-  <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
 
   <!-- JS Front -->
-  <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/components/hs.header.js"></script>
-  <script src="assets/js/components/hs.unfold.js"></script>
-  <script src="assets/js/components/hs.focus-state.js"></script>
-  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
-  <script src="assets/js/components/hs.validation.js"></script>
-  <script src="assets/js/components/hs.fancybox.js"></script>
-  <script src="assets/js/components/hs.slick-carousel.js"></script>
-  <script src="assets/js/components/hs.show-animation.js"></script>
-  <script src="assets/js/components/hs.svg-injector.js"></script>
-  <script src="assets/js/components/hs.go-to.js"></script>
-  <script src="assets/js/components/hs.scroll-nav.js"></script>
-  <script src="assets/js/components/hs.onscroll-animation.js"></script>
-  <script src="assets/js/components/hs.video-player.js"></script>
-
-  <!-- ADDED BY ME (SUPPORT MODAL) -->
-  <script src="assets/js/components/hs.modal-window.js"></script>
+  <!-- <script src="assets/js/hs.core.js"></script> -->
+  <!-- <script src="assets/js/components/hs.header.js"></script> -->
 
   <!-- JS Plugins Init. -->
   <script>
@@ -1206,79 +1168,11 @@
         breakpoint: 767.98,
         hideTimeOut: 0
       });
-
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-
-      // initialization of autonomous popups
-      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
-        autonomous: true
-      });
     });
     
     $(document).on('ready', function () {
-
-      // SCROLL TO FORM DIV ON PAGE LOAD
-      // $(function() {
-      //   if (window.location.href.indexOf('#free-trial') > -1 ) {
-      //     $('html, body').animate({
-      //       scrollTop: $('#free-trial').offset().top
-      //     }, 'slow');
-      //   }
-      // });
-      
-
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
-
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
-
-      // initialization of video player
-      $.HSCore.components.HSVideoPlayer.init('.js-inline-video-player');
-
-      // initialization of animation
-      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
-
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
-
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
-          }
-        }
-      });
-
-      // initialization of show animations
-      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-
-      // initialization of fancybox
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
-      // initialization of text animation (typing)
-      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["Office 365", "G Suite", "Slack", "Dropbox", "Google Drive", "Outlook", "G Mail", "Box", "OneDrive", "ShareFile"],
-        typeSpeed: 60,
-        loop: true,
-        backSpeed: 25,
-        backDelay: 1500
-      });
-
-      // initialization of slick carousel
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>
 </body>
