@@ -969,8 +969,6 @@
     </div>
     <!-- END HOW-IT-WORKS SECTION -->
 
-  
-
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
   <!-- ========== END MAIN CONTENT ========== -->
@@ -990,7 +988,7 @@
 
 
   <!-- TRIAL FORM -->
-  <div class="bg-primary text-white">
+  <div class="bg-primary text-white" id="free-trial">
     <div class="container space-1">
       <div class="row mt-3">
         <div class="col-lg-6 mb-3">
@@ -1030,7 +1028,7 @@
               <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
             </div>
           </div>
-          <a class="btn btn-block btn-dark transition-3d-hover font-weight-normal" href="#!">Start Enterprise Trial</a>
+          <a class="btn btn-block btn-dark transition-3d-hover font-weight-normal" href="#!">Start Free Trial</a>
         </div>
       </div>
       
@@ -1221,6 +1219,17 @@
     });
     
     $(document).on('ready', function () {
+
+      // SCROLL TO FORM DIV ON PAGE LOAD
+      // $(function() {
+      //   if (window.location.href.indexOf('#free-trial') > -1 ) {
+      //     $('html, body').animate({
+      //       scrollTop: $('#free-trial').offset().top
+      //     }, 'slow');
+      //   }
+      // });
+      
+
       // initialization of header
       $.HSCore.components.HSHeader.init($('#header'));
 
