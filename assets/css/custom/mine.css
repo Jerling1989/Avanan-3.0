@@ -42,6 +42,10 @@
     margin-left: 30px;
   }
 
+  #learn-how-text {
+    margin-top: 0px;
+  }
+
 }
 
 /* PHONES IN LANDSCAPE col-sm-3 */
@@ -87,6 +91,15 @@
   .hmpg-icon {
     width: 90% !important;
   }
+
+  .popup-panels {
+    margin-top: -50px;
+    margin-left: 30px;
+  }
+
+  #learn-how-text {
+    margin-top: 0px;
+  }
 }
 
 /* TABLETS col-md-3 */
@@ -124,12 +137,21 @@
     margin: 0 auto;
   }
 
+  .popup-panels {
+    margin-top: -50px;
+    margin-left: 30px;
+  }
+
   #client-block {
     margin-bottom: 40px
   }
 
   .hmpg-icon {
     width: 75% !important;
+  }
+
+  #learn-how-text {
+    margin-top: 50px;
   }
 }
 
@@ -162,12 +184,21 @@
     margin-top: -20px;
   }
 
+  .popup-panels {
+    margin-top: -58px;
+    margin-left: 50px;
+  }
+
   #client-block {
     margin-bottom: 0px
   }
 
   .hmpg-icon {
     width: 60% !important;
+  }
+
+   #learn-how-text {
+    margin-top: 115px;
   }
 }
 
@@ -200,6 +231,11 @@
     margin-top: -20px;
   }
 
+  .popup-panels {
+    margin-top: -58px;
+    margin-left: 50px;
+  }
+
   #client-block {
     margin-bottom: 0px
   }
@@ -210,6 +246,10 @@
 
   #data-copy {
     margin-top: 20px !important;
+  }
+
+  #learn-how-text {
+    margin-top: 175px;
   }
 }
 
@@ -258,6 +298,15 @@
   #data-copy {
     margin-top: 10px;
   }
+
+  #learn-how-text {
+    margin-top: 175px;
+  }
+
+  .popup-panels {
+    margin-top: -58px;
+    margin-left: 50px;
+  }
 }
 
 #mockup-laptop {
@@ -275,8 +324,6 @@
 
 .popup-panels {
   width: 90%;
-  margin-top: -58px;
-  margin-left: 50px;
   display: none;
   position: absolute;
   top: 0;
@@ -304,6 +351,7 @@
 #data-copy {
   font-weight: 400;
 }
+
 
 /** {
   background: #000 !important;
