@@ -249,6 +249,12 @@
   display: block;
 }
 
+.hmpg-icon {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .hmpg-icon:hover {
   cursor: pointer !important;
 }
