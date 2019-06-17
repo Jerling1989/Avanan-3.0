@@ -32,6 +32,10 @@
   #client-block {
     margin-bottom: 100px
   }
+
+  .hmpg-icon {
+    width: 100% !important;
+  }
 }
 
 /* PHONES IN LANDSCAPE col-sm-3 */
@@ -73,6 +77,10 @@
   #client-block {
     margin-bottom: 0px
   }
+
+  .hmpg-icon {
+    width: 90% !important;
+  }
 }
 
 /* TABLETS col-md-3 */
@@ -113,6 +121,10 @@
   #client-block {
     margin-bottom: 40px
   }
+
+  .hmpg-icon {
+    width: 75% !important;
+  }
 }
 
 /* LAPTOPS  col-lg-3 */
@@ -147,6 +159,10 @@
   #client-block {
     margin-bottom: 0px
   }
+
+  .hmpg-icon {
+    width: 60% !important;
+  }
 }
 
 /* DESKTOPS col-xl-3 */
@@ -180,6 +196,10 @@
 
   #client-block {
     margin-bottom: 0px
+  }
+
+  .hmpg-icon {
+    width: 50% !important;
   }
 }
 
@@ -219,6 +239,10 @@
 
   #client-block {
     margin-bottom: 0px
+  }
+
+  .hmpg-icon {
+    width: 50% !important;
   }
 }
 
