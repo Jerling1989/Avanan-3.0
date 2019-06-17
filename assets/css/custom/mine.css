@@ -36,6 +36,12 @@
   .hmpg-icon {
     width: 100% !important;
   }
+
+  .popup-panels {
+    margin-top: -58px;
+    margin-left: 50px;
+  }
+
 }
 
 /* PHONES IN LANDSCAPE col-sm-3 */
