@@ -38,8 +38,8 @@
   }
 
   .popup-panels {
-    margin-top: -58px;
-    margin-left: 50px;
+    margin-top: -50px;
+    margin-left: 30px;
   }
 
 }
@@ -207,6 +207,10 @@
   .hmpg-icon {
     width: 50% !important;
   }
+
+  #data-copy {
+    margin-top: 20px !important;
+  }
 }
 
 /* LARGE DESKTOPS */
@@ -250,6 +254,10 @@
   .hmpg-icon {
     width: 50% !important;
   }
+
+  #data-copy {
+    margin-top: 10px;
+  }
 }
 
 #mockup-laptop {
@@ -291,6 +299,10 @@
 
 .hmpg-icon-active {
   filter: drop-shadow(0 0 10px #569bbe);
+}
+
+#data-copy {
+  font-weight: 400;
 }
 
 /** {
