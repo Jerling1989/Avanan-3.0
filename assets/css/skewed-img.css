@@ -29,9 +29,7 @@
 
 
 [data-aos=img-skewed-item-left],
-[data-aos=img-skewed-item-right],
-[data-aos=fade-right],
-[data-aos=fade-left], {
+[data-aos=img-skewed-item-right] {
     opacity: 0;
     transition-property: transform, opacity;
     will-change: transform, opacity
