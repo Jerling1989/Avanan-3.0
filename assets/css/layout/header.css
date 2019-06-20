@@ -3145,3 +3145,20 @@
 .u-search-slide-down.active .u-search-slide-down__suggestions {
   transition-delay: 0.2s;
 }
+
+/* MINE */
+.header-container-wrapper {
+  margin-top: -28px !important;
+}
+
+a {
+  font-weight: 400 !important;
+}
+
+.hs-sub-menu {
+  margin-left: 15px;
+}
+
+#platformSubMenu {
+  margin-left: 0px;
+}
