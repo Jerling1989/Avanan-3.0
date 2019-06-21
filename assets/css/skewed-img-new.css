@@ -184,15 +184,6 @@ box-shadow: 25px 60px 125px -25px rgba(80, 102, 144, 0.1), 16px 40px 75px -40px 
   left: 0
 }
 
-/* UPDATED SHAPE-BLUR-1 FOR HUBSPOT */
-/*.shape-blur-1 {
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 90%;
-  margin: 0 auto;
-}*/
-
 .shape-blur-1>img,
 .shape-blur-1>svg {
   width: 100%;
@@ -316,3 +307,52 @@ box-shadow: 25px 60px 125px -25px rgba(80, 102, 144, 0.1), 16px 40px 75px -40px 
   transform: translate3d(0, -5px, 0)
 }
 
+
+/*===== UPDATED SHAPE-BLUR-1 FOR HUBSPOT =====*/
+
+/* PHONES IN PORTRAIT col-3 */
+@media (max-width: 576px) {
+  .shape-blur-1 {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+
+/* PHONES IN LANDSCAPE col-sm-3 */
+@media (min-width: 576px) and (max-width: 768px) {
+  .shape-blur-1 {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+
+/* TABLETS col-md-3 */
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+
+/* LAPTOPS  col-lg-3 */
+@media (min-width: 992px) and (max-width: 1200px) {
+  
+}
+
+
+/* DESKTOPS col-xl-3 */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  
+}
+
+
+/* LARGE DESKTOPS */
+@media (min-width: 1500px) {
+   
+}
