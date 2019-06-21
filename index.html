@@ -30,7 +30,6 @@
   <link rel="stylesheet" href="assets/css/custom/mine.css">
 
 
-
 </head>
 <body class="bg-light">
   <!-- ========== HEADER ========== -->
@@ -39,16 +38,6 @@
           data-header-fix-effect="slide">
           
     <div class="u-header__section">
-
-      <!-- Top Nav Section -->
-      <!-- <div class="container u-header__hide-content pt-2">
-        <div class="d-flex align-items-center">
-          <div class="ml-auto">
-          </div>
-        </div>
-      </div> -->
-      <!-- End Top Nav Section -->
-
       <div id="logoAndNav" class="container">
         <!-- Main Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
@@ -1070,6 +1059,7 @@
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
+  <script src="assets/js/components/hs.header.js"></script>
   <script src="assets/js/components/hs.onscroll-animation.js"></script>
 
 
@@ -1087,6 +1077,9 @@
     });
     
     $(document).on('ready', function () {
+
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
 
       $('#intel-scan-icon').click(function() {
         $('#intel-scan-icon').addClass('hmpg-icon-active');
