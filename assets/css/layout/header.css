@@ -3147,9 +3147,7 @@
 }
 
 /* MINE */
-.header-container-wrapper {
-  margin-top: -28px !important;
-}
+
 
 a {
   font-weight: 400 !important;
@@ -3162,3 +3160,72 @@ a {
 #platformSubMenu {
   margin-left: 0px;
 }
+
+
+/* PHONES IN PORTRAIT col-3 */
+@media (max-width: 576px) {
+  .header-container-wrapper {
+    margin-top: 0px !important;
+  }
+}
+
+
+/* PHONES IN LANDSCAPE col-sm-3 */
+@media (min-width: 576px) and (max-width: 768px) {
+  .header-container-wrapper {
+    margin-top: 0px !important;
+  }
+}
+
+
+/* TABLETS col-md-3 */
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-container-wrapper {
+    margin-top: -28px !important;
+  }
+}
+
+
+/* LAPTOPS  col-lg-3 */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header-container-wrapper {
+    margin-top: -28px !important;
+  }
+}
+
+
+/* DESKTOPS col-xl-3 */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .header-container-wrapper {
+    margin-top: -28px !important;
+  }
+}
+
+
+/* LARGE DESKTOPS */
+@media (min-width: 1500px) {
+  .header-container-wrapper {
+    margin-top: -28px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
