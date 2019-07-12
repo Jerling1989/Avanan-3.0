@@ -5159,19 +5159,17 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 
 .badge-success {
   color: #fff;
-  background-color: #28a745;
+  background-color: #00c9a7;
 }
 
-.badge-success[href]:hover,
-.badge-success[href]:focus {
+a.badge-success:hover, a.badge-success:focus {
   color: #fff;
-  text-decoration: none;
-  background-color: #1e7e34;
+  background-color: #00967d;
 }
 
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(40,167,69,0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 201, 167, 0.5);
 }
 
 .badge-info {
