@@ -31,6 +31,17 @@
       outline: solid #f00 1px !important;
     }*/
 
+    li {
+      color: #788487;
+      font-size: 1.085rem;
+    }
+
+    #visual-cue-arrow {
+      width: 150%;
+      margin-top: 30px;
+      margin-left: -40px;
+    }
+
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       #trial-spacer-div {
@@ -527,25 +538,30 @@
     <div class="space-bottom-md-3 space-bottom-2">
       <div class="container">
         <div class="row">
-          <div class="col-6"></div>
+          <div class="col-6">
+            <h1>See what you’re missing.</h1>
+            <ul>
+              <li style="margin-bottom: 10px;">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
+              <li style="margin-bottom: 10px;">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
+            </ul>
+            <h2>Ready to see the threats hiding in your inbox?</h2>
+            <ul>
+              <li style="margin-bottom: 10px;">Our team will contact you after you complete this form to get you up and running right away.</li>
+              <li style="margin-bottom: 10px;">An admin can approve the Avanan app in one click.</li>
+            </ul>
+          </div>
 
-          <div class="col-1"></div>
+          <div class="col-1">
+            <img id="visual-cue-arrow" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/filler-images/teal-arrow-extra-slim.png">
+          </div>
 
           <div class="col-5">
             <!-- Contact Form -->
             <div class="card shadow-sm p-4">
-              <!-- Header -->
-              <div class="media align-items-center mb-4">
-                <div class="media-body">
-                  <h4 class="h4 mb-0">Start Now for Free</h4>
-                </div>
-              </div>
-              <!-- End Header -->
-
               <!-- Form -->
               <form>
 
-                <div class="mb-2" style="margin-bottom: 30px;">
+                <div class="mb-2" style="margin-top: 10px; margin-bottom: 30px;">
                   <label class="sr-only" for="firstNameSr">First Name</label>
                   <input type="text" class="form-control form-control-sm" name="text" id="firstNameSr" placeholder="First Name" aria-label="First Name">
                 </div>
@@ -570,7 +586,7 @@
                   <input type="tel" class="form-control form-control-sm" name="tel" id="phoneNumberSr" placeholder="Phone Number" aria-label="Phone Number">
                 </div>
 
-                <button style="margin-top: 30px;" type="button" class="btn btn-block btn-sm btn-primary btn-wide transition-3d-hover">Submit</button>
+                <button style="margin-top: 30px; margin-bottom: 10px; text-transform: uppercase;" type="button" class="btn btn-block btn-sm btn-danger btn-wide transition-3d-hover">Start Free Trial</button>
               </form>
               <!-- End Form -->
             </div>
