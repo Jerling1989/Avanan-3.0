@@ -60,6 +60,10 @@
       .benefits > .card {
         height: auto;
       }
+
+      #arrow-div {
+        display: none;
+      }
     }
 
 
@@ -71,6 +75,10 @@
 
       .benefits > .card {
         height: auto;
+      }
+
+      #arrow-div {
+        display: none;
       }
     }
 
@@ -84,6 +92,10 @@
       .benefits > .card {
         height: 475px;
       }
+
+      #arrow-div {
+        display: none;
+      }
     }
 
 
@@ -95,6 +107,10 @@
 
       .benefits > .card {
         height: 400px;
+      }
+
+      #arrow-div {
+        display: block;
       }
     }
 
@@ -108,6 +124,10 @@
       .benefits > .card {
         height: 320px;
       }
+
+      #arrow-div {
+        display: block;
+      }
     }
 
 
@@ -120,6 +140,10 @@
 
       .benefits > .card {
         height: 320px;
+      }
+
+      #arrow-div {
+        display: block;
       }
     }
   </style>
@@ -172,7 +196,7 @@
     <!-- TOP FORM AND COPY -->
     <div class="container space-bottom-1">
       <div class="row">
-        <div class="col-6">
+        <!-- <div class="col-md-7 col-lg-6">
           <h1>See what you’re missing.</h1>
           <ul>
             <li style="margin-bottom: 10px;">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
@@ -183,13 +207,23 @@
             <li style="margin-bottom: 10px;">Our team will contact you after you complete this form to get you up and running right away.</li>
             <li style="margin-bottom: 10px;">An admin can approve the Avanan app in one click.</li>
           </ul>
+        </div> -->
+
+        <div class="col-md-7 col-lg-6">
+          <h1 style="font-size: 2.75rem;">See what you’re missing.</h1>
+          <h2 class="mt-2">Uncover the threats hiding in your inbox.</h2>
+          <ul class="mt-4">
+            <li style="margin-bottom: 10px;">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
+            <li style="margin-bottom: 10px;">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
+            <li style="margin-bottom: 10px;">Get started right away, an admin can approve the Avanan app in one click.</li>
+          </ul>
         </div>
 
-        <div class="col-1">
+        <div id="arrow-div" class="col-lg-1">
           <img id="visual-cue-arrow" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/filler-images/teal-arrow-extra-slim.png">
         </div>
 
-        <div class="col-5">
+        <div class="col-md-5 col-lg-5 mt-6 mt-md-0">
           <!-- Contact Form -->
           <div class="card shadow-lg p-4">
             <!-- Form -->
