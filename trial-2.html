@@ -12,6 +12,10 @@
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
@@ -206,7 +210,7 @@
        }
 
       .benefits > .card {
-        height: 320px;
+        height: 365px;
       }
 
       #arrow-div {
@@ -215,6 +219,10 @@
 
       #form-card {
         margin-top: -205px;
+      }
+
+      .card > blockquote {
+        padding: 20px;
       }
     }
   </style>
@@ -433,39 +441,31 @@
 
 
     <!-- <div class="container"> -->
-      <!-- CTA -->
-      <div class="container text-center pb-10">
-        <!-- Title -->
-        <div class="w-md-60 text-center mx-auto mb-5">
-          <h2 class="h1 font-weight-medium">Ready to get started?</h2>
-        </div>
-        <!-- End Title -->
 
 
-        <!-- Fancybox -->
-        <div class="d-flex justify-content-center mb-10">
-          <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="#!">Start Free Trial</a>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <!-- Fancybox -->
-              <a id="how-it-works-btn" class="js-fancybox media align-items-center u-media-player mb-4" href="javascript:;"
-                 data-src="//vimeo.com/167434033"
-                 data-speed="700"
-                 data-animate-in="zoomIn"
-                 data-animate-out="zoomOut"
-                 data-caption="Front - Responsive Website Template">
-                <span class="u-media-player__icon u-media-player__icon--primary mr-3">
-                  <span class="fas fa-play u-media-player__icon-inner"></span>
-                </span>
-                <span class="media-body">
-                  How Avanan Works
-                </span>
-              </a>
+      <!-- CTA Section -->
+      <div class="position-relative bg-primary">
+        <div class="container space-2">
+          <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h3 class="h2 text-white font-weight-semi-bold mb-0">Ready to get started?</h3>
             </div>
+
+            <div class="col-lg-5 text-lg-right">
+              <a class="btn btn-dark btn-wide btn-pill transition-3d-hover mr-3" href="#">Start Free Trial</a>
+              <a class="btn btn-white btn-wide btn-pill text-primary shadow-soft transition-3d-hover" href="#">How Avanan Works &nbsp; <i class="fas fa-play"></i></a>
+            </div>
+          </div>
         </div>
-        <!-- End Fancybox -->
+
+        <!-- SVG Top Shape -->
+        <figure class="gradient-overlay-half-primary-v3 position-absolute top-0 right-0 bottom-0 left-0 z-index-n1 overflow-hidden">
+          <img class="js-svg-injector d-none d-md-block" src="../../assets/svg/components/circles.svg" alt="Image Description"
+               data-parent="#SVGCTA7">
+        </figure>
+        <!-- End SVG Top Shape -->
       </div>
-      <!-- End CTA -->
+      <!-- End CTA Section -->
     </div>
 
 
@@ -478,7 +478,7 @@
 
 
   <!-- ========== FOOTER ========== -->
-  <footer class="border-top bg-dark">
+  <footer class="bg-dark">
     <div class="container space-2">
       <div class="row">
         <div class="col-sm-3 col-lg-2 order-sm-2 mb-4 mb-sm-0 ml-lg-auto">
