@@ -31,14 +31,26 @@
       outline: solid #f00 1px !important;
     }*/
 
+    ul.no_bullet {
+      list-style-type: none;
+
+      /*list-style-image: url('assets/img/teal-checkmark.png');*/
+    }
+
     li {
       color: #788487;
       font-size: 1.085rem;
+      margin-bottom: 15px;
+    }
+
+    li.check {
+      background: url('assets/img/teal-check-30.png') no-repeat left top;
+      padding-left: 35px;
     }
 
     #visual-cue-arrow {
       width: 145%;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-left: -35px;
     }
 
@@ -228,10 +240,10 @@
         <div id="trial-copy" class="col-md-7 col-lg-6">
           <h1 style="">See what you’re missing</h1>
           <h2 style="" class="">Uncover threats hiding in your inbox</h2>
-          <ul class="mt-4">
-            <li style="margin-bottom: 10px;">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
-            <li style="margin-bottom: 10px;">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
-            <li style="margin-bottom: 10px;">Get started right away — an admin can approve the Avanan app in one click.</li>
+          <ul class="mt-4 no_bullet">
+            <li class="check">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
+            <li class="check">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
+            <li class="check">Get started right away — an admin can approve the Avanan app in one click.</li>
           </ul>
         </div>
 
