@@ -12,6 +12,10 @@
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
@@ -69,6 +73,30 @@
       font-size: 1.885rem;
     }
 
+    #top-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #top-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #bottom-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
+    #bottom-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       #trial-spacer-div {
@@ -89,6 +117,22 @@
 
       #trial-copy > h2 {
         font-size: 1.5rem;
+      }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
       }
     }
 
@@ -114,6 +158,22 @@
       #trial-copy > h2 {
         font-size: 1.75rem;
       }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
+      }
     }
 
 
@@ -124,7 +184,7 @@
       }
 
       .benefits > .card {
-        height: 475px;
+        height: 450px;
       }
 
       #arrow-div {
@@ -142,6 +202,22 @@
       #form-card {
         margin-top: -195px;
       }
+
+      .line-break {
+        display: block;
+      }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+
+      blockquote > h3 {
+        font-size: 1.65rem;
+      }
+
+      blockquote > div {
+        font-size: .975rem;
+      }
     }
 
 
@@ -152,7 +228,7 @@
       }
 
       .benefits > .card {
-        height: 400px;
+        height: 370px;
       }
 
       #arrow-div {
@@ -176,6 +252,18 @@
       #form-card {
         margin-top: -155px;
       }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+
+      blockquote > h3 {
+        font-size: 1.65rem;
+      }
+
+      blockquote > div {
+        font-size: .975rem;
+      }
     }
 
 
@@ -186,7 +274,7 @@
       }
 
       .benefits > .card {
-        height: 320px;
+        height: 350px;
       }
 
       #arrow-div {
@@ -195,6 +283,10 @@
 
       #form-card {
         margin-top: -165px;
+      }
+
+      .card > blockquote {
+        padding: 15px;
       }
     }
 
@@ -206,7 +298,7 @@
        }
 
       .benefits > .card {
-        height: 320px;
+        height: 365px;
       }
 
       #arrow-div {
@@ -215,6 +307,10 @@
 
       #form-card {
         margin-top: -205px;
+      }
+
+      .card > blockquote {
+        padding: 20px;
       }
     }
   </style>
@@ -378,48 +474,48 @@
     <div class="container space-3">
       <div class="row">
 
-        <div class="benefits col-12 col-md-6">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="top-left" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/rocket-dark.png">
-              <h3>Easy Deployment</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/rocket-teal.png">
+              <h3>Easy <span class="line-break">Deployment</span></h3>
+              <div style="color: #788487;" class="text-left">
                 Install Avanan from the app store of your collaboration suite and connected apps. In just one click, the algorithm learns from your environment, quarantines existing threats, and identifies phishing, malware, data leakage, and account compromise immediately.
               </div>
             </blockquote>
           </div>
         </div>
 
-        <div class="benefits col-12 col-md-6">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="top-right" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/code-dark.png">
-              <h3>Security Beyond Email</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/code-teal.png">
+              <h3>Security <span class="line-break">Beyond Email</span></h3>
+              <div style="color: #788487;" class="text-left">
                 Gain end-to-end control over your entire environment, from file sharing and other account activity to configuration changes in the admin console. Multiple security engines add layers to your security, ensuring that every aspect of your suite is protected from advanced threats.
               </div>
             </blockquote>
           </div>
         </div>
 
-        <div class="benefits col-12 col-md-6 mt-md-3">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="bottom-left" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/unified-dark.png">
-              <h3>Unified Visibility & Management</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/unified-teal.png">
+              <h3>Unified Visibility <span class="line-break">& Management</span></h3>
+              <div style="color: #788487;" class="text-left">
                 No longer will you have to navigate the different interfaces of your security vendors. With Avanan, all your anti-phishing, anti-malware, DLP, and account takeover protection is in one place. Set policies, workflows, and reports for every service in use at your organization from a single administrative console.
               </div>
             </blockquote>
           </div>
         </div>
 
-        <div class="benefits col-12 col-md-6 mt-md-3">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="bottom-right" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/bionic-dark.png">
-              <h3>Proactive Security</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/bionic-teal.png">
+              <h3>Proactive <span class="line-break">Security</span></h3>
+              <div style="color: #788487;" class="text-left">
                 Users protected by Avanan can report email-based threats and request restores of quarantined content. Beyond this, every Avanan customer receives one-on-one customer support to ensure a seamless security experience.
               </div>
             </blockquote>
@@ -433,39 +529,31 @@
 
 
     <!-- <div class="container"> -->
-      <!-- CTA -->
-      <div class="container text-center pb-10">
-        <!-- Title -->
-        <div class="w-md-60 text-center mx-auto mb-5">
-          <h2 class="h1 font-weight-medium">Ready to get started?</h2>
-        </div>
-        <!-- End Title -->
 
 
-        <!-- Fancybox -->
-        <div class="d-flex justify-content-center mb-10">
-          <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="#!">Start Free Trial</a>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <!-- Fancybox -->
-              <a id="how-it-works-btn" class="js-fancybox media align-items-center u-media-player mb-4" href="javascript:;"
-                 data-src="//vimeo.com/167434033"
-                 data-speed="700"
-                 data-animate-in="zoomIn"
-                 data-animate-out="zoomOut"
-                 data-caption="Front - Responsive Website Template">
-                <span class="u-media-player__icon u-media-player__icon--primary mr-3">
-                  <span class="fas fa-play u-media-player__icon-inner"></span>
-                </span>
-                <span class="media-body">
-                  How Avanan Works
-                </span>
-              </a>
+      <!-- CTA Section -->
+      <div class="position-relative bg-primary">
+        <div class="container space-2">
+          <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h3 class="h2 text-white font-weight-semi-bold mb-0">Ready to get started?</h3>
             </div>
+
+            <div class="col-lg-7 text-lg-right">
+              <a class="btn btn-dark btn-wide btn-pill transition-3d-hover mr-3" href="#">Start Free Trial</a>
+              <a class="btn btn-white btn-wide btn-pill text-primary shadow-soft transition-3d-hover" href="#">How Avanan Works &nbsp; <i class="fas fa-play"></i></a>
+            </div>
+          </div>
         </div>
-        <!-- End Fancybox -->
+
+        <!-- SVG Top Shape -->
+        <figure class="gradient-overlay-half-primary-v3 position-absolute top-0 right-0 bottom-0 left-0 z-index-n1 overflow-hidden">
+          <img class="js-svg-injector d-none d-md-block" src="../../assets/svg/components/circles.svg" alt="Image Description"
+               data-parent="#SVGCTA7">
+        </figure>
+        <!-- End SVG Top Shape -->
       </div>
-      <!-- End CTA -->
+      <!-- End CTA Section -->
     </div>
 
 
@@ -478,14 +566,14 @@
 
 
   <!-- ========== FOOTER ========== -->
-  <footer class="border-top bg-dark">
+  <footer class="bg-dark">
     <div class="container space-2">
       <div class="row">
         <div class="col-sm-3 col-lg-2 order-sm-2 mb-4 mb-sm-0 ml-lg-auto">
           <!-- List Group -->
           <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
             <li><a class="list-group-item list-group-item-action" href="#!">About Us</a></li>
-            <li><a class="list-group-item list-group-item-action" href="#!">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Contact</a></li>
           </ul>
           <!-- End List Group -->
         </div>
@@ -495,7 +583,7 @@
           <!-- List Group -->
           <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
             <li><a class="list-group-item list-group-item-action" href="#!">Privacy Policy</a></li>
-            <li><a class="list-group-item list-group-item-action" href="#!">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">The Avanan Blog</a></li>
           </ul>
           <!-- End List Group -->
         </div>
