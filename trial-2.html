@@ -73,6 +73,30 @@
       font-size: 1.885rem;
     }
 
+    #top-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #top-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #bottom-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
+    #bottom-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       #trial-spacer-div {
@@ -93,6 +117,22 @@
 
       #trial-copy > h2 {
         font-size: 1.5rem;
+      }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
       }
     }
 
@@ -117,6 +157,22 @@
 
       #trial-copy > h2 {
         font-size: 1.75rem;
+      }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
       }
     }
 
@@ -418,7 +474,7 @@
     <div class="container space-3">
       <div class="row">
 
-        <div style="padding: 0; border-right: 1px solid #222; border-bottom: 1px solid #222;" class="benefits col-12 col-md-6">
+        <div id="top-left" class="benefits col-12 col-md-6">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="assets/img/benefit-statements/rocket-teal.png">
@@ -430,7 +486,7 @@
           </div>
         </div>
 
-        <div style="padding: 0; border-left: 1px solid #222; border-bottom: 1px solid #222;" class="benefits col-12 col-md-6">
+        <div id="top-right" class="benefits col-12 col-md-6">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="assets/img/benefit-statements/code-teal.png">
@@ -442,7 +498,7 @@
           </div>
         </div>
 
-        <div style="padding: 0; border-right: 1px solid #222; border-top: 1px solid #222;" class="benefits col-12 col-md-6">
+        <div id="bottom-left" class="benefits col-12 col-md-6">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="assets/img/benefit-statements/unified-teal.png">
@@ -454,7 +510,7 @@
           </div>
         </div>
 
-        <div style="padding: 0; border-left: 1px solid #222; border-top: 1px solid #222;" class="benefits col-12 col-md-6">
+        <div id="bottom-right" class="benefits col-12 col-md-6">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="assets/img/benefit-statements/bionic-teal.png">
