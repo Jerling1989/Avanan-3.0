@@ -42,58 +42,18 @@
       padding: 20px;
     }
 
-    .benefits > .card {
-      height: 320px;
-    }
+
 
     blockquote > div {
       font-weight: 400 !important;
     }
 
-    #top-left {
-      padding: 0;
-      border-right: 1px solid #222;
-      border-bottom: 1px solid #222;
-    }
-
-    #top-right {
-      padding: 0;
-      border-left: 1px solid #222;
-      border-bottom: 1px solid #222;
-    }
-
-    #bottom-left {
-      padding: 0;
-      border-right: 1px solid #222;
-      border-top: 1px solid #222;
-    }
-
-    #bottom-right {
-      padding: 0;
-      border-left: 1px solid #222;
-      border-top: 1px solid #222;
-    }
+    
 
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       .benefits > .card {
         height: auto;
-      }
-
-      #top-left {
-        border: none;
-      }
-
-      #top-right {
-        border: none;
-      }
-
-      #bottom-left {
-        border: none;
-      }
-
-      #bottom-right {
-        border: none;
       }
     }
 
@@ -103,29 +63,13 @@
       .benefits > .card {
         height: auto;
       }
-
-      #top-left {
-        border: none;
-      }
-
-      #top-right {
-        border: none;
-      }
-
-      #bottom-left {
-        border: none;
-      }
-
-      #bottom-right {
-        border: none;
-      }
     }
 
 
     /* TABLETS col-md-3 */
     @media (min-width: 768px) and (max-width: 992px) {
       .benefits > .card {
-        height: 450px;
+        height: auto;
       }
 
       .line-break {
@@ -181,11 +125,7 @@
     /* LARGE DESKTOPS */
     @media (min-width: 1500px) {
       .benefits > .card {
-        height: 365px;
-      }
-
-      #form-card {
-        margin-top: -205px;
+        height: auto;
       }
 
       .card > blockquote {
@@ -765,7 +705,7 @@
       <div class="container">
       <div class="row">
 
-        <div id="top-left" class="benefits col-12 col-md-6">
+        <div id="top-left" class="benefits col-12 col-md-3">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/patented-technology.png">
@@ -778,7 +718,7 @@
           </div>
         </div>
 
-        <div id="top-right" class="benefits col-12 col-md-6">
+        <div id="top-right" class="benefits col-12 col-md-3">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/catch-what-others-miss.png">
@@ -791,7 +731,7 @@
           </div>
         </div>
 
-        <div id="bottom-left" class="benefits col-12 col-md-6">
+        <div id="bottom-left" class="benefits col-12 col-md-3">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/full-suite-protection.png">
@@ -804,11 +744,11 @@
           </div>
         </div>
 
-        <div id="bottom-right" class="benefits col-12 col-md-6">
+        <div id="bottom-right" class="benefits col-12 col-md-3">
           <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
               <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/multi-platform.png">
-              <h3>Multi-Vendor<span class="line-break">Open Platform</span></h3>
+              <h3>Multi-Vendor <span class="line-break">Open Platform</span></h3>
               <div style="color: #788487;" class="text-left">
                Deploy and configure top malware, DLP, and SIEM technology, scaling with enterprise requirements — future-proofing security.
               </div>
