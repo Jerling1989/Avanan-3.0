@@ -200,6 +200,10 @@
    #learn-how-text {
     margin-top: 115px;
   }
+
+  .mockup-desktop {
+    margin-top: -100px;
+  }
 }
 
 /* DESKTOPS col-xl-3 */
@@ -250,6 +254,10 @@
 
   #learn-how-text {
     margin-top: 175px;
+  }
+
+  .mockup-desktop {
+    margin-top: -130px;
   }
 }
 
@@ -307,6 +315,10 @@
     margin-top: -58px;
     margin-left: 50px;
   }
+
+  .mockup-desktop {
+    margin-top: -130px;
+  }
 }
 
 #mockup-laptop {
@@ -316,7 +328,6 @@
 
 .mockup-desktop {
   width: 90%;
-  margin-top: -130px;
   position: relative;
   top: 0;
   left: 0;
