@@ -12,6 +12,10 @@
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
@@ -62,11 +66,35 @@
     }
 
     #trial-copy > h1 {
-      font-size: 2.82rem;
+      /*font-size: 2.82rem;*/
     }
 
     #trial-copy > h2 {
-      font-size: 1.885rem;
+      /*font-size: 1.885rem;*/
+    }
+
+    #top-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #top-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #bottom-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
+    #bottom-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-top: 1px solid #222;
     }
 
     /* PHONES IN PORTRAIT col-3 */
@@ -90,6 +118,22 @@
       #trial-copy > h2 {
         font-size: 1.5rem;
       }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
+      }
     }
 
 
@@ -108,11 +152,27 @@
       }
 
       #trial-copy > h1 {
-        font-size: 2.65rem;
+        /*font-size: 2.65rem;*/
       }
 
       #trial-copy > h2 {
-        font-size: 1.75rem;
+        /*font-size: 1.75rem;*/
+      }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
       }
     }
 
@@ -124,7 +184,7 @@
       }
 
       .benefits > .card {
-        height: 475px;
+        height: 450px;
       }
 
       #arrow-div {
@@ -132,15 +192,31 @@
       }
 
       #trial-copy > h1 {
-        font-size: 2.025rem;
+        /*font-size: 2.025rem;*/
       }
 
       #trial-copy > h2 {
-        font-size: 1.35rem;
+        /*font-size: 1.35rem;*/
       }
 
       #form-card {
         margin-top: -195px;
+      }
+
+      .line-break {
+        display: block;
+      }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+
+      blockquote > h3 {
+        font-size: 1.65rem;
+      }
+
+      blockquote > div {
+        font-size: .975rem;
       }
     }
 
@@ -152,7 +228,7 @@
       }
 
       .benefits > .card {
-        height: 400px;
+        height: 370px;
       }
 
       #arrow-div {
@@ -160,11 +236,11 @@
       }
 
       #trial-copy > h1 {
-        font-size: 2.25rem;
+        /*font-size: 2.25rem;*/
       }
 
       #trial-copy > h2 {
-        font-size: 1.5rem;
+        /*font-size: 1.5rem;*/
       }
 
       #visual-cue-arrow {
@@ -176,6 +252,18 @@
       #form-card {
         margin-top: -155px;
       }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+
+      blockquote > h3 {
+        font-size: 1.65rem;
+      }
+
+      blockquote > div {
+        font-size: .975rem;
+      }
     }
 
 
@@ -186,7 +274,7 @@
       }
 
       .benefits > .card {
-        height: 320px;
+        height: 350px;
       }
 
       #arrow-div {
@@ -195,6 +283,10 @@
 
       #form-card {
         margin-top: -165px;
+      }
+
+      .card > blockquote {
+        padding: 15px;
       }
     }
 
@@ -206,7 +298,7 @@
        }
 
       .benefits > .card {
-        height: 320px;
+        height: 365px;
       }
 
       #arrow-div {
@@ -215,6 +307,10 @@
 
       #form-card {
         margin-top: -205px;
+      }
+
+      .card > blockquote {
+        padding: 20px;
       }
     }
   </style>
@@ -268,13 +364,21 @@
     <div class="container space-bottom-1">
       <div class="row">
         <div id="trial-copy" class="col-md-7 col-lg-6 text-white">
-          <h1>See what you’re missing</h1>
-          <h2>Uncover threats hiding in your inbox</h2>
+          <h1>The Best Protection for Office 365</h1>
+          <h2>Start a Proof-of-Value for Real Results in Days.</h2>
+          <p>Avanan has been proven to catch the evolving threats missed by Microsoft Exchange Online Protection (EOP) and Advanced Threat Protection (ATP), as well as Secure Email Gateways (SEG) such as <i>Proofpoint and Mimecast.</i></p>
+          <p style="color: #fff; font-size: 1.25rem;"><strong>See what you’re missing.</strong></p>
+          <p>The patented Avanan AI instantly builds a social graph to map user behavior and detect phishing, malware, and other advanced threats such as Business Email Compromise (BEC).</p>
           <ul class="mt-4 no_bullet">
-            <li class="check">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
-            <li class="check">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
-            <li class="check">Get started right away — an admin can approve the Avanan app in one click.</li>
+            <li class="check">Installs in one click</li>
+            <li class="check">Immediately scans historical email for threats</li>
+            <li class="check">Pre-delivery protection before the inbox (and after Microsoft security)</li>
+            <li class="check">Secure internal-to-internal email scanning</li>
+            <li class="check">Post-delivery Search and Destroy™ remediation</li>
+            <li class="check">Full-suite security for OneDrive, Sharepoint, and more</li>
           </ul>
+          <p style="color: #fff; font-size: 1.25rem;" class="mt-5"><strong>Ready to see the threats hiding in your inboxes?</strong></p>
+          <p>Our team will contact you with secure user credentials, and schedule a time to set-up and introduce you to the platform. O365 global admins can approve the Avanan app from the Microsoft AppSource in one click. Expect to hear from us within 90 minutes during normal business hours. </p>
         </div>
 
         <div id="arrow-div" class="col-lg-1">
@@ -378,48 +482,48 @@
     <div class="container space-3">
       <div class="row">
 
-        <div class="benefits col-12 col-md-6">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="top-left" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/rocket-dark.png">
-              <h3>Easy Deployment</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/rocket-teal.png">
+              <h3>Easy <span class="line-break">Deployment</span></h3>
+              <div style="color: #788487;" class="text-left">
                 Install Avanan from the app store of your collaboration suite and connected apps. In just one click, the algorithm learns from your environment, quarantines existing threats, and identifies phishing, malware, data leakage, and account compromise immediately.
               </div>
             </blockquote>
           </div>
         </div>
 
-        <div class="benefits col-12 col-md-6">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="top-right" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/code-dark.png">
-              <h3>Security Beyond Email</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/code-teal.png">
+              <h3>Security <span class="line-break">Beyond Email</span></h3>
+              <div style="color: #788487;" class="text-left">
                 Gain end-to-end control over your entire environment, from file sharing and other account activity to configuration changes in the admin console. Multiple security engines add layers to your security, ensuring that every aspect of your suite is protected from advanced threats.
               </div>
             </blockquote>
           </div>
         </div>
 
-        <div class="benefits col-12 col-md-6 mt-md-3">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="bottom-left" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/unified-dark.png">
-              <h3>Unified Visibility & Management</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/unified-teal.png">
+              <h3>Unified Visibility <span class="line-break">& Management</span></h3>
+              <div style="color: #788487;" class="text-left">
                 No longer will you have to navigate the different interfaces of your security vendors. With Avanan, all your anti-phishing, anti-malware, DLP, and account takeover protection is in one place. Set policies, workflows, and reports for every service in use at your organization from a single administrative console.
               </div>
             </blockquote>
           </div>
         </div>
 
-        <div class="benefits col-12 col-md-6 mt-md-3">
-          <div style="border: none;" class="card shadow-lg bg-primary text-white text-center p-3 mb-3">
+        <div id="bottom-right" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
             <blockquote class="blockquote mb-0">
-              <img class="benefit-icons" src="assets/img/benefit-statements/bionic-dark.png">
-              <h3>Proactive Security</h3>
-              <div class="text-left">
+              <img class="benefit-icons" src="assets/img/benefit-statements/bionic-teal.png">
+              <h3>Proactive <span class="line-break">Security</span></h3>
+              <div style="color: #788487;" class="text-left">
                 Users protected by Avanan can report email-based threats and request restores of quarantined content. Beyond this, every Avanan customer receives one-on-one customer support to ensure a seamless security experience.
               </div>
             </blockquote>
@@ -433,39 +537,24 @@
 
 
     <!-- <div class="container"> -->
-      <!-- CTA -->
-      <div class="container text-center pb-10">
-        <!-- Title -->
-        <div class="w-md-60 text-center mx-auto mb-5">
-          <h2 class="h1 font-weight-medium">Ready to get started?</h2>
-        </div>
-        <!-- End Title -->
 
 
-        <!-- Fancybox -->
-        <div class="d-flex justify-content-center mb-10">
-          <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="#!">Start Free Trial</a>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <!-- Fancybox -->
-              <a id="how-it-works-btn" class="js-fancybox media align-items-center u-media-player mb-4" href="javascript:;"
-                 data-src="//vimeo.com/167434033"
-                 data-speed="700"
-                 data-animate-in="zoomIn"
-                 data-animate-out="zoomOut"
-                 data-caption="Front - Responsive Website Template">
-                <span class="u-media-player__icon u-media-player__icon--primary mr-3">
-                  <span class="fas fa-play u-media-player__icon-inner"></span>
-                </span>
-                <span class="media-body">
-                  How Avanan Works
-                </span>
-              </a>
+      <!-- CTA Section -->
+      <div class="position-relative bg-primary">
+        <div class="container space-2">
+          <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h3 class="h2 text-white font-weight-semi-bold mb-0">Ready to get started?</h3>
             </div>
+
+            <div class="col-lg-7 text-lg-right">
+              <a class="btn btn-dark btn-wide btn-pill transition-3d-hover mr-3" href="#">Start Free Trial</a>
+              <a class="btn btn-white btn-wide btn-pill text-primary shadow-soft transition-3d-hover" href="#">How Avanan Works &nbsp; <i class="fas fa-play"></i></a>
+            </div>
+          </div>
         </div>
-        <!-- End Fancybox -->
       </div>
-      <!-- End CTA -->
+      <!-- End CTA Section -->
     </div>
 
 
@@ -478,32 +567,32 @@
 
 
   <!-- ========== FOOTER ========== -->
-  <footer class="border-top bg-dark">
+  <footer class="bg-dark">
     <div class="container space-2">
       <div class="row">
-        <div class="col-sm-3 col-lg-2 order-sm-2 mb-4 mb-sm-0 ml-lg-auto">
+        <div class="col-3 col-lg-2 order-2 mb-4 mb-sm-0 ml-lg-auto">
           <!-- List Group -->
           <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
             <li><a class="list-group-item list-group-item-action" href="#!">About Us</a></li>
-            <li><a class="list-group-item list-group-item-action" href="#!">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Contact</a></li>
           </ul>
           <!-- End List Group -->
         </div>
 
 
-        <div class="col-sm-3 col-lg-2 order-sm-3 mb-4 mb-sm-0">
+        <div class="col-3 col-lg-2 order-3 mb-4 mb-sm-0">
           <!-- List Group -->
           <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
             <li><a class="list-group-item list-group-item-action" href="#!">Privacy Policy</a></li>
-            <li><a class="list-group-item list-group-item-action" href="#!">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">The Avanan Blog</a></li>
           </ul>
           <!-- End List Group -->
         </div>
 
-        <div class="col-sm-6 col-lg-4 order-sm-1">
+        <div class="col-5 col-lg-4 order-1">
           <!-- Logo -->
           <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Front">
-            <img style="max-width: 115px; height: auto; opacity: 1;" src="https://www.avanan.com/hubfs/Images/Logos/avanan-logo-white-teal.png">
+            <img style="max-width: 115px; height: auto;" src="https://www.avanan.com/hubfs/Images/Logos/avanan-logo-white-teal.png">
           </a>
           <!-- End Logo -->
 
