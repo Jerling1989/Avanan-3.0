@@ -29,6 +29,59 @@
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/layout/header.css">
+
+  <style type="text/css">
+    #top-img {
+      width: 90%;
+    }
+
+    /* PHONES IN PORTRAIT col-3 */
+    @media (max-width: 576px) {
+      #top-img {
+        width: 90%;
+      }
+    }
+
+
+    /* PHONES IN LANDSCAPE col-sm-3 */
+    @media (min-width: 576px) and (max-width: 768px) {
+      #top-img {
+        width: 90%;
+      }
+    }
+
+
+    /* TABLETS col-md-3 */
+    @media (min-width: 768px) and (max-width: 992px) {
+      #top-img {
+        width: 65%;
+      }
+    }
+
+
+    /* LAPTOPS  col-lg-3 */
+    @media (min-width: 992px) and (max-width: 1200px) {
+      #top-img {
+        width: 100%;
+      }
+    }
+
+
+    /* DESKTOPS col-xl-3 */
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      #top-img {
+        width: 90%;
+      }
+    }
+
+
+    /* LARGE DESKTOPS */
+    @media (min-width: 1500px) {
+       #top-img {
+        width: 90%;
+      }
+    }
+  </style>
 <body>
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md">
@@ -464,6 +517,7 @@
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
+    <div id="spacer-div"></div>
     <!-- Hero Section -->
     <div id="SVGHero" class="position-relative bg-primary-light">
       <div class="container space-top-2 space-bottom-3 space-md-3 space-bottom-lg-3">
@@ -492,13 +546,13 @@
     <!-- Stories Section -->
     <div class="container card shadow-sm p-7 mt-n10 mb-n6">
       <div class="row">
-        <div class="col-7">
+        <div class="col-lg-7">
           <h2>Avanan Protects Educational Institutions from Advanced Threats</h2>
           <p>Hacking a domain with a strong reputation makes malicious actors happy. It helps them more easily launch future attacks.  This makes Universities and other educational institutions high-value targets.</p>
-          <p>The Avanan platform currently protects faculty, student and alumni populations at some of the largest university systems as well as local school districts.</p>
+          <p>The Avanan platform currently protects faculty, student, and alumni populations at some of the largest university systems as well as local school districts.</p>
         </div>
-        <div class="col-5 text-center">
-          <img style="width: 90%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/mockups/intelligent-scanning-narrow.png">
+        <div class="col-lg-5 text-center">
+          <img id="top-img" class="img-fluid mt-4 mt-lg-7 mt-xl-0" src="https://www.avanan.com/hubfs/website/img/mockups/intelligent-scanning-narrow.png">
         </div>
       </div>
       
@@ -522,7 +576,7 @@
 
           <!-- Blockquote -->
           <div class="w-md-80 w-lg-80 text-center mx-md-auto">
-            <blockquote class="lead font-weight-normal">Microsoft Exchange Online Protection is not adequate to screen out all the phishing and hostile e-mails we receive through Office 365. We depend on Avanan to recognize and thwart novel attacks.</blockquote>
+            <blockquote class="lead font-weight-normal">“Web Application Attacks accounted for roughly one-quarter of breaches in the Education vertical,” which are mostly due to the "frequent compromise of cloud-based mail services via phishing links to phony login pages."</blockquote>
             <p class="font-size-sm text-white">— 2019 Verizon Data Breach Investigation Report</p>
           </div>
           <!-- End Blockquote -->
@@ -535,9 +589,9 @@
       <h2 class="mb-3 h3">Protect Students, Faculty, and Reputation from Phishing and Malware</h2>
       <p><strong style="color: #222;">Students</strong> are a highly-vulnerable population for hackers. Avanan helps to protect both them and the institution from the costly ramifications of a breach.</p>
       <p><strong style="color: #222;">Faculty</strong> have enough work with classes and research. Passive, pre-inbox protection from Avanan means they don’t even see phishing emails. At the same time, they can easily report attacks that get through to IT, who can use the Search & Destroy™ post-delivery forensic tools to pull all malicious files from the entire collaboration environment in a few clicks.</p>
-      <p class="mb-5"><strong style="color: #222;">Reputation</strong> is the basis of trust in the educational system. Avanan helps to prevent data leakage, account takeover, and compromises that extend across file-sharing, email and collaboration with a one-click installation that is easy on staff and budget.</p>
+      <p class="mb-5"><strong style="color: #222;">Reputation</strong> is the basis of trust in the educational system. Avanan helps to prevent data leakage, account takeover, and compromises that extend across file-sharing, email, and collaboration with a one-click installation that is easy on staff and budget.</p>
       
-      <p style="color: #222;">Cost-effective advanced threat protection for educational institutions save time and labor in the face of increasing security requirements:</p>
+      <p style="color: #222;">Cost-effective advanced threat protection for educational institutions saves time and labor in the face of increasing security requirements:</p>
       <ul class="mb-8">
         <li>Set proactive anti-phishing policies for faculty, students, and alumni — or use our recommended out-of-box configurations.</li>
         <li>Specifically protect against spear-phishing and impersonation attacks from V.I.P. staff such as the superintendent, principal, dean, and professors.</li>
@@ -570,11 +624,11 @@
 
 
       <div class="row align-items-lg-center mt-10">
-        <div class="col-lg-3 order-lg-1 text-center" data-aos="fade-right">
+        <div class="col-md-3 order-md-1 text-center" data-aos="fade-right">
           <img style="width: 70%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/icons/one-click.png">
         </div>
 
-        <div class="col-lg-9 order-lg-2 mb-7 mb-lg-0" data-aos="fade-left">
+        <div class="col-md-9 order-md-2 mb-7 mb-lg-0" data-aos="fade-left">
           <h3>Instant One-Click Deployment</h3>
           <p>Avanan connects to both Office 365 and G Suite using an encrypted API protocol. Every Avanan client has a highly-secure, dedicated environment. At the same time, the Avanan security layer is additive to default security measures, and invisible to hackers — preventing them from custom-crafting attacks for specific institutions.</p>
         </div>
@@ -582,11 +636,11 @@
 
 
       <div class="row align-items-lg-center mt-10">
-        <div class="col-lg-3 order-lg-2 text-center" data-aos="fade-left">
-          <img style="width: 70%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/icons/multi-tenancy.png">
+        <div class="col-md-3 order-md-2 text-center" data-aos="fade-left">
+          <img style="width: 62%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/icons/multi-tenancy.png">
         </div>
 
-        <div class="col-lg-9 order-lg-1 mb-7 mb-lg-0" data-aos="fade-right">
+        <div class="col-md-9 order-md-1 mb-7 mb-lg-0" data-aos="fade-right">
           <h3>Multi-Tenancy Support</h3>
           <p>Many schools and universities have separate tenants: one for faculty, and another for staff. The Avanan dashboard unifies reporting, remediation, and policy enforcement in a single pane of glass. Security Operations and IT teams can manage and secure all environments with one threat interface.</p>
         </div>
@@ -594,11 +648,11 @@
 
 
       <div class="row align-items-lg-center mt-10 mb-10">
-        <div class="col-lg-3 order-lg-1 text-center" data-aos="fade-right">
-          <img style="width: 70%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/icons/support-new.png">
+        <div class="col-md-3 order-md-1 text-center" data-aos="fade-right">
+          <img style="width: 60%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/icons/support-new.png">
         </div>
 
-        <div class="col-lg-9 order-lg-2 mb-7 mb-lg-0" data-aos="fade-left">
+        <div class="col-md-9 order-md-2 mb-7 mb-lg-0" data-aos="fade-left">
           <h3>Free One-On-One Customer Support</h3>
           <p>Learning shouldn’t be disrupted by phishing attacks and the excessive clean-up time that follows. Get on a call with an expert to better understand how the Avanan portal can save you time, resources, and frustration.</p>
         </div>
@@ -608,7 +662,7 @@
 
       <div class="mt-5">
         <h2>Avanan Protects Educational Institutions from Advanced Threats</h2>
-        <p>Hacking a domain with a strong reputation makes malicious actors happy. It helps them more easily launch future attacks.  This makes Universities and other educational institutions high-value targets.</p>
+
         <p>The Avanan platform currently protects faculty, student and alumni populations at some of the largest university systems as well as local school districts.</p>
         <div class="text-center mt-5">
           <img class="img-fluid" style="width: 40%;" src="https://www.avanan.com/hubfs/website/img/logos/saas/office-365-microsoft-partner.png">
@@ -623,22 +677,11 @@
     <div class="bg-primary" style="">
       <div class="container p-7">
         <div class="container space-1">
-          <!-- SVG Quote -->
-          <!-- <figure class="mx-auto text-center mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
-               viewBox="0 0 8 8" style="enable-background:new 0 0 8 8;" xml:space="preserve">
-              <path class="fill-dark" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
-                C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
-                c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
-                C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
-            </svg>
-          </figure> -->
-          <!-- End SVG Quote -->
 
           <!-- Blockquote -->
           <div class="w-md-80 w-lg-80 text-center mx-md-auto">
-            <!-- <blockquote class="lead font-weight-normal mt-5">Microsoft Exchange Online Protection is not adequate to screen out all the phishing and hostile e-mails we receive through Office 365. We depend on Avanan to recognize and thwart novel attacks.</blockquote> -->
-            <a class="btn btn-white btn-pill btn-lg mt-5 transition-3d-hover" href="#!">Get a Trial for your EDU</a>
+           <h3 class="h1 text-white mt-5">Ready to give Avanan a try?</h3>
+            <a class="btn btn-white btn-pill btn-lg mt-3 transition-3d-hover" href="#!">Get a Trial for your EDU</a>
           </div>
           <!-- End Blockquote -->
         </div>
