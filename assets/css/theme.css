@@ -15857,8 +15857,8 @@ label.btn {
 ------------------------------------*/
 .custom-select:focus,
 .form-control:focus {
-  box-shadow: 0 0 10px rgba(55, 125, 255, 0.1);
-  border-color: rgba(55, 125, 255, 0.5);
+  box-shadow: 0 0 10px rgba(86, 155, 190, 0.1);
+  border-color: rgba(86, 155, 190, 0.5);
 }
 
 .form-label {
