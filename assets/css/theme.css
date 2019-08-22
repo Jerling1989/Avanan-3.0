@@ -3933,9 +3933,9 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: rgba(55, 125, 255, 0.5);
+  border-color: rgba(86, 155, 190, 0.5);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(55, 125, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(86, 155, 190, 0.25);
 }
 
 .custom-select:focus::-ms-value {
