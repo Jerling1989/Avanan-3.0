@@ -20,6 +20,9 @@
     <title>Avanan Webinar Landing Page</title>
 
     <style type="text/css">
+      body {
+        font-size: 1rem !important;
+      }
       /* PHONES IN PORTRAIT col-3 */
       @media (max-width: 576px) {
         #peer-insight-logo {
@@ -57,6 +60,10 @@
         #peer-insight-logo {
           width: 30%;
         }
+
+        .container {
+          max-width: 1140px !important;
+        }
       }
 
 
@@ -64,6 +71,32 @@
       @media (min-width: 1500px) {
         #peer-insight-logo {
           width: 30%;
+        }
+      }
+
+      #footer-container {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        color: #788487;
+      }
+
+      .footer-link {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.875rem;
+      }
+
+      .footer-link:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      @media (max-width: 576px) {
+        #footer-container {
+          width: 90%;
         }
       }
     </style>
@@ -85,8 +118,9 @@
     ================================================== -->
     <section class="">
       <div class="container text-center mt-10">
-
-            <h1 class="display-3">Make EDUs a No Phishing Zone with Avanan</h1>
+            <h3>WEBINAR</h3>
+            <h1 class="display-3" style="color: #569bbe;">Make EDUs a No Phishing Zone with Avanan</h1>
+            <h4>Thursday, September 26th at 2:00pm ET</h4>
           
       </div> <!-- / .container -->
     </section>
@@ -95,10 +129,10 @@
 
     <!-- SCALABLE
     ================================================== -->
-    <section id="whereToFindUs" class="py-8 py-md-11 border-bottom">
+    <section id="whereToFindUs" class="py-8 py-md-10 border-bottom">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-6 order-md-2">
+          <div class="col-12 col-md-5 offset-md-1 order-md-2 pb-8 pb-md-1">
             
             <!-- Card -->
             <div class="card shadow">
@@ -148,7 +182,7 @@
                           
                           <!-- Submit -->
                           <button class="btn btn-block btn-danger mt-3 lift">
-                            Watch Recording
+                            Register Now
                           </button>
 
                         </div>
@@ -162,47 +196,33 @@
             </div>
 
           </div>
+
           <div class="col-12 col-md-6 order-md-1">
 
-            <!-- Heading -->
-            <h2>
-              Where to find us <br>
-              <span class="text-secondary">when you're at the summit</span>.
-            </h2>
+            <p class="text-muted">Educational Institutions are under attack. Phishing attacks target students, staff, and alumni, who are caught off-guard and tricked into giving up login credentials. According to the 2019 Verizon Data Breach Investigation Report, “Web Application Attacks accounted for roughly one-quarter of breaches in the Education vertical” which are mostly due to the "frequent compromise of cloud-based mail services via phishing links to phony login pages."</p>
 
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-6 mb-md-6">
-              Floor A, Maryland Ballroom <br>
-              Section B, Booth 1492
-            </p>
+            <p class="text-muted">Avanan has come to the service of these institutions by offering creative licensing models that make protecting their diverse user base in the most cost-efficient manner possible. Current clients range from small colleges to major university systems, who can get up and running quickly with a one-click cloud deployment.</p>
 
-            <button type="button" class="btn btn-secondary btn-sm mb-2" data-toggle="modal" data-target="#floorplanModal">View on Map</button>
+            <p class="text-muted">Join us for this webinar, where the relationship management team and our engineering lead who work with so many of our educational institution clients will walk through the key aspects of our solution. </p>
+
+            <div>
+              <h3>Session Hosts</h3>
+
+              <div style="margin-bottom: -15px;"><img src="https://www.avanan.com/hs-fs/hubfs/Don-thumbnail.png?width=70&amp;name=Don-thumbnail.png" alt="Don Byrne" width="70" style="width: 70px; float: left; margin: 0px 10px 10px 0px; filter: drop-shadow(0 0 7.5px #95a5a6); border-radius: 100px;">
+              <p style="font-size: 14px; color: #222; margin-bottom: 35px;"><br><strong>Don Byrne, Executive VP of Worldwide Sales</strong><br><br></p>
+              </div>
+  
+
+              <div style="margin-bottom: -15px;"><img src="https://www.avanan.com/hs-fs/hubfs/Website/website/jacob_redesign/staff/chris.jpeg?width=70&amp;name=chris.jpeg" alt="Chris Isbrecht" width="70" style="width: 70px; float: left; margin: 0px 10px 10px 0px; filter: drop-shadow(0 0 7.5px #95a5a6); border-radius: 100px;">
+                <p style="font-size: 14px; color: #222; margin-bottom: 35px;"><br><strong>Chris Isbrecht,&nbsp;Director of Security Engineering </strong><br><br></p>
+              </div>
+              
+            </div>
 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="floorplanModal" tabindex="-1" role="dialog" aria-labelledby="Summit Map" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Event Floorplan</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-fluid" src="assets/img/floorplan.png">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-            <a class="btn btn-sm btn-danger" href="#!">Download PDF</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
     <!-- FEATURES
@@ -251,20 +271,47 @@
 
     <!-- FOOTER
     ================================================== -->
-    <section style="background-color: #222;" class="pt-2">
-      <footer class="py-2 py-md-3">
-        <div class="container">
+    <section class="pt-2" style="background-color: #222;">
+      <footer class="py-2 py-md-3" style="background-color: #222;">
+        <div id="footer-container" class="container">
           <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-3 col-lg-2 order-2 mb-4 mb-sm-0 ml-lg-auto">
+              <!-- List Group -->
+              <ul class="">
+                <li><a class="footer-link" href="https://www.avanan.com/about">About Us</a></li>
+                <li><a class="footer-link" href="https://www.avanan.com/contact-us">Contact</a></li>
+              </ul>
+              <!-- End List Group -->
+            </div>
 
-              <!-- Text -->
-              <p style="color: #788487;">© Copyright
-               <!-- YEAR SCRIPT -->
-              <script type="text/javascript">
-                document.write(new Date().getFullYear());
-              </script> 
-              <!-- END YEAR SCRIPT -->
-              Avanan. All Rights Reserved.</p>
+
+            <div class="col-4 col-lg-3 col-xl-3 order-3 mb-4 mb-sm-0">
+              <!-- List Group -->
+              <ul class="">
+                <li><a class="footer-link" href="https://www.avanan.com/privacy-policy">Privacy Policy</a></li>
+                <li><a class="footer-link" href="https://www.avanan.com/blog">The Avanan Blog</a></li>
+              </ul>
+              <!-- End List Group -->
+            </div>
+
+            <div class="col-5 col-lg-4 order-1">
+              <!-- Logo -->
+              <a class="d-inline-flex align-items-center mb-2" href="https://www.avanan.com/" aria-label="Avanan">
+                <img style="max-width: 115px; height: auto; opacity: 1;" src="https://www.avanan.com/hubfs/Images/Logos/avanan-logo-white-teal.png">
+              </a>
+              <!-- End Logo -->
+
+              <div class="mb-4">
+                <p class="copyright">
+                  © Copyright
+                  <!-- YEAR SCRIPT -->
+                  <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                  </script> 
+                  <!-- END YEAR SCRIPT -->
+                  Avanan. All Rights Reserved.
+                </p>
+              </div>
 
             </div>
           </div> <!-- / .row -->
