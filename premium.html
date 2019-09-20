@@ -97,6 +97,12 @@
       border-top: 1px solid #222;
     }
 
+    .gradient {
+      background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       #trial-spacer-div {
@@ -363,63 +369,13 @@
     <!-- TOP FORM AND COPY -->
     <div class="container space-bottom-1">
       <div class="row">
-        <div id="trial-copy" class="col-md-7 col-lg-6 text-white">
-          <h1>See what you’re missing</h1>
-          <h2>Uncover threats hiding in your inbox</h2>
-          <ul class="mt-4 no_bullet">
-            <li class="check">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
-            <li class="check">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
-            <li class="check">Get started right away — an admin can approve the Avanan app in one click.</li>
-          </ul>
+        <div id="trial-copy" class="col-md-8 col-lg-8 mx-auto text-white">
+          <h1 class="gradient">Incident Response-as-a-Service</h1>
+          <p class="lead text-white">Avanan Security Experts will review every end-user report of missed phishing and every request to release from quarantine.</p>
+          <p class="lead text-white">Avanan will then perform all necessary remediation actions on your behalf.</p>
         </div>
 
-        <div id="arrow-div" class="col-lg-1">
-          <img id="visual-cue-arrow" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/filler-images/teal-arrow-extra-slim.png">
-        </div>
 
-        <div class="col-md-5 col-lg-5 mt-6 mt-md-0">
-          <!-- Contact Form -->
-          <div id="form-card" class="card shadow-lg p-4">
-            <div class="text-center">
-              <div style="margin-top: 20px; margin-bottom: 20px;">
-                <h1 class="mb-0">TRY IT FREE</h1>
-                <h5 style="color: #569bbe; letter-spacing: 0.5rem; margin-left: 10px;">FOR 14 DAYS</h5>
-              </div>
-              <hr>
-            </div>
-            <!-- Form -->
-            <form class="mt-3">
-              <div class="mb-2" style="margin-top: 10px; margin-bottom: 30px;">
-                <label class="sr-only" for="firstNameSr">First Name</label>
-                <input type="text" class="form-control form-control-sm" name="text" id="firstNameSr" placeholder="First Name" aria-label="First Name">
-              </div>
-
-              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
-                <label class="sr-only" for="lastNameSr">Last Name</label>
-                <input type="text" class="form-control form-control-sm" name="text" id="lastNameSr" placeholder="Last Name" aria-label="Last Name">
-              </div>
-
-              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
-                <label class="sr-only" for="companyNameSr">Company Name</label>
-                <input type="tel" class="form-control form-control-sm" name="tel" id="companyNameSr" placeholder="Company Name" aria-label="Company Name">
-              </div>
-
-              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
-                <label class="sr-only" for="emailAddressSr">Email Address</label>
-                <input type="email" class="form-control form-control-sm" name="text" id="emailAddressSr" placeholder="Email Address" aria-label="Email Address">
-              </div>
-
-              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
-                <label class="sr-only" for="phoneNumberSr">Phone Number</label>
-                <input type="tel" class="form-control form-control-sm" name="tel" id="phoneNumberSr" placeholder="Phone Number" aria-label="Phone Number">
-              </div>
-
-              <button style="margin-top: 30px; margin-bottom: 10px; text-transform: uppercase;" type="button" class="btn btn-block btn-sm btn-danger btn-wide transition-3d-hover">Start Free Trial</button>
-            </form>
-            <!-- End Form -->
-          </div>
-          <!-- End Contact Form -->
-        </div>
       </div>
     </div>
     <!-- END TOP FORM AND COPY -->
