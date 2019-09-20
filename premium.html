@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Avanan | Start a Trial</title>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+
+  <!-- ADDED BY ME (ANIMATION) -->
+  <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/layout/header.css">
+
+
+  <style type="text/css">
+    /** {
+      background: #000 !important;
+      color: #0f0 !important;
+      outline: solid #f00 1px !important;
+    }*/
+
+    ul.no_bullet {
+      list-style-type: none;
+    }
+
+    #trial-copy li {
+      color: #cdcdcd;
+      font-size: 1.085rem;
+      margin-bottom: 15px;
+    }
+
+    li.check {
+      background: url('assets/img/teal-check-30.png') no-repeat left top;
+      padding-left: 35px;
+    }
+
+    #visual-cue-arrow {
+      width: 145%;
+      margin-top: 15px;
+      margin-left: -35px;
+    }
+
+    .benefit-icons {
+      width: 125px;
+      padding: 20px;
+    }
+
+    .benefits > .card {
+      height: 320px;
+    }
+
+    #trial-copy > h1 {
+      font-size: 2.82rem;
+    }
+
+    #trial-copy > h2 {
+      font-size: 1.885rem;
+    }
+
+    #top-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #top-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    #bottom-left {
+      padding: 0;
+      border-right: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
+    #bottom-right {
+      padding: 0;
+      border-left: 1px solid #222;
+      border-top: 1px solid #222;
+    }
+
+    /* PHONES IN PORTRAIT col-3 */
+    @media (max-width: 576px) {
+      #trial-spacer-div {
+        margin-top: 60px;
+      }
+
+      .benefits > .card {
+        height: auto;
+      }
+
+      #arrow-div {
+        display: none;
+      }
+
+      #trial-copy > h1 {
+        font-size: 2.25rem;
+      }
+
+      #trial-copy > h2 {
+        font-size: 1.5rem;
+      }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
+      }
+    }
+
+
+    /* PHONES IN LANDSCAPE col-sm-3 */
+    @media (min-width: 576px) and (max-width: 768px) {
+      #trial-spacer-div {
+        margin-top: 60px;
+      }
+
+      .benefits > .card {
+        height: auto;
+      }
+
+      #arrow-div {
+        display: none;
+      }
+
+      #trial-copy > h1 {
+        font-size: 2.65rem;
+      }
+
+      #trial-copy > h2 {
+        font-size: 1.75rem;
+      }
+
+      #top-left {
+        border: none;
+      }
+
+      #top-right {
+        border: none;
+      }
+
+      #bottom-left {
+        border: none;
+      }
+
+      #bottom-right {
+        border: none;
+      }
+    }
+
+
+    /* TABLETS col-md-3 */
+    @media (min-width: 768px) and (max-width: 992px) {
+      #trial-spacer-div {
+        margin-top: 180px;
+      }
+
+      .benefits > .card {
+        height: 450px;
+      }
+
+      #arrow-div {
+        display: none;
+      }
+
+      #trial-copy > h1 {
+        font-size: 2.025rem;
+      }
+
+      #trial-copy > h2 {
+        font-size: 1.35rem;
+      }
+
+      #form-card {
+        margin-top: -195px;
+      }
+
+      .line-break {
+        display: block;
+      }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+
+      blockquote > h3 {
+        font-size: 1.65rem;
+      }
+
+      blockquote > div {
+        font-size: .975rem;
+      }
+    }
+
+
+    /* LAPTOPS  col-lg-3 */
+    @media (min-width: 992px) and (max-width: 1200px) {
+      #trial-spacer-div {
+        margin-top: 130px;
+      }
+
+      .benefits > .card {
+        height: 370px;
+      }
+
+      #arrow-div {
+        display: block;
+      }
+
+      #trial-copy > h1 {
+        font-size: 2.25rem;
+      }
+
+      #trial-copy > h2 {
+        font-size: 1.5rem;
+      }
+
+      #visual-cue-arrow {
+        width: 175%;
+        margin-top: 45px;
+        margin-left: -35px;
+      }
+
+      #form-card {
+        margin-top: -155px;
+      }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+
+      blockquote > h3 {
+        font-size: 1.65rem;
+      }
+
+      blockquote > div {
+        font-size: .975rem;
+      }
+    }
+
+
+    /* DESKTOPS col-xl-3 */
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      #trial-spacer-div {
+        margin-top: 150px;
+      }
+
+      .benefits > .card {
+        height: 350px;
+      }
+
+      #arrow-div {
+        display: block;
+      }
+
+      #form-card {
+        margin-top: -165px;
+      }
+
+      .card > blockquote {
+        padding: 15px;
+      }
+    }
+
+
+    /* LARGE DESKTOPS */
+    @media (min-width: 1500px) {
+       #trial-spacer-div {
+        margin-top: 190px;
+       }
+
+      .benefits > .card {
+        height: 365px;
+      }
+
+      #arrow-div {
+        display: block;
+      }
+
+      #form-card {
+        margin-top: -205px;
+      }
+
+      .card > blockquote {
+        padding: 20px;
+      }
+    }
+  </style>
+
+
+</head>
+<body class="bg-dark">
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md">
+    <div class="u-header__section">
+      <div id="logoAndNav" class="container">
+        <!-- Main Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+            <img src="https://www.avanan.com/hubfs/website/img/logos/avanan-logo-white-teal-HiRes.png" alt="Avanan">
+          </a>
+          <!-- End Logo -->
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+
+              <!-- EMPTY NAV ITEM -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item">
+                <a class="nav-link u-header__nav-link" href="#!">&nbsp;</a>
+              </li>
+              <!-- END EMPTY NAV ITEM -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Main Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+
+
+    
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <main id="content" role="main" style="overflow: hidden;">
+    <div id="trial-spacer-div"></div>
+
+    <!-- TOP FORM AND COPY -->
+    <div class="container space-bottom-1">
+      <div class="row">
+        <div id="trial-copy" class="col-md-7 col-lg-6 text-white">
+          <h1>See what you’re missing</h1>
+          <h2>Uncover threats hiding in your inbox</h2>
+          <ul class="mt-4 no_bullet">
+            <li class="check">Our patented AI filters email after your existing security, but before it arrives at the inbox.</li>
+            <li class="check">The algorithm learns from historical communication patterns at your organization to map user behavior into a social graph.</li>
+            <li class="check">Get started right away — an admin can approve the Avanan app in one click.</li>
+          </ul>
+        </div>
+
+        <div id="arrow-div" class="col-lg-1">
+          <img id="visual-cue-arrow" src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/filler-images/teal-arrow-extra-slim.png">
+        </div>
+
+        <div class="col-md-5 col-lg-5 mt-6 mt-md-0">
+          <!-- Contact Form -->
+          <div id="form-card" class="card shadow-lg p-4">
+            <div class="text-center">
+              <div style="margin-top: 20px; margin-bottom: 20px;">
+                <h1 class="mb-0">TRY IT FREE</h1>
+                <h5 style="color: #569bbe; letter-spacing: 0.5rem; margin-left: 10px;">FOR 14 DAYS</h5>
+              </div>
+              <hr>
+            </div>
+            <!-- Form -->
+            <form class="mt-3">
+              <div class="mb-2" style="margin-top: 10px; margin-bottom: 30px;">
+                <label class="sr-only" for="firstNameSr">First Name</label>
+                <input type="text" class="form-control form-control-sm" name="text" id="firstNameSr" placeholder="First Name" aria-label="First Name">
+              </div>
+
+              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
+                <label class="sr-only" for="lastNameSr">Last Name</label>
+                <input type="text" class="form-control form-control-sm" name="text" id="lastNameSr" placeholder="Last Name" aria-label="Last Name">
+              </div>
+
+              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
+                <label class="sr-only" for="companyNameSr">Company Name</label>
+                <input type="tel" class="form-control form-control-sm" name="tel" id="companyNameSr" placeholder="Company Name" aria-label="Company Name">
+              </div>
+
+              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
+                <label class="sr-only" for="emailAddressSr">Email Address</label>
+                <input type="email" class="form-control form-control-sm" name="text" id="emailAddressSr" placeholder="Email Address" aria-label="Email Address">
+              </div>
+
+              <div class="mb-2" style="margin-top: 30px; margin-bottom: 30px;">
+                <label class="sr-only" for="phoneNumberSr">Phone Number</label>
+                <input type="tel" class="form-control form-control-sm" name="tel" id="phoneNumberSr" placeholder="Phone Number" aria-label="Phone Number">
+              </div>
+
+              <button style="margin-top: 30px; margin-bottom: 10px; text-transform: uppercase;" type="button" class="btn btn-block btn-sm btn-danger btn-wide transition-3d-hover">Start Free Trial</button>
+            </form>
+            <!-- End Form -->
+          </div>
+          <!-- End Contact Form -->
+        </div>
+      </div>
+    </div>
+    <!-- END TOP FORM AND COPY -->
+
+
+    <!-- SOCIAL PROOF -->
+    <div>
+      <div class="row bg-light mt-8">
+        <!-- Testimonials Section -->
+        <div class="container space-1">
+          <!-- SVG Quote -->
+          <figure class="mx-auto text-center mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+               viewBox="0 0 8 8" style="enable-background:new 0 0 8 8;" xml:space="preserve">
+              <path class="fill-gray-400" d="M3,1.3C2,1.7,1.2,2.7,1.2,3.6c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5
+                C1.4,6.9,1,6.6,0.7,6.1C0.4,5.6,0.3,4.9,0.3,4.5c0-1.6,0.8-2.9,2.5-3.7L3,1.3z M7.1,1.3c-1,0.4-1.8,1.4-1.8,2.3
+                c0,0.2,0,0.4,0.1,0.5c0.2-0.2,0.5-0.3,0.9-0.3c0.8,0,1.5,0.6,1.5,1.5c0,0.9-0.7,1.5-1.5,1.5c-0.7,0-1.1-0.3-1.4-0.8
+                C4.4,5.6,4.4,4.9,4.4,4.5c0-1.6,0.8-2.9,2.5-3.7L7.1,1.3z"/>
+            </svg>
+          </figure>
+          <!-- End SVG Quote -->
+
+          <!-- Blockquote -->
+          <div class="w-md-80 w-lg-80 text-center mx-md-auto">
+            <blockquote class="lead text-secondary font-weight-normal">Microsoft Exchange Online Protection is not adequate to screen out all the phishing and hostile e-mails we receive through Office 365. We depend on Avanan to recognize and thwart novel attacks.</blockquote>
+          </div>
+          <!-- End Blockquote -->
+
+          <!-- Reviewer -->
+          <div class="d-flex justify-content-center align-items-center w-lg-50 mx-auto text-center">
+            <div class="">
+              <img style="width: 85%;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/logos/gpi-logo.png" alt="Image Description"><br>
+              <span class="text-warning">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span> 
+              </span>
+            </div>
+          </div>
+          <!-- End Reviewer -->
+        </div>
+        <!-- End Testimonials Section -->
+      </div>
+    </div>
+    <!-- END SOCIAL PROOF -->
+
+
+    <div class="bg-white">
+    <!-- AVANAN BENEFITS -->
+    <div class="container space-3">
+      <div class="row">
+
+        <div id="top-left" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
+            <blockquote class="blockquote mb-0">
+              <img class="benefit-icons" src="assets/img/benefit-statements/rocket-teal.png">
+              <h3>Easy <span class="line-break">Deployment</span></h3>
+              <div style="color: #788487;" class="text-left">
+                Install Avanan from the app store of your collaboration suite and connected apps. In just one click, the algorithm learns from your environment, quarantines existing threats, and identifies phishing, malware, data leakage, and account compromise immediately.
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+        <div id="top-right" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
+            <blockquote class="blockquote mb-0">
+              <img class="benefit-icons" src="assets/img/benefit-statements/code-teal.png">
+              <h3>Security <span class="line-break">Beyond Email</span></h3>
+              <div style="color: #788487;" class="text-left">
+                Gain end-to-end control over your entire environment, from file sharing and other account activity to configuration changes in the admin console. Multiple security engines add layers to your security, ensuring that every aspect of your suite is protected from advanced threats.
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+        <div id="bottom-left" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
+            <blockquote class="blockquote mb-0">
+              <img class="benefit-icons" src="assets/img/benefit-statements/unified-teal.png">
+              <h3>Unified Visibility <span class="line-break">& Management</span></h3>
+              <div style="color: #788487;" class="text-left">
+                No longer will you have to navigate the different interfaces of your security vendors. With Avanan, all your anti-phishing, anti-malware, DLP, and account takeover protection is in one place. Set policies, workflows, and reports for every service in use at your organization from a single administrative console.
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+        <div id="bottom-right" class="benefits col-12 col-md-6">
+          <div style="border: none; margin: 0 !important; border-radius: 0;" class="card text-center p-3 mb-3">
+            <blockquote class="blockquote mb-0">
+              <img class="benefit-icons" src="assets/img/benefit-statements/bionic-teal.png">
+              <h3>Proactive <span class="line-break">Security</span></h3>
+              <div style="color: #788487;" class="text-left">
+                Users protected by Avanan can report email-based threats and request restores of quarantined content. Beyond this, every Avanan customer receives one-on-one customer support to ensure a seamless security experience.
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- END AVANAN BENEFITS -->
+    
+
+
+    <!-- <div class="container"> -->
+
+
+      <!-- CTA Section -->
+      <div class="position-relative bg-primary">
+        <div class="container space-2">
+          <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h3 class="h2 text-white font-weight-semi-bold mb-0">Ready to get started?</h3>
+            </div>
+
+            <div class="col-lg-7 text-lg-right">
+              <a class="btn btn-dark btn-wide btn-pill transition-3d-hover mr-3" href="#">Start Free Trial</a>
+              <a class="btn btn-white btn-wide btn-pill text-primary shadow-soft transition-3d-hover" href="#">How Avanan Works &nbsp; <i class="fas fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End CTA Section -->
+    </div>
+
+
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container space-2">
+      <div class="row">
+        <div class="col-3 col-lg-2 order-2 mb-4 mb-sm-0 ml-lg-auto">
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="#!">About Us</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Contact</a></li>
+          </ul>
+          <!-- End List Group -->
+        </div>
+
+
+        <div class="col-3 col-lg-2 order-3 mb-4 mb-sm-0">
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="#!">Privacy Policy</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">The Avanan Blog</a></li>
+          </ul>
+          <!-- End List Group -->
+        </div>
+
+        <div class="col-5 col-lg-4 order-1">
+          <!-- Logo -->
+          <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="Front">
+            <img style="max-width: 115px; height: auto;" src="https://www.avanan.com/hubfs/Images/Logos/avanan-logo-white-teal.png">
+          </a>
+          <!-- End Logo -->
+
+          <div class="mb-4">
+            <p class="small text-muted mb-0">
+              © Copyright
+              <!-- YEAR SCRIPT -->
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> 
+              <!-- END YEAR SCRIPT -->
+              Avanan. All Rights Reserved.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+
+  <!-- JS Global Compulsory -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- ADDED BY ME (ANIMATION) -->
+  <script src="assets/libs/aos/dist/aos.js"></script>
+  <script src="assets/js/theme2.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+  <!-- JS Front -->
+  <!-- <script src="assets/js/hs.core.js"></script> -->
+  <!-- <script src="assets/js/components/hs.header.js"></script> -->
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+    });
+    
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+    });
+  </script>
+</body>
+</html>
