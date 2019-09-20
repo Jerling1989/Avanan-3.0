@@ -41,6 +41,10 @@
       -webkit-text-fill-color: transparent;
     }
 
+    #down-icon {
+      width: 65px;
+    }
+
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
       #trial-spacer-div {
@@ -51,13 +55,16 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        /*width: 100%;*/
         height: 100%;
       }
 
       #video-hero {
         height: 350px;
       }
+
+      /*#down-icon {
+        width: 50px;
+      }*/
     }
 
 
@@ -71,13 +78,16 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        /*width: 100%;*/
         height: 100%;
       }
 
       #video-hero {
         height: 350px;
       }
+
+      /*#down-icon {
+        width: 50px;
+      }*/
     }
 
 
@@ -92,7 +102,6 @@
         top: 50%;
         left: 50%;
         width: 100%;
-        /*height: 100%;*/
       }
 
       #video-hero {
@@ -111,7 +120,6 @@
         top: 55%;
         left: 50%;
         width: 100%;
-        /*height: 100%;*/
       }
 
       #video-hero {
@@ -130,12 +138,11 @@
         top: 55%;
         left: 50%;
         width: 100%;
-        /*height: 100%;*/
       }
 
       #video-hero {
         height: 350px;
-        margin-top: 120px !important;
+        margin-top: 180px !important;
       }
     }
 
@@ -150,12 +157,11 @@
         top: 55%;
         left: 50%;
         width: 100%;
-        /*height: 100%;*/
       }
 
       #video-hero {
         height: 480px;
-        margin-top: 120px !important;
+        margin-top: 180px !important;
       }
     }
 
@@ -251,12 +257,17 @@
     <div id="trial-spacer-div"></div>
 
     <!-- TOP TITLE AND COPY -->
-    <div class="container space-top-2 space-bottom-3">
+    <div class="container space-top-3 space-bottom-4">
       <div class="row">
-        <div id="" class="col-md-8 col-lg-10 mx-auto text-white">
+        <div id="" class="col-12 mx-auto text-white">
           <h1 class="gradient display-4">Incident Response-as-a-Service</h1>
-          <p class="lead text-white">Avanan Security Experts will review every end-user report of missed phishing and every request to release from quarantine.</p>
-          <p class="lead text-white">Avanan will then perform all necessary remediation actions on your behalf.</p>
+          <h3 class="text-white mt-4">Avanan Security Experts will review every end-user report of missed phishing and every request to release from quarantine.</h3>
+          <h3 class="text-white mt-4">Avanan will then perform all necessary remediation actions on your behalf.</h3>
+
+          <div class="text-center">
+            <img id="down-icon" class="img-fluid mt-10" src="assets/img/gradient-down.png">
+          </div>
+          
         </div>
       </div>
     </div>
