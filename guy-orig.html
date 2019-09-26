@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html data-ember-extension="1"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Portals</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+​
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/msp">Managed service provider portal</a>
+​
+      <div>
+        <span class="navbar-text">
+          Welcome, msp1 - u1
+        </span>
+        <a href="http://127.0.0.1:8000/accounts/logout?next=/msp/">Logout</a>
+      </div>
+​
+    </nav>
+​
+<div class="container-fluid">
+<div class="row">
+  <div class="table-content col-8">
+    <h3>Portals</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Portal</th>
+          <th>Mode</th>
+          <th>POC date start</th>
+          <th>Paid date start</th>
+          <th>Expiry date</th>
+          <th>All users</th>
+          <th>Licensed users</th>
+        </tr>
+      </thead>
+      <tbody>
+​
+        <tr>
+          <td>
+            <a target="_blank" href="https://usecurity.sonicwallcloudsec.com/">
+              5776 usecurity
+            </a>
+          </td>
+          <td>poc</td>
+          <td>Sept. 22, 2019</td>
+          <td></td>
+          <td>Oct. 23, 2019</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+​
+        <tr>
+          <td>
+            <a target="_blank" href="https://domryles.sonicwallcloudsec.com/">
+              5787 domryles
+            </a>
+          </td>
+          <td>poc</td>
+          <td>Sept. 23, 2019</td>
+          <td></td>
+          <td>Oct. 24, 2019</td>
+          <td></td>
+          <td></td>
+        </tr>
+​
+        <tr>
+          <td>
+            <a target="_blank" href="https://gjvoormeulen.sonicwallcloudsec.com/">
+              5788 gjvoormeulen
+            </a>
+          </td>
+          <td>paid</td>
+          <td>Sept. 22, 2019</td>
+          <td>Sept. 22, 2019</td>
+          <td>Sept. 22, 2020</td>
+          <td></td>
+          <td></td>
+        </tr>
+​
+        <tr>
+          <td>
+            <a target="_blank" href="https://ddd.avanan.net/">
+              5790 ddd
+            </a>
+          </td>
+          <td>poc</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+​
+      </tbody>
+    </table>
+    <div>
+      Total: 4 portals
+    </div>
+  </div>
+  <div class="filters col-4">
+    <h3>Filters</h3>
+    <h5>By mode</h5>
+    <div class="btn-group" role="group">
+​
+<a class="btn btn-secondary active" href="http://127.0.0.1:8000/msp/?mode=&amp;expiry_date=">All</a>
+​
+​
+<a class="btn btn-secondary " href="http://127.0.0.1:8000/msp/?mode=poc&amp;expiry_date=">POC</a>
+​
+​
+<a class="btn btn-secondary " href="http://127.0.0.1:8000/msp/?mode=paid&amp;expiry_date=">Paid</a>
+​
+    </div>
+    <h5>By expiry date</h5>
+    <div class="btn-group" role="group">
+​
+<a class="btn btn-secondary active" href="http://127.0.0.1:8000/msp/?mode=&amp;expiry_date=">All</a>
+​
+​
+<a class="btn btn-secondary " href="http://127.0.0.1:8000/msp/?mode=&amp;expiry_date=2weeks">Expire in 2 weeks</a>
+​
+​
+<a class="btn btn-secondary " href="http://127.0.0.1:8000/msp/?mode=&amp;expiry_date=expired">Expired</a>
+​
+    </div>
+  </div>
+</div>
+​
+​
+</div></body></html>
