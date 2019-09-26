@@ -5,13 +5,22 @@
   <title>Portals</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <style>
-    /** {
-      background: #000 !important;
-      color: #0f0 !important;
-      outline: solid #f00 1px !important;
-    }*/
+    .active {
+      color: #0056b3;
+      font-weight: 700;
+      text-decoration: underline;
+    }
   </style>
+  <script>
+    $(document).ready(function(){
+      $('#number').click(function(){
+        $('#number').toggleClass('active');
+      });
+    });
+  </script>
+
 </head>
 
 <body>
@@ -40,11 +49,11 @@
               </div>
               <div class="card-body row">
                 <div class="col-6 text-center">
-                  <h5><a href="#!">245</a></h5>
+                  <h5><a id="number" class="active" href="#!">245</a></h5>
                   <h6>Portals</h6>
                 </div>
                 <div class="col-6 text-center">
-                  <h5><a href="#!">45k</a></h5>
+                  <h5><a class="number" href="#!">45k</a></h5>
                   <h6>Users</h6>
                 </div>
               </div>
@@ -58,11 +67,11 @@
               </div>
               <div class="card-body row">
                 <div class="col-6 text-center">
-                  <h5><a href="#!">23</a></h5>
+                  <h5><a class="number" href="#!">23</a></h5>
                   <h6>Portals</h6>
                 </div>
                 <div class="col-6 text-center">
-                  <h5><a href="#!">12k</a></h5>
+                  <h5><a class="number" href="#!">12k</a></h5>
                   <h6>Users</h6>
                 </div>
               </div>
@@ -76,11 +85,11 @@
               </div>
               <div class="card-body row">
                 <div class="col-6 text-center">
-                  <h5><a href="#!">23</a></h5>
+                  <h5><a class="number" href="#!">23</a></h5>
                   <h6>Expired</h6>
                 </div>
                 <div class="col-6 text-center">
-                  <h5><a href="#!">56</a></h5>
+                  <h5><a class="number" href="#!">56</a></h5>
                   <h6>Expire in 2w</h6>
                 </div>
               </div>
@@ -94,11 +103,11 @@
               </div>
               <div class="card-body row">
                 <div class="col-6 text-center">
-                  <h5><a href="#!">26</a></h5>
+                  <h5><a class="number" href="#!">26</a></h5>
                   <h6>Warnings</h6>
                 </div>
                 <div class="col-6 text-center">
-                  <h5><a href="#!">5</a></h5>
+                  <h5><a class="number" href="#!">5</a></h5>
                   <h6>Errors</h6>
                 </div>
               </div>
