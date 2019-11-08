@@ -951,11 +951,11 @@
                   data-animation-out="fadeOut"
                   data-max-width="600px"
                   data-position="right">
-                <a id="twoColumnsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">2 Columns</a>
+                <a id="twoColumnsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle hs-mega-menu-opened" href="javascript:;" aria-haspopup="true" aria-expanded="false">2 Columns</a>
 
                 <!-- 2 Columns Item - Mega Menu -->
                 <!-- replace .fadeOut with .slideInUp -- change to display: block; -->
-                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="twoColumnsMegaMenu">
+                <div class="hs-mega-menu w-100 u-header__sub-menu slideInUp" aria-labelledby="twoColumnsMegaMenu" style="display: block !important;">
                   <div class="row u-header__mega-menu-wrapper">
                     <div class="col-sm-6 mb-3 mb-sm-0">
 
@@ -1032,9 +1032,45 @@
                       </span>
 
                       <ul class="u-header__sub-menu-nav-group mb-3">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Conferences</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Webinars</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="#">Regional Events</a></li>
+                        <li>
+                          <a href="#!">
+                            <div class="media align-items-center">
+                              <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/website/img/icons/conferences.png" alt="Conferences">
+                              <div class="media-body">
+                                <span class="u-header__promo-title">
+                                  Conferences
+                                </span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#!">
+                            <div class="media align-items-center">
+                              <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/website/img/icons/webinars.png" alt="Webinars">
+                              <div class="media-body">
+                                <span class="u-header__promo-title">
+                                  Webinars
+                                </span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#!">
+                            <div class="media align-items-center">
+                              <img class="js-svg-injector u-header__promo-icon" src="https://www.avanan.com/hubfs/website/img/icons/regional-events.png" alt="Regional Events">
+                              <div class="media-body">
+                                <span class="u-header__promo-title">
+                                  Regional Events
+                                </span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
                       </ul>
                     </div>
 
