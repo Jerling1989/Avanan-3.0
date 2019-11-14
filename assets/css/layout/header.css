@@ -194,6 +194,10 @@
   margin-right: 1.5rem;
 }
 
+#products-services .u-header__promo-item {
+  margin-left: .75rem;
+}
+
 .u-header__promo-item ~ .u-header__promo-item {
   border-top: 1px solid #e7eaf3;
 }
