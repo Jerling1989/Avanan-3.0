@@ -33,13 +33,30 @@
   <link rel="stylesheet" href="assets/css/layout/header-slim.css">
   <link rel="stylesheet" href="assets/css/custom/mine.css">
 
+<style type="text/css">
+  #sub-nav > div > nav > .nav-item {
+    padding-top: 0.65rem;
+  }
+
+  #sub-nav > div > nav > .nav-item:hover {
+    background-color: #e5eff4;
+  }
+
+  #sub-nav > div > nav > .active:hover {
+    background-color: #569bbe !important;
+  }
+
+  #office-365-home:hover {
+    background-color: #fff !important;
+  }
+</style>
 
 
 </head>
 <body class="bg-light">
 
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+  <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md"
           data-header-fix-moment="0"
           data-header-fix-effect="slide">
     <!-- Search -->
@@ -573,17 +590,17 @@
     </div>
 
     <!-- PROMO BANNER -->
-    <div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;" id="sub-nav" class="bg-light">
-      <div class="container-fluid">
+    <div style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; font-size: 15px;" id="sub-nav" class="bg-white">
+      <div class="">
         <nav class="nav nav-pills nav-justified">
-          <a class="nav-item nav-link" href="#">
+          <a id="office-365-home" style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">
             <img style="width: 120px; margin-top: -5px;" src="assets/img/nav/office-365-long.png">
             <i style="color: #dd4026; margin-left: 5px;" class="fas fa-lg fa-chevron-right"></i>
           </a>
-          <a style="border-radius: 0;" class="nav-item nav-link active" href="#">Anti-Phishing</a>
-          <a class="nav-item nav-link" href="#">Malware Protection</a>
-          <a class="nav-item nav-link" href="#">Account Compromise Detection</a>
-          <a class="nav-item nav-link" href="#">DLP and Compliance</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link active" href="#">Anti-Phishing</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#">Malware Protection</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#">Account Compromise Detection</a>
+          <a style="border-radius: 0;" class="nav-item nav-link" href="#">DLP and Compliance</a>
         </nav>
       </div>
     </div>
