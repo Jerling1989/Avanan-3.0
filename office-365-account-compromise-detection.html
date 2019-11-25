@@ -50,6 +50,10 @@
     background-color: #fff !important;
   }
 
+  tbody > tr > td > ul {
+    margin-left: -10px;
+  }
+
 
   /* PHONES IN PORTRAIT col-3 */
   @media (max-width: 576px) {
@@ -972,9 +976,9 @@
         <table class="table table-striped">
           <thead class="">
             <tr id="labels">
-              <th scope="col">Anomaly</th>
-              <th scope="col">Description</th>
-              <th scope="col">Remediation Action<br><span style="font-weight: 400;">besides alerting/education</span></th>
+              <th style="width: 25%" scope="col">Anomaly</th>
+              <th style="width: 50%" scope="col">Description</th>
+              <th style="width: 25%" scope="col">Remediation Action<br><span style="font-weight: 400;">besides alerting/education</span></th>
             </tr>
           </thead>
 
