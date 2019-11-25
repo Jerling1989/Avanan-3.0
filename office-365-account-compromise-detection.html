@@ -969,44 +969,24 @@
           <h3 class="text-primary">How Avanan Remediates Compromised Accounts</h3>
         </div>
 
-        <div style="border-bottom: 2px solid #569bbe;" class="col-12 col-md-6 mt-5">
-          <h5>EOP has several gaps in security that require additional solutions to address.</h5>
-        </div>
-        <div class="col-12 row mt-4">
-          <div class="col-6"><p><strong>EOP cannot effectively identify zero-day threats.</strong></p></div>
-          <div class="col-6"><p><strong>EOP’s SharePoint malware scans do not occur in real-time, leaving a window for users to download infected files.</strong></p></div>
-        </div>
+        <table class="table table-striped">
+          <thead class="">
+            <tr id="labels">
+              <th scope="col">Anomaly</th>
+              <th scope="col">Description</th>
+              <th scope="col">Remediation Action<br><span style="font-weight: 400;">besides alerting/education</span></th>
+            </tr>
+          </thead>
 
-
-        <div style="border-bottom: 2px solid #569bbe;" class="col-12 mt-5">
-          <h5>ATP doesn’t solve the problem</h5>
-          <p>Microsoft offers ATP to fill in the gaps EOP leaves exposed. However, ATP also falls short of addressing all the dynamic threats facing Office 365 users today.</p>
-        </div>
-
-          
-        <div class="col-12 row mt-5">
-          <div class="col-12 col-md-6">
-            <p><strong>Poor catch rate for zero-day malware</strong><br>
-            ATP is only marginally better than EOP at detecting zero-day malware via email. Both ATP and EOP let 5-20% of zero-day malware hit email inboxes.</p>
-
-            <p><strong>No behavioral analytics</strong><br>
-            ATP lacks the advanced behavioral analytics functionality that can address sophisticated attack vectors such as <a href="https://www.avanan.com/blog/what-is-business-email-compromise">Business Email Compromise (BEC)</a>.</p>
-
-            <p><strong>Limited reporting</strong><br>
-            ATP threat management reporting only contains 7 days’ worth of data. Additionally, the data lacks the granularity IT needs to troubleshoot and management requires for capturing in-depth insights to dataflows.</p>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <p><strong>No detection of insecure account configurations</strong><br>
-            Unusual logins and altered email settings are common signs of <a href="https://www.avanan.com/blog/5-signs-of-a-compromised-account">account compromise</a>. Unfortunately, ATP cannot rapidly detect and respond to insecure Office 365 account configurations.</p>
-            <p><strong>Limited scanning</strong><br>
-            Microsoft calls out the fact <a href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams#keep-these-points-in-mind">ATP does NOT scan ever file loaded to SharePoint Online, OneDrive for Business, or Microsoft Teams</a>. Rather ATP scans asynchronously based upon heuristics. As a result, when you consider <a href="https://www.avanan.com/blog/sharepoint-phishing-scam">the rise of threats like PhishPoint</a>, there is an inherent gap in Office 365 scan coverage with ATP.</p>
-          </div>
-
-        </div>
-
-        
-
+          <tbody>
+            <!-- CRITICAL CAPABILITIES -->
+            <tr>
+              <td class="text-center"><i class="far fa-lg fa-times-circle text-danger"></i></td>
+              <td class="text-center"><i class="far fa-lg fa-check-circle text-success"></i></td>
+              <td class="text-center"><i class="far fa-lg fa-check-circle text-success"></i></td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
     </div>
