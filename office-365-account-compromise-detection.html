@@ -978,12 +978,150 @@
             </tr>
           </thead>
 
-          <tbody>
+          <tbody style="color: #788487;">
             <!-- CRITICAL CAPABILITIES -->
             <tr>
-              <td class="text-center"><i class="far fa-lg fa-times-circle text-danger"></i></td>
-              <td class="text-center"><i class="far fa-lg fa-check-circle text-success"></i></td>
-              <td class="text-center"><i class="far fa-lg fa-check-circle text-success"></i></td>
+              <td>
+                <strong>Compromised/Lost Devices</strong>
+              </td>
+              <td>
+                Detecting cases of authenticated devices (phones?) - lost/taken over
+              </td>
+              <td>
+                <ul>
+                  <li>Reset password</li>
+                  <li>One-time sign-out</li>
+                  <li>Wipe device</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Brute-force attack</strong>
+              </td>
+              <td>
+                Identifying brute-force attacks (trying multiple passwords, multiple users) - associated with a single campaign (IP? Device, network, VPN provider)
+              </td>
+              <td>
+                <ul>
+                  <li>Enforce MFA</li>
+                  <li>Reset Passwords</li>
+                  <li>Conditional Access: block IP, subnet</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Logins behind VPN</strong>
+              </td>
+              <td>
+                Successful logins behind VPN/proxies
+              </td>
+              <td>
+                <ul>
+                  <li>Reset password</li>
+                  <li>Suspend User</li>
+                  <li>Enforce MFA</li>
+                  <li>Conditional-access - block IP</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Unsecured successful authentications</strong>
+              </td>
+              <td>
+                Logins from old browsers, internet-kiosks, subject to password grabbers and vulnerabilities.
+              </td>
+              <td>
+                <ul>
+                  <li>Reset Password</li>
+                  <li>Enforce MFA</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Unusual authentication protocols</strong>
+              </td>
+              <td>
+                Logins/emails using ‘old’ authentication protocols - IMAP, pop3 etc.
+              </td>
+              <td>
+                <ul>
+                  <li>Reset Password</li>
+                  <li>Enforce MFA</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Too-many devices</strong>
+              </td>
+              <td>
+                Identifying logins (success/fail) with different device fingerprints
+              </td>
+              <td>
+                <ul>
+                  <li>Reset Password</li>
+                  <li>Enforce MFA</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>GEO-wall</strong>
+              </td>
+              <td>
+                Extending our GEO capabilities to allow GEO-walling - detecting and preventing of logins from hostile locations
+              </td>
+              <td>
+                <ul>
+                  <li>Conditional access - block IP/locations</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Outbound phishing campaign</strong>
+              </td>
+              <td>
+                Detecting outbound phishing emails - indicating of an account take over
+              </td>
+              <td>
+                <ul>
+                  <li>Suspend user</li>
+                  <li>Contain’ outbound emails</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Too many ‘bounced’ emails</strong>
+              </td>
+              <td>
+                High load of ‘bounced’ emails, indicate a massive outbound email campaign
+              </td>
+              <td>
+                <ul>
+                  <li>Suspend user</li>
+                  <li>Contain’ outbound emails</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Unlikely device (down version)</strong>
+              </td>
+              <td>
+                Connection from unlikely devices
+              </td>
+              <td>
+                <ul>
+                  <li>Reset Password</li>
+                  <li>Enforce MFA</li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>
