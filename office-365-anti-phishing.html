@@ -52,11 +52,11 @@
   }
 
   #internal-internal, #ai-trained {
-      max-width: 150%;
-      height: auto;
-      margin-top: 0px;
-      margin-left: 0px;
-    }
+    max-width: 150%;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 
 
   /* PHONES IN PORTRAIT col-3 */
@@ -149,6 +149,12 @@
     #ai-trained {
       width: 100%;
     }
+
+    #custom-queries {
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
 
 
@@ -175,6 +181,11 @@
       width: 120%;
       margin-top: 165px;
       margin-left: -55px;
+    }
+
+    #custom-queries {
+      width: 600px;
+      margin-top: 75px;
     }
   }
 
@@ -203,6 +214,11 @@
       margin-top: 150px;
       margin-left: -75px;
     }
+
+    #custom-queries {
+      width: 600px;
+      margin-top: 50px;
+    }
   }
 
 
@@ -228,6 +244,11 @@
       width: 135%;
       margin-top: 115px;
       margin-left: -230px;
+    }
+
+    #custom-queries {
+      width: 680px;
+      margin-top: 40px;
     }
   }
 
@@ -946,7 +967,7 @@
 
           <div class="row">
             <div class="order-1 order-lg-2 col-12 col-lg-6" data-aos="fade-left">
-              <img id="internal-internal" src="assets/img/internal-internal.png">
+              <img id="internal-internal" src="assets/img/new/internal-internal.png">
             </div>
 
             <div class="order-2 order-lg-1 col-12 col-lg-6" data-aos="fade-right">
@@ -961,7 +982,7 @@
 
           <div class="row mt-8 mb-8">
             <div class="col-12 col-lg-6" data-aos="fade-right">
-              <img id="ai-trained" src="assets/img/ai-trained.png">
+              <img id="ai-trained" src="assets/img/new/ai-trained.png">
             </div>
 
             <div class="col-12 col-lg-6" data-aos="fade-left">
@@ -1007,47 +1028,55 @@
 
     <!-- Stories Section -->
     <div class="container card shadow-sm p-7 mt-n10 mb-n6">
-      <div class="row">
+      <div>
+        <div class="row">
         <div class="col-12">
           <h3 class="text-primary">The most Complete Anti-Phishing Tool on the Market for Office 365</h3>
           <p>Security engineers familiar with Office 365 know that even with ATP’s Threat Intelligence Dashboard, cleaning up post-attack isn’t as easy as it should be. Having to write PowerShell scripts from within a consolidated reporting dashboard with limited drill-down capabilities feels redundant and frustrating.</p>
           <p>Avanan customers can manage all their Office 365 anti-phishing requirements for security and compliance from a single dashboard. They can easily set phishing workflows that automate security administration and threat monitoring. </p>
         </div>
-        <div class="col-12 col-md-6 mt-5">
-          <h5>Review Threats with Mail Explorer and Custom Queries</h5>
-          <p>See every threat caught by Avanan, the email subject, content, and why it was determined to be phishing based on the 300+ indicators Avanan looks at in every email. Phishing indicators are explained in plain English, so it’s easy to assess the potential impact of an attack.</p>
-          <p>The simplified view in Mail Explorer allows admin to quarantine advanced threats across inboxes by searching:</p>
-          <div class="row">
-            <div class="col-6">
-              <ul style="color: #788487;">
-                <li>“From”</li>
-                <li>“To”</li>
-                <li>email subject</li>
-                <li>sender email address</li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <ul style="color: #788487;">
-                <li>sender IP</li>
-                <li>sender name</li>
-                <li>sender domain</li>
-              </ul>
+        </div>
+
+        <div class="row">
+          <div class="order-1 order-lg-2 col-12 col-lg-6">
+            <div class="img-skewed img-skewed-left">
+              <img id="custom-queries" class="screenshot" src="assets/img/new/custom-queries.png" data-aos="img-skewed-item-left" data-aos-delay="50">
             </div>
           </div>
-          <p>With the click of a button, Avanan quarantines all emails that match these parameters to isolate the threat.</p>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="img-skewed img-skewed-left">
-            <img class="screenshot" style="width: 680px; margin-top: 40px; filter: drop-shadow(0 0 7.5px #95a5a6);" src="assets/img/custom-queries-two.png" data-aos="img-skewed-item-left" data-aos-delay="50">
+          <div class="order-2 order-lg-1 col-12 col-lg-6 mt-5">
+            <h5>Review Threats with Mail Explorer and Custom Queries</h5>
+            <p>See every threat caught by Avanan, the email subject, content, and why it was determined to be phishing based on the 300+ indicators Avanan looks at in every email. Phishing indicators are explained in plain English, so it’s easy to assess the potential impact of an attack.</p>
+            <p>The simplified view in Mail Explorer allows admin to quarantine advanced threats across inboxes by searching:</p>
+            <div class="row">
+              <div class="col-6">
+                <ul style="color: #788487;">
+                  <li>“From”</li>
+                  <li>“To”</li>
+                  <li>email subject</li>
+                  <li>sender email address</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul style="color: #788487;">
+                  <li>sender IP</li>
+                  <li>sender name</li>
+                  <li>sender domain</li>
+                </ul>
+              </div>
+            </div>
+            <p>With the click of a button, Avanan quarantines all emails that match these parameters to isolate the threat.</p>
           </div>
         </div>
+
+  
+        <div class="row">
         <div class="col-12">
           <p>Using Queries, security engineers in Office 365 can customize the components of their search beyond the options available in Mail Explorer. After identifying advanced persistent threats in the query tool, security professionals can:</p>
           <!-- THIS IS WEIRD EITHER WAY -->
-          <div class="row">
-            <div class="col-6 row">
+          
+            <div class="col-12 col-lg-6 row">
             <div class="col-6">
-              <ul style="color: #788487;">
+              <ul style="color: #788487; margin-left: -15px;">
                 <li>Report</li>
                 <li>Add to exceptions</li>
                 <li>Exclude selected</li>
@@ -1066,36 +1095,39 @@
             </div>
             </div>
             <div class="col-6"></div>
-          </div>
         </div>
-        
-        <div class="col-12 col-md-6">
-          <div>
-            
-          </div>
-          <div class="img-skewed img-skewed-right">
-            <img style="width: 600px; margin-top: 240px; margin-left: -120px; filter: drop-shadow(0 0 7.5px #95a5a6);" src="assets/img/universal-policies.png" data-aos="img-skewed-item-right" data-aos-delay="50">
-          </div>
         </div>
 
-        <div class="col-12 col-md-6 mt-10">
-          <h5>Create Universal Policies</h5>
-          <p>The Avanan policy wizard enables the creation of granular policies that apply across Office 365 email to the rest of the collaboration suite.</p>
-          <p>There are three modes of protection available for email:</p>
-          <ol style="color: #788487;">
-            <li>
-              <p><strong>Monitor Only</strong><br>Provides visibility into cloud-hosted email and leverages publicly available APIs from Office 365. Manual and automated query-based quarantines are available after delivery to the email.</p>
-            </li>
-            <li>
-              <p><strong>Detect and Prevent</strong><br>Provides an increased level of protection that scans email that’s already arrived in the user’s inbox. This mode adds an automated policy action to quarantine malware, phishing attacks, etc. based on the results of the best-of-breed security stack. In this mode user notifications and release workflows are available.</p>
-            </li>
-            <li><p><strong>Protect (Inline)</strong><br>Provides the highest level of protection and scans email prior to delivery to the end user’s inbox. Scanning and quarantining take place before the email is delivered to the user’s inbox. This ensures that threats are detected and remediated before the user has access to the email.</p></li>
-          </ol>
-          <p>From any of these modes, the security orchestration admin can choose what happens to the malicious email, and whether or not to involve the user.</p>
-          <ul style="color: #788487;">
-            <li>We are able to customize sensitivity based upon groups, in addition to the alerts we would receive.</li>
-            <li>Would be good to be able to lower risk thresholds for some of the detections based on sender patterns, since we have special considerations with Icelandic emails.</li>
-          </ul>
+        
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div>
+              
+            </div>
+            <div class="img-skewed img-skewed-right">
+              <img style="width: 600px; margin-top: 240px; margin-left: -120px; filter: drop-shadow(0 0 7.5px #95a5a6);" src="assets/img/universal-policies.png" data-aos="img-skewed-item-right" data-aos-delay="50">
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 mt-10">
+            <h5>Create Universal Policies</h5>
+            <p>The Avanan policy wizard enables the creation of granular policies that apply across Office 365 email to the rest of the collaboration suite.</p>
+            <p>There are three modes of protection available for email:</p>
+            <ol style="color: #788487;">
+              <li>
+                <p><strong>Monitor Only</strong><br>Provides visibility into cloud-hosted email and leverages publicly available APIs from Office 365. Manual and automated query-based quarantines are available after delivery to the email.</p>
+              </li>
+              <li>
+                <p><strong>Detect and Prevent</strong><br>Provides an increased level of protection that scans email that’s already arrived in the user’s inbox. This mode adds an automated policy action to quarantine malware, phishing attacks, etc. based on the results of the best-of-breed security stack. In this mode user notifications and release workflows are available.</p>
+              </li>
+              <li><p><strong>Protect (Inline)</strong><br>Provides the highest level of protection and scans email prior to delivery to the end user’s inbox. Scanning and quarantining take place before the email is delivered to the user’s inbox. This ensures that threats are detected and remediated before the user has access to the email.</p></li>
+            </ol>
+            <p>From any of these modes, the security orchestration admin can choose what happens to the malicious email, and whether or not to involve the user.</p>
+            <ul style="color: #788487;">
+              <li>We are able to customize sensitivity based upon groups, in addition to the alerts we would receive.</li>
+              <li>Would be good to be able to lower risk thresholds for some of the detections based on sender patterns, since we have special considerations with Icelandic emails.</li>
+            </ul>
+          </div>
         </div>
 
 
