@@ -36,6 +36,7 @@
 <style type="text/css">
   #sub-nav > div > nav > .nav-item {
     padding-top: 0.65rem;
+    font-size: 12px;
   }
 
   #sub-nav > div > nav > .nav-item:hover {
@@ -50,10 +51,6 @@
     background-color: #fff !important;
   }
 
-  tbody > tr > td > ul {
-    margin-left: -10px;
-  }
-
 
   /* PHONES IN PORTRAIT col-3 */
   @media (max-width: 576px) {
@@ -61,22 +58,19 @@
       margin-top: 0px;
     }
 
-    #anti-phishing {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #sub-nav {
+      display: none;
     }
 
-    #full-suite-img {
+    #hero-image {
       max-width: 100%;
       height: auto;
-      margin-bottom: -2.5rem;
+      margin-top: -75px;
+      margin-bottom: -5.5rem;
     }
 
-    #layered-img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #demo-button {
+      display: none;
     }
   }
 
@@ -87,22 +81,19 @@
       margin-top: 0px;
     }
 
-    #anti-phishing {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #sub-nav {
+      display: none;
     }
 
-    #full-suite-img {
+    #hero-image {
       max-width: 90%;
       height: auto;
-      margin-bottom: -2.5rem;
+      margin-top: -75px;
+      margin-bottom: -5.5rem;
     }
 
-    #layered-img {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #demo-button {
+      display: none;
     }
   }
 
@@ -113,22 +104,19 @@
       margin-top: 180px;
     }
 
-    #anti-phishing {
-      max-width: 75%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #sub-nav {
+      display: none;
     }
 
-    #full-suite-img {
-      max-width: 75%;
+    #hero-image {
+      max-width: 85%;
       height: auto;
-      margin-bottom: -2.5rem;
+      margin-top: -80px;
+      margin-bottom: -6rem;
     }
 
-    #layered-img {
-      max-width: 75%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #demo-button {
+      display: none;
     }
   }
 
@@ -138,22 +126,6 @@
     #spacer-div {
       margin-top: 165px;
     }
-
-    #anti-phishing {
-      max-width: 125%;
-      height: auto;
-    }
-
-    #full-suite-img {
-      max-width: 125%;
-      height: auto;
-      margin-left: -62px;
-    }
-
-    #layered-img {
-      max-width: 125%;
-      height: auto;
-    }
   }
 
 
@@ -162,22 +134,6 @@
     #spacer-div {
       margin-top: 145px;
     }
-
-    #anti-phishing {
-      max-width: 125%;
-      height: auto;
-    }
-
-    #full-suite-img {
-      max-width: 125%;
-      height: auto;
-      margin-left: -90px;
-    }
-
-    #layered-img {
-      max-width: 125%;
-      height: auto;
-    }
   }
 
 
@@ -185,22 +141,6 @@
   @media (min-width: 1500px) {
     #spacer-div {
       margin-top: 145px;
-    }
-
-    #anti-phishing {
-      max-width: 150%;
-      height: auto;
-    }
-
-    #full-suite-img {
-      max-width: 150%;
-      height: auto;
-      margin-left: -198px;
-    }
-
-    #layered-img {
-      max-width: 150%;
-      height: auto;
     }
   }
 
@@ -862,7 +802,7 @@
       <div class="">
         <div class="row">
           <div class="col-12 col-md-7 bg-dark pt-10 pb-10">
-            <div class="col-8 offset-4">
+            <div class="col-12 offset-0 col-lg-11 offset-lg-1">
               <h3 class="text-primary">Credential harvesting is not the hacker’s end goal. It’s just a step in a much grander scheme.</h1>
               <p class="text-white">Using these compromised credentials, hackers take over Office 365 accounts belonging to corporate users. This is called Business Email Compromise (BEC), a specific kind of email-based account compromise designed to spread phishing at the organization. The hacker’s goal is to financial loss, commit data exfiltration, and degrade the organization’s reputation.</p>
               <p class="text-white">The issue of account compromise is highly critical because Microsoft Office 365 offers many integrations with third-party applications. Once the hacker has gained control over a trusted account, they typically sift through the email to learn more about the victim’s role in the company, and their relationship with other employees and partners. They’ll investigate the victim’s calendar, SharePoint folders, and OneDrive files.</p>
@@ -871,7 +811,7 @@
           </div>
 
           <div class="col-12 col-md-5 bg-light pt-10 pb-10">
-            <div class="col-8 pr-lg-7">
+            <div class="col-12 col-xl-10 pr-lg-7">
               <h4 class="mb-4">Signs of a Compromised Account</h4>
               <ul>
                 <li class="mb-2">Mailbox rule that deletes all your emails</li>
@@ -934,7 +874,7 @@
           
 
           <div class="col-12 col-md-6">
-            <img style="max-width: 150%; width: 125%; height: auto; margin-top: 180px; margin-left: 0px;" src="assets/img/detects-compromised-accounts.png">
+            <img style="max-width: 150%; width: 125%; height: auto; margin-top: 180px; margin-left: 0px;" src="assets/img/new/office-365-account-compromise.png">
           </div>
 
 
