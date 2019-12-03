@@ -72,6 +72,15 @@
     #demo-button {
       display: none;
     }
+
+    #account-compromise-screen {
+      max-width: 155%;
+      width: 100%;
+      height: auto;
+      margin-top: -80px;
+      margin-bottom: -35px;
+      margin-left: 0px;
+    }
   }
 
 
@@ -94,6 +103,15 @@
 
     #demo-button {
       display: none;
+    }
+
+    #account-compromise-screen {
+      max-width: 155%;
+      width: 100%;
+      height: auto;
+      margin-top: -80px;
+      margin-bottom: -35px;
+      margin-left: 0px;
     }
   }
 
@@ -118,6 +136,15 @@
     #demo-button {
       display: none;
     }
+
+    #account-compromise-screen {
+      max-width: 155%;
+      width: 100%;
+      height: auto;
+      margin-top: -80px;
+      margin-bottom: -55px;
+      margin-left: 0px;
+    }
   }
 
 
@@ -125,6 +152,14 @@
   @media (min-width: 992px) and (max-width: 1200px) {
     #spacer-div {
       margin-top: 165px;
+    }
+
+    #account-compromise-screen {
+      max-width: 155%;
+      width: 155%;
+      height: auto;
+      margin-top: -100px;
+      margin-left: 0px;
     }
   }
 
@@ -134,6 +169,14 @@
     #spacer-div {
       margin-top: 145px;
     }
+
+    #account-compromise-screen {
+      max-width: 150%;
+      width: 135%;
+      height: auto;
+      margin-top: -10px;
+      margin-left: 0px;
+    }
   }
 
 
@@ -141,6 +184,14 @@
   @media (min-width: 1500px) {
     #spacer-div {
       margin-top: 145px;
+    }
+
+    #account-compromise-screen {
+      max-width: 150%;
+      width: 135%;
+      height: auto;
+      margin-top: 0px;
+      margin-left: 0px;
     }
   }
 
@@ -798,7 +849,6 @@
 
 
     <section class="">
-      <!-- <div class="container"> test </div> -->
       <div class="">
         <div class="row">
           <div class="col-12 col-md-7 bg-dark pt-10 pb-10">
@@ -860,7 +910,7 @@
         <div class="row pt-10 pb-10">
 
 
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-lg-6 order-2 order-lg-1" data-aos="fade-right">
             <h3 class="text-primary">How Avanan Detects Compromised Accounts</h3>
             <p>Avanan has developed an algorithm to detect compromised accounts, using a number of threat signals appearing in the Office 365 instance. The adaptive technology looks at email activity, and correlates that with account activity and user behavior.</p>
             <p>Because Avanan is so tightly integrated with the full Office 365 Suite, it can correlate login information, policy edits, file activity, data shares or other anomalous behavior across the entire suite. This identifies the insider threat and blocks malicious behavior before it happens.</p>
@@ -873,8 +923,8 @@
           </div>
           
 
-          <div class="col-12 col-md-6">
-            <img style="max-width: 150%; width: 125%; height: auto; margin-top: 180px; margin-left: 0px;" src="assets/img/new/office-365-account-compromise.png">
+          <div class="col-12 col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img id="account-compromise-screen" src="assets/img/new/office-365-account-compromise.png">
           </div>
 
 
