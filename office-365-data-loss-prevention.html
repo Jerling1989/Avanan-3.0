@@ -36,6 +36,7 @@
 <style type="text/css">
   #sub-nav > div > nav > .nav-item {
     padding-top: 0.65rem;
+    font-size: 12px;
   }
 
   #sub-nav > div > nav > .nav-item:hover {
@@ -57,22 +58,19 @@
       margin-top: 0px;
     }
 
-    #anti-phishing {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #sub-nav {
+      display: none;
     }
 
-    #full-suite-img {
+    #hero-image {
       max-width: 100%;
       height: auto;
-      margin-bottom: -2.5rem;
+      margin-top: -75px;
+      margin-bottom: -5.5rem;
     }
 
-    #layered-img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #demo-button {
+      display: none;
     }
   }
 
@@ -83,22 +81,19 @@
       margin-top: 0px;
     }
 
-    #anti-phishing {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #sub-nav {
+      display: none;
     }
 
-    #full-suite-img {
+    #hero-image {
       max-width: 90%;
       height: auto;
-      margin-bottom: -2.5rem;
+      margin-top: -75px;
+      margin-bottom: -5.5rem;
     }
 
-    #layered-img {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #demo-button {
+      display: none;
     }
   }
 
@@ -109,22 +104,19 @@
       margin-top: 180px;
     }
 
-    #anti-phishing {
-      max-width: 75%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #sub-nav {
+      display: none;
     }
 
-    #full-suite-img {
-      max-width: 75%;
+    #hero-image {
+      max-width: 85%;
       height: auto;
-      margin-bottom: -2.5rem;
+      margin-top: -80px;
+      margin-bottom: -6rem;
     }
 
-    #layered-img {
-      max-width: 75%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #demo-button {
+      display: none;
     }
   }
 
@@ -135,20 +127,11 @@
       margin-top: 165px;
     }
 
-    #anti-phishing {
-      max-width: 125%;
+    #hero-image {
+      max-width: 145%;
       height: auto;
-    }
-
-    #full-suite-img {
-      max-width: 125%;
-      height: auto;
-      margin-left: -62px;
-    }
-
-    #layered-img {
-      max-width: 125%;
-      height: auto;
+      margin-top: -45px;
+      margin-bottom: -60px;
     }
   }
 
@@ -159,20 +142,11 @@
       margin-top: 145px;
     }
 
-    #anti-phishing {
-      max-width: 125%;
+    #hero-image {
+      max-width: 120%;
       height: auto;
-    }
-
-    #full-suite-img {
-      max-width: 125%;
-      height: auto;
-      margin-left: -90px;
-    }
-
-    #layered-img {
-      max-width: 125%;
-      height: auto;
+      margin-top: -70px;
+      margin-bottom: -70px;
     }
   }
 
@@ -183,23 +157,13 @@
       margin-top: 145px;
     }
 
-    #anti-phishing {
-      max-width: 150%;
+    #hero-image {
+      max-width: 120%;
       height: auto;
-    }
-
-    #full-suite-img {
-      max-width: 150%;
-      height: auto;
-      margin-left: -198px;
-    }
-
-    #layered-img {
-      max-width: 150%;
-      height: auto;
+      margin-top: -70px;
+      margin-bottom: -70px;
     }
   }
-
 
   /** {
     background: #000 !important;
@@ -844,7 +808,7 @@
         <div class="w-md-65 w-lg-65 text-center m-auto">
           <img style="width: 100px; margin-bottom: 20px;" src="https://www.avanan.com/hubfs/marketing/website/teal-icons/dlp.svg">
           <h1 class="display-4">DLP & Compliance for Office 365</h1>
-          <a class="btn btn-danger btn-pill mt-5 transition-3d-hover" href="#!">GET A DEMO</a>
+          <a id="demo-button" class="btn btn-danger btn-pill mt-5 transition-3d-hover" href="#!">GET A DEMO</a>
         </div>
       </div>
 
@@ -857,15 +821,15 @@
     <section class="bg-dark">
       <div class="container">
         <div class="row pt-10 pb-10">
-          <div class="col-12 col-md-6 mt-8">
+          <div class="order-2 order-lg-1 col-12 col-lg-6 mt-8">
             <h3 class="text-primary">26% of organizations feel that improving data security with DLP is the most important thing they could do in 2019 to meet their goals.</h1>
             <p class="text-white">Compared with industry-leading solutions, DLP in Exchange, SharePoint and OneDrive lack key enterprise management features like advanced reporting and detection techniques. The Avanan platform fills these gaps, bringing a complete solution for data loss to the cloud.</p> 
           </div>
 
-          <div class="col-12 col-md-6 text-white">
+          <div class="order-1 order-lg-2 col-12 col-lg-6 text-white">
             <div class="pr-lg-7 text-center">
               <!-- SVG Icon -->
-              <img style="max-width: 120%; height: auto; margin-top: 0px;" id="malware-protection" src="assets/img/dlp-placeholder.png" alt="Office 365 Malware Protection">
+              <img id="hero-image" src="assets/img/new/office-365-dlp-right.png" alt="Office 365 DLP & Compliance">
               <!-- End SVG Icon -->
             </div>
           </div>
