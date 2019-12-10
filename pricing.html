@@ -35,6 +35,10 @@
     #partner-info > h5 > a:hover {
       text-decoration: underline;
     }
+
+    .btn-custom-toggle-primary {
+    	color: #569bbe;
+    }
   </style>
 </head>
 <body>
@@ -474,21 +478,21 @@
   <main id="content" role="main">
     
     <!-- Hero Section -->
-    <div id="SVGwave1BottomSMShape" class="position-relative gradient-half-primary-v1">
+    <div id="SVGwave1BottomSMShape" class="position-relative bg-primary-light">
       <div class="container space-top-2 space-top-md-4 space-bottom-4">
         <div class="w-md-80 w-lg-80 text-center mx-auto">
           <div class="mb-6">
-            <h1 class="text-white">Find the <span class="font-weight-semi-bold">right plan</span> for your company</h1>
+            <h1 class="">Find the <span class="font-weight-semi-bold">right plan</span> for your company</h1>
           </div>
 
           <!-- Button Group -->
           <div class="btn-group btn-group-toggle mb-4">
-            <a style="width: 180px;" class="js-animation-link btn btn-outline-light btn-custom-toggle-white btn-sm-wide active" href="javascript:;"
+            <a style="width: 180px; border-color: #569bbe;" class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide active" href="javascript:;"
                data-target="#pricingMonthly"
                data-link-group="idPricing">
               Sm/Med Business
             </a>
-            <a style="width: 180px;" class="js-animation-link btn btn-outline-light btn-custom-toggle-white btn-sm-wide" href="javascript:;"
+            <a style="width: 180px; border-color: #569bbe;" class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
                data-target="#pricingYearly"
                data-link-group="idPricing">
               Enterprise
@@ -499,7 +503,16 @@
       </div>
 
       <!-- SVG Background -->
-      
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="100%" height="85px" viewBox="0 0 1920 107.7" style="margin-bottom: -8px; enable-background:new 0 0 1920 107.7;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGHero">
+          <style type="text/css">
+            .wave-9-bottom-0{fill:#FFFFFF;}
+            .wave-9-bottom-1{fill:#FFFFFF;}
+          </style>
+          <path class="wave-9-bottom-0 fill-white" d="M0,107.7V69.8c0,0,451-54.7,960-5.4S1920,0,1920,0v107.7H0z"></path>
+          <path class="wave-9-bottom-1 fill-white" opacity=".3" d="M0,107.7v-81c0,0,316.2-8.9,646.1,54.5s794.7-114.1,1273.9-38v64.5H0z"></path>
+        </svg>
+      </figure>
       <!-- End SVG Background -->
     </div>
     <!-- End Hero Section -->
@@ -630,24 +643,166 @@
                 <div class="card transition-3d-hover mt-1">
                   <!-- Header -->
                   <header class="card-header text-center p-5">
-                    <h4 class="h6 text-primary mb-3">Starter</h4>
+                    <h4 class="h5 text-primary mb-2">Enterprise Cloud Security</h4>
+                    <p style="line-height: 125%;" class="mb-4">Protect all your SaaS with your<br>choice of security vendors</p>
                     <span class="d-block">
                       <span class="display-4 text-dark font-weight-normal">
-                        <span class="align-top font-size-2">$</span>242
+                        Contact Us
                       </span>
-                      <span class="d-block text-secondary font-size-1">per year</span>
+                      <!-- <span class="d-block text-secondary font-size-1">For a Quote</span> -->
                     </span>
                   </header>
                   <!-- End Header -->
 
                   <!-- Content -->
-                  <div class="card-body p-5">
-                    <ul class="list-group list-group-flush list-group-borderless mb-4">
-                      <li class="list-group-item">Community support</li>
-                      <li class="list-group-item">400+ pages</li>
-                    </ul>
+                  <div class="col-11 m-auto card-body p-5">
+                    <div class="row mb-3 mt-3">
 
-                    <button type="button" class="btn btn-sm btn-block btn-soft-primary transition-3d-hover">Start Starter</button>
+										  <div class="col-md-6 mb-3">
+										    <div class="mb-2">
+										      <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+										    </div>
+										  </div>
+										  <div class="col-md-6 mb-3">
+										    <div class="mb-2">
+										      <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+										    </div>
+										  </div>
+
+										  <div class="col-12 mb-3">
+										    <div class="mb-2">
+										      <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name">
+										    </div>
+										  </div>
+
+										  <div class="col-md-6 mb-3">
+										    <div class="mb-2">
+										      <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+										    </div>
+										  </div>
+										  <div class="col-md-6 mb-3">
+										    <div class="mb-2">
+										      <input type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+										    </div>
+										  </div>
+
+										  <div class="col-12 mb-3">
+										    <div class="mb-2">
+										      <select class="form-control">
+													  <option>Number of Employees</option>
+													  <option>501-1,000</option>
+													  <option>1,001-10,000</option>
+													  <option>10,001-100,000</option>
+													  <option>100,001+</option>
+													</select>
+										    </div>
+										  </div>
+
+										  <div class="col-md-4 mb-3">
+										    <div class="mb-2">
+										      <div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Office 365 Suite
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Office 365 Email
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    OneDrive
+													  </label>
+													</div>
+												</div>
+												<!-- <div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Default checkbox
+													  </label>
+													</div>
+										    </div> -->
+										  </div>
+										  <div class="col-md-4 mb-3">
+										    <div class="mb-2">
+										      <div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    G Suite
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Gmail
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Google Drive
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Other/Not Listed
+													  </label>
+													</div>
+										    </div>
+										  </div>
+										  <div class="col-md-4 mb-3">
+										    <div class="mb-2">
+										      <div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Slack
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Dropbox
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Box
+													  </label>
+													</div>
+												</div>
+												<div class="mb-2">
+													<div class="form-check">
+													  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													  <label class="form-check-label" for="defaultCheck1">
+													    Citrix ShareFile
+													  </label>
+													</div>
+										    </div>
+										  </div>
+
+										</div>
+                    <button type="button" class="btn btn-sm btn-block btn-danger transition-3d-hover mb-4">Submit Quote Request</button>
                   </div>
                   <!-- End Content -->
                 </div>
