@@ -10521,6 +10521,10 @@ button.bg-indigo:focus {
 }
 
 @media (min-width: 992px) {
+  .mt-lg-n23 {
+    margin-top: -10rem !important;
+  }
+
   .m-lg-0 {
     margin: 0 !important;
   }
