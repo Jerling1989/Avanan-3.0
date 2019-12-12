@@ -2656,13 +2656,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning {
-  color: #222222;
+  color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
 }
 
 .btn-warning:hover {
-  color: #222222;
+  color: #fff;
   background-color: #e0a800;
   border-color: #d39e00;
 }
@@ -2672,14 +2672,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning.disabled, .btn-warning:disabled {
-  color: #222222;
+  color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
 .show > .btn-warning.dropdown-toggle {
-  color: #222222;
+  color: #fff;
   background-color: #d39e00;
   border-color: #c69500;
 }
