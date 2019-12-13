@@ -505,47 +505,47 @@
           <!-- <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">
             JUMP TO:
           </a> -->
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">A</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-a">A</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">B</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-b">B</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">C</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-c">C</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">D</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-d">D</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">E</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">F</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">G</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-g">G</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">H</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-h">H</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">I</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-i">I</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">J</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">K</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-k">K</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">L</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-l">L</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">M</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-m">M</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">N</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">O</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">P</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-p">P</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">Q</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-q">Q</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">R</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-r">R</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">S</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-s">S</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">T</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-t">T</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">U</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-u">U</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">V</a>
 
@@ -969,6 +969,10 @@
   <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
   <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <!-- JS Smoothscroll -->
+  <script src="assets/vendor/appear.js"></script>
+  <script src="assets/js/helpers/hs.scroll-nav.js"></script>
+
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
@@ -1005,6 +1009,11 @@
         afterOpen: function () {
           $(this).find('input[type="search"]').focus();
         }
+      });
+
+      // initialization of HSScrollNav component
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700
       });
 
       // initialization of malihu scrollbar
