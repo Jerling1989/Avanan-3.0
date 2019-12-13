@@ -36,6 +36,12 @@
       font-size: 12px;
     }
 
+    @media (max-width: 1200px) {
+      #sub-nav {
+        display: none;
+      }
+    }
+
     #sub-nav > div > nav > li:hover {
       background-color: #e5eff4;
     }
@@ -647,7 +653,7 @@
 
 
 
-    <!-- Reseller Info Section -->
+    <!-- Glossary Section -->
     <div class="position-relative z-index-2">
       <div class="container">
         <div class="space-bottom-2">
@@ -946,7 +952,7 @@
         </div>
       </div>
     </div>
-    <!-- End Reseller Info Section -->
+    <!-- End Glossary Section -->
 
     
 
@@ -1169,7 +1175,7 @@
       $(window).on('scroll',function(){
           var WindowTop = $(window).scrollTop();
           $('section').each(function(i){
-              if(WindowTop > $(this).offset().top - 200 && 
+              if(WindowTop > $(this).offset().top - 165 && 
                  WindowTop < $(this).offset().top + $(this).outerHeight(true)
                 ){
                   $('.nav > li > a').removeClass('newClass');
