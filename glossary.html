@@ -36,16 +36,8 @@
       font-size: 12px;
     }
 
-    #sub-nav > div > nav > .nav-item:hover {
+    #sub-nav > div > nav > li:hover {
       background-color: #e5eff4;
-    }
-
-    #sub-nav > div > nav > .active:hover {
-      background-color: #569bbe !important;
-    }
-
-    #office-365-home:hover {
-      background-color: #fff !important;
     }
 
     .alert {
@@ -56,12 +48,31 @@
     }
 
     .alert > h1 {
-      font-family: 'Gupter', serif;
+      /*font-family: 'Gupter', serif;*/
       font-size: 3.25rem;
+      font-weight: 500;
     }
 
     a.disabled {
-      
+      background-color: #f5f5f5;
+    }
+
+    .newClass {
+      background-color: #569bbe;
+      color: #fff;
+    }
+
+    .nav-justified li {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .newClass:hover {
+      cursor: pointer;
+      color: #fff;
     }
 
   </style>
@@ -505,57 +516,109 @@
           <!-- <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#!">
             JUMP TO:
           </a> -->
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-a">A</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-a">A</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-b">B</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-b">B</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-c">C</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-c">C</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-d">D</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-d">D</a>
+          </li>
+          
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-e">E</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">E</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-f">F</a>
+          </li>
+            
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-g">G</a>
+          </li>
+          
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-h">H</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">F</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-i">I</a>
+          </li>    
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-g">G</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-j">J</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-h">H</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-k">K</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-i">I</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-l">L</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">J</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-m">M</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-k">K</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-n">N</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-l">L</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-o">O</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-m">M</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-p">P</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">N</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-q">Q</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">O</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-r">R</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-p">P</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-s">S</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-q">Q</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-t">T</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-r">R</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-u">U</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-s">S</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-v">V</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-t">T</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-w">W</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-u">U</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-x">X</a>
+          </li>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">V</a>
-
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">W</a>
-
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">X</a>
-
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">Y</a>
-
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">Z</a>
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-y">Y</a>
+          </li>
+  
+          <li>
+            <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#letter-z">Z</a>
+          </li>
         </nav>
       </div>
     </div>
@@ -568,7 +631,7 @@
   <main id="content" role="main">
     <!-- Hero Section -->
     <div id="SVGHero" class="position-relative bg-white">
-      <div class="container space-top-2 space-bottom-3 space-md-3 space-bottom-lg-4">
+      <div class="container space-top-2 space-md-3 ">
         <div class="">
           <!-- <h1>You're in good company.</h1> -->
           <h1 style="margin-top: 100px;" class="h1 text-center display-4 mb-5">Cloud Security Glossary</h1>
@@ -585,14 +648,14 @@
 
 
     <!-- Reseller Info Section -->
-    <div class="position-relative mt-n10 mt-lg-n23 z-index-2">
+    <div class="position-relative z-index-2">
       <div class="container">
-        <div class="space-2 space-md-3">
+        <div class="space-bottom-2">
           <div class="row">
 
             <div class="col-12">
 
-              <div id="letter-a">
+              <section id="letter-a">
                 <div class="alert alert-secondary" role="alert">
                   <h1>A</h1>
                 </div>
@@ -622,10 +685,10 @@
                 <h3>API (Application Programming Interface) Attack</h3>
                 <p>An API allows two cloud applications to talk to one other directly, allowing a third party to read or make changes directly within a cloud application. Creating an API connection requires a user's approval, but once created, runs silently in the background, often with little or no monitoring. An API-based attack typically involves fooling the user into approving an API connection with a phishing attack. Once granted the API token, the attacker has almost complete access and control, even if the user changes the account password. To break the connection, the user must manually revoke the API token.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-b">
+              <section id="letter-b">
                 <div class="alert alert-secondary" role="alert">
                   <h1>B</h1>
                 </div>
@@ -641,10 +704,10 @@
                 <h3>Breach Response</h3>
                 <p>A form of security that remedies the damage caused by a breach. For example, changing passwords, revoking API tokens, resetting permissions for shared documents, enabling multi-factor-authentication, restoring lost or edited documents, documenting and classifying leaked information, identifying potential pathways to collateral compromise.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-c">
+              <section id="letter-c">
                 <div class="alert alert-secondary" role="alert">
                   <h1>C</h1>
                 </div>
@@ -676,10 +739,10 @@
                 <p>An account which has been accessed and is possibly controlled by an outside party for malicious reasons. This can be done either via API connection or by gaining credentials to the account from a leak or phishing email. Typically, the goal of the attacker is to remain undetected, in order to use the account as a base for further attacks.</p>
                 <p><em><strong>Related:</strong> <a href="/resources/why-account-takeover-is-important-part-of-email-security" rel="noopener" target="_blank">Account Takeover: A Critical Layer Of Your Email Security</a></em></p>
                 <br><br>
-              </div>
+              </section>
                 
 
-              <div id="letter-d">
+              <section id="letter-d">
                 <div class="alert alert-secondary" role="alert">
                   <h1>D</h1>
                 </div>
@@ -696,10 +759,15 @@
                 <h3>DRM (Digital Rights Management)</h3>
                 <p>A set of access control technologies for restricting the use of confidential information, proprietary hardware, and copyrighted works, typically using encryption and key management. (<a href="#IRM">Also see IRM</a>)</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-g">
+              <section id="letter-e"></section>
+
+              <section id="letter-f"></section>
+
+
+              <section id="letter-g">
                 <div class="alert alert-secondary" role="alert">
                   <h1>G</h1>
                 </div>
@@ -707,10 +775,10 @@
                 <h3>Gateway</h3>
                 <p><span style="font-size: 14px; background-color: transparent;">A gateway is any device or is another word for an MTA, please see the definition for MTA.</span></p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-h">
+              <section id="letter-h">
                 <div class="alert alert-secondary" role="alert">
                   <h1>H</h1>
                 </div>
@@ -719,10 +787,10 @@
                 <p>Describes a mixture of on premise data centers, private clouds, and publicly available clouds (like the companies mentioned our definition for "The Cloud" above). Companies using the hybrid model move workloads between public and private clouds, typically guided by cost or computing needs.</p>
                 <p>Many organizations prefer this model, because it allows for greater flexibility and deployment options. This decision is often based on the applications that an organization uses and what kind of regulatory controls they need over data.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-i">
+              <section id="letter-i">
                 <div class="alert alert-secondary" role="alert">
                   <h1>I</h1>
                 </div>
@@ -730,10 +798,11 @@
                 <h3>IRM (Information Rights Management)</h3>
                 <p>A subset of Digital Rights Management, IRM protects corporate information from being viewed or edited by unwanted parties, typically using encryption and permission management. (<a href="#DRM">also see DRM</a>)</p>
                 <br><br>
-              </div>
+              </section>
 
+              <section id="letter-j"></section>
               
-              <div id="letter-k">
+              <section id="letter-k">
                 <div class="alert alert-secondary" role="alert">
                   <h1>K</h1>
                 </div>
@@ -742,10 +811,10 @@
                 <p>A covert method of attack, where hackers install malware that records what a person types. Unbeknownst to the user typing away, the program logs each string of letters, characters, and numbers entered onto the device to identify passwords and other confidential information.</p>
                 <p><em>Related: <a href="/resources/what-are-botnets-and-how-to-defend-against-them" rel="noopener" target="_blank">What Are Botnets and How to Defend Against Them</a></em></p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-l">
+              <section id="letter-l">
                 <div class="alert alert-secondary" role="alert">
                   <h1>L</h1>
                 </div>
@@ -753,10 +822,10 @@
                 <h3>Latency</h3>
                 <p>The added time it takes for an email to be delivered to its intended recipient. Security measures sometimes add latency as they perform scans on the email prior to allowing the email to reach the user's inbox.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-m">
+              <section id="letter-m">
                 <div class="alert alert-secondary" role="alert">
                   <h1>M</h1>
                 </div>
@@ -773,11 +842,17 @@
                 <p>An MTA is an appliance or service that acts as the authorized server-of-record for electronic messages, eventually passing them on to the final mail server.</p>
                 <p><em><strong>Related:</strong> <a href="/resources/why-not-mta" rel="" target="">7 Reasons Not to Use an MTA Gateway</a></em></p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-p">
-              <div class="alert alert-secondary" role="alert">
+              <section id="letter-n"></section>
+
+
+              <section id="letter-o"></section>
+
+
+              <section id="letter-p">
+                <div class="alert alert-secondary" role="alert">
                   <h1>P</h1>
                 </div>
 
@@ -788,21 +863,21 @@
                 <h3>Proxy</h3>
                 <p>A proxy can include any gateway, service, or appliance that causes a rerouting of traffic through an appliance or cloud service. For example, a web proxy or CASB will redirect a user's web browsing in order to decrypt the traffic and block particular applications or data. Mail proxy gateways (see MTA) reroute incoming email in order to scan and block spam, phishing or other malicious email. A proxy is limited in its visibility because it cannot monitor or control traffic it cannot see, such as remote and non-employee web usage or internal email traffic.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-q">
+              <section id="letter-q">
                 <div class="alert alert-secondary" role="alert">
                   <h1>Q</h1>
                 </div>
 
                 <h3>Quarantine</h3>
-                <p>The act of encrypting, moving, or changing the share permissions of a file so that it is unreachable by a user until it can be deemed safe or authorized by the intended recipient.&nbsp;</p>
+                <p>The act of encrypting, moving, or changing the share permissions of a file so that it is unreachable by a user until it can be deemed safe or authorized by the intended recipient.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-r">
+              <section id="letter-r">
                 <div class="alert alert-secondary" role="alert">
                   <h1>R</h1>
                 </div>
@@ -810,10 +885,10 @@
                 <h3>Ransomware</h3>
                 <p>A type of malware that encrypts the files on an endpoint device using a mechanism for which only the attacker has the keys. While the attacker will offer the key in exchange for payment, fewer than half of victims that do pay actually recover their files.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-s">
+              <section id="letter-s">
                 <div class="alert alert-secondary" role="alert">
                   <h1>S</h1>
                 </div>
@@ -834,10 +909,10 @@
                 <h3>Spearphishing</h3>
                 <p>A type of phishing attack that is designed to target a small number of users, sometimes only one user such as a CEO. Spear-phishing attacks usually involve intensive research by the hacker to increase the chances that the intended target will fall for it.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-t">
+              <section id="letter-t">
                 <div class="alert alert-secondary" role="alert">
                   <h1>T</h1>
                 </div>
@@ -845,10 +920,10 @@
                 <h3>Tokens</h3>
                 <p>A unique authorization key used for API interactions. Each token is granted a certain level of access and control and often continues to provide access until the token is manually revoked.</p>
                 <br><br>
-              </div>
+              </section>
 
 
-              <div id="letter-u">
+              <section id="letter-u">
                 <div class="alert alert-secondary" role="alert">
                   <h1>U</h1>
                 </div>
@@ -864,7 +939,7 @@
                 <h3>User Impersonation</h3>
                 <p>A technique used in phishing attacks in which the hacker makes their email look like it is coming from a trusted sender, either a corporation or another employee. This can be done by editing their nickname or using an email address that looks like it is from a trusted organization.</p>
                 <br><br>
-              </div>
+              </section>
             </div>
 
           </div>
@@ -1080,14 +1155,43 @@
     });
 
 
-    $('.smoothscroll').on('click', function(e) {
-      var target  = this.hash;
-      var $target = $(target);
-      $('html, body').stop().animate({
-        'scrollTop': $target.offset().top - 120
-      }, 600, 'swing');
-      e.preventDefault();
+    // $('.smoothscroll').on('click', function(e) {
+    //   var target  = this.hash;
+    //   var $target = $(target);
+    //   $('html, body').stop().animate({
+    //     'scrollTop': $target.offset().top - 120
+    //   }, 600, 'swing');
+    //   e.preventDefault();
+    // });
+
+
+    $(function() {
+      $(window).on('scroll',function(){
+          var WindowTop = $(window).scrollTop();
+          $('section').each(function(i){
+              if(WindowTop > $(this).offset().top - 200 && 
+                 WindowTop < $(this).offset().top + $(this).outerHeight(true)
+                ){
+                  $('.nav > li > a').removeClass('newClass');
+       $('.nav li').eq(i).find('a').addClass('newClass');
+              }
+          });
+      });
+      $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 120
+        }, 1000);
+        return false;
+        }
+      }
+      });
     });
+
+
   </script>
 </body>
 </html>
