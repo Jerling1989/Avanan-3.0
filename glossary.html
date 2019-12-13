@@ -517,7 +517,7 @@
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link disabled" href="#!">F</a>
 
-          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-g">G</a>
+          <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link smoothscroll" href="#letter-g">G</a>
 
           <a style="border-radius: 0; border-right: 1px solid #ddd;" class="nav-item nav-link" href="#letter-h">H</a>
 
@@ -969,9 +969,6 @@
   <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
   <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-  <!-- JS Smoothscroll -->
-  <script src="assets/vendor/appear.js"></script>
-  <script src="assets/js/helpers/hs.scroll-nav.js"></script>
 
 
   <!-- JS Front -->
@@ -1011,11 +1008,7 @@
         }
       });
 
-      // initialization of HSScrollNav component
-      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
-        duration: 700
-      });
-
+    
       // initialization of malihu scrollbar
       $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
 
@@ -1036,6 +1029,16 @@
 
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+
+
+    $('.smoothscroll').on('click', function(e) {
+      var target  = this.hash;
+      var $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - 120
+      }, 600, 'swing');
+      e.preventDefault();
     });
   </script>
 </body>
