@@ -44,6 +44,22 @@
       background-color: #28a745 !important;
       border-color: #28a745 !important;
     }
+
+    .btn-group-toggle > a.btn-custom-toggle-primary {
+      width: 200px;
+      border-color: #569bbe;
+    }
+
+    @media (max-width: 768px) {
+      .btn-group-toggle > a.btn-custom-toggle-primary {
+        width: auto;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+
+
   </style>
 </head>
 <body>
@@ -492,17 +508,17 @@
 
           <!-- Button Group -->
           <div class="btn-group btn-group-toggle mb-4">
-            <a style="width: 200px; border-color: #569bbe;" class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide active" href="javascript:;"
+            <a class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide active" href="javascript:;"
                data-target="#pricingREG"
                data-link-group="idPricing">
-              Sm/Med Business
+              Business<br>
             </a>
-            <a style="width: 200px; border-color: #569bbe;" class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
+            <a class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
                data-target="#pricingENT"
                data-link-group="idPricing">
               Enterprise
             </a>
-            <a style="width: 200px; border-color: #569bbe;" class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
+            <a class="js-animation-link btn btn-outline-primary btn-custom-toggle-primary btn-sm-wide" href="javascript:;"
                data-target="#pricingEDU"
                data-link-group="idPricing">
               EDU/Government
@@ -533,9 +549,9 @@
         <div class="space-bottom-2 space-bottom-md-3">
 
           <!-- Pricing Carousel -->
-          <div id="pricingREG" data-target-group="idPricing">
+          <div style="margin-top: -184px;" id="pricingREG" data-target-group="idPricing">
+            <small>*under 500 employees</small>
             <div class="row">
-              
               <div class="col-4">
                 <!-- Pricing -->
                 <div class="card transition-3d-hover mt-1">
@@ -644,9 +660,9 @@
 
 
           <!-- Pricing Carousel -->
-          <div id="pricingENT" style="display: none; opacity: 0;" data-target-group="idPricing">
+          <div style="margin-top: -184px;" id="pricingENT" style="display: none; opacity: 0;" data-target-group="idPricing">
+            <small>*over 500 employees</small>
             <div class="row">
-
               <div class="col-12">
                 <!-- Pricing -->
                 <div class="card transition-3d-hover mt-1">
