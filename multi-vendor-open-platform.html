@@ -21,7 +21,7 @@
 
   <!-- ADDED BY ME (HERO ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/theme3.css">
+  <link rel="stylesheet" href="assets/css/skewed-img-new.css">
 
   <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
   <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
@@ -37,7 +37,7 @@
 
     .svg-divider-polygon-2 {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 475px, 0 815px);
-      clip-path: polygon(0 0, 100% 0, 100% 475px, 0 815px);
+      clip-path: polygon(0 0, 100% 0, 100% 475px, 0 835px);
     }
 
     .card-header {
@@ -61,6 +61,56 @@
     .card-body > .col-md-4 > img {
       vertical-align: middle;
       max-height: 85px;
+    }
+
+    
+
+    #bottom-mockup {
+      width: 900px;
+      margin-top: -35px;
+    }
+
+    /* PHONES IN PORTRAIT col-3 */
+    @media (max-width: 576px) {
+      
+    }
+
+
+    /* PHONES IN LANDSCAPE col-sm-3 */
+    @media (min-width: 576px) and (max-width: 768px) {
+      
+    }
+
+
+    /* TABLETS col-md-3 */
+    @media (min-width: 768px) and (max-width: 992px) {
+      
+    }
+
+
+    /* LAPTOPS  col-lg-3 */
+    @media (min-width: 992px) and (max-width: 1200px) {
+      
+    }
+
+
+    /* DESKTOPS col-xl-3 */
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      #top-mockup {
+        width: 860px;
+        margin-top: -200px;
+        margin-left: -330px;
+      }
+    }
+
+
+    /* LARGE DESKTOPS */
+    @media (min-width: 1500px) {
+       #top-mockup {
+        width: 860px;
+        margin-top: -200px;
+        margin-left: -330px;
+      }
     }
   </style>
 </head>
@@ -534,18 +584,18 @@
         <div class="space-bottom-1">
           <div class="row">
 
-            <div class="col-12 col-md-6">
-              <img style="width: 800px; margin-top: -220px; margin-left: -290px;" src="assets/img/new/multi-vendor-open-platform.png" alt="">
+            <div class="col-12 col-lg-6" data-aos="fade-right">
+              <img id="top-mockup" src="assets/img/new/multi-vendor-open-platform.png" alt="">
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6" data-aos="fade-left">
               <h2 class="h3">Integrate and Layer Leading Security</h2>
               <p>Integrate innovative security technology from the industry's top vendors and their next-generation tools. Every Avanan security partner is vetted before being adapted to the platform.</p>
 
-              <h6>Single license</h6>
+              <h6 class="mt-5">Single license</h6>
               <p>Purchase multiple layers of cloud security for the same price as just one in a data center appliance. Each vendor's individual licensing model has been consolidated into a single per-user, per-month subscription.</p>
 
-              <h6>Deploys in one click</h6>
+              <h6 class="mt-5">Deploys in one click</h6>
               <p>Choose individual security layers, or use one of Avanan pre-made bundles. One-click in the interface spins up a new instance of the pre-configured security tool.</p>
             </div>
 
@@ -582,7 +632,7 @@
     <!-- Bottom Info Section -->
     <div class="position-relative">
       <div class="container">
-        <div class="space-bottom-1">
+        <div class="space-bottom-1 space-top-2">
           <div class="row">
             
             <div class="col-12 text-center mb-8">
@@ -592,7 +642,7 @@
 
             <div class="col-12 col-md-6">
 
-              <div class="card p-1 mb-3 shadow-sm">
+              <div class="card p-1 mb-3 shadow-sm" data-aos="fade-right">
                 <div class="card-header text-center">
                   <h3>Anti-Malware</h3>
                 </div>
@@ -612,7 +662,7 @@
                 </div>
               </div>
 
-              <div class="card p-1 mb-3 shadow-sm">
+              <div class="card p-1 mb-3 shadow-sm" data-aos="fade-right">
                 <div class="card-header text-center">
                   <h3>Anti-Virus</h3>
                 </div>
@@ -632,7 +682,7 @@
                 </div>
               </div>
 
-              <div class="card p-1 mb-3 shadow-sm">
+              <div class="card p-1 mb-3 shadow-sm" data-aos="fade-right">
                 <div class="card-header text-center">
                   <h3>Data Loss Prevention (DLP)</h3>
                 </div>
@@ -652,7 +702,7 @@
                 </div>
               </div>
 
-              <div class="card p-1 mb-3 shadow-sm">
+              <div class="card p-1 mb-3 shadow-sm" data-aos="fade-right">
                 <div class="card-header text-center">
                   <h3>SIEM Integrations</h3>
                 </div>
@@ -672,8 +722,8 @@
 
             </div>
 
-            <div class="col-12 col-md-6">
-              <img style="width: 800px;" src="assets/img/new/app-store-angled.png" alt="">
+            <div class="col-12 col-md-6" data-aos="fade-left">
+              <img id="bottom-mockup" src="assets/img/new/app-store-angled.png" alt="">
             </div>
 
           </div>
@@ -840,6 +890,10 @@
   <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
   <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- ADDED BY ME (ANIMATION) -->
+  <script src="assets/libs/aos/dist/aos.js"></script>
+  <script src="assets/js/theme2.min.js"></script>
 
   <!-- JS Implementing Plugins -->
   <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
