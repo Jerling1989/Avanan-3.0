@@ -35,11 +35,6 @@
       text-decoration: underline;
     }
 
-    .svg-divider-polygon-2 {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 475px, 0 815px);
-      clip-path: polygon(0 0, 100% 0, 100% 475px, 0 835px);
-    }
-
     .card-header {
       padding: .5rem 1rem .1rem 1rem;
       margin-bottom: 0;
@@ -72,33 +67,53 @@
 
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
+      .svg-divider-polygon-2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 855px, 0 995px);
+        clip-path: polygon(0 0, 100% 0, 100% 855px, 0 995px);
+      }
+      
       #top-mockup {
         width: 100%;
-        margin-top: -240px;
+        margin-top: -250px;
       }
     }
 
 
     /* PHONES IN LANDSCAPE col-sm-3 */
     @media (min-width: 576px) and (max-width: 768px) {
+      .svg-divider-polygon-2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 715px, 0 935px);
+        clip-path: polygon(0 0, 100% 0, 100% 715px, 0 935px);
+      }
+
       #top-mockup {
         width: 100%;
-        margin-top: -240px;
+        margin-top: -250px;
       }
     }
 
 
     /* TABLETS col-md-3 */
     @media (min-width: 768px) and (max-width: 992px) {
+      .svg-divider-polygon-2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 835px, 0 995px);
+        clip-path: polygon(0 0, 100% 0, 100% 835px, 0 995px);
+      }
+
       #top-mockup {
         width: 100%;
-        margin-top: -240px;
+        margin-top: -250px;
       }
     }
 
 
     /* LAPTOPS  col-lg-3 */
     @media (min-width: 992px) and (max-width: 1200px) {
+      .svg-divider-polygon-2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 585px, 0 845px);
+        clip-path: polygon(0 0, 100% 0, 100% 585px, 0 845px);
+      }
+
       #top-mockup {
         width: 800px;
         margin-top: -160px;
@@ -109,6 +124,11 @@
 
     /* DESKTOPS col-xl-3 */
     @media (min-width: 1200px) and (max-width: 1500px) {
+      .svg-divider-polygon-2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 475px, 0 815px);
+        clip-path: polygon(0 0, 100% 0, 100% 475px, 0 835px);
+      }
+
       #top-mockup {
         width: 860px;
         margin-top: -200px;
@@ -119,7 +139,12 @@
 
     /* LARGE DESKTOPS */
     @media (min-width: 1500px) {
-       #top-mockup {
+      .svg-divider-polygon-2 {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 475px, 0 815px);
+        clip-path: polygon(0 0, 100% 0, 100% 475px, 0 835px);
+      }
+
+      #top-mockup {
         width: 860px;
         margin-top: -200px;
         margin-left: -330px;
