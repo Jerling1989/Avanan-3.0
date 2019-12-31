@@ -85,6 +85,10 @@
       height: 100%;
       vertical-align: middle;
     }
+
+    #first-section h5 {
+      color: #fff;
+    }
     
 
     /* PHONES IN PORTRAIT col-3 */
@@ -113,13 +117,37 @@
 
     /* DESKTOPS col-xl-3 */
     @media (min-width: 1200px) and (max-width: 1500px) {
-      
+      #first-section {
+        padding-top: 340px !important;
+      }
+
+      #first-section h5 {
+        width: 700px;
+        margin-left: 25px;
+      }
+
+      #first-section img {
+        width: 700px;
+        margin-left: 25px;
+      }
     }
 
 
     /* LARGE DESKTOPS */
     @media (min-width: 1500px) {
-      
+      #first-section {
+        padding-top: 340px !important;
+      }
+
+      #first-section h5 {
+        width: 700px;
+        margin-left: 25px;
+      }
+
+      #first-section img {
+        width: 700px;
+        margin-left: 25px;
+      }
     }
 
   </style>
@@ -633,7 +661,7 @@
 
 
     <!-- PROMOTION CARDS -->
-    <div class="container space-top-3">
+    <div class="container space-top-2 space-top-xl-3">
       <div id="SVGkeyFeatures" class="card-deck card-lg-gutters-3 d-block d-lg-flex">
 
 
@@ -702,7 +730,7 @@
 
 
     <!-- CLOUD EMAIL SECURITY IS DIFFERENT -->
-    <div style="padding-top: 340px !important;" class="space-4 bg-white">
+    <div id="first-section" class="space-4 bg-white">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 mt-8" data-aos="fade-right">
@@ -713,8 +741,8 @@
           </div>
 
           <div class="col-12 col-lg-6 text-center" data-aos="fade-left">
-            <h5 style="color: #fff; width: 700px; margin-left: 25px;"><span style="background-color: #222;">&nbsp;What percentage of phishing attacks do they miss?&nbsp;</span></h5>
-            <img style="width: 700px; margin-left: 25px;" src="assets/img/missed-attacks-graph.png" alt="">
+            <h5><span style="background-color: #222;">&nbsp;What percentage of phishing attacks do they miss?&nbsp;</span></h5>
+            <img src="assets/img/missed-attacks-graph.png" alt="">
           </div>
         </div>
       </div>
