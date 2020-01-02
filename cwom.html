@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Avanan | Office 365 Security</title>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+
+  <!-- <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css"> -->
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+  <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+
+  <!-- ADDED BY ME (HERO ANIMATION) -->
+  <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/skewed-img-new.css">
+
+  <!-- ADDED BY ME (SUPPORT MODAL & ICON ANIMATION) -->
+  <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/layout/header-slim.css">
+  <link rel="stylesheet" href="assets/css/custom/mine.css">
+
+<style type="text/css">
+
+  /* PHONES IN PORTRAIT col-3 */
+  @media (max-width: 576px) {
+    #spacer-div {
+      margin-top: 0px;
+    }
+
+    .screenshot-right {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: -2.5rem;
+    }
+
+    .screenshot-left {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: -2.5rem;
+    }
+
+    .svg-icon {
+      display: none;
+    }
+  }
+
+
+  /* PHONES IN LANDSCAPE col-sm-3 */
+  @media (min-width: 576px) and (max-width: 768px) {
+    #spacer-div {
+      margin-top: 0px;
+    }
+
+    .screenshot-right {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: -2.5rem;
+    }
+
+    .screenshot-left {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: -2.5rem;
+    }
+
+    .svg-icon {
+      display: none;
+    }
+  }
+
+
+  /* TABLETS col-md-3 */
+  @media (min-width: 768px) and (max-width: 992px) {
+    #spacer-div {
+      margin-top: 180px;
+    }
+
+    .screenshot-right {
+      max-width: 75%;
+      height: auto;
+      margin-bottom: -2.5rem;
+    }
+
+    .screenshot-left {
+      max-width: 75%;
+      height: auto;
+      margin-bottom: -2.5rem;
+    }
+  }
+
+
+  /* LAPTOPS  col-lg-3 */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    #spacer-div {
+      margin-top: 100px;
+    }
+
+    .screenshot-right {
+      max-width: 125%;
+      height: auto;
+    }
+
+    .screenshot-left {
+      max-width: 125%;
+      height: auto;
+      margin-left: -62px;
+    }
+  }
+
+
+  /* DESKTOPS col-xl-3 */
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    #spacer-div {
+      margin-top: 100px;
+    }
+
+    .screenshot-right {
+      max-width: 125%;
+      height: auto;
+    }
+
+    .screenshot-left {
+      max-width: 125%;
+      height: auto;
+      margin-left: -90px;
+    }
+  }
+
+
+  /* LARGE DESKTOPS */
+  @media (min-width: 1500px) {
+    #spacer-div {
+      margin-top: 100px;
+    }
+
+    .screenshot-right {
+      max-width: 150%;
+      height: auto;
+    }
+
+    .screenshot-left {
+      max-width: 150%;
+      height: auto;
+      margin-left: -198px;
+    }
+  }
+
+
+ /* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }*/
+</style>
+
+
+</head>
+<body class="">
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md"
+          data-header-fix-moment="0"
+          data-header-fix-effect="slide">
+    <!-- Search -->
+    <div id="searchPushTop" class="u-search-push-top bg-white" style="box-shadow: none !important;">
+      <div class="container position-relative">
+        <div class="u-search-push-top__content">
+          <!-- Close Button -->
+          <button type="button" class="close u-search-push-top__close-btn"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="searchPushTop"
+                  data-unfold-type="jquery-slide"
+                  data-unfold-target="#searchPushTop">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- End Close Button -->
+
+          <!-- Input -->
+          <form class="js-focus-state input-group input-group-lg">
+            <input type="search" class="form-control" placeholder="Search Front" aria-label="Search Front">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+          </form>
+          <!-- End Input -->
+
+          <!-- Content -->
+          <div class="row d-none d-md-flex mt-7">
+            <div class="col-sm-6">
+              <strong class="d-block mb-2">Quick Links</strong>
+
+              <div class="row">
+                <!-- List Group -->
+                <div class="col-6">
+                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/resources/topic/blog">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Avanan Blog
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/resources/topic/attack-briefs">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Attack Briefs
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/events">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Events
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="/resources/webinars">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Webinars
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Group -->
+
+                <!-- List Group -->
+                <div class="col-6">
+                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/anti-phishing-software">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Anti-Phishing
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/resources/atp-anti-phishing-compared-to-avanan">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Avanan vs ATP
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/contact-us">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Contact Us
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/about">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      About Us
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Group -->
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <!-- Banner -->
+              <a href="https://www.avanan.com/the-history-and-future-of-phishing">
+                <img class="img-fluid rounded text-center shadow mb-5 lift" src="https://www.avanan.com/hubfs/website/img/infographics/history-of-phishing-feat.png">
+              </a>              
+              <!-- End Banner -->
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+      </div>
+    </div>
+    <!-- End Search -->
+
+    <div class="u-header__section">
+      <!-- Topbar -->
+      <div class="container u-header__hide-content pt-2">
+        <div class="d-flex align-items-center">
+
+          <div class="ml-auto">
+          </div>
+
+          <ul class="list-inline ml-2 mb-0">
+            <!-- Search -->
+            <li class="list-inline-item">
+              <a class="u-header__navbar-link" href="javascript:;" role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="searchPushTop"
+                      data-unfold-type="jquery-slide"
+                      data-unfold-target="#searchPushTop">
+                <i class="fas fa-search"></i>
+                <span class="d-none d-sm-inline-block">Search</span>
+              </a>
+            </li>
+            <!-- End Search -->
+
+            <!-- Support Icon -->
+            <li class="list-inline-item position-relative">
+              <a class="u-header__navbar-link" href="#supportModal" role="button"
+                      data-modal-target="#supportModal"
+                      data-overlay-color="#111722">
+                <i class="fas fa-headset"></i>
+                <span class="d-none d-sm-inline-block">Support</span>
+              </a>
+            </li>
+            <!-- End Support Icon -->
+          </ul>
+        </div>
+      </div>
+      <!-- End Topbar -->
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+          <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="https://www.avanan.com/" aria-label="Front">
+            <img src="https://www.avanan.com/hubfs/marketing/website/jacob_redesign/logos/avanan-teal-logo-sm.png" alt="Avanan">
+          </a>
+          <!-- End Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn u-hamburger"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                  aria-controls="navBar"
+                  data-toggle="collapse"
+                  data-target="#navBar">
+            <span id="hamburgerTrigger" class="u-hamburger__box">
+              <span class="u-hamburger__inner"></span>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
+
+              <!-- Interactive Nav Item -->
+              <li id="products-services" class="nav-item hs-has-mega-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-position="left">
+                <a id="interactiveMegaMenu1" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Products & Services</a>
+
+                <!-- Interactive Nav Item - Mega Menu -->
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="interactiveMegaMenu1">
+                  <div class="row no-gutters">
+                    <div class="col-lg-5">
+                      <!-- Banner Image -->
+                      <div class="u-header__banner" style="background-image: url(https://www.avanan.com/hubfs/website/img/pages/angled-flat-phishing-malware-dashboard.png);">
+                        <div class="u-header__banner-content">
+                          <div class="mb-4">
+                            <span class="u-header__banner-title">Patented Technology</span>
+                            <p class="u-header__banner-text">Avanan is the first In-Line Email Security Solution based fully on APIs</p>
+                          </div>
+                          <a class="btn btn-primary btn-sm transition-3d-hover" href="https://www.avanan.com/patented-technology">Learn More <span class="fas fa-angle-right ml-2"></span></a>
+                        </div>
+                      </div>
+                      <!-- End Banner Image -->
+                    </div>
+
+                    <div class="col-lg-7">
+                      <div class="row u-header__mega-menu-wrapper">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <span style="margin-bottom: 1rem;" class="u-header__sub-menu-title">Platforms</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+
+                            <!-- Office 365 -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="https://www.avanan.com/office-365-security">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 0px 0px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Office 365
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Office 365 -->
+
+                            <!-- G Suite -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="/g-suite-security-software">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 100px 0px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      G Suite
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End G Suite -->
+
+                            <!-- Slack -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="/slack-security">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 75px 0px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Slack
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Slack -->
+
+                            <!-- Dropbox -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="/file-sharing">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 50px 0px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Dropbox
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Dropbox -->
+
+                            <!-- Google Drive -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="/file-sharing">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 25px 0px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Google Drive
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Google Drive -->
+
+                            <!-- View All -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="/saas">
+                                <div class="media align-items-center">
+                                  <button hre class="btn btn-sm btn-outline-primary btn-block lift">See More</button>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End View All -->
+                          </ul>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <span style="margin-bottom: 1rem;" class="u-header__sub-menu-title">Security Services</span>
+                          <ul class="u-header__sub-menu-nav-group">
+
+                            <!-- Anti-Phishing -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="https://www.avanan.com/anti-phishing-software">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 0px 75px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Anti-Phishing
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Anti-Phishing -->
+
+                            <!-- Malware & Ransomware -->
+                            <div class="u-header__promo-item">
+                              <a style="padding-top: 0.39rem; padding-bottom: 0.39rem;" class="u-header__promo-link" href="https://www.avanan.com/anti-malware-software">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 100px 75px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Malware<br>& Ransomware
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Malware & Ransomware -->
+
+                            <!-- Account Takeover Protection -->
+                            <div class="u-header__promo-item">
+                              <a style="padding-top: 0.39rem; padding-bottom: 0.39rem;" class="u-header__promo-link" href="https://www.avanan.com/account-takeover-prevention">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 75px 75px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      Account Takeover<br>Protection
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Account Takeover Protection -->
+
+                            <!-- DLP & Compliance -->
+                            <div class="u-header__promo-item">
+                              <a style="padding-top: 0.39rem; padding-bottom: 0.39rem;" class="u-header__promo-link" href="https://www.avanan.com/data-loss-prevention-software">
+                                <div class="media align-items-center">
+                                  <div style="background-position: 50px 75px;" class="u-header__promo-icon"></div>
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">
+                                      DLP &<br>Compliance
+                                    </span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End DLP & Compliance -->
+
+
+                            <!-- View All -->
+                            <div class="u-header__promo-item">
+                              <a class="u-header__promo-link" href="https://www.avanan.com/multi-vendor-open-platform">
+                                <div class="media align-items-center">
+                                  <button class="btn btn-sm btn-outline-primary btn-block lift">See More</button>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End View All -->
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Interactive Nav Item - Mega Menu -->
+              </li>
+              <!-- End Interactive Nav Item -->
+
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="/pricing">Pricing</a>
+              </li>
+
+              <!-- Blog -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="/how-it-works">How it Works</a>
+              </li>
+              <!-- End Blog -->
+
+              <!-- RESOURCES -->
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+                <a id="resourcesMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="resourcesSubMenu">Resources</a>
+
+                <!-- RESOURCES SUBMENU -->
+                <ul id="resourcesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="resourcesMenu" style="min-width: 225px;">
+                  <!-- Blog -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources/topic/blog">
+                      <div class="media align-items-center">
+                        <div style="background-position: 0px 50px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Blog
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Blog -->
+                  
+                  <!-- Events -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/events">
+                      <div class="media align-items-center">
+                        <div style="background-position: 100px 50px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Events
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Events -->
+
+                  <!-- White Papers -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources/reports-white-papers">
+                      <div class="media align-items-center">
+                        <div style="background-position: 75px 50px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            White Papers
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End White Papers -->
+
+                  <!-- Case Studies -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources/case-studies">
+                      <div class="media align-items-center">
+                        <div style="background-position: 50px 50px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Case Studies
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Case Studies -->
+
+                  <!-- Infographics -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources/infographics">
+                      <div class="media align-items-center">
+                        <div style="background-position: 25px 50px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Infographics
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Infographics -->
+
+                  <!-- Comics -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources/comics">
+                      <div class="media align-items-center">
+                        <div style="background-position: 0px 25px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Comics
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Comics -->
+
+                  <!-- Webinars -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources/webinars">
+                      <div class="media align-items-center">
+                        <div style="background-position: 100px 25px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Webinars
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Webinars -->
+
+                  <!-- More Resources -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="/resources">
+                      <div class="media align-items-center">
+                        <div style="background-position: 75px 25px;" class="u-header__promo-icon"></div>
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            More Resources
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End More Resources -->
+                </ul>
+                <!-- END RESOURCES SUBMENU -->
+              </li>
+              <!-- END RESOURCES -->
+
+
+              <!-- Nav CTA Buttons -->
+              <li class="nav-item u-header__nav-last-item">
+                <a style="padding: 5px 10px !important; text-transform: uppercase; font-weight: 500 !important; letter-spacing: 0.25px;" class="btn btn-sm btn-danger transition-3d-hover" href="/trial">
+                  Free Trial
+                </a>
+              </li>
+              
+              <li class="nav-item u-header__nav-last-item">
+                <a style="padding: 5px 10px !important; text-transform: uppercase; font-weight: 500 !important; letter-spacing: 0.25px;" class="btn btn-sm btn-danger transition-3d-hover" href="/demo">
+                  Get Demo
+                </a>
+              </li>
+              <!-- End Nav CTA Buttons -->
+            </ul>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+
+
+  <!-- DOCUMENTATION MODAL -->
+  <div id="supportModal" class="js-modal-window u-modal-window" style="width: 370px;">
+    <div class="card">
+      <!-- Header -->
+      <header class="card-header bg-light py-3 px-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="h6 mb-0">Avanan Support</h3>
+
+          <button type="button" class="close" aria-label="Close" onclick="Custombox.modal.close();">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Body -->
+      <div class="card-body text-center p-5">
+        <!-- Card -->
+        <div class="card card-frame mb-2">
+          <a href="https://www.avanan.com/docs/index">
+          <div class="card-body">
+            <div class="media d-sm-flex justify-content-sm-between align-items-sm-center">
+              <div class="u-avatar mr-3">
+                <img class="img-fluid mb-2 mb-sm-0" src="https://www.avanan.com/hubfs/website/img/nav/documentation.png" alt="Documentation">
+              </div>
+              <div class="media-body mb-2 mb-sm-0 mt-3 mt-sm-2">
+                <h4 class="h6 mb-0">Documentation</h4>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div class="card card-frame mb-2">
+          <a href="https://www.avanan.com/support">
+          <div class="card-body">
+            <div class="media d-sm-flex justify-content-sm-between align-items-sm-center">
+              <div class="u-avatar mr-3">
+                <img class="img-fluid mb-2 mb-sm-0" src="https://www.avanan.com/hubfs/website/img/nav/open-ticket.png" alt="Open a Ticket">
+              </div>
+              <div class="media-body mb-2 mb-sm-0 mt-3 mt-sm-2">
+                <h4 class="h6 mb-0">Open a Ticket</h4>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+        <!-- End Card -->
+
+      </div>
+      <!-- End Body -->
+
+    </div>
+  </div>
+  <!-- END DOCUMENTATION MODAL -->
+
+
+  
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <!-- =========================== MAIN CONTENT ======================= -->
+  <main id="content" role="main">
+
+    <!-- HERO -->
+    <div id="SVGHero" class="position-relative bg-primary-light">
+      <div id="spacer-div"></div>
+      <div class="container space-top-2 space-bottom-3 space-to-md-2 space-bottom-lg-3">
+        <div class="w-md-65 w-lg-65 text-center m-auto">
+          <img style="width: 100px; margin-bottom: 20px;" src="assets/img/saas/office-365-72.png">
+          <h1 class="display-4">Office 365 Security</h1>
+          <a class="btn btn-danger btn-pill mt-5 transition-3d-hover" href="#!">GET A DEMO</a>
+        </div>
+      </div>
+
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="100%" height="85px" viewBox="0 0 1920 107.7" style="margin-bottom: -8px; enable-background:new 0 0 1920 107.7;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGHero">
+          <style type="text/css">
+            .wave-9-bottom-0{fill:#FFFFFF;}
+            .wave-9-bottom-1{fill:#FFFFFF;}
+          </style>
+          <path class="wave-9-bottom-0 fill-white" d="M0,107.7V69.8c0,0,451-54.7,960-5.4S1920,0,1920,0v107.7H0z"></path>
+          <path class="wave-9-bottom-1 fill-white" opacity=".3" d="M0,107.7v-81c0,0,316.2-8.9,646.1,54.5s794.7-114.1,1273.9-38v64.5H0z"></path>
+        </svg>
+      </figure>
+
+    </div>
+    <!-- END HERO -->
+
+    <!-- OFFICE 365 SECURITY -->
+    <div class="space-bottom-md-1 space-bottom-1">
+      <div id="office-365-security">
+
+
+        <!-- ANTI-PHISHING -->
+        <div class="container">
+          <div class="row align-items-lg-center mb-10">
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+
+              <div class="pr-lg-7 text-center">
+                <!-- SVG Icon -->
+                <img class="screenshot-right" src="assets/img/new/office-365-anti-phishing.png" alt="Office 365 Anti-Phishing">
+                <!-- End SVG Icon -->
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0 row" data-aos="fade-right">
+              <div class="col-0 col-md-2 svg-icon">
+                <img style="width: 120px; margin-left: -60px;" src="https://www.avanan.com/hubfs/marketing/website/teal-icons/antiphishing.svg">
+              </div>
+              <div class="col-12 col-md-10">
+                <h4>Anti-Phishing for Office 365</h4>
+                <p>Avanan's <a href="#!">anti-phishing</a> tools utilize an advanced machine learning algorithm that connects via API behind Office 365's default security, in order to specifically catch the complex phishing attacks that Microsoft misses.</p>
+                <a style="text-decoration: underline;" href="#!">Learn more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END ANTI-PHISHING -->
+
+
+
+
+        <!-- Gartner Quote One -->
+        <div class="bg-primary mb-11" style="filter: drop-shadow(0 0 7.5px #95a5a6);">
+          <div class="container p-3 text-center">
+            <div class="container space-1">
+              <!-- Logo --> 
+              <img style="width: 180px; height: auto;" src="https://www.avanan.com/hubfs/website/img/logos/gartner-peer-full.png"> 
+              <!-- End Logo --> 
+              <!-- Blockquote -->
+              <div class="w-md-65 w-lg-65 text-center mx-md-auto mt-3">
+                <blockquote class="lead font-weight-normal text-white">“We can clearly see all the spam/phishing emails that pass through Microsoft and get picked up by Avanan.”</blockquote>
+                <p class="text-white">Network Engineer, Communications Industry</p>
+              </div>
+              <!-- End Blockquote -->
+            </div>
+          </div>
+        </div>
+        <!-- End Gartner Quote One -->
+
+
+
+        
+        <!-- MALWARE PROTECTION -->
+        <div class="container">
+          <div class="row align-items-lg-center mt-10 mb-10">
+            <div class="col-lg-6 order-lg-1"  data-aos="fade-right">
+              <div class="pr-lg-7 text-center">
+                <!-- SVG Icon -->
+                <img class="screenshot-left" src="assets/img/new/office-365-malware.png" alt="Office 365 Malware Protection">
+                <!-- End SVG Icon -->
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0 row" data-aos="fade-left">
+              <div class="col-12 col-md-10 text-right">
+                <h4>Malware Protection for Office 365</h4>
+                <p>Avanan's Zero-Day Malware Protection, Antivirus, and File Sanitization tools run on all your cloud applications to ensure that no malicious files will make it into your Office 365 environment.</p>
+                <a style="text-decoration: underline;" href="#!">Learn more &rarr;</a>
+              </div>
+              <div class="col-0 col-md-2 svg-icon text-right">
+                <img style="width: 120px;" src="https://www.avanan.com/hubfs/marketing/website/teal-icons/malware.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MALWARE PROTECTION -->
+
+
+
+        <!-- Gartner Quote Two -->
+        <div class="bg-primary mb-11" style="filter: drop-shadow(0 0 7.5px #95a5a6);">
+          <div class="container p-3 text-center">
+            <div class="container space-1">
+              <!-- Logo --> 
+              <img style="width: 180px; height: auto;" src="https://www.avanan.com/hubfs/website/img/logos/gartner-peer-full.png"> 
+              <!-- End Logo --> 
+              <!-- Blockquote -->
+              <div class="w-md-65 w-lg-65 text-center mx-md-auto mt-3">
+                <blockquote class="lead font-weight-normal text-white">“Avanan consistently blocked malicious emails that were NOT caught by Microsoft.”</blockquote>
+                <p class="text-white">Cybersecurity Engineer, Media Company</p>
+              </div>
+              <!-- End Blockquote -->
+            </div>
+          </div>
+        </div>
+        <!-- End Gartner Quote Two -->
+        
+
+
+        <!-- ACCOUNT COMPROMISE DETECTION -->
+        <div class="container">
+          <div class="row align-items-lg-center mt-10">
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+              <div class="pr-lg-7 text-center">
+                <!-- SVG Icon -->
+                <img class="screenshot-right" src="assets/img/new/office-365-account-compromise.png" alt="Office 365 Account Compromise Detection">
+                <!-- End SVG Icon -->
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-1 mb-7 mb-lg-0 row" data-aos="fade-right">
+              <div class="col-0 col-md-2 svg-icon">
+                <img style="width: 120px; margin-left: -60px;" src="https://www.avanan.com/hubfs/marketing/website/teal-icons/account-takeover.svg">
+              </div>
+              <div class="col-12 col-md-10">
+                <h4>Account Compromise Detection for Office 365</h4>
+                <p>By collecting numerous real-world incidents, the Avanan event analysis algorithm identifies behavior that can be a sign of a compromised Office 365 account. Once identified, Avanan responds in real-time with effective remedies to lock out the attacker before the damage is done.</p>
+                <a style="text-decoration: underline;" href="#!">Learn more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END ACCOUNT COMPROMISE DETECTION -->
+
+
+
+        <!-- Solution Brief Download -->
+        <div style="margin-top: 60px; margin-bottom: 80px;" class="container card shadow-sm p-7">
+          <div class="row">
+            <div class="col-lg-7 text-center mt-6">
+              <h2 class="m-4">READ THE SOLUTION BRIEF</h2>
+              <h4 style="font-weight: 400;">Avanan for Office 365</h4>
+              <a class="btn btn-primary mt-4" href="#!">DOWNLOAD NOW</a>
+            </div>
+            <div class="col-lg-5 text-center">
+              <img style="width: 320px;" class="img-fluid mt-4 mt-lg-2 mt-xl-0" src="assets/img/office-365-solution-brief.png">
+            </div>
+          </div>
+        </div>
+        <!-- End Solution Brief Download -->
+
+
+
+        <!-- DLP AND COMPLIANCE -->
+        <div class="container">
+          <div class="row align-items-lg-center mt-10 mb-10">
+            <div class="col-lg-6 order-lg-1"  data-aos="fade-right">
+              <div class="pr-lg-7 text-center">
+                <!-- SVG Icon -->
+                <img class="screenshot-left" src="assets/img/new/office-365-dlp.png" alt="Office 365 DLP and Compliance">
+                <!-- End SVG Icon -->
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-2 mb-7 mb-lg-0 row" data-aos="fade-left">
+              <div class="col-12 col-md-10 text-right">
+                <h4>DLP and Compliance for Office 365</h4>
+                <p>Control who your Office 365 data is shared with and how it is shared. Avanan's automated automated encryption and sharing policies will ensure you meet your industry’s compliance regulations without sacrificing the functionality of your cloud applications.</p>
+                <a style="text-decoration: underline;" href="#!">Learn more &rarr;</a>
+              </div>
+              <div class="col-0 col-md-2 svg-icon text-right">
+                <img style="width: 120px;" src="https://www.avanan.com/hubfs/marketing/website/teal-icons/dlp.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END DLP AND COMPLIANCE -->
+
+
+      </div>
+    </div>
+    <!-- END OFFICE 365 SECURITY -->
+
+
+
+    <div id="free-trial-div" class="bg-light">
+      <div class="container space-2">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3 class="mt-3" style="margin-right: auto; margin-left: auto;">Ready to see the threats hiding in your inbox?</h3>
+            <p>Approve the Avanan app in one click. From within your email environment, the patented AI will build a social graph connecting users across your organization, and identify phishing, malware, and other advanced threats that have been hiding in your collaboration suite immediately.</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <a class="btn btn-danger btn-lg mt-4 mt-lg-10 mt-xl-9 transition-3d-hover" style="font-size: 16px; padding: 20px;" href="/trial">Start Your Free Trial Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== END MAIN CONTENT ========== -->
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container space-top-2">
+      <div class="row justify-content-lg-between mb-4">
+        <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
+          <h4 class="h6 text-white">About</h4>
+
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="#!">About Us</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Careers</a></li>
+          </ul>
+          <!-- End List Group -->
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
+          <h4 class="h6 text-white">Explore</h4>
+
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="#!">Platform</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">How it Works</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">View Pricing</a></li>
+            <li><a class="list-group-item list-group-item-action" href="#!">Get a Demo</a></li>
+          </ul>
+          <!-- End List Group -->
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
+          <h4 class="h6 text-white">Contacts</h4>
+
+          <!-- Address -->
+          <address class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <a class="list-group-item list-group-item-action" href="#!">+1 (888) 109-9222</a>
+            <a class="list-group-item list-group-item-action" href="#!">support@avanan.com</a>
+            <a class="list-group-item list-group-item-action" href="#!">253 West 30th Street, New York, NY 10001</a>
+          </address>
+          <!-- End Address -->
+        </div>
+
+        <div class="col-sm-6 col-md-5 col-lg-3 col-lg-3">
+          <div class="mb-4">
+            <h4 class="h6 text-white mb-3">Subscribe</h4>
+
+            <!-- Subscribe Form -->
+            <form class="js-validate js-form-message">
+              <label class="sr-only" for="subscribeSrEmailExample2">Your email</label>
+              <div class="input-group">
+                <input type="email" class="form-control" name="email" id="subscribeSrEmailExample2" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButtonExample2" required
+                       data-msg="Please enter a valid email address.">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit" id="subscribeButtonExample2">
+                    <span class="fas fa-paper-plane"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- End Subscribe Form -->
+          </div>
+
+          <h4 class="h6 text-white-70 mb-3">Stay in touch</h4>
+
+          <!-- Social Networks -->
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-facebook-f btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-linkedin-in btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-twitter btn-icon__inner"></span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#!">
+                <span class="fab fa-youtube btn-icon__inner"></span>
+              </a>
+            </li>
+          </ul>
+          <!-- End Social Networks -->
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center space-1">
+        <div class="col-5">
+          <!-- Logo -->
+          <img style="max-width: 100px; height: auto; opacity: 1;" src="https://www.avanan.com/hubfs/Images/Logos/avanan-logo-white-teal.png">
+          </a>
+          <!-- End Logo -->
+        </div>
+
+        <div class="col-6 text-right">
+          <p class="small mb-0">
+            © Copyright
+             <!-- YEAR SCRIPT -->
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script> 
+            <!-- END YEAR SCRIPT -->
+            Avanan. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Account Sidebar Navigation -->
+  <aside id="sidebarContent" class="u-sidebar" aria-labelledby="sidebarNavToggler">
+    <div class="u-sidebar__scroller">
+      <div class="u-sidebar__container">
+        <div class="u-header-sidebar__footer-offset">
+          <!-- Toggle Button -->
+          <div class="d-flex align-items-center pt-4 px-7">
+            <button type="button" class="close ml-auto"
+                    aria-controls="sidebarContent"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-unfold-event="click"
+                    data-unfold-hide-on-scroll="false"
+                    data-unfold-target="#sidebarContent"
+                    data-unfold-type="css-animation"
+                    data-unfold-animation-in="fadeInRight"
+                    data-unfold-animation-out="fadeOutRight"
+                    data-unfold-duration="500">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- End Toggle Button -->
+
+          <!-- Content -->
+          <div class="js-scrollbar u-sidebar__body">
+            <div class="u-sidebar__content u-header-sidebar__content">
+              <form class="js-validate">
+                <!-- Login -->
+                <div id="login" data-target-group="idForm">
+                  <!-- Title -->
+                  <header class="text-center mb-7">
+                    <h2 class="h4 mb-0">Welcome Back!</h2>
+                    <p>Login to manage your account.</p>
+                  </header>
+                  <!-- End Title -->
+
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <div class="js-form-message js-focus-state">
+                      <label class="sr-only" for="signinEmail">Email</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="signinEmailLabel">
+                            <span class="fas fa-user"></span>
+                          </span>
+                        </div>
+                        <input type="email" class="form-control" name="email" id="signinEmail" placeholder="Email" aria-label="Email" aria-describedby="signinEmailLabel" required
+                               data-msg="Please enter a valid email address."
+                               data-error-class="u-has-error"
+                               data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <div class="js-form-message js-focus-state">
+                      <label class="sr-only" for="signinPassword">Password</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="signinPasswordLabel">
+                            <span class="fas fa-lock"></span>
+                          </span>
+                        </div>
+                        <input type="password" class="form-control" name="password" id="signinPassword" placeholder="Password" aria-label="Password" aria-describedby="signinPasswordLabel" required
+                               data-msg="Your password is invalid. Please try again."
+                               data-error-class="u-has-error"
+                               data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <div class="d-flex justify-content-end mb-4">
+                    <a class="js-animation-link small link-muted" href="javascript:;"
+                       data-target="#forgotPassword"
+                       data-link-group="idForm"
+                       data-animation-in="slideInUp">Forgot Password?</a>
+                  </div>
+
+                  <div class="mb-2">
+                    <button type="submit" class="btn btn-block btn-sm btn-primary transition-3d-hover">Login</button>
+                  </div>
+
+                  <div class="text-center">
+                    <span class="u-divider u-divider--xs u-divider--text mb-3 mt-2">OR</span>
+                  </div>
+
+                  <!-- Login Buttons -->
+                  <div class="d-flex">
+                    <!-- <a class="btn btn-block btn-sm btn-soft-facebook transition-3d-hover mr-1" href="#">
+                      <span class="fab fa-facebook-square mr-1"></span>
+                      Facebook
+                    </a> -->
+                    <a class="btn btn-block btn-sm btn-soft-google transition-3d-hover ml-1 mt-0" href="#">
+                      <span class="fab fa-google mr-1"></span>
+                      Google
+                    </a>
+                  </div>
+                  <!-- End Login Buttons -->
+                </div>
+
+                <!-- Forgot Password -->
+                <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
+                  <!-- Title -->
+                  <header class="text-center mb-7">
+                    <h2 class="h4 mb-0">Recover Password.</h2>
+                    <p>Enter your email address and an email with instructions will be sent to you.</p>
+                  </header>
+                  <!-- End Title -->
+
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <div class="js-form-message js-focus-state">
+                      <label class="sr-only" for="recoverEmail">Your email</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="recoverEmailLabel">
+                            <span class="fas fa-user"></span>
+                          </span>
+                        </div>
+                        <input type="email" class="form-control" name="email" id="recoverEmail" placeholder="Your email" aria-label="Your email" aria-describedby="recoverEmailLabel" required
+                               data-msg="Please enter a valid email address."
+                               data-error-class="u-has-error"
+                               data-success-class="u-has-success">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <div class="mb-2">
+                    <button type="submit" class="btn btn-block btn-sm btn-primary transition-3d-hover">Recover Password</button>
+                  </div>
+
+                  <div class="text-center mb-4">
+                    <span class="small text-muted">Remember your password?</span>
+                    <a class="js-animation-link small" href="javascript:;"
+                       data-target="#login"
+                       data-link-group="idForm"
+                       data-animation-in="slideInUp">Login
+                    </a>
+                  </div>
+                </div>
+                <!-- End Forgot Password -->
+              </form>
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+
+        <!-- Footer -->
+        <footer id="SVGwaveWithDots" class="svg-preloader u-sidebar__footer u-sidebar__footer--account">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item pr-3">
+              <a class="u-sidebar__footer--account__text" href="#!">Privacy</a>
+            </li>
+            <li class="list-inline-item pr-3">
+              <a class="u-sidebar__footer--account__text" href="#!">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="u-sidebar__footer--account__text" href="#!">
+                <i class="fas fa-info-circle"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- SVG Background Shape -->
+          <div class="position-absolute right-0 bottom-0 left-0">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 126.5" style="margin-bottom: -5px; enable-background:new 0 0 300 126.5;" xml:space="preserve" class="injected-svg js-svg-injector" data-parent="#SVGwaveWithDots">
+            <style type="text/css">
+              .wave-bottom-with-dots-0{fill:#377DFF;}
+              .wave-bottom-with-dots-1{fill:#377DFF;}
+              .wave-bottom-with-dots-2{fill:#DE4437;}
+              .wave-bottom-with-dots-3{fill:#00C9A7;}
+              .wave-bottom-with-dots-4{fill:#FFC107;}
+            </style>
+            <path class="wave-bottom-with-dots-0 fill-primary" opacity=".6" d="M0,58.9c0-0.9,5.1-2,5.8-2.2c6-0.8,11.8,2.2,17.2,4.6c4.5,2.1,8.6,5.3,13.3,7.1C48.2,73.3,61,73.8,73,69  c43-16.9,40-7.9,84-2.2c44,5.7,83-31.5,143-10.1v69.8H0C0,126.5,0,59,0,58.9z"></path>
+            <path class="wave-bottom-with-dots-1 fill-primary" d="M300,68.5v58H0v-58c0,0,43-16.7,82,5.6c12.4,7.1,26.5,9.6,40.2,5.9c7.5-2.1,14.5-6.1,20.9-11  c6.2-4.7,12-10.4,18.8-13.8c7.3-3.8,15.6-5.2,23.6-5.2c16.1,0.1,30.7,8.2,45,16.1c13.4,7.4,28.1,12.2,43.3,11.2  C282.5,76.7,292.7,74.4,300,68.5z"></path>
+            <g>
+              <circle class="wave-bottom-with-dots-2 fill-danger" cx="259.5" cy="17" r="13"></circle>
+              <circle class="wave-bottom-with-dots-1 fill-primary" cx="290" cy="35.5" r="8.5"></circle>
+              <circle class="wave-bottom-with-dots-3 fill-success" cx="288" cy="5.5" r="5.5"></circle>
+              <circle class="wave-bottom-with-dots-4 fill-warning" cx="232.5" cy="34" r="2"></circle>
+            </g>
+            </svg>
+          </div>
+          <!-- End SVG Background Shape -->
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </aside>
+  <!-- End Account Sidebar Navigation -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+  <!-- JS Global Compulsory -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- ADDED BY ME (ANIMATION) -->
+  <script src="assets/libs/aos/dist/aos.js"></script>
+  <script src="assets/js/theme2.min.js"></script>
+  <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="assets/vendor/appear.js"></script>
+  <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="assets/js/hs.core.js"></script>
+  <script src="assets/js/components/hs.header.js"></script>
+  <script src="assets/js/components/hs.unfold.js"></script>
+  <script src="assets/js/components/hs.focus-state.js"></script>
+  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="assets/js/components/hs.validation.js"></script>
+  <script src="assets/js/components/hs.fancybox.js"></script>
+  <script src="assets/js/components/hs.slick-carousel.js"></script>
+  <script src="assets/js/components/hs.show-animation.js"></script>
+  <script src="assets/js/components/hs.svg-injector.js"></script>
+  <script src="assets/js/components/hs.go-to.js"></script>
+  <script src="assets/js/components/hs.scroll-nav.js"></script>
+  <script src="assets/js/components/hs.onscroll-animation.js"></script>
+
+  <!-- ADDED BY ME (SUPPORT MODAL) -->
+  <script src="assets/js/components/hs.modal-window.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+        autonomous: true
+      });
+    });
+    
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of animation
+      $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of forms
+      $.HSCore.components.HSFocusState.init();
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["phishing.", "data loss.", "account takeover.", "malware."],
+        typeSpeed: 60,
+        loop: true,
+        backSpeed: 25,
+        backDelay: 1500
+      });
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+</body>
+</html>
