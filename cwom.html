@@ -35,26 +35,19 @@
 
 <style type="text/css">
 
+  #matrix-btn {
+    margin-top: -175px;
+    border-width: 2px;
+  }
+
   /* PHONES IN PORTRAIT col-3 */
   @media (max-width: 576px) {
     #spacer-div {
       margin-top: 0px;
     }
 
-    .screenshot-right {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: -2.5rem;
-    }
-
-    .screenshot-left {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: -2.5rem;
-    }
-
-    .svg-icon {
-      display: none;
+    #matrix-btn {
+      margin-top: -85px;
     }
   }
 
@@ -65,20 +58,8 @@
       margin-top: 0px;
     }
 
-    .screenshot-right {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: -2.5rem;
-    }
-
-    .screenshot-left {
-      max-width: 90%;
-      height: auto;
-      margin-bottom: -2.5rem;
-    }
-
-    .svg-icon {
-      display: none;
+    #matrix-btn {
+      margin-top: -85px;
     }
   }
 
@@ -89,16 +70,8 @@
       margin-top: 180px;
     }
 
-    .screenshot-right {
-      max-width: 75%;
-      height: auto;
-      margin-bottom: -2.5rem;
-    }
-
-    .screenshot-left {
-      max-width: 75%;
-      height: auto;
-      margin-bottom: -2.5rem;
+    #matrix-btn {
+      margin-top: -85px;
     }
   }
 
@@ -109,15 +82,14 @@
       margin-top: 100px;
     }
 
-    .screenshot-right {
-      max-width: 125%;
-      height: auto;
+    .right-cards {
+      margin-left: 50px;
+      margin-right: -50px;
     }
 
-    .screenshot-left {
-      max-width: 125%;
-      height: auto;
-      margin-left: -62px;
+    .left-cards {
+      margin-left: -50px;
+      margin-right: 50px;
     }
   }
 
@@ -778,7 +750,7 @@
     <!-- HERO -->
     <div id="SVGHero" class="position-relative bg-primary-light">
       <div id="spacer-div"></div>
-      <div class="container space-top-2 space-bottom-3 space-top-md-4 space-bottom-lg-3">
+      <div class="container space-top-2 space-bottom-3 space-top-lg-4 space-bottom-lg-3">
         <div class="w-md-65 w-lg-80 text-left m-auto">
           <h1 style="font-weight: 500;" class="display-5">Catch Advanced Threats That Others Miss</h1>
           <p>The Avanan platform is engineered to catch the sophisticated attacks default and advanced security layers miss, particularly those in Microsoft Office 365. This <a href="#!">patented</a> approach has been proven to block over 99% of phishing, malware, and data leakage for organizations of all sizes.</p>
@@ -805,11 +777,11 @@
 
 
         <!-- ROW ONE -->
-        <div class="container space-top-3 space-bottom-2">
+        <div class="container space-top-3 space-bottom-0 space-bottom-lg-2">
           <div class="row align-items-lg-center mb-10">
             <div class="col-lg-6 order-lg-2" data-aos="fade-left">
 
-              <div class="card shadow mb-3 mb-lg-0 right-cards">
+              <div class="card shadow mb-5 mb-lg-0 right-cards">
                 <div style="height: 60px; background-color: #222;" class="card-header p-5 text-left">
                   <h4 style="text-transform: uppercase; margin-top: -15px; color: #fff;">Learn More</h4>
                 </div>
@@ -845,11 +817,11 @@
 
 
         <!-- ROW TWO -->
-        <div class="container space-bottom-2">
+        <div class="container space-bottom-0 space-bottom-lg-2">
           <div class="row align-items-lg-center mb-10">
             <div class="col-lg-6 order-lg-1" data-aos="fade-right">
 
-              <div class="card shadow mb-3 mb-lg-0 left-cards">
+              <div class="card shadow mb-5 mb-lg-0 left-cards">
                 <div style="height: 60px; background-color: #222;" class="card-header p-5 text-left">
                   <h4 style="text-transform: uppercase; margin-top: -15px; color: #fff;">Learn More</h4>
                 </div>
@@ -909,11 +881,11 @@
 
         
         <!-- ROW THREE -->
-        <div class="container space-top-2 space-bottom-2">
+        <div class="container space-top-2 space-bottom-0 space-bottom-lg-2">
           <div class="row align-items-lg-center mb-10">
             <div class="col-lg-6 order-lg-2" data-aos="fade-left">
 
-              <div class="card shadow mb-3 mb-lg-0 right-cards">
+              <div class="card shadow mb-5 mb-lg-0 right-cards">
                 <div style="height: 60px; background-color: #222;" class="card-header p-5 text-left">
                   <h4 style="text-transform: uppercase; margin-top: -15px; color: #fff;">Learn More</h4>
                 </div>
@@ -950,11 +922,11 @@
 
 
         <!-- ROW FOUR -->
-        <div class="container space-bottom-2">
+        <div class="container space-bottom-0 space-bottom-lg-2">
           <div class="row align-items-lg-center mb-10">
             <div class="col-lg-6 order-lg-1" data-aos="fade-right">
 
-              <div class="card shadow mb-3 mb-lg-0 left-cards">
+              <div class="card shadow mb-5 mb-lg-0 left-cards">
                 <div style="height: 60px; background-color: #222;" class="card-header p-5 text-left">
                   <h4 style="text-transform: uppercase; margin-top: -15px; color: #fff;">Learn More</h4>
                 </div>
@@ -1026,7 +998,7 @@
           <div class="row">
             <div class="col-12 text-center">
               <img style="width: 95%; margin-top: 45px;" src="assets/img/view-comparison-new.png">
-              <a style="margin-top: -175px; border-width: 2px;" class="btn btn-outline-primary btn-lg" href="https://www.avanan.com/compare">AVANAN COMPARATIVE MATRIX</a>
+              <a id="matrix-btn" class="btn btn-outline-primary btn-lg" href="https://www.avanan.com/compare">AVANAN COMPARATIVE MATRIX</a>
             </div>
           </div>
         </div>
@@ -1056,11 +1028,11 @@
       <div class="container space-bottom-2 space-top-3">
         <div class="row">
           <div class="col-lg-9">
-            <h3 class="mt-3" style="margin-right: auto; margin-left: auto;">Ready to see the threats hiding in your inbox?</h3>
-            <p>Approve the Avanan app in one click. From within your email environment, the patented AI will build a social graph connecting users across your organization, and identify phishing, malware, and other advanced threats that have been hiding in your collaboration suite immediately.</p>
+            <h3 class="mt-3 h4" style="margin-right: auto; margin-left: auto;">See How Avanan Catches What Your Current Security Misses</h3>
+            <p>Avanan clients enjoy unparalleled protection from advanced email attacks, as well as Search & Destroy™ post-delivery forensics, data leakage protection, and shadow IT avoidance. To learn more, schedule a demonstration or start a free trial assessment today.</p>
           </div>
           <div class="col-lg-3 text-center">
-            <a class="btn btn-danger btn-lg mt-4 mt-lg-10 mt-xl-9 transition-3d-hover" style="font-size: 16px; padding: 20px;" href="/demo">Start Your Free Trial Now</a>
+            <a class="btn btn-danger btn-lg mt-4 mt-lg-10 mt-xl-9 transition-3d-hover" style="font-size: 16px; padding: 20px;" href="/demo">Get a Demo</a>
           </div>
         </div>
       </div>
