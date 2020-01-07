@@ -50,13 +50,13 @@
       margin-left: 0;
     }
 
-    #deploys img {
+    #inline img {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
 
-    #deploys h3 {
+    #inline h3 {
       margin-top: -75px;
     }
 
@@ -83,13 +83,13 @@
       margin-left: 0;
     }
 
-    #deploys img {
+    #inline img {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
 
-    #deploys h3 {
+    #inline h3 {
       margin-top: -75px;
     }
 
@@ -116,13 +116,13 @@
       margin-left: 0;
     }
 
-    #deploys img {
+    #inline img {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
     }
 
-    #deploys h3 {
+    #inline h3 {
       margin-top: -75px;
     }
 
@@ -159,12 +159,12 @@
       margin-left: 25px;
     }
 
-    #deploys img {
+    #inline img {
       width: 100%;
       margin-left: -50px;
     }
 
-    #deploys h3 {
+    #inline h3 {
       margin-top: 100px;
     }
 
@@ -204,12 +204,12 @@
       margin-left: 25px;
     }
 
-    #deploys img {
+    #inline img {
       width: 600px;
       margin-left: -100px;
     }
 
-    #deploys h3 {
+    #inline h3 {
       margin-top: 180px;
     }
 
@@ -249,19 +249,30 @@
       margin-left: 25px;
     }
 
-    #deploys img {
-      width: 700px;
-      margin-left: -150px;
+    #inline img {
+      width: 600px;
+      margin-left: -85px;
     }
 
-    #deploys h3 {
+    #inline h3 {
       margin-top: 180px;
     }
 
+    #search-n-destroy img {
+      width: 620px;
+      margin-left: 85px;
+    }
+
     #secures-cloud img {
-      margin-left: 125px;
-      margin-top: 35px;
+      width: 650px;
+      margin-left: -115px;
+      margin-top: 45px;
       margin-bottom: 100px;
+    }
+
+    #deploys img {
+      width: 700px;
+      margin-left: 25px;
     }
 
     #bottom-layer > img {
@@ -1082,7 +1093,7 @@
             </div>
 
 
-            <div id="deploys" class="row mt-8">
+            <div id="inline" class="row mt-8">
               <div class="col-12 col-lg-7 mt-10">
                 <div class="img-skewed img-skewed-right">
                   <img style="filter: drop-shadow(-10px 10px 10px #95a5a6);" src="assets/img/inline-protection.png" data-aos="img-skewed-item-right" data-aos-delay="150">
@@ -1096,41 +1107,43 @@
             </div>
 
 
-            <div id="secures-cloud" class="row mt-8">
+
+            <div id="search-n-destroy" class="row space-bottom-3 space-top-4">
               <div class="col-12 col-lg-5 order-2 order-lg-1 mt-10" data-aos="fade-right">
-                <h3>Complete Cloud Security</h3>
-                <p class="mt-3">Avanan extends security beyond just cloud email to protect the entire suite from OneDrive to Slack to Google Drive to Teams and more.</p>
-              </div>
-              <div class="col-12 col-lg-7 order-1 order-lg-2" data-aos="fade-left">
-                <img class="img-fluid" src="assets/img/saas-graphic.png" alt="">
-              </div>
-            </div>
-
-
-
-            <div id="deploys" class="row mt-8 mb-10">
-              <div class="col-12 col-lg-7 mt-10">
-                <div class="img-skewed img-skewed-right">
-                  <img style="filter: drop-shadow(-10px 10px 10px #95a5a6);" src="assets/img/new/custom-queries.png" data-aos="img-skewed-item-right" data-aos-delay="150">
-                </div>
-              </div>
-
-              <div style="padding-left: 0; padding-right: 0;" class="col-12 col-lg-5 mt-4" data-aos="fade-left">
                 <h3>Search and Destroy</h3>
                 <p class="mt-3">Avanan enables you to find and remove entire phishing campaigns from users inboxes based on sender, subject line, or dozens of other criteria.</p>
                 <p><a href="#!">Watch</a> the 2-minute video on post-attack protection.</p>
               </div>
+              <div class="col-12 col-lg-7 order-1 order-lg-2">
+                <div class="img-skewed img-skewed-left">
+                  <img style="filter: drop-shadow(10px 10px 10px #95a5a6);" src="assets/img/new/custom-queries.png" data-aos="img-skewed-item-left" data-aos-delay="150">
+                </div>
+              </div>
             </div>
 
 
-            <div id="secures-cloud" class="row mt-10">
-              <div class="col-12 col-lg-5 order-2 order-lg-1 mt-10" data-aos="fade-right">
+
+            <div id="secures-cloud" class="row mt-8">
+              <div class="col-12 col-lg-5 order-2 order-lg-2 mt-10" data-aos="fade-left">
+                <h3>Complete Cloud Security</h3>
+                <p class="mt-3">Avanan extends security beyond just cloud email to protect the entire suite from OneDrive to Slack to Google Drive to Teams and more.</p>
+              </div>
+              <div class="col-12 col-lg-7 order-1 order-lg-1" data-aos="fade-right">
+                <img src="assets/img/saas-graphic.png" alt="">
+              </div>
+            </div>
+
+
+
+
+            <div id="deploys" class="row mt-10">
+              <div class="col-12 col-lg-6 order-2 order-lg-1 mt-10" data-aos="fade-right">
                 <h3>Deploys in Minutes</h3>
                 <p class="mt-3">Deploying like an app, Avanan takes only a few minutes to set up and begin securing your organization. There is no need for complicated configurations, just accept the permissions and you’re ready to go.</p>
                 <p><a href="#!">Watch</a> how Avanan deploys in one click<br>(1-minute video)</p>
               </div>
-              <div class="col-12 col-lg-7 order-1 order-lg-2 text-center" data-aos="fade-left">
-                <img style="width: 300px;" class="img-fluid" src="assets/img/click-start.png" alt="">
+              <div class="col-12 col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-left">
+                <img style="width: 280px;" class="img-fluid" src="assets/img/click-start.png" alt="">
               </div>
             </div>
             
