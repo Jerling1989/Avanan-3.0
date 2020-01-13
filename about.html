@@ -33,6 +33,27 @@
   <link rel="stylesheet" href="assets/css/layout/header-slim.css">
 
   <style type="text/css">
+
+
+    .mgmt-images .mgmt-member {
+      position: relative;
+    }
+
+    .mgmt-images .mgmt-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 12.5%;
+      background-color: rgba(41, 128, 185, 0.4);
+      color: #fff;
+    }
+    .mgmt-member .mgmt-name {
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+    }
     
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
@@ -687,20 +708,26 @@
 
     <div style="background-color: #569bbe; color: #fff;">
       <div class="container p-7">
-        <div class="space-5">
+        <div class="space-top-5 space-bottom-1">
+
+          <h2 class="mb-5">Managment Team</h2>
           
-          <div class="row">
+          <div class="row mgmt-images">
             <div class="col-3 text-center">
-              <img class="img-fluid" src="assets/img/default_profile.png" alt="">
+              <div class="mgmt-member">
+                <div class="mgmt-name">First Lastname</div>
+                <div class="mgmt-overlay"></div>
+                <img class="img-fluid shadow-sm" src="assets/img/default_profile.png" alt="">
+              </div>
             </div>
             <div class="col-3 text-center">
-              <img class="img-fluid" src="assets/img/default_profile.png" alt="">
+              <img class="img-fluid shadow-sm" src="assets/img/default_profile.png" alt="">
             </div>
             <div class="col-3 text-center">
-              <img class="img-fluid" src="assets/img/default_profile.png" alt="">
+              <img class="img-fluid shadow-sm" src="assets/img/default_profile.png" alt="">
             </div>
             <div class="col-3 text-center">
-              <img class="img-fluid" src="assets/img/default_profile.png" alt="">
+              <img class="img-fluid shadow-sm" src="assets/img/default_profile.png" alt="">
             </div>
           </div>
 
@@ -724,7 +751,7 @@
     </div>
 
      <!-- Stories Section -->
-    <div class="container card shadow-sm p-7 mb-10 mt-n6 mb-n6">
+    <div class="container card shadow-sm p-7 mb-10">
 
       <h2 class="h3">The First In-Line Email Security Solution Based Fully on APIs</h2>
 
