@@ -88,6 +88,10 @@
       #o365-microsoft-partner {
         width: 80%;
       }
+
+      #bottom-layer {
+        display: none;
+      }
     }
 
 
@@ -122,6 +126,10 @@
 
       #o365-microsoft-partner {
         width: 70%;
+      }
+
+      #bottom-layer {
+        display: none;
       }
     }
 
@@ -158,6 +166,10 @@
       #o365-microsoft-partner {
         width: 60%;
       }
+
+      #bottom-layer {
+        display: none;
+      }
     }
 
 
@@ -189,6 +201,13 @@
 
       #o365-microsoft-partner {
         width: 50%;
+      }
+
+      #bottom-layer > img {
+        width: 645px;
+        margin-bottom: -210px;
+        margin-left: -75px;
+        margin-top: 30px;
       }
     }
 
@@ -222,6 +241,13 @@
       #o365-microsoft-partner {
         width: 40%;
       }
+
+      #bottom-layer > img {
+        width: 700px;
+        margin-bottom: -210px;
+        margin-left: -75px;
+        margin-top: 0px;
+      }
     }
 
 
@@ -254,9 +280,16 @@
       #o365-microsoft-partner {
         width: 40%;
       }
+
+      #bottom-layer > img {
+        max-width: none;
+        width: 750px;
+        margin-bottom: -200px;
+        margin-left: 5px;
+      }
     }
   </style>
-<body>
+<body class="bg-light">
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md">
 
@@ -718,7 +751,7 @@
               <div class="mgmt-member">
                 <div class="mgmt-name"><strong>Gil Friedrich</strong><br>CEO</div>
                 <div class="mgmt-overlay"></div>
-                <img class="img-fluid shadow-sm" src="assets/img/default_profile.png" alt="">
+                <img class="img-fluid shadow-sm" src="assets/img/about/Gil-Friedrich.jpg" alt="">
               </div>
             </div>
             <div class="col-3 text-center">
@@ -821,8 +854,8 @@
 
 
 
-     <!-- Stories Section -->
-    <div class="container card shadow-sm p-7 mb-10">
+    <!-- Stories Section -->
+    <!-- <div class="container card shadow-sm p-7 mb-10">
       <div class="col-12">
         <h1 class="text-primary h2">The Avanan Story</h1>
         <p class="mt-3">He loved his job. Driving a train had been his dream ever since he was a child. He loved to make the train go as fast as possible. Unfortunately, one day he was a little too reckless and caused a crash. He made it out, but a single person died. Well, needless to say, he went to court over this incident. He was found guilty, and was sentenced to death by electrocution. When the day of the execution came, he requested a single banana as his last meal. After eating the banana, he was strapped into the electric chair. The switch was flown, sparks flew, and smoke filled the air - but nothing happened. The man was perfectly fine.</p>
@@ -831,19 +864,33 @@
         <p>“You know what? No," said the executioner. "I've had it with you and your stupid bananas and walking out of here unharmed. I'm not giving you a thing to eat; we're strapping you in and doing this now." Well, it was against protocol, but the man was strapped in to the electric chair without a last meal. The switch was pulled, sparks flew, smoke filled the room - and the man was still unharmed. The executioner was speechless.</p>
         <p>The man looked at the executioner and said, "Oh, the bananas had nothing to do with it. I'm just a bad conductor."</p>
       </div>
-
-    </div>
+    </div> -->
     <!-- End Stories Section -->
 
 
-    <div  style="margin-top: -400px" class="bg-primary" style="">
-      <div class="container p-7">
-        <div class="container space-top-5 space-bottom-2">
-          <!-- Blockquote -->
-          <div class="w-md-80 w-lg-80 text-center mx-md-auto space-top-3">
-            <h3 class="h1 text-white mt-5">Ready to give Avanan a try?</h3>
-            <a class="btn btn-white btn-pill btn-lg btn-wide mt-3 transition-3d-hover" href="https://www.avanan.com/trial">Start a Trial</a></div>
-          <!-- End Blockquote -->
+    <div style="margin-top: 50px;" class="position-relative">
+      <div style="height: 50px;" class="bg-dark shape shape-top shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 36" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M1440 0H0V18C0 18 289.423 58 705 18C1121.5 -19.5 1440 18 1440 18V0Z" fill="#f8f9fa"></path>
+        </svg>
+      </div>
+    </div>
+
+
+      
+    <div class="bg-dark space-3 space-lg-4">
+      <div class="container">
+        <div class="row">
+          <div style="margin-bottom: -60px;" class="col-12 col-lg-8 mt-8">
+            <h3 style="font-weight: 500;" class="text-primary">Ready to fully secure your cloud email and collaboration?</h3>
+            <p class="mt-3 text-white">Approve the Avanan app in one click and start blocking phishing, malware, and other advanced threats that have evaded existing security.</p>
+            <div class="text-center">
+              <a style="text-decoration: none;" class="btn btn-danger btn-wide mt-3 transition-3d-hover" href="#!">Start Your Free Trial</a>
+            </div>
+          </div>
+          <div id="bottom-layer" class="col-12 col-lg-4">
+            <img src="assets/img/angled-flat-three.png" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -854,7 +901,7 @@
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark">
+  <footer style="border-top: 1px solid rgba(231,234,243,.25);" class="bg-dark">
     <div class="container space-top-2">
       <div class="row justify-content-lg-between mb-4">
         <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
