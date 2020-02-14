@@ -14449,6 +14449,11 @@ code {
     background-color: #335eea
 }
 
+.overlay-indigo:before {
+    background-color: #6610f2;
+}
+
+
 .overlay-10:before {
     opacity: .1
 }
