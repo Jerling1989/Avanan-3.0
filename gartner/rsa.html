@@ -112,13 +112,13 @@
             </div>
 
           </div>
-          <div class="col-12 col-md-6 col-lg-5 mt-7"
+          <div class="col-12 col-md-6 col-lg-5 mt-7">
             
             <!-- Heading -->
-            <h2 class="font-weight-bold mt-4">
+            <h1 class="font-weight-bold mt-4">
               See  how Avanan protects
               Office 365 from <span style="color: #569bbe;">the inside</span>.
-            </h2>
+            </h1>
             
             <!-- Text -->
             <!-- <p class="font-size-lg text-muted mb-6">
@@ -153,6 +153,33 @@
 
 
 
+    <script>
+      // Create a request variable and assign a new XMLHttpRequest object to it.
+      var request = new XMLHttpRequest()
+      // Open a new connection, using the GET request on the URL endpoint
+      request.open('GET', 'https://u7q76ggsff.execute-api.us-east-1.amazonaws.com/production', true)
+      request.onload = function () {
+        // Begin accessing JSON data here
+        var data = JSON.parse(this.response)
+        var emails = data['Total Emails/Files Scanned by Avanan'];
+        var phishing = data['Phishing Attacks Blocked By Avanan'];
+        var malware = data['Malware Attacks Blocked By Avanan'];
+        console.log(data);
+        console.log('Emails Scanned: ' + emails);
+        console.log('Phishing: ' + phishing);
+        console.log('Malware: ' + malware);      
+
+        document.getElementById('scannedEmails').setAttribute('data-to', emails);
+        document.getElementById('phishingBlocked').setAttribute('data-to', phishing); 
+        document.getElementById('malwareStopped').setAttribute('data-to', malware); 
+      }
+      // Send request
+      request.send()
+    </script>
+
+
+
+
 
     <!-- STATS
     ================================================== -->
@@ -160,7 +187,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-center">In the past 24 hours Avanan has caught</h3>
+            <h2 class="text-center mt-8">In the past 24 hours Avanan has caught</h2>
             
             <!-- Card -->
             <div style="border-color: #569bbe !important;" class="card-group card-border card-border-lg shadow-light-lg">
@@ -169,7 +196,7 @@
 
                   <!-- Heading -->
                   <h2 class="font-weight-bold text-center mb-0">
-                    <span data-toggle="countup" data-from="1" data-to="63159" data-aos data-aos-id="countup:in">0</span>
+                    <span id="phishingBlocked" data-toggle="countup" data-from="1" data-to="63159" data-aos data-aos-id="countup:in">0</span>
                   </h2>
 
                   <!-- Text -->
@@ -185,7 +212,7 @@
 
                   <!-- Heading -->
                   <h2 class="font-weight-bold text-center mb-0">
-                    <span data-toggle="countup" data-from="1" data-to="4595" data-aos data-aos-id="countup:in">0</span>
+                    <span id="malwareStopped" data-toggle="countup" data-from="1" data-to="4595" data-aos data-aos-id="countup:in">0</span>
                   </h2>
 
                   <!-- Text -->
@@ -204,19 +231,163 @@
 
     
 
-    
+  
 
-    <!-- SHAPE
+    <!-- BLOG
     ================================================== -->
-   <!--  <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        <svg viewBox="0 0 1440 24" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0 24H1440V0C722.5 52 0 0 0 0V24Z" fill="currentColor"/>
-        </svg>
+    <section class="py-8 py-md-11 bg-gradient-light border-bottom">
+      <div class="container">
 
-      </div>
-    </div>
- -->
+        <div class="row justify-content-center mt-10 mb-3">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Heading -->
+            <h2>
+              Stay up to date with rentals.
+            </h2>
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            
+            <!-- Card -->
+            <a class="card text-reset text-decoration-none shadow-light-lg lift lift-lg mb-6 mb-lg-0 overlay overlay-black overlay-30 bg-cover pt-13 pt-lg-0" style="background-image: url(assets/img/photos/photo-8.jpg);" href="#!">
+
+              <!-- Body -->
+              <div class="position-relative card-body d-flex flex-column">
+
+                <!-- Heading -->
+                <h3 class="text-white mt-auto">
+                  Using Unsplash to improve your listing visibility
+                </h3>
+
+                <!-- Text -->
+                <p class="text-white mb-5">
+                  Using free stock photos of your surrounding areas can skyrocket your popularity.
+                </p>
+
+                <!-- Meta -->
+                <div class="row pt-5 border-top border-white-20">
+                  <div class="col">
+                    
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-white-70 mb-0">
+                      Casey Fyfe
+                    </h6>
+
+                  </div>
+                  <div class="col-auto">
+                    
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-white-70 mb-0">
+                      <time datetime="2018-05-02">May 02</time>
+                    </p>
+
+                  </div>
+                </div> <!-- / .row -->
+                
+              </div>
+              
+            </a>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            
+            <!-- Card -->
+            <a class="card text-reset text-decoration-none shadow-light-lg lift lift-lg mb-6 mb-lg-0" href="#!">
+
+              <!-- Image -->
+              <img src="assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+              <!-- Body -->
+              <div class="card-body">
+
+                <!-- Heading -->
+                <h3>
+                  Photos should appeal to a sense of adventure
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-5">
+                  Cozy vibes are out and this summer you should focus on making customer's feel brave.
+                </p>
+                
+                <!-- Meta -->
+                <div class="row mt-auto pt-5 border-top">
+                  <div class="col">
+                    
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted mb-0">
+                      Danny Devito
+                    </h6>
+
+                  </div>
+                  <div class="col-auto">
+                    
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0">
+                      <time datetime="2018-05-02">May 02</time>
+                    </p>
+
+                  </div>
+                </div> <!-- / .row -->
+                
+              </div>
+            </a>
+
+          </div>
+          <div class="col-12 col-lg-4 d-flex">
+            
+            <!-- Card -->
+            <a class="card text-reset text-decoration-none shadow-light-lg lift lift-lg" href="#">
+
+              <!-- Body -->
+              <div class="card-body d-flex flex-column">
+
+                <!-- Heading -->
+                <h3 class="mt-auto">
+                  It's the little touches that make memories.
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-5">
+                  Once you have your rental posted, you should focus on how you can differentiate your home with little touches. Chocolates, specialty coffee, fast wifi, nice toiletries, or a personal note. Small touches can make a huge difference.
+                </p>
+
+                <!-- Meta -->
+                <div class="row mt-auto pt-5 border-top">
+                  <div class="col">
+                    
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted mb-0">
+                      Dave Gamache
+                    </h6>
+
+                  </div>
+                  <div class="col-auto">
+                    
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0">
+                      <time datetime="2018-05-02">May 02</time>
+                    </p>
+
+                  </div>
+                </div> <!-- / .row -->
+                
+              </div>
+
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+
     <!-- SHAPE
     ================================================== -->
     <div class="position-relative mt-n5">
