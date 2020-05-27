@@ -1439,7 +1439,7 @@
     border-top: 0.1875rem solid #569bbe;
     border-bottom-right-radius: 0.3125rem;
     border-bottom-left-radius: 0.3125rem;
-    box-shadow: 0 8px 20px rgba(86,155,190,.075);
+    box-shadow: 0 8px 20px rgba(86,155,190,.125);
   }
   .navbar-expand-md .u-header__navbar-nav .u-header__sub-menu-nav-link {
     padding-right: 1.75rem;
