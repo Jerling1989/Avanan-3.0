@@ -1,0 +1,18 @@
+
+/* ====~~~~~~ COPY THE CSS CODE BETWEEN THESE COMMENT ~~~~~~==== */
+
+.layout-content.status .masthead-container.premium {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.layout-content.status .masthead-container.premium .masthead .images-container {
+    max-height: 275px;
+    min-height: 37.06%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* ====~~~~~~ COPY THE CSS CODE BETWEEN THESE COMMENT ~~~~~~==== */
