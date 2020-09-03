@@ -20,13 +20,16 @@
   <!-- <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css"> -->
   <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
 
+  <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+
+
   <!-- ADDED BY ME (HERO ANIMATION) -->
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
   <link rel="stylesheet" href="assets/css/skewed-img-new.css">
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/layout/header.css">
+  <link rel="stylesheet" href="assets/css/layout/header-slim.css">
   <link rel="stylesheet" href="assets/css/custom/mine.css">
 
 
@@ -37,106 +40,413 @@
       outline: solid #f00 1px !important;
     } */
 
-    .benefit-icons {
-      width: 100px;
-      /*padding: 20px;*/
+    .text-lh-md {
+      line-height: 1.65;
     }
 
-
-
-    blockquote > div {
-      font-weight: 400 !important;
+    .btn-outline-gartner {
+      color: #ad911a;
+      border-color: #ad911a;
+      border: 2px solid #ad911a;
     }
 
+    .btn-outline-gartner:hover {
+      color: #fff;
+      background-color: #ad911a;
+      border-color: #ad911a;
+    }
+
+    .btn-outline-451 {
+      color: #025b9e;
+      border-color: #025b9e;
+      border: 2px solid #025b9e;
+    }
+
+    .btn-outline-451:hover {
+      color: #fff;
+      background-color: #025b9e;
+      border-color: #025b9e;
+    }
+
+    .btn-outline-insider {
+      color: #6eae00;
+      border-color: #6eae00;
+      border: 2px solid #6eae00;
+    }
+
+    .btn-outline-insider:hover {
+      color: #fff;
+      background-color: #6eae00;
+      border-color: #6eae00;
+    }
+
+    .card-header {
+      height: 160px;
+      white-space: nowrap;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    #first-section h5 {
+      color: #fff;
+    }
+
+    #second-section h5 {
+      color: #fff;
+    }
     
 
     /* PHONES IN PORTRAIT col-3 */
     @media (max-width: 576px) {
-      .benefits > .card {
-        height: auto;
+      #first-section {
+        padding-top: 250px !important;
+      }
+
+      #first-section h5 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+      }
+
+      #first-section img {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #vs-atp-cta {
+        display: none;
+      }
+
+      #second-section h5 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -100px;
+      }
+
+      #new-numbers {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #architecture img {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #deploys img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #deploys h3 {
+        margin-top: -75px;
+      }
+
+      #secures-cloud img {
+        margin-left: 0;
+        margin-top: 125px;
+        margin-bottom: -50px;
+      }
+
+      #bottom-layer {
+        display: none;
       }
     }
 
 
     /* PHONES IN LANDSCAPE col-sm-3 */
     @media (min-width: 576px) and (max-width: 768px) {
-      .benefits > .card {
-        height: auto;
+      #first-section {
+        padding-top: 250px !important;
+      }
+
+      #first-section h5 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+      }
+
+      #first-section img {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #vs-atp-cta {
+        display: none;
+      }
+
+      #second-section h5 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -100px;
+      }
+
+      #new-numbers {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #architecture img {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #deploys img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #deploys h3 {
+        margin-top: -75px;
+      }
+
+      #secures-cloud img {
+        margin-left: 0;
+        margin-top: 125px;
+        margin-bottom: -50px;
+      }
+
+      #bottom-layer {
+        display: none;
       }
     }
 
 
     /* TABLETS col-md-3 */
     @media (min-width: 768px) and (max-width: 992px) {
-      .benefits > .card {
-        height: auto;
+      #first-section {
+        padding-top: 250px !important;
       }
 
-      .line-break {
-        display: block;
+      #first-section h5 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
       }
 
-      .card > blockquote {
-        padding: 15px;
+      #first-section img {
+        width: 100%;
+        margin-left: 0;
       }
 
-      blockquote > h3 {
-        font-size: 1.65rem;
+      #vs-atp-cta {
+        display: none;
       }
 
-      blockquote > div {
-        font-size: .975rem;
+      #second-section h5 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -100px;
+      }
+
+      #new-numbers {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #architecture img {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      #deploys img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #deploys h3 {
+        margin-top: -75px;
+      }
+
+      #secures-cloud img {
+        margin-left: 0;
+        margin-top: 125px;
+        margin-bottom: -50px;
+      }
+
+      #bottom-layer {
+        display: none;
       }
     }
 
 
     /* LAPTOPS  col-lg-3 */
     @media (min-width: 992px) and (max-width: 1200px) {
-      .benefits > .card {
-        height: 370px;
+      #first-section {
+        padding-top: 340px !important;
       }
 
-      .card > blockquote {
-        padding: 15px;
+      #first-section h5 {
+        width: 100%;
+        margin-left: 25px;
       }
 
-      blockquote > h3 {
-        font-size: 1.65rem;
+      #first-section img {
+        width: 100%;
+        margin-left: 25px;
       }
 
-      blockquote > div {
-        font-size: .975rem;
+      #second-section h5 {
+        width: 100%;
+        margin-left: -25px;
+      }
+
+      #new-numbers {
+        width: 100%;
+        margin-left: -25px;
+      }
+
+      #architecture img {
+        width: 100%;
+        margin-left: 25px;
+      }
+
+      #deploys img {
+        width: 100%;
+        margin-left: -50px;
+      }
+
+      #deploys h3 {
+        margin-top: 100px;
+      }
+
+      #secures-cloud img {
+        margin-left: 0;
+        margin-top: 75px;
+        margin-bottom: 100px;
+      }
+
+      #bottom-layer > img {
+        width: 645px;
+        margin-bottom: -210px;
+        margin-left: -75px;
+        margin-top: 30px;
       }
     }
 
 
     /* DESKTOPS col-xl-3 */
     @media (min-width: 1200px) and (max-width: 1500px) {
-      .benefits > .card {
-        height: 350px;
+      #first-section {
+        padding-top: 340px !important;
       }
 
-      .card > blockquote {
-        padding: 15px;
+      #first-section h5 {
+        width: 600px;
+        margin-left: 25px;
+      }
+
+      #first-section img {
+        width: 600px;
+        margin-left: 25px;
+      }
+
+      #second-section h5 {
+        width: 600px;
+        margin-left: -100px;
+      }
+
+      #new-numbers {
+        width: 600px;
+        margin-left: -100px;
+      }
+
+      #architecture img {
+        width: 600px;
+        margin-left: 25px;
+      }
+
+      #deploys img {
+        width: 600px;
+        margin-left: -100px;
+      }
+
+      #deploys h3 {
+        margin-top: 180px;
+      }
+
+      #secures-cloud img {
+        margin-left: 100px;
+        margin-top: 35px;
+        margin-bottom: 100px;
+      }
+
+      #bottom-layer > img {
+        width: 700px;
+        margin-bottom: -210px;
+        margin-left: -75px;
+        margin-top: 0px;
       }
     }
 
 
     /* LARGE DESKTOPS */
     @media (min-width: 1500px) {
-      .benefits > .card {
-        height: auto;
+      #first-section {
+        padding-top: 340px !important;
       }
 
-      .card > blockquote {
-        padding: 10px;
+      #first-section h5 {
+        width: 700px;
+        margin-left: 25px;
+      }
+
+      #first-section img {
+        width: 700px;
+        margin-left: 25px;
+      }
+
+      #second-section h5 {
+        width: 700px;
+        margin-left: -150px;
+      }
+
+      #new-numbers {
+        width: 700px;
+        margin-left: -150px;
+      }
+
+      #architecture img {
+        width: 700px;
+        margin-left: 25px;
+      }
+
+      #deploys img {
+        width: 700px;
+        margin-left: -150px;
+      }
+
+      #deploys h3 {
+        margin-top: 180px;
+      }
+
+      #secures-cloud img {
+        margin-left: 125px;
+        margin-top: 35px;
+        margin-bottom: 100px;
+      }
+
+      #bottom-layer > img {
+        width: 700px;
+        margin-bottom: -200px;
+        margin-left: -40px;
       }
     }
+
   </style>
 
 
 </head>
-<body class="bg-light">
+<body class="bg-white">
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
           data-header-fix-moment="500"
@@ -595,27 +905,35 @@
             
             <!-- Image -->
             <div class="img-skewed img-skewed-left mb-10 mb-md-0">
-              <img id="hero-img" src="https://www.avanan.com/hubfs/website/img/mockups/Dashboard-Homepage.png" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
+              <img id="hero-img" src="assets/img/avanan-dashboard-light_NEW.png" alt="..." class="screenshot img-fluid mw-md-130" data-aos="img-skewed-item-left" data-aos-delay="100">
             </div>
 
           </div>
 
-          <div id="hero-copy" class="col-12 col-lg-6 order-md-1" data-aos="fade-up">
-            <!-- Heading -->
-            <h1 class="display-4 font-size-md-down-5 mb-4">Reinventing Email Security.</h1>
-            <p>
-                The best way to protect Office 365, G Suite, and other <span id="hero-brk">enterprise collaboration suites from
-                <span class="text-primary">
-                  <strong class="u-text-animation u-text-animation--typing"></strong><span class="typed-cursor"></span>
-                </span>
-              </span>
-              
-            </p>
-            <p class="mt-4">25% of phishing attacks get through existing security.</p>
-            
-            <div class="d-flex align-items-center flex-wrap">
-              <a class="btn btn-danger btn-wide transition-3d-hover mb-4" href="how-it-works.html#free-trial">See What You're Missing</a>
+          <div id="hero-copy" class="col-12 col-lg-6 text-center order-md-1" data-aos="fade-up">
+            <!-- <div id="gartner-hero" class="mt-n7 mt-md-2 mt-lg-3 m-auto">
+              <h1 style="font-size: 2.25rem;" class="mt-2 h2">The <span style="color: #569bbe; font-weight: 500;">only way</span> to secure cloud email and collaboration.</h1>
             </div>
+            <div class="d-flex align-items-center flex-wrap"><a style="margin-right: auto; margin-left: auto;" id="see-what-btn" class="btn btn-danger btn-wide transition-3d-hover mb-4 mt-4" href="/demo" rel=" noopener">GET A DEMO</a></div> -->
+
+            <h5><span style="background-color: #222; color: #fff;">&nbsp;In the past 24 hours Avanan has caught&nbsp;</span></h5>
+            <div id="new-numbers" class="row mt-5">
+              <div class="col-6 text-center">
+                <div class="card shadow">
+                  <div class="carb-body p-5">
+                    <div style="font-weight: 400;" id="phishingBlocked" class="h3" data-toggle="countup" data-from="0" data-to="63159" data-aos="" data-aos-id="countup:in">0</div>
+                    <p style="line-height: 1.45; margin-bottom: 0;">phishing attacks<br>missed by Microsoft</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 text-center">
+                <div class="card shadow">
+                  <div class="carb-body p-5">
+                    <div style="font-weight: 400;" id="malwareStopped" class="h3" data-toggle="countup" data-from="0" data-to="4595" data-aos="" data-aos-id="countup:in">0</div>
+                    <p style="line-height: 1.45; margin-bottom: 0;">malware attacks<br>missed by Microsoft</p>
+                  </div>
+                </div>
+              </div>
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -651,104 +969,216 @@
 
 
 
-    <section id="daily-data">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-12">
-            <h3 id="data-copy">Today, Avanan has:</h3>
-            <br>
-          </div>
-          
-          <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
-            <h4 class="h6">Scanned</h4>
-            <div style="font-weight: 400;" id="scannedEmails" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
-            <h4 class="h6">Emails</h4>
-          </div>
-
-          <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
-            <h4 class="h6">Blocked</h4>
-            <div style="font-weight: 400;" id="phishingBlocked" class="h3" data-toggle="countup" data-from="0" data-to="" data-aos data-aos-id="countup:in">0</div>
-            <h4 class="h6">Phishing Attacks</h4>
-          </div>
-
-          <div class="col-lg-4 col-sm-4 mb-5 mb-lg-0">
-            <h4 class="h6">Stopped</h4>
-            <div style="font-weight: 400;" id="malwareStopped" class="h3" data-toggle="countup" data-from="0" data-to="4420" data-aos data-aos-id="countup:in">0</div>
-            <h4 class="h6">Malicous Files</h4>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 
-    <!-- Info -->
-    <div class="container space-top-4">
-      <div id="SVGkeyFeatures" class="card-deck card-lg-gutters-2 d-block d-lg-flex">
-        <div class="card shadow mb-3 mb-lg-0">
-          <!-- Icon Blocks -->
-          <div class="card-body p-5">
-            <figure class="ie-height-56 w-100 max-width-8 mb-4">
-              <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/patented-technology.png">
-            </figure>
-            <h3 class="h5">Patented Technology</h3>
-            <p class="font-size-1">Connects via API to collaboration environments. The only solution layered behind existing security to filter email threats inline before the inbox.</p>
-            <a class="font-size-1" href="#">Learn More <span class="fas fa-angle-right align-middle ml-2"></span></a>
-          </div>
-          <!-- End Icon Blocks -->
-        </div>
+    <!-- Testimonials -->
+<div id="SVGbgElements5" class="svg-preloader position-relative bg-light">
+  <div class="container position-relative z-index-2 space-2 space-md-3">
 
 
-        <div class="card shadow mb-3 mb-lg-0">
-          <!-- Icon Blocks -->
-          <div class="card-body p-5">
-            <figure class="ie-height-56 w-100 max-width-8 mb-4">
-              <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/full-suite-protection.png">
-            </figure>
-            <h3 class="h5">Full-Suite Protection</h3>
-            <p class="font-size-1">Manage data leakage, malware, and account takeover via a single threat intelligence interface. Robust protections extend to enterprise file-sharing and chat.</p>
-            <a class="font-size-1" href="#">Learn More <span class="fas fa-angle-right align-middle ml-2"></span></a>
-          </div>
-          <!-- End Icon Blocks -->
-        </div>
-
-
-        <div class="card shadow">
-          <!-- Icon Blocks -->
-          <div class="card-body p-5">
-            <figure class="ie-height-56 w-100 max-width-8 mb-4">
-              <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/multi-platform.png">
-            </figure>
-            <h3 class="h5">Multi-Vendor Open Platform</h3>
-            <p class="font-size-1">Deploy and configure top malware, DLP, and SIEM technology, scaling with enterprise requirements — future-proofing security.</p>
-            <a class="font-size-1" href="#">Learn More <span class="fas fa-angle-right align-middle ml-2"></span></a>
-          </div>
-          <!-- End Icon Blocks -->
-        </div>
+    <!-- Slick Carousel - Testimonials Main Nav -->
+    <div id="testimonialsNavMainExample2" class="js-slick-carousel u-slick text-center w-lg-75 mx-lg-auto mb-4"
+         data-adaptive-height="true"
+         data-infinite="true"
+         data-fade="true"
+         data-nav-for="#testimonialsNavPaginationExample3">
+      <div class="js-slide">
+        <!-- Testimonials -->
+        <blockquote class="lead text-lh-md">
+          <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+              </span><br>
+            </div>
+          Caught a tremendous amount of threats that ATP and Zix SecureGateway left unchecked. Avanan has been our most reliable email security layer in our organization.</blockquote>
+        <!-- End Testimonials -->
       </div>
 
-      
-      <div id="SVGkeyFeatures" class="card-deck card-lg-gutters-2 d-block d-lg-flex mt-3">
-        <div class="card shadow mb-3 mb-lg-0">
-          <div class="card-body p-5">
-            <figure class="ie-height-56 w-100 max-width-8 mb-4">
-              <img class="benefit-icons" src="https://www.avanan.com/hubfs/website/img/icons/catch-what-others-miss.png">
-            </figure>
-            <h3 class="h5">Catch What Others Miss</h3>
-            <p class="font-size-1">Learns from threats missed by default/advanced collaboration suite security and legacy solutions unadapted to the cloud.</p>
-            <a class="font-size-1" href="#">Learn More <span class="fas fa-angle-right align-middle ml-2"></span></a>
-          </div>
-        </div>
+      <div class="js-slide">
+        <!-- Testimonials -->
+        <blockquote class="lead text-lh-md">
+          I had my resume public on Front for only two days and I got flooded with interviews from serious competitive employers that resulted in me choosing between very tempting offers. Don't waste your time. Go Front. It's real!</blockquote>
+        <!-- End Testimonials -->
       </div>
 
+      <div class="js-slide">
+        <!-- Testimonials -->
+        <blockquote class="lead text-lh-md">
+          I found my current Job on Front. I applied and got a reply from the company within one day. Hired within the week. No other job site has as many tech jobs as Front.</blockquote>
+        <!-- End Testimonials -->
+      </div>
+
+      <div class="js-slide">
+        <!-- Testimonials -->
+        <blockquote class="lead text-lh-md">
+          <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+                <span class="fas fa-star fa-lg"></span>
+              </span><br>
+            </div>
+          We selected Avanan over Email Laundry, Mimecast and Proofpoint. Their design is much more cutting edge and simpler to implement.</blockquote>
+        <!-- End Testimonials -->
+      </div>
     </div>
-    <!-- End Info -->
+    <!-- End Slick Carousel - Testimonials Main Nav -->
+
+    <!-- Slick Carousel - Testimonials Pagination Nav -->
+    <div id="testimonialsNavPaginationExample3" class="js-slick-carousel u-slick u-slick--gutters-3 u-slick--pagination-interactive"
+         data-infinite="true"
+         data-slides-show="3"
+         data-center-mode="true"
+         data-focus-on-select="true"
+         data-nav-for="#testimonialsNavMainExample2"
+         data-responsive='[{
+           "breakpoint": 1200,
+           "settings": {
+             "slidesToShow": 2
+           }
+         }, {
+           "breakpoint": 768,
+           "settings": {
+             "slidesToShow": 2
+           }
+         }, {
+           "breakpoint": 554,
+           "settings": {
+             "slidesToShow": 1
+           }
+         }]'>
+      <div class="js-slide rounded-pill p-2 shadow-soft mb-2">
+        <!-- Authors -->
+        <div class="media align-items-center">
+          <div class="">
+            <img style="width: 100px; margin-right: 30px;" class="img-fluid" src="assets/img/gartner-peer-full.png" alt="Image Description">
+          </div>
+          <div class="media-body">
+            <h4 class="h6 u-slick--pagination-interactive__title mb-0">Visualization Engineer</h4>
+            <p class="small u-slick--pagination-interactive__text mb-0">Finance Industry</p>
+          </div>
+        </div>
+        <!-- End Authors -->
+      </div>
+      <div style="background-color: #fff;" class="js-slide rounded-pill p-2">
+        <!-- Authors -->
+        <div class="media align-items-center">
+          <div class="">
+            <img style="width: 100px; margin-right: 30px;" class="img-fluid" src="assets/img/gartner-peer-full.png" alt="Image Description">
+          </div>
+          <div class="media-body">
+            <h4 style="color: rgba(86,155,190,.65);" class="h6 u-slick--pagination-interactive__title mb-0">Systems Integrator</h4>
+            <p style="color: rgba(120,132,135,.65);" class="small u-slick--pagination-interactive__text mb-0">Manufacturing Industry</p>
+          </div>
+        </div>
+        <!-- End Authors -->
+      </div>
+      <div class="js-slide rounded-pill p-2">
+        <!-- Authors -->
+        <div class="media align-items-center">
+          <div class="">
+            <img style="width: 100px; margin-right: 30px;" class="img-fluid" src="assets/img/gartner-peer-full.png" alt="Image Description">
+          </div>
+          <div class="media-body">
+            <h4 class="h6 u-slick--pagination-interactive__title mb-0">Linda Spears</h4>
+            <p class="small u-slick--pagination-interactive__text mb-0">Business Analyst</p>
+          </div>
+        </div>
+        <!-- End Authors -->
+      </div>
+      <div style="background-color: #fff;" class="js-slide rounded-pill p-2">
+        <!-- Authors -->
+        <div class="media align-items-center">
+          <div class="">
+            <img style="width: 100px; margin-right: 30px;" class="img-fluid" src="assets/img/gartner-peer-full.png" alt="Image Description">
+          </div>
+          <div class="media-body">
+            <h4 style="color: rgba(86,155,190,.65);" class="h6 u-slick--pagination-interactive__title mb-0">CTO</h4>
+            <p style="color: rgba(120,132,135,.65);" class="small u-slick--pagination-interactive__text mb-0">Retail Industry</p>
+          </div>
+        </div>
+        <!-- End Authors -->
+      </div>
+    </div>
+    <!-- End Slick Carousel - Testimonials Pagination Nav -->
+  </div>
+
+  <!-- SVG Background Element -->
+  <figure class="position-absolute top-0 right-0 w-100 h-100">
+    <img class="js-svg-injector" src="assets/svg/components/bg-elements-5.svg" alt="SVG"
+         data-parent="#SVGbgElements5">
+  </figure>
+  <!-- End SVG Background Element -->
+</div>
+<!-- End Testimonials -->
+
+
+
+
+
+
+    <!-- PROMOTION CARDS -->
+    <div class="container space-top-2 space-top-xl-3">
+      <div id="SVGkeyFeatures" class="card-deck card-lg-gutters-3 d-block d-lg-flex">
+
+
+        <div style="border: 3px solid #ad911a;" class="card shadow mb-3 mb-lg-0">
+          <div class="card-header text-center">
+            <span class="helper"></span>
+            <img style="height: 120px;" class="img-fluid" src="assets/img/gartner-customers-choice-full.png">
+          </div>
+          <!-- Icon Blocks -->
+          <div class="card-body p-5 text-center">
+            <h3 style="color: #ad911a;" class="h5">Avanan named 2019 Customer’s Choice for Email Security</h3>
+            <a class="btn btn-outline-gartner mt-4" href="#!">Read More</a>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+
+        <div style="border: 3px solid #025b9e;" class="card shadow mb-3 mb-lg-0">
+          <div class="card-header text-center">
+            <span class="helper"></span>
+            <img style="height: 70px;" class="img-fluid" src="assets/img/451-research.png">
+          </div>
+          <!-- Icon Blocks -->
+          <div class="card-body p-5 text-center">
+            <h3 style="color: #025b9e;" class="h5">Avanan Business<br>Impact Brief<br><br></h3>
+            <a class="btn btn-outline-451 mt-4" href="#!">Download</a>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+
+        <div style="border: 3px solid #6eae00;" class="card shadow">
+          <div class="card-header text-center">
+            <span class="helper"></span>
+            <img style="height: 50px;" class="img-fluid" src="assets/img/insider-pro-logo.png">
+          </div>
+          <!-- Icon Blocks -->
+          <div class="card-body p-5 text-center">
+            <h3 style="color: #6eae00;" class="h5">REVIEW: How Avanan Secures Cloud-Based Email<br><br></h3>
+            <a class="btn btn-outline-insider mt-4" href="#!">Read more</a>
+          </div>
+          <!-- End Icon Blocks -->
+        </div>
+
+      </div>
+    </div>
+    <!-- END PROMOTION CARDS -->
 
     
 
     <!-- SHAPE
     ================================================== -->
-    <div style="margin-top: 65px; z-index: -1;" class="position-relative">
+    <div style="margin-top: -85px; z-index: -1;" class="position-relative">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
         <svg viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0C720 240 0 240 0 240H1440V0Z" fill="currentColor"/>
@@ -763,298 +1193,269 @@
 
 
 
+    <!-- CLOUD EMAIL SECURITY IS DIFFERENT -->
+    <div id="first-section" class="space-4 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 mt-0 mt-xl-8" data-aos="fade-right">
+            <h3>Cloud Email Security is <span style="color: #569bbe; font-weight: 500;">different</span></h3>
+            <p class="mt-3">Conventional solutions, built for on-premises email have failed to adequately adapt for the cloud</p>
+            <p>Proxies and gateways impair native security tools, will forever be blind to cloud threats like compromised accounts and don’t extend protection across connected applications like SharePoint and Slack.</p>
+            <p>Avanan stops threats before the inbox and works seamlessly with your existing security.</p>
+          </div>
+
+          <div class="col-12 col-lg-6 text-center" data-aos="fade-left">
+            <h5><span style="background-color: #222;">&nbsp;What percentage of phishing attacks do they miss?&nbsp;</span></h5>
+            <img src="assets/img/missed-attacks-graph.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CLOUD EMAIL SECURITY IS DIFFERENT -->
+
+
+
+
+    <!-- NEW API NUMBERS -->
+    <div id="second-section" class="space-bottom-4 space-top-2 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 order-2 order-lg-1 text-center" data-aos="fade-right">
+            <h5><span style="background-color: #222;">&nbsp;In the past 24 hours Avanan has caught&nbsp;</span></h5>
+            <div id="new-numbers" class="row mt-5">
+              <div class="col-6 text-center">
+                <div class="card shadow">
+                  <div class="carb-body p-5">
+                    <div style="font-weight: 400;" id="phishingBlocked" class="h3" data-toggle="countup" data-from="0" data-to="63159" data-aos="" data-aos-id="countup:in">0</div>
+                    <p style="line-height: 1.45; margin-bottom: 0;">phishing attacks<br>missed by Microsoft</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 text-center">
+                <div class="card shadow">
+                  <div class="carb-body p-5">
+                    <div style="font-weight: 400;" id="malwareStopped" class="h3" data-toggle="countup" data-from="0" data-to="4595" data-aos="" data-aos-id="countup:in">0</div>
+                    <p style="line-height: 1.45; margin-bottom: 0;">malware attacks<br>missed by Microsoft</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="vs-atp-cta" class="col-12 col-lg-5 order-1 order-lg-2 mt-0 mt-xl-7" style="padding-right: 0; " data-aos="fade-left">
+            <h3>Microsoft Security is <span style="color: #569bbe; font-weight: 500;">not enough</span></h3>
+            <p class="mt-3">"After Microsoft ATP Didn't Work, We Tried Avanan And Didn't Need To Worry About Phishing"</p>
+            <div class="text-center">
+              <a class="btn btn-primary" href="#!">Compare to ATP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NEW API NUMBERS -->
+
+
+
+
+        <!-- SHAPE
+  ================================================== -->
+    <div style="" class="position-relative">
+      <div style="height: 50px;" class="shape shape-top shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 36" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M1440 0H0V18C0 18 289.423 58 705 18C1121.5 -19.5 1440 18 1440 18V0Z" fill="#fff"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bg-light">
+      <div>
+        <div class="pt-6">
+          <!-- Testimonials Section -->
+          <div class="container space-top-2 space-bottom-1">
+            
+            <div style="margin-top: 50px; margin-bottom: 100px;" class="text-center">
+              <h2>Avanan is <span style="color: #569bbe; font-weight: 500;">the only</span> solution that can fully<br>secure your cloud email and communication</h2>
+            </div>
+
+            <div id="architecture" class="row mt-8">
+              <div class="col-12 col-lg-5 order-2 order-lg-1 mt-10" data-aos="fade-right">
+                <h3>Unique architecture built specifically for the cloud</h3>
+                <p class="mt-3">Avanan connects after the default security but before the inbox. Allowing it to focus on advanced attacks that evade existing security layers while allowing them to filter out spam and greymail.</p>
+              </div>
+              <div class="col-12 col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+                <img src="assets/img/avanan-architecture.png" alt="">
+              </div>
+            </div>
+
+
+            <div id="deploys" class="row mt-8">
+              <div class="col-12 col-lg-7" data-aos="fade-right">
+                <img src="assets/img/intelligent-detection-screen-angled-opp.png" alt="">
+              </div>
+              <div style="padding-left: 0; padding-right: 0;" class="col-12 col-lg-5 mt-10" data-aos="fade-left">
+                <h3>Deploys in minutes not months</h3>
+                <p class="mt-3">Avanan deploys like an app, and configures in a few clicks.</p>
+              </div>
+            </div>
+
+
+            <div id="secures-cloud" class="row mt-8">
+              <div class="col-12 col-lg-4 order-2 order-lg-1 mt-10" data-aos="fade-right">
+                <h3>Secures the entire cloud</h3>
+                <p class="mt-3">Avanan catches threats in connected cloud applications like OneDrive, Google Drive, and Teams.</p>
+              </div>
+              <div class="col-12 col-lg-8 order-1 order-lg-2" data-aos="fade-left">
+                <img class="img-fluid" src="assets/img/saas-graphic.png" alt="">
+              </div>
+            </div>
+            
+          </div>
+          <!-- End Testimonials Section -->
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 0px;" class="position-relative">
+      <div style="height: 50px;" class="shape shape-top shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 36" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M1440 0H0V18C0 18 289.423 58 705 18C1121.5 -19.5 1440 18 1440 18V0Z" fill="#f8f9fa"></path>
+        </svg>
+      </div>
+    </div>
+
 
     <!-- Icon Blocks Section -->
-    <div class="space-top-3 space-top-xl-3 space-bottom-1 bg-white">
+    <div class="space-top-3 space-bottom-4 bg-primary text-white">
       <div class="container">
-
         
-        <div class="row">
-          <div class="col-md-8 text-center" data-aos="fade-right">
-            <!-- Desktop mockup base -->
-            <img class="mockup-desktop" src="https://www.avanan.com/hubfs/website/img/mockups/angled-desktop-base.png">
-            <!-- Intelligent Scanning Panels -->
-            <img class="popup-panels popup-panels-active" id="intel-scan-img" src="https://www.avanan.com/hubfs/website/img/mockups/panels/intelligent-scanning.png">
-            <!-- Full Suite Protection Panels -->
-            <img class="popup-panels" id="full-suite-img" src="https://www.avanan.com/hubfs/website/img/mockups/panels/full-suite-protection.png">
-            <!-- Layered Security Panels -->
-            <img class="popup-panels" id="layered-sec-img" src="https://www.avanan.com/hubfs/website/img/mockups/panels/layered-security.png">
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 col-lg-6 pr-lg-10 mt-10">
+            <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+              </span><br>
+            </div>
+            <blockquote class="mb-1" style="font-weight: 600;">“Caught a tremendous amount of threats that ATP and Zix SecureGateway left unchecked. Avanan has been our most reliable email security layer in our organization.”</blockquote>
+            <p class="text-white mt-1" style="font-style: italic;"><u>- Visualization Engineer</u>, Finance Industry</p>
           </div>
 
-          <!-- Title -->
-          <div class="col-md-4 text-left">
-            <h4 id="learn-how-text" class="h5">
-              Catch attacks that default and advanced security tools miss, with an invisible layer of security.
-            </h4>
-            <a href="how-it-works.html" class="btn btn-wide btn-primary mt-3 mb-5 transition-3d-hover">Learn How</a>
+          <div class="col-12 col-lg-6 pl-lg-10 mt-10">
+            <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+              </span><br>
+            </div>
+            <blockquote class="mb-1" style="font-weight: 600;">“We selected Avanan over Email Laundry, Mimecast and Proofpoint. Their design is much more cutting edge and simpler to implement.”</blockquote>
+            <p class="text-white mt-1" style="font-style: italic;"><u>- CTO</u>, Retail Industry</p>
           </div>
-          <!-- End Title -->
         </div>
 
+
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 col-lg-6 pr-lg-10 mt-10">
+            <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+              </span><br>
+            </div>
+            <blockquote class="mb-1" style="font-weight: 600;">“Avanan has proven to be a better option than Microsoft ATP. Start directly with Avanan instead of ATP.”</blockquote>
+            <p class="text-white mt-1" style="font-style: italic;"><u>- Infrastructure and Operations</u>, Communications Industry</p>
+          </div>
+
+          <div class="col-12 col-lg-6 pl-lg-10 mt-10">
+            <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+              </span><br>
+            </div>
+            <blockquote class="mb-1" style="font-weight: 600;">“We were receiving too many phishing emails. Avanan is stopping all of them.”</blockquote>
+            <p class="text-white mt-1" style="font-style: italic;"><u>- Systems Integrator</u>, Manufacturing Industry</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 col-lg-6 pr-lg-10 mt-10">
+            <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+              </span><br>
+            </div>
+            <blockquote class="mb-1" style="font-weight: 600;">“The solution was extremely simple to implement and integrated into our current service offerings. We spent less than one day with the onboarding team and began to see results immediately.”</blockquote>
+            <p class="text-white mt-1" style="font-style: italic;"><u>- Senior IT Administrator</u>, Manufacturing Industry</p>
+          </div>
+
+          <div class="col-12 col-lg-6 pl-lg-10 mt-10">
+            <div class="text-center mb-3">
+              <span class="text-warning">
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+                <span class="fas fa-star fa-2x"></span>
+              </span><br>
+            </div>
+            <blockquote class="mb-1" style="font-weight: 600;">“Do a trial. It's easy to set-up and they will be able to immediately show you how they can improve your email security.”</blockquote>
+            <p class="text-white mt-1" style="font-style: italic;"><u>- Manager of IT</u>, Construction Industry</p>
+          </div>
+        </div>
+        
       </div>
     </div>
     <!-- End Icon Blocks Section -->
 
+      
+
+    <div style="margin-top: 0px;" class="position-relative">
+      <div style="height: 50px;" class="shape shape-top shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 1440 36" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M1440 0H0V18C0 18 289.423 58 705 18C1121.5 -19.5 1440 18 1440 18V0Z" fill="#569bbe"></path>
+        </svg>
+      </div>
+    </div>
 
 
-
-    
-    <div class="bg-white pb-10 space-bottom-2">
+      
+    <div class="bg-dark space-3 space-lg-4">
       <div class="container">
-        <!-- Info -->
-        <div class="card-deck card-lg-gutters-2 d-block d-lg-flex">
-          <!-- Item -->
-          <div class="card mb-3">
-            <div class="card-body p-4">
-              <!-- Details -->
-              <div class="media">
-
-
-                <div class="media-body">
-                  <!-- Header -->
-                  <div class="mb-4 row">
-                    <div class="col-6 text-center">
-                      <h3 class="h6 mb-0">
-                        <img class="img-fluid" style="width: 150px;" src="https://www.avanan.com/hubfs/website/img/logos/gpi-logo.png" alt="Gartner Peer Insights">
-                      </h3>
-                    </div>
-
-                    <div class="col-6 text-center">
-                      <!-- Review -->
-                      <a class="d-inline-block small" href="#">
-                        <span class="text-warning">
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                        </span><br>
-                        <span class="text-muted">Manufacturing</span>
-                      </a>
-                      <!-- End Review -->
-                    </div>
-                    
-                  </div>
-                  <!-- End Header -->
-
-                  <!-- Additional Info -->
-                  <div class="align-items-center">
-                    <!-- <div class="u-ver-divider pr-3 mr-3"> -->
-                      <p class="small">Once it was in place, it immediately began to catch the phishing messages that were making it past EOP.</p>
-                    <!-- </div> -->
-                    <!-- <a class="font-size-1 font-weight-medium" href="#">Read more</a> -->
-                  </div>
-                  <!-- End Additional Info -->
-                </div>
-              </div>
-              <!-- End Details -->
+        <div class="row">
+          <div style="margin-bottom: -60px;" class="col-12 col-lg-8 mt-8">
+            <h3 style="font-weight: 500;" class="text-primary">Ready to fully secure your cloud email and collaboration?</h3>
+            <p class="mt-3 text-white">Approve the Avanan app in one click and start blocking phishing, malware, and other advanced threats that have evaded existing security.</p>
+            <div class="text-center">
+              <a class="btn btn-danger btn-wide mt-3 transition-3d-hover" href="#!">Start Your Free Trial</a>
             </div>
           </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <div class="card mb-3">
-            <div class="card-body p-4">
-              <!-- Details -->
-              <div class="media">
-
-
-                <div class="media-body">
-                  <!-- Header -->
-                  <div class="mb-4 row">
-                    <div class="col-6 text-center">
-                      <h3 class="h6 mb-0">
-                        <img class="img-fluid" style="width: 150px;" src="https://www.avanan.com/hubfs/website/img/logos/gpi-logo.png" alt="Gartner Peer Insights">
-                      </h3>
-                    </div>
-
-                    <div class="col-6 text-center">
-                      <!-- Review -->
-                      <a class="d-inline-block small" href="#">
-                        <span class="text-warning">
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                        </span><br>
-                        <span class="text-muted">Healthcare</span>
-                      </a>
-                      <!-- End Review -->
-                    </div>
-                    
-                  </div>
-                  <!-- End Header -->
-
-                  <!-- Additional Info -->
-                  <div class="align-items-center">
-                    <!-- <div class="u-ver-divider pr-3 mr-3"> -->
-                      <p class="small">I recommend Avanan for anyone who wants to sleep well, without working hard and without looking for different solutions to any cloud system in the organization.</p>
-                    <!-- </div> -->
-                    <!-- <a class="font-size-1 font-weight-medium" href="#">Read more</a> -->
-                  </div>
-                  <!-- End Additional Info -->
-                </div>
-              </div>
-              <!-- End Details -->
-            </div>
+          <div id="bottom-layer" class="col-12 col-lg-4">
+            <img src="assets/img/angled-flat-three.png" alt="">
           </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <div class="card mb-3">
-            <div class="card-body p-4">
-              <!-- Details -->
-              <div class="media">
-
-
-                <div class="media-body">
-                  <!-- Header -->
-                  <div class="mb-4 row">
-                    <div class="col-6 text-center">
-                      <h3 class="h6 mb-0">
-                        <img class="img-fluid" style="width: 150px;" src="https://www.avanan.com/hubfs/website/img/logos/gpi-logo.png" alt="Gartner Peer Insights">
-                      </h3>
-                    </div>
-
-                    <div class="col-6 text-center">
-                      <!-- Review -->
-                      <a class="d-inline-block small" href="#">
-                        <span class="text-warning">
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                        </span><br>
-                        <span class="text-muted">Energy and Utilities</span>
-                      </a>
-                      <!-- End Review -->
-                    </div>
-                    
-                  </div>
-                  <!-- End Header -->
-
-                  <!-- Additional Info -->
-                  <div class="align-items-center">
-                    <!-- <div class="u-ver-divider pr-3 mr-3"> -->
-                      <p class="small">Every IT team hopes that an outside vendor becomes an extension of their team. The Avanan team has lived up to this and then some.</p>
-                    <!-- </div> -->
-                    <!-- <a class="font-size-1 font-weight-medium" href="#">Read more</a> -->
-                  </div>
-                  <!-- End Additional Info -->
-                </div>
-              </div>
-              <!-- End Details -->
-            </div>
-          </div>
-          <!-- End Item -->
         </div>
-        <!-- End Info -->
       </div>
     </div>
     
-
-
-    <!-- SAAS Section -->
-    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-white pt-10" data-options='{direction: "reverse"}'>
-      <div class="dzsparallaxer--target">
-        <div class="container-fluid px-lg-6">
-          <div class="row justify-content-center">
-            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
-              <!-- G SUITE -->
-              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/g-suite.png" alt="G Suite Security">
-              </div>
-              <!-- END G SUITE -->
-            </div>
-            <div class="col-3 mb-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"5", mid:"0", final:"-5"}]'>
-              <!-- OFFICE 365 -->
-              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/office-365.png" alt="Office 365 Security">
-              </div>
-              <!-- END OFFICE 365 -->
-            </div>
-            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
-              <!-- SLACK -->
-              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/slack.png" alt="Slack Security">
-              </div>
-              <!-- END SLACK -->
-            </div>
-          </div>
-
-          <div class="row justify-content-between">
-            <div class="col-3 mb-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
-              <!-- BOX -->
-              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4">
-                <img style="margin-top: 8px;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/box.png" alt="Box Security">
-              </div>
-              <!-- END BOX -->
-            </div>
-            <div class="col-3 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"7", mid:"0", final:"-7"}]'>
-              <!-- ONEDRIVE -->
-              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/onedrive.png" alt="OneDrive Security">
-              </div>
-              <!-- END ONEDRIVE -->
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-3 offset-1 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
-              <!-- OUTLOOK -->
-              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/outlook.png" alt="Outlook Security">
-              </div>
-              <!-- END OUTLOOK -->
-            </div>
-            <div class="col-3 offset-2 my-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
-              <!-- GMAIL -->
-              <div class="d-none d-md-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 ml-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/gmail.png" alt="Gmail Security">
-              </div>
-              <!-- END GMAIL -->
-            </div>
-          </div>
-
-          <div class="row justify-content-between">
-            <div class="col-4" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"11", mid:"0", final:"-11"}]'>
-              <!-- DROPBOX -->
-              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/dropbox.png" alt="Dropbox Security">
-              </div>
-              <!-- END DROPBOX -->
-            </div>
-            <div class="col-4 mt-6" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"5", mid:"0", final:"-5"}]'>
-              <!-- SHAREFILE -->
-              <div class="d-none d-sm-block bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
-                <img style="width: 80%; margin-left: 3px;" class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/sharefile.png" alt="ShareFile Security">
-              </div>
-              <!-- END SHAREFILE -->
-            </div>
-            <div class="col-4 mt-6" data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"15", mid:"0", final:"-15"}]'>
-              <!-- GOOGLE DRIVE -->
-              <div class="bg-primary-light u-lg-avatar shadow-sm rounded-circle p-4 mx-auto">
-                <img class="img-fluid" src="https://www.avanan.com/hubfs/website/img/saas/google-drive.png" alt="Google Drive Security">
-              </div>
-              <!-- END GOOGLE DRIVE -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container space-3 space-sm-4 mb-8">
-        <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto">
-          <!-- <h2 class="h1 font-weight-medium mb-0">See what we Protect</h2>
-          <p class="mb-5">Get Full Suite Protection or cover just what you need.</p> -->
-          <a style="font-size: 20px;" class="btn btn-primary btn-pill btn-wide transition-3d-hover" href="./saas.html">See what we Protect</a>
-        </div>
-        <!-- End Title -->
-      </div>
-    </div>
-    <!-- SAAS section -->
 
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
@@ -1062,19 +1463,9 @@
   <!-- ========== END MAIN CONTENT ========== -->
   <!-- ========== END MAIN CONTENT ========== -->
 
-  <!-- CTA Section -->
-  <div class="bg-primary text-white text-center">
-    <div class="container space-1">
-      <span class="h6 d-block d-lg-inline-block font-weight-light mb-lg-0">
-        <span class="font-weight-semi-bold">14-Day Free Trial</span> – Get 100% visibility into your cloud right now.
-      </span> &nbsp;
-      <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-3"  href="#trialModal" data-modal-target="#trialModal">Start Enterprise Trial</a>
-    </div>
-  </div>
-  <!-- End CTA Section -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark">
+  <footer style="border-top: 1px solid rgba(231,234,243,.25);" class="bg-dark">
     <div class="container space-top-2">
       <div class="row justify-content-lg-between mb-4">
         <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
@@ -1203,6 +1594,8 @@
   <script src="assets/vendor/typed.js/lib/typed.js"></script>
   <script src="assets/vendor/appear.js"></script>
   <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
 
 
   <!-- JS Front -->
@@ -1210,6 +1603,24 @@
   <script src="assets/js/components/hs.header.js"></script>
   <script src="assets/js/components/hs.onscroll-animation.js"></script>
 
+
+  <script src="assets/js/components/hs.slick-carousel.js"></script>
+  <script src="assets/js/components/hs.svg-injector.js"></script>
+
+
+
+<!-- JS Plugins Init. -->
+<script>
+  $(window).on('load', function () {
+    // initialization of svg injector module
+    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+  });
+
+  $(document).on('ready', function () {
+    // initialization of slick carousel
+    $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+  });
+</script>
 
 
   <!-- JS Plugins Init. -->
