@@ -18988,6 +18988,11 @@ label.btn {
   .height-md-60vh {
     height: 60vh;
   }
+
+  .height-md-80vh {
+    height: 80vh;
+  }
+
   .height-md-100vh {
     height: 100vh;
   }
@@ -19005,6 +19010,10 @@ label.btn {
   }
   .min-height-lg-100vh {
     min-height: 100vh;
+  }
+
+  .height-lg-70vh {
+    height: 70vh;
   }
 }
 
