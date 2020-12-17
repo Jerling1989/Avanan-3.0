@@ -448,8 +448,165 @@
 </head>
 <body class="bg-white">
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header">
+  <header id="header" class="u-header u-header--full-container u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+        data-header-fix-moment="500"
+        data-header-fix-effect="slide">
+
+
+
+
+    <!-- Search -->
+    <div id="searchPushTop" class="u-search-push-top bg-white" style="box-shadow: none !important;">
+      <div class="container position-relative">
+        <div class="u-search-push-top__content">
+          <!-- Close Button -->
+          <button type="button" class="close u-search-push-top__close-btn"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="searchPushTop"
+                  data-unfold-type="jquery-slide"
+                  data-unfold-target="#searchPushTop">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- End Close Button -->
+
+          <!-- Input --> 
+          <form id="avananSearch" class="js-focus-state input-group input-group-lg" action="https://www.avanan.com/{{ site_settings.content_search_results_page_path }}">
+            {% if module.field_label %}
+              <label for="term">{{ module.field_label }}</label>
+            {% endif %}
+            <input type="text" name="term" autocomplete="off" type="search" class="form-control" placeholder="Search Avanan" aria-label="Search Avanan">
+            <div class="input-group-append">
+              <button type="submit" form="avananSearch" value="Submit" class="btn btn-primary" aria-label="Search">Search</button>
+            </div>
+
+            {% if module.content_types.website_pages %}
+              <input type="hidden" name="type" value="SITE_PAGE">
+            {% endif %}
+            {% if module.content_types.landing_pages %}
+              <input type="hidden" name="type" value="LANDING_PAGE">
+            {% endif %}
+            {% if module.content_types.blog_posts %}
+              <input type="hidden" name="type" value="BLOG_POST">
+              <input type="hidden" name="type" value="LISTING_PAGE">
+            {% endif %}
+            {% if module.content_types.knowledge_articles %}
+              <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+            {% endif %}
+          </form>
+          <!-- End Input -->
+
+          <!-- Content -->
+          <div class="row d-none d-md-flex mt-7">
+            <div class="col-sm-6">
+              <strong class="d-block mb-2">Quick Links</strong>
+
+              <div class="row">
+                <!-- List Group -->
+                <div class="col-6">
+                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/resources/topic/blog">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Avanan Blog
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/resources/topic/attack-briefs">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Attack Briefs
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/events">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Events
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="/resources/webinars">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Webinars
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Group -->
+
+                <!-- List Group -->
+                <div class="col-6">
+                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/anti-phishing-software">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Anti-Phishing
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/resources/atp-anti-phishing-compared-to-avanan">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Avanan vs ATP
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/contact-us">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      Contact Us
+                    </a>
+                    <a class="list-group-item list-group-item-action" href="https://www.avanan.com/about">
+                      <span class="fas fa-angle-right list-group-icon"></span>
+                      About Us
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Group -->
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <!-- Banner -->
+              <a href="https://www.avanan.com/the-history-and-future-of-phishing">
+                <img class="img-fluid rounded text-center shadow mb-5 lift" src="https://www.avanan.com/hubfs/website/img/infographics/history-of-phishing-feat.png">
+              </a>              
+              <!-- End Banner -->
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+      </div>
+    </div>
+    <!-- End Search -->
+
+
+
+
+
     <div class="u-header__section">
+
+      <!-- Topbar -->
+      <div class="container u-header__hide-content pt-2">
+        <div class="d-flex align-items-center">
+
+          <div class="ml-auto">
+          </div>
+
+          <ul class="list-inline ml-2 mb-0">
+            <!-- Search -->
+            <li class="list-inline-item">
+              <a class="u-header__navbar-link" href="javascript:;" role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false"
+                 aria-controls="searchPushTop"
+                 data-unfold-type="jquery-slide"
+                 data-unfold-target="#searchPushTop">
+                <i class="fas fa-search"></i>
+                <span class="d-none d-sm-inline-block">Search</span>
+              </a>
+            </li>
+            <!-- End Search -->
+
+            <!-- Support Icon -->
+            <li class="list-inline-item position-relative">
+              <a class="u-header__navbar-link" href="#supportModal" role="button"
+                 data-modal-target="#supportModal"
+                 data-overlay-color="#111722">
+                <i class="fas fa-headset"></i>
+                <span class="d-none d-sm-inline-block">Support</span>
+              </a>
+            </li>
+            <!-- End Support Icon -->
+          </ul>
+        </div>
+      </div>
+      <!-- End Topbar -->
+
       <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
