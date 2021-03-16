@@ -312,8 +312,16 @@
         margin-left: 5px;
       }
     }
+
+
+    .gradient-overlay-half-primary-v3::before {
+          background-image: linear-gradient(
+      90deg
+      , #e5eff4 0%, #e5eff4 100%);
+          background-repeat: repeat-x;
+      }
   </style>
-<body class="bg-light">
+<body class="bg-white">
   <!-- ========== HEADER ========== -->
   <header id="header" class="u-header u-header--abs-top-md u-header--show-hide-md">
 
@@ -748,90 +756,91 @@
 
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
-    <div id="spacer-div"></div>
+    <!-- <div id="spacer-div"></div> -->
+
+
+    <!-- Hero Section -->
+    <div id="SVGHero" class="position-relative bg-white overflow-hidden">
+      <div class="container position-relative z-index-2 space-top-2 space-bottom-3 space-top-md-4">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-5 mb-11 mb-lg-0">
+            <!-- Info -->
+            <div class="mb-10">
+              <h1 class="text-dark font-weight-semi-bold mb-3">
+                The only way to secure cloud email and collaboration.
+              </h1>
+              <h5 class="mb-2 font-weight-semi-bold">Leading the email security revolution.</h5>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="position-relative">
+              <!-- SVG Laptop Mockup -->
+              <figure class="ie-devices-v4-laptop mb-3 mb-sm-0">
+                <img class="img-fluid" src="assets/img/about/new-ui-mockup.png" alt="Image Description"
+                     data-img-paths='[
+                       {"targetId": "#SVGlaptopImg1", "newPath": "assets/img/aboutt/Dashboard-Homepage.jpg"}
+                     ]'
+                     data-parent="#SVGHero">
+              </figure>
+              <!-- SVG Laptop Mockup -->
+
+              <!-- Card Info -->
+              <div class="position-sm-absolute bottom-0 right-0 max-width-40 ml-auto mb-sm-n5">
+                <div style="box-shadow: 0 0 50px rgb(86 155 190 / 40%) !important;" class="card border-0 bg-primary rounded p-5">
+                  <h3 style="font-size: 18px; margin-bottom: 0; line-height: 1.5;" class="text-white mb-0">Our vision is to completely secure all lines of business communication.</h3>
+                </div>
+              </div> 
+              <!-- Enc Card Info -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG Background Shape -->
+      <div class="gradient-overlay-half-primary-v3 svg-divider-polygon position-absolute top-0 right-0 bottom-0 left-0">
+      </div>
+      <!-- End SVG Background Shape -->
+    </div>
+    <!-- End Hero Section -->
 
 
 
-    <!-- Stories Section -->
-    <div style="margin-bottom: -210px" class="container card shadow-sm p-7">
+
+    <div class="container">
+      <p style="font-size: 1.2rem;" class="lead"><strong>Avanan is about the future.</strong> We have reinvented the email security market but will not rest on our laurels. As the world of security evolves, Avanan stands ready to meet the moment.</p>
+      <p style="font-size: 1.2rem;" class="lead"><strong>Avanan is about innovation.</strong> We were the first to implement cloud-email security via API. We are the only company that catches what Microsoft and G-Suite miss. With our patented technology, we are the only company that offers inline security. We’re the only company that secures the entire suite, from collaboration apps to file-sharing.</p>
+      <p style="font-size: 1.2rem;" class="lead mb-5"><strong>Avanan is about simplicity.</strong> We are modern and cloud-first. It’s an all-SaaS architecture, built from the ground up. It installs in minutes with just a few clicks.</p>
+      <div style="background-color: #e5eff4;" class="alert" role="alert">
+        <p style="font-size: 1.2rem;" class="text-dark mb-0">It is this approach that has seen Avanan become the fastest-growing email security company on the market.</p>
+      </div>
+    </div>
+
+
+    <div class="container space-top-2">
+      <div class="row space-bottom-3">
+        <div class="col-sm-5">
+          <img style="width: 90%;" class="img-fluid" src="assets/img/about/Support-bro.png" alt="">
+        </div>
+        <div class="col-sm-7">
+          <h5 class="mt-8">Customer First Philosophy</h5>
+          <p style="font-size: 1.2rem;" class="lead mb-5">Avanan is all about our customers. We are committed to our customers - everything we know and do comes to us as feedback from our customers. We're committed to making our technology work for our customers, providing the best service, to go above and beyond our customers’ requests. This is why our AI learns about your company and is unique to your organization.</p>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-12">
-          <h1 class="text-primary h2">About Avanan</h1>
-          <p class="mt-3 ">Avanan is a cloud email security platform that pioneered and <a href="#!">patented</a> a new approach to prevent sophisticated attacks. We use APIs to scan for phishing, malware, and data leakage in the line of communications traffic. This means we catch threats missed by Microsoft while adding a transparent layer of security for the entire suite and other collaboration tools like Slack.</p>
-          <p class="">Avanan catches the advanced attacks that evade default and advanced security tools. Its invisible, multi-layer security enables full-suite protection for cloud collaboration solutions such as Office 365™, G-Suite™, and Slack™.  The platform deploys in one click via API to prevent Business Email Compromise and block phishing, malware, data leakage, account takeover, and shadow IT across the enterprise. Avanan replaces the need for multiple tools to secure the entire cloud collaboration suite, with a patented solution that goes far beyond any other Cloud Email Security Supplement.</p>
+        <div class="col-sm-7">
+          <h5>The Cutting Edge</h5>
+          <p style="font-size: 1.2rem;" class="lead mb-2">With its patented inline protection and innovative machine learning, Avanan has defined the cutting edge of email security with its patented inline protection and innovative machine learning since its founding in 2016.</p>
+          <ul style="color: #788487; font-size: 1.2rem;">
+            <li>Avanan was the first email security company to implement true machine learning to catch sophisticated attacks</li>
+            <li>Avanan was the first to look holistically at the entire collaboration suite, and protect beyond email</li>
+            <li>Avanan was the first to offer an API-based solution that blocks emails inline, which is our patent</li>
+            <li>Avanan was the first to implement security for Microsoft Teams, with the ability to take action and block malicious content or sensitive data</li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- End Stories Section -->
-
-    <div style="background-color: #569bbe; color: #fff;">
-      <div class="container p-7">
-        <div class="space-top-5 space-bottom-1">
-
-          <h2 class="mb-5">Managment Team</h2>
-          
-          <div class="row mgmt-images">
-            <div class="mt-5 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Gil Friedrich</strong><br>CEO</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;"  class="img-fluid" src="assets/img/about/Gil-Friedrich.jpg" alt="Gil Friedrich">
-              </div>
-            </div>
-            <div class="mt-5 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Avi Zelovich</strong><br>CTO</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;"  class="img-fluid" src="assets/img/about/Avi-Zelovich.jpg" alt="Avi Zelovich">
-              </div>
-            </div>
-            <div class="mt-5 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Michael Castricone</strong><br>CFO</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;" class="img-fluid" src="assets/img/about/Michael-Castricone.png" alt="Michael Castricone">
-              </div>
-            </div>
-            <div class="mt-5 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Itamar Lask</strong><br>VP of R&D</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;"  class="img-fluid" src="assets/img/about/Itamar-Lask.jpg" alt="Itamar Lask">
-              </div>
-            </div>
-          </div>
-
-          <div class="row mgmt-images">
-            <div class="mt-5 col-4 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Don Byrne</strong><br>VP of Global Sales</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;" class="img-fluid" src="assets/img/about/Don-Byrne.png" alt="Don Byrne">
-              </div>
-            </div>
-            <div class="mt-5 col-4 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Roy Rotem</strong><br>VP of Product</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;"  class="img-fluid" src="assets/img/about/Roy-Rotem.png" alt="Roy Rotem">
-              </div>
-            </div>
-            <div class="mt-5 col-4 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Michael Landewe</strong><br>VP of Strategy</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;"  class="img-fluid" src="assets/img/about/Michael-Landewe.png" alt="Michael Landewe">
-              </div>
-            </div>
-            <div class="mt-5 col-4 col-12 col-md-6 col-lg-3 text-center">
-              <div class="mgmt-member">
-                <div class="mgmt-name"><strong>Jacob Erling</strong><br>Sr Front End Engineer</div>
-                <div class="mgmt-overlay"></div>
-                <img style="width: 100%;"  class="img-fluid" src="assets/img/about/Jacob-Erling.png" alt="Jacob Erling">
-              </div>
-            </div>
-          </div>
-
+        <div class="col-sm-5">
+          <img class="img-fluid" src="assets/img/about/Security-bro.png" alt="">
         </div>
       </div>
     </div>
@@ -841,198 +850,145 @@
 
 
 
-
-
-    <div class="container space-5">
+    <div class="container space-top-0 space-bottom-2">
       <!-- Team Section -->
       <div class="container space-2 space-md-3">
         <!-- Title -->
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-          <span class="btn btn-xs btn-soft-success btn-pill mb-2">Company Leaders</span>
+          <span class="btn btn-sm btn-soft-primary btn-pill mb-2">Company Leaders</span>
           <h2 class="text-primary">Our <span class="font-weight-semi-bold">Management Team</span></h2>
-          <p>Our top professionals are ready to help with your business</p>
         </div>
         <!-- End Title -->
 
-        <!-- Slick Carousel -->
-        <div class="js-slick-carousel u-slick u-slick--gutters-3"
-             data-slides-show="2"
-             data-slides-scroll="1"
-             data-pagi-classes="text-center u-slick__pagination mt-7 mb-0"
-             data-responsive='[{
-               "breakpoint": 992,
-               "settings": {
-                 "slidesToShow": 1
-               }
-             }, {
-               "breakpoint": 768,
-               "settings": {
-                 "slidesToShow": 1
-               }
-             }, {
-               "breakpoint": 554,
-               "settings": {
-                 "slidesToShow": 1
-               }
-             }]'>
 
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Gil Friedrich</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">CEO</span>
-                </div>
-                <p class="font-size-1">Gil Friedrich brings more than 20 years of development and leadership experience to Avanan.</p>
-              </div>
-              <div class="col-sm-6">
-                <img class="img-fluid rounded mx-auto" src="assets/img/about/Gil-Friedrich.jpg" alt="Image Description">
-              </div>
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%;" class="img-fluid rounded shadow-soft mx-auto mb-10" src="https://www.avanan.com/hubfs/headshots/GilNewHeadshot-dark.png" alt="Gil Friedrich">
             </div>
-            <!-- End Team -->
-          </div>
-
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Avi Zelovich</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">CTO</span>
-                </div>
-                <p class="font-size-1">Having been with the company since its inception, Avi Zelovich was ForeScout’s VP of Product Engineering.</p>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Gil Friedrich</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">CEO</span>
               </div>
-              <div class="col-sm-6">
-                <img class="img-fluid rounded mx-auto" src="assets/img/about/Avi-Zelovich.jpg" alt="Image Description">
-              </div>
+              <p class="font-size-1">Gil Friedrich brings more than 18 years of development and leadership experience to Avanan. As ForeScout’s VP of R&D and VP of Technology, Gil expanded the company's technology into mobile security, BYOD policy, and Cloud services while developing the partner integration ecosystem. He holds a B.Sc. in Physics and an M.Sc. in Computer Science from Tel-Aviv University.</p>
             </div>
-            <!-- End Team -->
           </div>
+          <!-- End Team -->
 
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Michael Castricone</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">CFO</span>
-                </div>
-                <p class="font-size-1">Michael Castricone is a certified public accountant with years of experience in finance, administration and operations.</p>
-              </div>
-              <div class="col-sm-6">
-                <img style="width: 100%" class="img-fluid rounded mx-auto" src="assets/img/about/Michael-Castricone.png" alt="Image Description">
-              </div>
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%;" class="img-fluid rounded shadow-soft mx-auto mb-10" src="https://www.avanan.com/hubfs/headshots/avi-z-avanan-dark.png" alt="Image Description">
             </div>
-            <!-- End Team -->
-          </div>
-
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Don Byrne</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">CRO</span>
-                </div>
-                <p class="font-size-1">Don Byrne has over 20 years in information technology, serving companies including Accenture, Capgemini Ernst & Young , and Archer Daniels Midland.</p>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Avi Zelovich</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">CTO</span>
               </div>
-              <div class="col-sm-6">
-                <img style="width: 100%" class="img-fluid rounded mx-auto" src="assets/img/about/Don-Byrne.png" alt="Image Description">
-              </div>
+              <p class="font-size-1">Having been with the company since its inception, Avi Zelovich was ForeScout’s VP of Product Engineering. Prior to ForeScout, he was a software engineer at RAD Guard. Avi holds a B.Sc. in Computer Science from the Academic College of Tel-Aviv and an MBA from Bar-Ilan University.</p>
             </div>
-            <!-- End Team -->
+            
           </div>
+          <!-- End Team -->
 
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Itamar Lask</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">VP of R&D</span>
-                </div>
-                <p class="font-size-1">Itamar Lask brings more than 20 years of development and leadership experience to Avanan, previously serving as VP of R&D to CreditGuard and Safecharge payment gateways as well as R&D Director at Amdocs Cloud technologies.</p>
-              </div>
-              <div class="col-sm-6">
-                <img style="width: 100%" class="img-fluid rounded mx-auto" src="assets/img/about/Itamar-Lask.jpg" alt="Image Description">
-              </div>
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%" class="img-fluid rounded shadow-soft mx-auto mb-10" src="https://www.avanan.com/hubfs/marketing/website/Don-2.png" alt="Image Description">
             </div>
-            <!-- End Team -->
-          </div>
-
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Roy Rotem</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">VP of Product</span>
-                </div>
-                <p class="font-size-1">Roy Rotem was VP of Product Management at ForeScout, and led the company’s pivot to network access control.</p>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Don Byrne</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">CRO</span>
               </div>
-              <div class="col-sm-6">
-                <img style="width: 100%" class="img-fluid rounded mx-auto" src="assets/img/about/Roy-Rotem.png" alt="Image Description">
-              </div>
+              <p class="font-size-1">Don Byrne has over 20 years in information technology, serving companies including Accenture, Capgemini Ernst & Young , and Archer Daniels Midland. Before joining Avanan, Don led ForeScout's expansion into the federal market, where segment revenue grew from $250K to $6.3 million in four years. Don holds a BBA in Information Systems Management from the University of Iowa.</p>
             </div>
-            <!-- End Team -->
           </div>
-
-
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Chris Blum</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">VP of Marketing</span>
-                </div>
-                <p class="font-size-1">Results oriented marketing professional with over 22 years experience marketing technology and software through direct and indirect enterprise sales channels.</p>
-              </div>
-              <div class="col-sm-6">
-                <img style="width: 100%" class="img-fluid rounded mx-auto" src="assets/img/about/chris-blum.png" alt="Image Description">
-              </div>
+          <!-- End Team -->
+ 
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%" class="img-fluid rounded shadow-soft mx-auto mb-10" src="https://www.avanan.com/hubfs/headshots/michael-castricone-dark.png" alt="Image Description">
             </div>
-            <!-- End Team -->
-          </div>
-
-
-          <div class="js-slide px-3">
-            <!-- Team -->
-            <div class="row">
-              <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
-                <div class="w-100">
-                  <h3 class="h5 mb-2">Jacob Erling</h3>
-                </div>
-                <div class="d-inline-block">
-                  <span class="badge badge-primary badge-pill badge-bigger mb-3">Cool Guy</span>
-                </div>
-                <p class="font-size-1">Jacob is super cool. Very talented and very cool.</p>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Michael Castricone</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">CFO</span>
               </div>
-              <div class="col-sm-6">
-                <img style="width: 100%" class="img-fluid rounded mx-auto" src="assets/img/about/Jacob-Erling.png" alt="Image Description">
-              </div>
+              <p class="font-size-1">Michael Castricone is a certified public accountant with years of experience in finance, administration and operations. Before joining Avanan, Mike served as the Chief Financial Officer of several technology companies, such as Guardium, Inc. and WebLayers. Michael holds a BS in Math and Economics from UNH and a Masters in Accounting from Bentley University.</p>
             </div>
-            <!-- End Team -->
           </div>
+          <!-- End Team -->
+
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%" class="img-fluid rounded shadow-soft mx-auto mb-10" src="https://www.avanan.com/hubfs/headshots/itamar-lask.png" alt="Image Description">
+            </div>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Itamar Lask</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">VP of R&D</span>
+              </div>
+              <p class="font-size-1">Itamar Lask brings more than 20 years of development and leadership experience to Avanan, previously serving as VP of R&D to CreditGuard and Safecharge payment gateways as well as R&D Director at Amdocs Cloud technologies. Itamar is well versed in managing mission critical, high traffic cloud based SaaS services and products. He holds a B.Sc. in Computer Science and Operations Research from Tel-Aviv University.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%" class="img-fluid rounded shadow-soft mx-auto mb-10" src="https://www.avanan.com/hubfs/headshots/roy-dark-gray.png" alt="Image Description">
+            </div>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Roy Rotem</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">VP of Product</span>
+              </div>
+              <p class="font-size-1">Roy Rotem was VP of Product Management at ForeScout, and led the company’s pivot to network access control. His previous roles include business development at Business Layers and senior development at Bay Network and Armon Networking. Most recently, he founded and served as CEO of Tazooz. Roy holds a B.Sc. In Computer Science and an MBA from Tel-Aviv University.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+
+
+
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%" class="img-fluid rounded shadow-soft mx-auto mb-10" src="assets/img/about/chris-blum-grey.png" alt="Image Description">
+            </div>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Chris Blum</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">VP of Marketing</span>
+              </div>
+              <p class="font-size-1">Results oriented marketing professional with over 22 years experience marketing technology and software through direct and indirect enterprise sales channels with in-depth experience in conceiving, implementing, and managing a broad rand of marketing initiatives.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+
+
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-5">
+              <img style="width: 100%" class="img-fluid rounded shadow-soft mx-auto" src="https://www.avanan.com/hubfs/headshots/michael-landewe-dark.png" alt="Image Description">
+            </div>
+            <div class="col-sm-7 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100 mb-2">
+                <h3 class="h5 d-inline-block">Michael Landewe</h3>
+                <span style="background-color: #569bbe;" class="badge badge-primary badge-pill badge-bigger d-inline-block ml-2">Chief Privacy Officer</span>
+              </div>
+              <p class="font-size-1">Michael Landewe has 15 years of startup experience as an early employee of three high-growth technology companies. He has had leadership roles in engineering, sales, marketing, and business development. He holds an MBA from New York University.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+
 
 
         </div>
-        <!-- End Slick Carousel -->
+
       </div>
       <!-- End Team Section -->
     </div>
@@ -1044,11 +1000,83 @@
 
 
 
+    <div class="container space-bottom-2 space-bottom-md-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <h2 class="text-primary">Board of <span class="font-weight-semi-bold">Directors</span></h2>
+      </div>
+      <!-- End Title -->
 
-    <div class="container space-3">
+      <!-- Team Carousel -->
+      <div class="js-slick-carousel u-slick u-slick--gutters-3 mb-5 slick-initialized slick-slider slick-dotted" data-slides-show="2" data-slides-scroll="1" data-pagi-classes="d-lg-none text-center u-slick__pagination mb-7" data-responsive="[{
+             &quot;breakpoint&quot;: 992,
+             &quot;settings&quot;: {
+               &quot;slidesToShow&quot;: 2
+             }
+           }, {
+             &quot;breakpoint&quot;: 768,
+             &quot;settings&quot;: {
+               &quot;slidesToShow&quot;: 2
+             }
+           }, {
+             &quot;breakpoint&quot;: 554,
+             &quot;settings&quot;: {
+               &quot;slidesToShow&quot;: 1
+             }
+           }]">
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1140px; transform: translate3d(0px, 0px, 0px);"><div class="js-slide pb-4 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 255px; height: auto;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
+          <!-- Team -->
+          <img class="img-fluid w-100 rounded" src="assets/img/about/Yuda-Doron.png" alt="Image Description">
+          <div class="card border-0 shadow-sm mt-n6 mx-3">
+            <div class="card-body text-center p-4">
+              <h3 class="h6 mb-1">Yuda Doron</h3>
+              <p class="font-size-1 mb-0">Greenfield Partners</p>
+            </div>
+          </div>
+          <!-- End Team -->
 
+        </div><div class="js-slide pb-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 255px; height: auto;" tabindex="0" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11">
+          <!-- Team -->
+          <img class="img-fluid w-100 rounded" src="assets/img/about/Modi-Rosen.png" alt="Image Description">
+          <div class="card border-0 shadow-sm mt-n6 mx-3">
+            <div class="card-body text-center p-4">
+              <h3 class="h6 mb-1">Modi Rosen</h3>
+              <p class="font-size-1 mb-0">Magma Venture Partners</p>
+            </div>
+          </div>
+
+          <!-- End Team -->
+        </div><div class="js-slide pb-4 slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 255px; height: auto;" tabindex="0" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12">
+          <!-- Team -->
+          <img class="img-fluid w-100 rounded" src="file:///Users/jacobs_macbook/Desktop/Repo/Avanan-3.0/assets/img/about/Tal-Slobodkin.png" alt="Image Description">
+          <div class="card border-0 shadow-sm mt-n6 mx-3">
+            <div class="card-body text-center p-4">
+              <h3 class="h6 mb-1">Tal Slobodkin</h3>
+              <p class="font-size-1 mb-0">StageOne Ventures</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div></div></div>
+
+        
+
+    
+        
+      <ul class="js-pagination d-lg-none text-center u-slick__pagination mb-7" role="tablist"><li class="slick-active slick-current" role="presentation"><span></span></li></ul></div>
+      <!-- End Team Carousel -->
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container space-3">
       <h2 class="mb-5">Board of Directors</h2>
-
       <div class="row board-images">
         <div class="col-12 col-lg-3 text-center">
           <div class="board-member">
@@ -1072,14 +1100,9 @@
           </div>
         </div>
         <div class="col-12 col-lg-3 text-center">
-          <!-- <div class="mgmt-member">
-            <div class="mgmt-name"><strong>Itmar Lask</strong><br>VP of R&D</div>
-            <div class="mgmt-overlay"></div>
-            <img class="img-fluid shadow-sm" src="assets/img/default_profile.png" alt="">
-          </div> -->
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
