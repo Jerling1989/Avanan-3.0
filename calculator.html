@@ -492,16 +492,16 @@
           <label for="secVendor">Email Security Vendor</label>
           <select class="form-control" id="secVendor">
             <option value="select">- select -</option>
-            <option value="eop">Microsoft EOP</option>
-            <option value="atp">Microsoft ATP</option>
-            <option value="pfpt">Proofpoint</option>
-            <option value="cuda">Barracuda</option>
-            <option value="mime">Mimecast</option>
+            <option value="0.0042">Microsoft EOP</option>
+            <option value="0.0021">Microsoft ATP</option>
+            <option value="0.00021">Proofpoint</option>
+            <option value="0.00155">Barracuda</option>
+            <option value="0.00052">Mimecast</option>
           </select>
         </div>
         
       </form>
-      <button onclick="myFunction()">Calculate</button>
+      <button class="mb-5" onclick="myFunction()">Calculate</button>
 
 
 
@@ -513,21 +513,50 @@
           var numEmails = document.getElementById("numEmails").value; 
           var secVendor = document.getElementById("secVendor").value;
 
+          var userEmailsMonth = numEmails * 30;
+          var orgEmailsMonth = numUsers * userEmailsMonth;
+          var vendorMissRate = secVendor * 100;
+          var totalMissedAttacks = vendorMissRate * orgEmailsMonth;
+
+
           console.log(numUsers);
           console.log(numEmails);
           console.log(secVendor);
+
+          console.log(userEmailsMonth);
+          console.log(orgEmailsMonth);
+          console.log(vendorMissRate + "%");
+          console.log(totalMissedAttacks);
+
+
+          document.getElementById("emailUserMonth").innerHTML = userEmailsMonth;
+          document.getElementById("emailOrgMonth").innerHTML = orgEmailsMonth;
+          document.getElementById("missRate").innerHTML = vendorMissRate + "%";
+          document.getElementById("missedAttacks").innerHTML = totalMissedAttacks;
         }
       </script>
 
 
       <div class="div">
-        <h6>Emails User/Month: <span id="emailUserMonth"></span></h6>
-
-        <h6>Total Emails Organization/Month: <span id="emailOrgMonth"></span></h6>
-
-        <h6>Vendor Miss Rate: <spa id="missRate"></span></h6>
-
-        <h6>Estimated Missed Attacks/Month: <span id="missedAttacks"></span></h6>
+        <div class="row mb-0">
+          <h6 class="text-left col-8 mb-0">Emails User/Month: </h6>
+          <h6 class="text-right col-4 mb-0" id="emailUserMonth"></h6>
+        </div>
+        <hr>
+        <div class="row mb-0">
+          <h6 class="text-left col-8 mb-0">Total Emails Organization/Month: </h6>
+          <h6 class="text-right col-4 mb-0" id="emailOrgMonth"></h6>
+        </div>
+        <hr>
+        <div class="row mb-0">
+          <h6 class="text-left col-8 mb-0">Vendor Miss Rate: </h6>
+          <h6 class="text-right col-4 mb-0 text-danger" id="missRate" style="font-weight: bold;"></h6>
+        </div>
+        <hr>
+        <div class="row mb-0">
+          <h6 class="text-left col-8 mb-0">Estimated Missed Attacks/Month: </h6>
+          <h6 class="text-right col-4 mb-0 text-danger" id="missedAttacks" style="font-weight: bold;"></h6>
+        </div>
       </div>
       
 
